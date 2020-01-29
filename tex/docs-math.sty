@@ -1,0 +1,31 @@
+%% Identification
+%% ----------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-math}[2018/10/08 v 0.1 Part of docs-bundle]
+
+\RequirePackage{latexsym}
+\RequirePackage{amssymb}
+\RequirePackage{mathtools}
+\mathtoolsset{mathic}
+
+
+%% Like amsmath \text command, but insert a space, a quad or a qquad
+%% before the text.
+\newcommand*{\@text}[2]{\text{#1#2}}
+\newcommand*{\stext}[1]{\@text{\ }{#1}}
+\newcommand*{\qtext}[1]{\@text{$\quad$}{#1}}
+\newcommand*{\qqtext}[1]{\@text{$\qquad$}{#1}}
+
+
+\newcommand*{\diff}{\mathop{}\!\mathrm{d}}
+\newcommand*{\incr}{\mathop{}\!\Delta}
+\newcommand*{\incrpct}{\mathop{}\!\Delta\%}
+\newcommand*{\iratio}[2]{\frac{\incr #1}{\incr #2}}
+\newcommand*{\ipctratio}[2]{\frac{\incrpct #1}{\incrpct #2}}
+
+\DeclarePairedDelimiter\Math@abs{\lvert}{\rvert}
+\newcommand*{\abs}[1]{\Math@abs*{#1}}
+
+\DeclarePairedDelimiter\Math@eval{.}{\rvert}
+\newcommand*{\eval}[2]{\Math@eval*{#1}_{#2}}

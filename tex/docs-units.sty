@@ -1,0 +1,32 @@
+%% Identification
+%% -------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-units}[2018/10/04 v 0.1 Part of docs-bundle]
+
+%% Needed for \texteuro
+\RequirePackage[full]{textcomp}
+
+
+\RequirePackage{siunitx}
+
+%% Adjust decimal separator to babel language
+\@ifpackageloaded{babel}{%
+  \addto\extrasspanish{\sisetup{locale = FR}}
+  \addto\extrasenglish{\sisetup{locale = UK}}
+}{}
+
+\DeclareSIUnit{\@EUR}{\text{\texteuro}}
+\DeclareSIUnit{\@UNIT}{\text{u}}
+
+\sisetup{%
+  group-digits=integer,
+  group-minimum-digits=5,
+  group-separator=\,,
+  per-mode=symbol
+}
+
+\newcommand*{\money}[1]{\SI{#1}{\@EUR}}
+\newcommand*{\price}[2][@UNIT]{\SI{#2}{\@EUR\per\csname #1\endcsname}}
+\newcommand*{\wage}[2][hour]{\SI{#2}{\@EUR\per\csname #1\endcsname}}
+\newcommand*{\units}[2][@UNIT]{\SI{#2}{\csname #1\endcsname}}
+\newcommand*{\hours}[1]{\units[hour]{#1}}

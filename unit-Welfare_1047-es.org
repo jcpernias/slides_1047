@@ -1,0 +1,715 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Eficiencia
+
+#+LATEX_CLASS: unit
+
+
+#+MATS: bib
+
+- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 3.
+
+- *Albi y otros*:  /Economía Pública I/. Capítulo 3.
+
+* Introducción
+
+
+** Eficiencia en el sentido de Pareto
+
+- Una asignación es *eficiente en el sentido de Pareto* si no es posible
+  mejorar el bienestar de ninguna persona sin empeorar el de alguna
+  otra.
+
+
+** El principio de Pareto
+
+- Una *mejora en el sentido de Pareto* es un cambio que mejora el
+  bienestar de algunas personas sin empeorar el de ninguna otra.
+
+
+** Individualismo
+
+El principio de Pareto es individualista en dos sentidos:
+
+- No considera la *desigualdad*, sólo el bienestar de cada agente por
+  separado.
+
+- *Soberanía del consumidor*: los propios individuos son los mejores
+  jueces de sus propias necesidades y deseos.
+
+
+
+* Eficiencia en el intercambio
+
+
+** Consumidores
+
+- Dos consumidores: $A$ y $B$.
+
+- Dos bienes: $X$ e $Y$.
+
+
+** Dotaciones iniciales
+
+- Unidades que poseen inicialmente los dos consumidores:
+
+  + Consumidor $A$: $(\Xbar_A, \Ybar_A)$.
+
+  + Consumidor $B$: $(\Xbar_B, \Ybar_B)$.
+
+
+** Preferencias
+
+- Funciones de utilidad:
+
+  + Consumidor $A$: $U_A = U_A(X_A, Y_A)$.
+
+  + Consumidor $B$: $U_B = U_B(X_B, Y_B)$.
+
+
+** Intercambio puro
+- No hay producción: la cantidad total de los dos bienes es fija:
+  #+begin_export latex
+  \begin{gather*}
+    \Xbar = \Xbar_{A} + \Xbar_{B} \\
+    \Ybar = \Ybar_{A} + \Ybar_{B}
+  \end{gather*}
+  #+end_export
+
+- Los consumidores pueden *intercambiar* unidades *libremente*.
+
+
+** La caja de Edgeworth (I)
+
+- La *caja de Edgeworth* permite visualizar una economía compuesta por
+  dos consumidores que intercambian dos bienes.
+
+
+** La caja de Edgeworth (II)
+
+#+MATS: figcol fig-Welfare_1047-01-*.pdf 0.55
+
+- Las dimensiones de la caja representan las cantidades totales de los
+  bienes: $\Xbar$ e $\Ybar$.
+
+- $O_A$ y $O_B$ son los orígenes de coordenadas de $A$ y $B$.
+
+
+** La caja de Edgeworth (y III)
+
+#+MATS: figcol fig-Welfare_1047-02-*.pdf 0.55
+
+- Cada punto representa una posibles asignación:
+  #+begin_export latex
+  \begin{gather*}
+    \Xbar = X_{A} + X_{B} \\
+    \Ybar = Y_{A} + Y_{B}
+  \end{gather*}
+  #+end_export
+
+- Dotación inicial:
+
+  + $A$: $(\Xbar_A, \Ybar_A)$.
+
+  + $B$: $(\Xbar_B, \Ybar_B)$.
+
+
+** Relación marginal de sustitución
+
+- La *relación marginal de sustitución*, \RMS, es el número máximo de
+  unidades del bien $Y$ que un consumidor estaría dispuesto
+  intercambiar por una unidad adicional del bien $X$.
+
+- Se puede calcular como el cociente entre utilidades marginales:
+  #+begin_export latex
+  \[
+    \RMS = \frac{\UMgX}{\UMgY}
+  \]
+  #+end_export
+
+
+** Curvas de indiferencia (I)
+
+#+MATS: figcol fig-Welfare_1047-03-*.pdf 0.55
+
+- Curvas de indiferencia del consumidor $A$.
+
+- La $\RMS_A$ es la pendiente, en valor absoluto, de las curvas de
+  indiferencia de $A$.
+
+
+** Curvas de indiferencia (y II)
+
+#+MATS: figcol fig-Welfare_1047-04-*.pdf 0.55
+
+- Curvas de indiferencia del consumidor $B$.
+
+- La $\RMS_B$ es la pendiente, en valor absoluto, de las curvas de
+  indiferencia de $B$.
+
+
+** Intercambio (I)
+
+#+MATS: figcol fig-Welfare_1047-05-*.pdf 0.55
+
+- En la dotación inicial $\RMS_A(Q) > \RMS_B(Q)$.
+
+- ¿Es posible encontrar una mejora en el sentido de Pareto?
+
+
+** Intercambio (II)
+
+#+MATS: figcol fig-Welfare_1047-06-*.pdf 0.55
+
+- Pasar de $Q$ a $R$ es una mejora en sentido de Pareto: $A$ mejora y
+  $B$ está igual.
+
+
+** Intercambio (y III)
+
+#+MATS: figcol fig-Welfare_1047-07-*.pdf 0.55
+
+- En $S$: $\RMS_A(S) = \RMS_B(S)$
+
+- $S$ es eficiente en el sentido de Pareto.
+
+
+** Eficiencia en el intercambio
+
+- La eficiencia en el intercambio requiere que la valoración relativa
+  de los bienes sea la misma para todos los consumidores:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B}
+  \]
+  #+end_export
+
+
+** La curva de contrato (I)
+
+#+MATS: figcol fig-Welfare_1047-08-*.pdf 0.55
+
+- La *curva de contrato* es el conjunto de todas las asignaciones
+  eficientes.
+
+
+** La curva de contrato (y II)
+
+#+MATS: figcol fig-Welfare_1047-09-*.pdf 0.55
+
+- El intercambio libre permite alcanzar una asignación eficiente
+  partiendo de una asignación ineficiente.
+
+
+** La frontera de posibilidades de utilidad (I)
+
+#+MATS: figcol fig-Welfare_1047-09b-*.pdf 0.55
+
+- Curva de contrato del intercambio.
+
+- Podemos calcular las utilidades de los consumidores en cada una de
+  las asignaciones eficientes.
+
+
+** La frontera de posibilidades de utilidad (II)
+
+#+MATS: figcol fig-Welfare_1047-10-*.pdf 0.55
+
+- La *frontera de posibilidades de utilidad* representa el nivel de
+  utilidad que obtiene cada consumidores en las asignaciones
+  eficientes.
+
+
+** La frontera de posibilidades de utilidad (y III)
+
+#+MATS: figcol fig-Welfare_1047-10-*.pdf 0.55
+
+- La *frontera de posibilidades de utilidad* representa la utilidad
+  máxima que puede disfrutar un consumidor dada la utilidad del otro
+  consumidor.
+
+
+** Eficiencia (I)
+
+#+MATS: figcol fig-Welfare_1047-09-*.pdf 0.55
+
+- $Q$ es una asignación ineficiente.
+
+- Cada punto del tramo $\mathit{TS}$ es una asignación eficiente.
+
+
+** Eficiencia (y II)
+
+#+MATS: figcol fig-Welfare_1047-10b-*.pdf 0.55
+
+- $Q$ se corresponde a una asignación ineficiente.
+
+- Cada punto del tramo $\mathit{TS}$ se corresponde a una asignación
+  eficiente.
+
+
+
+* Eficiencia en la producción
+
+
+** Intercambio y producción
+
+- Ampliamos el modelo para incluir la producción.
+
+
+** Consumidores
+
+- Dos consumidores: $A$ y $B$.
+
+- Dos bienes: $X$ e $Y$.
+
+- Dos factores de producción: $L$ y $K$.
+
+
+** Producción
+
+- Las empresas combinan los factores para producir los bienes de
+  consumo.
+
+- Funciones de producción:
+  #+begin_export latex
+  \begin{gather*}
+    X = F_{X}(L_{X}, K_{X}) \\
+    Y = F_{Y}(L_{Y}, K_{Y})
+  \end{gather*}
+  #+end_export
+
+
+** Intercambio
+
+- Podemos seguir analizando el intercambio igual que antes.
+
+- Las dimensiones de la caja de Edgeworth, $\Xbar$ e $\Ybar$, se
+  corresponden ahora con las producciones de los bienes $X$ e $Y$.
+
+
+** Asignaciones de factores iniciales
+
+- La cantidad total de los dos factores es fija:
+  #+begin_export latex
+  \begin{gather*}
+    \Kbar = \Kbar_{X} + \Kbar_{Y} \\
+    \Lbar = \Lbar_{X} + \Lbar_{Y}
+  \end{gather*}
+  #+end_export
+
+
+** La caja de Edgeworth
+
+#+MATS: figcol fig-Welfare_1047-22-*.pdf 0.55
+
+- Usaremos otra caja de Edgeworth para considerar todas las posibles
+  asignaciones de factores:
+  #+begin_export latex
+  \begin{gather*}
+    \Kbar = K_{X} + K_{Y} \\
+    \Lbar = L_{X} + L_{Y}
+  \end{gather*}
+  #+end_export
+
+- $M$ es la asignación inicial.
+
+
+** Relación marginal de sustitución técnica
+
+- La *relación marginal de sustitución técnica*, \RMST, es el número
+  máximo de unidades de $K$ que una tecnología permite sustituir por
+  una unidad de $L$ sin que disminuya la producción.
+
+- Se puede calcular como el cociente entre productos marginales:
+  #+begin_export latex
+  \[
+    \RMST = \frac{\PMgL}{\PMgK}
+  \]
+  #+end_export
+
+
+** Isocuantas (I)
+
+#+MATS: figcol fig-Welfare_1047-23-*.pdf 0.55
+
+- Isocuantas de la función de producción de $X$.
+
+- La $\RMST_X$ es la pendiente, en valor absoluto, de las isocuantas
+  de $X$.
+
+
+** Isocuantas (y II)
+
+#+MATS: figcol fig-Welfare_1047-24-*.pdf 0.55
+
+- Isocuantas de la función de producción de $Y$.
+
+- La $\RMST_Y$ es la pendiente, en valor absoluto, de las isocuantas
+  de $Y$.
+
+
+** Eficiencia (I)
+
+#+MATS: figcol fig-Welfare_1047-25-*.pdf 0.55
+
+- En la asignación inicial $\RMST_X < \RMST_Y$.
+
+- ¿Es posible encontrar una mejora en el sentido de Pareto?
+
+
+** Eficiencia (II)
+
+#+MATS: figcol fig-Welfare_1047-28-*.pdf 0.55
+
+- En las curva de contrato todas las asignaciones son eficientes:
+  $\RMST_X = \RMST_Y$
+
+
+** Eficiencia (y III)
+
+- La eficiencia en la asignación de factores requiere que la tasa a la
+  que pueden sustituirse los dos factores sea la misma en la
+  producción de cada uno de los bienes:
+  #+begin_export latex
+  \[
+    \RMST_{X} = \RMST_{Y}
+  \]
+  #+end_export
+
+
+** Eficiencia en la producción
+
+#+MATS: figcol fig-Welfare_1047-29-*.pdf 0.55
+
+- Es posible encontrar mejoras de Pareto desde cualquier asignación
+  ineficiente.
+
+
+* Eficiencia en la combinación de productos
+
+
+** La curva de contrato
+
+#+MATS: figcol fig-Welfare_1047-29b-*.pdf 0.55
+
+- Curva de contrato de la asignación de factores.
+
+- Podemos calcular las producciones de cada bien que se obtienen con
+  cada asignación eficiente.
+
+
+** La frontera de posibilidades de producción
+
+#+MATS: figcol fig-Welfare_1047-30-*.pdf 0.55
+
+- La *frontera de posibilidades de producción* representa la máxima
+  producción que puede obtenerse de un bien dada la producción del
+  otro bien.
+
+
+** Eficiencia en la asignación de factores (I)
+
+#+MATS: figcol fig-Welfare_1047-29-*.pdf 0.55
+
+- $M$ no es una asignación eficiente.
+
+
+** Eficiencia en la asignación de factores (y II)
+
+#+MATS: figcol fig-Welfare_1047-30b-*.pdf 0.55
+
+- Las combinaciones de producción asociadas a asignaciones
+  ineficientes se encuentran debajo de la FPP.
+
+
+** La relación marginal de transformación (I)
+
+#+MATS: figcol fig-Welfare_1047-31-*.pdf 0.55
+
+- La pendiente de la FPP, en valor absoluto, es la *relación marginal
+  de transformación*, $\RMT$.
+
+
+** La relación marginal de transformación (y II)
+
+- La $\RMT$ mide cuantas unidades de $Y$ se deben sacrificar para
+  producir una unidad adicional de $X$.
+
+- En el caso de las combinaciones de producción eficientes, podemos
+  escribir:
+  #+begin_export latex
+  \[
+    \RMT = \frac{\PMgL_{Y}}{\PMgL_{X}} = \frac{\PMgK_{Y}}{\PMgK_{X}}
+  \]
+  #+end_export
+
+
+** Eficiencia en la combinación de productos
+
+- La eficiencia en la combinación de productos requiere que:
+  #+begin_export latex
+  \[
+    \RMS_A = \RMS_B = RMT
+  \]
+  #+end_export
+
+** Condiciones para eficiencia
+
+- Eficiencia en el intercambio:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B}
+  \]
+  #+end_export
+
+- Eficiencia en la asignación de factores:
+  #+begin_export latex
+  \[
+    \RMST_{X} = \RMST_{Y}
+  \]
+  #+end_export
+
+- Eficiencia en la combinación de productos:
+  #+begin_export latex
+  \[
+    \RMS_A = \RMS_B = RMT
+  \]
+  #+end_export
+
+
+* Otros                                                            :noexport:
+
+** Eficiencia en la combinación de productos (y II)
+
+- Consideremos la siguiente situación:
+
+  + Las relaciones marginales de sustitución de los consumidores coinciden:
+    #+begin_export latex
+    \[
+      \RMS_A = \RMS_B = 2;
+    \]
+    #+end_export
+
+  + pero son distintas de la relación marginal de transformación:
+    #+begin_export latex
+    \[
+      \RMT = 1.
+    \]
+    #+end_export
+
+- ¿Es posible encontrar una mejora de Pareto?
+
+
+* Mercados competitivos                                            :noexport:
+
+
+** Condiciones para eficiencia
+
+- Eficiencia en el intercambio:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B}
+  \]
+  #+end_export
+
+- Eficiencia en la asignación de factores:
+  #+begin_export latex
+  \[
+    \RMST_{X} = \RMST_{Y}
+  \]
+  #+end_export
+
+- Eficiencia en la combinación de productos:
+  #+begin_export latex
+  \[
+    \RMS_A = \RMS_B = RMT
+  \]
+  #+end_export
+
+
+** Mercados competitivos
+
+- ¿Son eficientes los resultados de los mercados competitivos?
+
+- *Primer teorema del bienestar*: las economías competitivas alcanzan
+  la eficiencia de Pareto.
+
+
+** Eficiencia en el intercambio
+
+- Equilibrio del consumidor:
+  #+begin_export latex
+  \begin{gather*}
+    \RMS_{A} = p_{X}/p_{Y} \\
+    \RMS_{B} = p_{X}/p_{Y}
+  \end{gather*}
+  #+end_export
+
+- Como todos los consumidores se enfrentan a los mismos precios:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B}
+  \]
+  #+end_export
+
+
+** Eficiencia en la asignación de factores
+
+- Minimización de costes:
+  #+begin_export latex
+  \begin{gather*}
+    \RMST_{X} = w/r \\
+    \RMST_{Y} = w/r
+  \end{gather*}
+  #+end_export
+
+- Como todas las empresas competitivas pagan lo mismo por sus
+  factores:
+  #+begin_export latex
+  \[
+    \RMST_{X} = \RMST_{Y}
+  \]
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (I)
+
+- Maximización de beneficios de la empresa competitiva:
+  #+begin_export latex
+  \begin{gather*}
+    p_X = \CMg_X \\
+    p_Y = \CMg_Y
+  \end{gather*}
+  #+end_export
+
+- Podemos expresar el coste marginal como:
+  #+begin_export latex
+  \begin{gather*}
+    \CMg_X = w / \PMgL_X \\
+    \CMg_Y = w / \PMgL_Y
+  \end{gather*}
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (II)
+
+- Maximización de beneficios de la empresa competitiva:
+  #+begin_export latex
+  \begin{gather*}
+    p_X = w / \PMgL_X \\
+    p_Y = w / \PMgL_Y
+  \end{gather*}
+  #+end_export
+
+- Dividiendo las dos expresiones anteriores:
+  #+begin_export latex
+  \[
+    \frac{p_X}{p_Y} = \frac{\PMgL_Y}{\PMgL_X} = \RMT
+  \]
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (y III)
+
+- La optimización del consumidor implica:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B} = p_X/p_Y
+  \]
+  #+end_export
+
+- La maximización del beneficio de las empresas competitivas implica:
+  #+begin_export latex
+  \[
+    \RMT = p_X/p_Y
+  \]
+  #+end_export
+
+- Eficiencia en la combinación de productos:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B} = \RMT
+  \]
+  #+end_export
+
+
+** Eficiencia y equidad
+
+- ¿Hay que renunciar a la eficiencia si se persigue algún tipo de equidad?
+
+- *Segundo teorema del bienestar*: toda asignación eficiente puede ser
+  alcanzada por los mercados competitivos, partiendo de una
+  redistribución inicial adecuada.
+
+
+** Fallos de mercado
+
+- Fuentes de ineficiencia:
+
+  + Poder de mercado.
+
+  + Bienes públicos.
+
+  + Externalidades.
+
+  + Mercados incompletos.
+
+  + Información imperfecta.
+
+
+
+* Elección social                                                  :noexport:
+
+
+** La función social de bienestar (I)
+
+- La *función social de bienestar* indica el nivel de bienestar social
+  asociado a las utilidades alcanzadas por todos los miembros de la
+  sociedad:
+  #+begin_export latex
+  \[
+    W = W(U_{A}, U_{B})
+  \]
+  #+end_export
+
+- Una *curva de indiferencia social* es el conjunto de combinaciones
+  de utilidad individual que proporcionan el mismo bienestar social.
+  #+begin_export latex
+  \[
+    \Wbar = W(U_{A}, U_{B})
+  \]
+  #+end_export
+
+
+** La función social de bienestar (II)
+
+#+MATS: figcol fig-Welfare_1047-11-*.pdf 0.55
+
+- *Utilitarismo*: $W = U_A + U_B$.
+
+
+** La función social de bienestar (y III)
+
+#+MATS: figcol fig-Welfare_1047-12-*.pdf 0.55
+
+- *Igualitarismo*: $W = \min\{U_A, U_B\}$.
+
+
+** La elección social (I)
+
+#+MATS: figcol fig-Welfare_1047-13-*.pdf 0.55
+
+- Cada función de bienestar social determina una elección óptima
+  diferente.
+
+
+** La elección social (y II)
+
+- Problemas:
+
+  + ¿De dónde viene la función de bienestar social?
+
+  + ¿Como podemos comparar la utilidad de diferentes personas?

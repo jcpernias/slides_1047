@@ -1,0 +1,6 @@
+% -*- LaTeX -*-
+
+\ProvidesDictionary{docs-marks}{Spanish}
+
+\providetranslation{point}{punto}
+\providetranslation{points}{puntos}

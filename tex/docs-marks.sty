@@ -1,0 +1,31 @@
+%% Identification
+%% -------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-marks}[2018/10/04 v 0.1 Part of docs-bundle]
+
+%% Conditionals
+\RequirePackage{ifthen}
+
+%% Bold weight in math mode
+
+% The following macros prevent an error with math alphabets. See:
+% https://tex.stackexchange.com/questions/3676/too-many-math-alphabets-error
+\newcommand\hmmax{0}
+\newcommand\bmmax{0}
+\RequirePackage{bm}
+
+%% Singular and plural words
+\RequirePackage{translator}
+\usedictionary{docs-marks}
+
+\newlength{\@pointlen}
+\newcommand*{\@pointslabel}{\translate{points}}%
+\newcommand*{\@pointlabel}{\translate{point}}%
+
+\newcommand*{\@points}[1]{%
+  \setlength{\@pointlen}{#1 pt}%
+  \ensuremath{\bm{#1}}~\ifthenelse{\lengthtest{\@pointlen = 1pt}}{%
+    \@pointlabel}{\@pointslabel}}
+
+\newcommand*{\points}[1]{\textbf{(\@points{#1})}}
+

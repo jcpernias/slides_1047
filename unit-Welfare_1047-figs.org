@@ -1,0 +1,756 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Welfare economics
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+
+* Chunks
+
+** Caja intercambio
+#+begin_src latex :noweb-ref output-box
+  % The box
+  \draw[curve] (0,0) rectangle (100, 100);
+  \node[left] at (7, -7) {$O_{A}$} ;
+  \node[right] at (97, 105) {$O_{B}$} ;
+  \node[below] at (97,0) {$X_{A}$} ;
+  \node[left] at (0,97) {$Y_{A}$} ;
+  \node[above] at (5,100) {$X_{B}$} ;
+  \node[right] at (100,5) {$Y_{B}$} ;
+#+end_src
+
+#+begin_src latex :noweb-ref output-box-scale
+  [xscale=0.045, yscale=0.045, samples=128]
+#+end_src
+
+** Frontera de posibilidades de utilidad
+
+#+begin_src latex :noweb-ref upf-scale
+  [xscale=0.045, yscale=0.045, samples=128]
+#+end_src
+
+** Caja producción
+
+#+begin_src latex :noweb-ref input-box
+  % The box
+  \draw[curve] (0,0) rectangle (100, 100);
+  \node[left] at (7, -7) {$O_{X}$} ;
+  \node[right] at (97, 105) {$O_{Y}$} ;
+  \node[below] at (97,0) {$L_{X}$} ;
+  \node[left] at (0,97) {$K_{X}$} ;
+  \node[above] at (5,100) {$L_{Y}$} ;
+  \node[right] at (100,5) {$K_{Y}$} ;
+#+end_src
+
+#+begin_src latex :noweb-ref input-box-scale
+  [xscale=0.045, yscale=0.045, samples=128]
+#+end_src
+
+** Frontera de posibilidades de producción
+
+#+begin_src latex :noweb-ref ppf-scale
+  [xscale=0.45, yscale=0.45, samples=128]
+#+end_src
+
+* Eficiencia en el intercambio
+
+** La caja de Edgeworth
+
+#+begin_src latex :tangle fig-Welfare_1047-01.tex :noweb yes
+  \begin{tikzpicture}<<output-box-scale>>
+
+    \draw[shift arrow, <->] (3, 3) -- (3, 99)
+    node[midway, right] {$\Ybar$}
+    ;
+
+    \draw[shift arrow, <->] (3, 3) -- (99, 3)
+    node[midway, above] {$\Xbar$}
+    ;
+
+    <<output-box>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Dotaciones iniciales
+
+#+begin_src latex :tangle fig-Welfare_1047-02.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \draw[shift arrow, ->] (3, 3) -- (20.44104, 3) ;
+  \draw[shift arrow, ->] (3, 3) -- (3, 54.70359) ;
+  \draw[shift arrow, ->] (97, 97) -- (20.44104, 97) ;
+  \draw[shift arrow, ->] (97, 97) -- (97, 54.70359) ;
+
+  \draw[help lines]
+  (20.44104, 0) node[below] {$\Xbar_{A}$} --
+  (20.44104, 100) node[above] {$\Xbar_{B}$}
+  ;
+
+  \draw[help lines]
+  (0, 54.70359) node[left] {$\Ybar_{A}$} --
+  (100, 54.70359) node[right] {$\Ybar_{B}$}
+  ;
+
+  \node[dot, label={above left:$Q$}] at (20.44104, 54.70359) {} ;
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Curvas indiferencia A
+
+#+begin_src latex :tangle fig-Welfare_1047-03.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \draw[curve A]
+  plot[domain=16:82] (\x, {(28.37967/\x^0.6666667)^3})
+  node[above right=-7pt and 0pt] {$U_{A}$}
+  ;
+
+  \draw[curve A]
+  plot[domain=38.5:82] (\x, {(51.16764/\x^0.6666667)^3})
+  node[right] {$U'_{A}$}
+  ;
+
+  \draw[curve A]
+  plot[domain=59.5:82] (\x, {(68.39904/\x^0.6666667)^3})
+  node[right] {$U''_{A}$}
+  ;
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Curvas indiferencia B
+
+#+begin_src latex :tangle fig-Welfare_1047-04.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \draw[curve B]
+  plot[domain=17:54] (\x, {100-(76.10606/(100-\x)^0.333333)^1.5})
+  node[left] at (17, 27.9856) {$U''_{B}$}
+  ;
+
+  \draw[curve B]
+  plot[domain=17:82.8] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  node[left] at (17, 56.17734) {$U'_{B}$}
+  ;
+
+  \draw[curve B]
+  plot[domain=17:94.8] (\x, {100-(36.84031/(100-\x)^0.3333333)^1.5})
+  node[left] at (17, 75.74644) {$U_{B}$}
+  ;
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Asignación ineficiente
+
+#+begin_src latex :tangle fig-Welfare_1047-05.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \fill[fillA]
+  plot[domain=20.44104:82.52288] (\x, {(28.37967/\x^0.6666667)^3}) --
+  plot[domain=82.52288:20.44104] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  ;
+
+  \draw[help lines]
+  (20.44104, 0) node[below] {$\Xbar_{A}$} --
+  (20.44104, 100) node[above] {$\Xbar_{B}$}
+  ;
+
+  \draw[help lines]
+  (0, 54.70359) node[left] {$\Ybar_{A}$} --
+  (100, 54.70359) node[right] {$\Ybar_{B}$}
+  ;
+
+
+  \draw[curve A]
+  plot[domain=19.4:88] (\x, {(28.37967/\x^0.6666667)^3})
+  ;
+
+  \draw[curve B]
+  plot[domain=15:83.2] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  ;
+
+
+  \node[dot, label={above right:$Q$}] at (20.44104, 54.70359) {} ;
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Mejora paretiana
+
+#+begin_src latex :tangle fig-Welfare_1047-06.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \fill[fillA]
+  plot[domain=45:77.14438] (\x, {(45.1731/\x^0.6666667)^3}) --
+  plot[domain=77.14438:45] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  ;
+
+  \draw[curve A]
+  plot[domain=19.4:88] (\x, {(28.37967/\x^0.6666667)^3})
+  ;
+
+  \draw[curve A]
+  plot[domain=40:82] (\x, {(45.1731/\x^0.6666667)^3})
+  ;
+
+
+  \draw[curve B]
+  plot[domain=15:83.2] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  ;
+
+
+  \node[dot, label={above right:$Q$}] at (20.44104, 54.70359) {} ;
+  \node[dot, label={above right:$R$}] at (45, 45.52129) {} ;
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Asignación eficiente
+
+#+begin_src latex :tangle fig-Welfare_1047-07.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \draw[curve A]
+  plot[domain=19.4:88] (\x, {(28.37967/\x^0.6666667)^3})
+  ;
+
+  \draw[curve A]
+  plot[domain=40:82] (\x, {(45.1731/\x^0.6666667)^3})
+  ;
+
+  \draw[curve A]
+  plot[domain=55:80] (\x, {(51.16764/\x^0.6666667)^3})
+  ;
+
+  \draw[curve B]
+  plot[domain=15:83.2] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  ;
+
+
+  \node[dot, label={above right:$Q$}] at (20.44104, 54.70359) {} ;
+  \node[dot, label={above right:$R$}] at (45, 45.52129) {} ;
+  \node[dot, label={above right:$S$}] at (65, 31.70732) {} ;
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Curva de contrato
+
+#+begin_src latex :tangle fig-Welfare_1047-08.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \draw[curve A]
+  plot[domain=30:55] (\x, {(28.37967/\x^0.6666667)^3})
+  ;
+
+  \draw[curve B]
+  plot[domain=25:50] (\x, {100-(76.10606/(100-\x)^0.333333)^1.5})
+  ;
+
+
+  \draw[curve A]
+  plot[domain=55:80] (\x, {(51.16764/\x^0.6666667)^3})
+  ;
+
+  \draw[curve B]
+  plot[domain=53:76] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  ;
+
+
+  \draw[curve B]
+  plot[domain=67:88] (\x, {100-(36.84031/(100-\x)^0.3333333)^1.5})
+  ;
+
+  \draw[curve A]
+  plot[domain=72:95] (\x, {(68.39904/\x^0.6666667)^3})
+  ;
+
+
+
+
+  \draw[curve, semithick]
+  plot[domain=0:100] (\x, {100*\x/(400-3*\x)})
+  ;
+
+
+
+  \node[dot] at (80, 50) {} ;
+  \node[dot] at (40, 14.28571) {} ;
+  \node[dot, label={above:$S$}] at (65, 31.70732) {} ;
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Curva de contrato (II)
+
+#+begin_src latex :tangle fig-Welfare_1047-09.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \fill[fillA]
+  plot[domain=20.44104:82.52288] (\x, {(28.37967/\x^0.6666667)^3}) --
+  plot[domain=82.52288:20.44104] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  ;
+
+
+  \draw[curve A]
+  plot[domain=19.4:88] (\x, {(28.37967/\x^0.6666667)^3})
+  ;
+
+  \draw[curve B]
+  plot[domain=15:83.2] (\x, {100-(54.65193/(100-\x)^0.333333)^1.5})
+  ;
+
+  \draw[curve, semithick]
+  plot[domain=0:100] (\x, {100*\x/(400-3*\x)})
+  ;
+
+  \draw[curve, ultra thick]
+  plot[domain=40:65] (\x, {100*\x/(400-3*\x)})
+  ;
+
+
+  \node[dot, label={above right:$Q$}] at (20.44104, 54.70359) {} ;
+  \node[dot, label={above:$S$}] at (65, 31.70732) {} ;
+  \node[dot, label={below:$T$}] at (40, 14.28571) {} ;
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Curva de contrato (III)
+
+#+begin_src latex :tangle fig-Welfare_1047-09b.tex :noweb yes
+\begin{tikzpicture}<<output-box-scale>>
+
+  \draw[curve]
+  plot[domain=0:100] (\x, {100*\x/(400-3*\x)})
+  ;
+
+
+  <<output-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Frontera de posibilidades de utilidad
+
+#+begin_src latex :tangle fig-Welfare_1047-10.tex :noweb yes
+\begin{tikzpicture}<<upf-scale>>
+
+  \draw[curve, ultra thick]
+  plot[domain=0:100] (\x,{8.75*(100-\x)^0.5})
+  ;
+
+
+
+  \draw[axis] (0,110) node[left] {$U_{B}$} |- (110,0) node[below] {$U_{A}$};
+\end{tikzpicture}
+#+end_src
+
+
+** Frontera de posibilidades de utilidad (II)
+
+#+begin_src latex :tangle fig-Welfare_1047-10b.tex :noweb yes
+\begin{tikzpicture}<<upf-scale>>
+  \coordinate (Q) at (30, 40) ;
+  \coordinate (S) at (79.10204, 40) ;
+  \coordinate (T) at (30, 73.20755) ;
+
+
+  \fill[fillB]
+  plot[domain=30:79.10204] (\x,{8.75*(100-\x)^0.5}) --
+  (Q) -- cycle
+  ;
+
+  \draw[help lines] (Q) -- (T) (Q) -- (S) ;
+
+  \draw[curve, semithick]
+  plot[domain=0:100] (\x,{8.75*(100-\x)^0.5})
+  ;
+
+  \draw[curve, ultra thick]
+  plot[domain=30:79.10204] (\x,{8.75*(100-\x)^0.5})
+  ;
+
+
+  \node[dot, label={left:$Q$}] at (Q) {} ;
+  \node[dot, label={above:$S$}] at (S) {} ;
+  \node[dot, label={above:$T$}] at (T) {} ;
+
+
+  \draw[axis] (0,110) node[left] {$U_{B}$} |- (110,0) node[below] {$U_{A}$};
+\end{tikzpicture}
+#+end_src
+
+
+
+* Elección social
+
+#+begin_src latex :tangle fig-Welfare_1047-11.tex :noweb yes
+\begin{tikzpicture}[xscale=0.04545, yscale=0.04545, samples=128]
+
+  \draw[curve, ultra thick]
+  plot[domain=0:100] (\x,{8.75*(100-\x)^0.5})
+  ;
+
+  \draw[curve, semithick]
+  (19.1406, 100) -- (100, 19.1406) node[right] {$W_{3}$}
+  (10, 50) -- (50, 10)  node[right] {$W_{1}$}
+  (15, 75) -- (80, 10)  node[right] {$W_{2}$}
+  (45, 100) -- (100, 45)  node[right] {$W_{4}$}
+  ;
+
+  \node[dot, label={right:$C_{U}$}] at (80.85938, 38.28124) {} ;
+
+
+  \draw[axis] (0,110) node[left] {$U_{B}$} |- (110,0) node[below] {$U_{A}$};
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Welfare_1047-12.tex :noweb yes
+\begin{tikzpicture}[xscale=0.04545, yscale=0.04545, samples=128]
+
+  \draw[curve, ultra thick]
+  plot[domain=0:100] (\x,{8.75*(100-\x)^0.5})
+  ;
+
+  \draw[curve, semithick]
+  (57.22636, 100) |- (100, 57.22636) node[right] {$W_{3}$}
+  (75, 100) |- (100, 75)  node[right] {$W_{4}$}
+  (37, 100) |- (100, 37)  node[right] {$W_{2}$}
+  (17, 100) |- (100, 17)  node[right] {$W_{1}$}
+  ;
+
+  \node[dot, label={above right:$C_{I}$}] at (57.22636, 57.22636) {} ;
+
+
+  \draw[axis] (0,110) node[left] {$U_{B}$} |- (110,0) node[below] {$U_{A}$};
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Welfare_1047-13.tex :noweb yes
+\begin{tikzpicture}[xscale=0.04545, yscale=0.04545, samples=128]
+
+  \draw[curve, ultra thick]
+  plot[domain=0:100] (\x,{8.75*(100-\x)^0.5})
+  ;
+
+
+  \node[dot, label={above:$C_{I}$}] at (57.22636, 57.22636) {} ;
+  \node[dot, label={right:$C_{U}$}] at (80.85938, 38.28124) {} ;
+
+
+  \draw[axis] (0,110) node[left] {$U_{B}$} |- (110,0) node[below] {$U_{A}$};
+\end{tikzpicture}
+#+end_src
+
+
+* Eficiencia en la producción
+
+** Caja de Edgeworth
+
+#+begin_src latex :tangle fig-Welfare_1047-22.tex :noweb yes
+\begin{tikzpicture}<<input-box-scale>>
+  \newcommand*{\Mx}{80}
+  \newcommand*{\My}{20}
+
+
+  \draw[shift arrow, ->] (3, 3) -- (\Mx, 3) ;
+  \draw[shift arrow, ->] (3, 3) -- (3, \My) ;
+  \draw[shift arrow, ->] (97, 97) -- (\Mx, 97) ;
+  \draw[shift arrow, ->] (97, 97) -- (97, \My) ;
+
+  \draw[help lines]
+  (\Mx, 0) node[below] {$\Lbar_{X}$} --
+  (\Mx, 100) node[above] {$\Lbar_{Y}$}
+  ;
+
+  \draw[help lines]
+  (0, \My) node[left] {$\Kbar_{X}$} --
+  (100, \My) node[right] {$\Kbar_{Y}$}
+  ;
+
+  \node[dot, label={above left:$M$}] at (\Mx, \My) {} ;
+
+  <<input-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Isocuantas X
+
+#+begin_src latex :tangle fig-Welfare_1047-23.tex :noweb yes
+\begin{tikzpicture}<<input-box-scale>>
+
+  \draw[curve A]
+  plot[domain=6.7:85] (\x, {625/\x})
+  node[above right=-7pt and 0pt] {$X$}
+  ;
+
+  \draw[curve A]
+  plot[domain=27:85] (\x, {2500/\x})
+  node[right] {$X'$}
+  ;
+
+  \draw[curve A]
+  plot[domain=60:85] (\x, {5625/\x})
+  node[right] {$X''$}
+  ;
+
+  <<input-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Isocuantas Y
+
+
+#+begin_src latex :tangle fig-Welfare_1047-24.tex :noweb yes
+\begin{tikzpicture}<<input-box-scale>>
+
+  \draw[curve B]
+  plot[domain=15:40] (\x, {100-5625/(100-\x)})
+  node[left] at (15, 33.82353) {$Y''$}
+  ;
+
+  \draw[curve B]
+  plot[domain=15:73] (\x, {100-2500/(100-\x)})
+  node[left] at (15, 70.58824) {$Y'$}
+  ;
+
+  \draw[curve B]
+  plot[domain=15:93.3] (\x, {100-625/(100-\x)})
+  node[left] at (15, 92.64706) {$Y$}
+  ;
+
+  <<input-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Combinación ineficiente
+
+#+begin_src latex :tangle fig-Welfare_1047-25.tex :noweb yes
+\begin{tikzpicture}<<input-box-scale>>
+  \newcommand*{\Mx}{80}
+  \newcommand*{\My}{20}
+
+
+  \fill[fillA]
+  plot[domain=20:80] (\x, {1600/\x}) --
+  plot[domain=80:20] (\x, {100-1600/(100-\x)})
+  ;
+
+  \draw[help lines]
+  (\Mx, 0) node[below] {$\Lbar_{X}$} --
+  (\Mx, 100) node[above] {$\Lbar_{Y}$}
+  ;
+
+  \draw[help lines]
+  (0, \My) node[left] {$\Kbar_{X}$} --
+  (100, \My) node[right] {$\Kbar_{Y}$}
+  ;
+
+  \draw[curve A]
+  plot[domain=18:85] (\x, {1600/\x})
+  ;
+
+  \draw[curve B]
+  plot[domain=15:82] (\x, {100-1600/(100-\x)})
+  ;
+
+
+  \node[dot, label={above right:$M$}] at (\Mx, \My) {} ;
+
+  <<input-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Curva de contrato
+
+#+begin_src latex :tangle fig-Welfare_1047-28.tex :noweb yes
+\begin{tikzpicture}<<input-box-scale>>
+
+  \draw[curve A]
+  plot[domain=16:35] (\x, {625/\x})
+  ;
+
+  \draw[curve B]
+  plot[domain=15:32] (\x, {100-5625/(100-\x)})
+  ;
+
+  \draw[curve A]
+  plot[domain=40:60] (\x, {2500/\x})
+  ;
+
+  \draw[curve B]
+  plot[domain=40:60] (\x, {100-2500/(100-\x)})
+  ;
+
+  \draw[curve A]
+  plot[domain=66:85] (\x, {5625/\x})
+  ;
+
+  \draw[curve B]
+  plot[domain=65:82] (\x, {100-625/(100-\x)})
+  ;
+
+
+  \draw[curve, semithick]
+  plot[domain=0:100] (\x, \x)
+  ;
+
+
+  \node[dot] at (25, 25) {} ;
+  \node[dot] at (50, 50) {} ;
+  \node[dot] at (75, 75) {} ;
+
+  <<input-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Mejoras paretianas
+
+#+begin_src latex :tangle fig-Welfare_1047-29.tex :noweb yes
+\begin{tikzpicture}<<input-box-scale>>
+  \newcommand*{\Mx}{80}
+  \newcommand*{\My}{20}
+
+
+  \fill[fillA]
+  plot[domain=20:80] (\x, {1600/\x}) --
+  plot[domain=80:20] (\x, {100-1600/(100-\x)})
+  ;
+
+  \draw[curve A]
+  plot[domain=18:85] (\x, {1600/\x})
+  ;
+
+  \draw[curve B]
+  plot[domain=15:82] (\x, {100-1600/(100-\x)})
+  ;
+
+
+  \draw[curve, semithick]
+  plot[domain=0:100] (\x, \x)
+  ;
+
+  \draw[curve, ultra thick]
+  plot[domain=40:60] (\x, \x)
+  ;
+
+  \node[dot, label={above right:$M$}] at (\Mx, \My) {} ;
+
+  <<input-box>>
+\end{tikzpicture}
+#+end_src
+
+
+** Curva de contrato
+
+#+begin_src latex :tangle fig-Welfare_1047-29b.tex :noweb yes
+\begin{tikzpicture}<<input-box-scale>>
+
+  \draw[curve]
+  plot[domain=0:100] (\x, \x)
+  ;
+
+  <<input-box>>
+\end{tikzpicture}
+#+end_src
+
+
+* Eficiencia en la combinación de productos
+
+** Frontera de posibilidades de producción
+
+#+begin_src latex :tangle fig-Welfare_1047-30.tex :noweb yes
+\begin{tikzpicture}<<ppf-scale>>
+
+  \draw[curve, ultra thick]
+  plot[domain=10:0] (\x,{(100-\x^2)^0.5})
+  ;
+
+  \draw[axis] (0,11) node[left] {$Y$} |- (11,0) node[below] {$X$};
+\end{tikzpicture}
+#+end_src
+
+
+** FPP e ineficiencia
+
+#+begin_src latex :tangle fig-Welfare_1047-30b.tex :noweb yes
+\begin{tikzpicture}<<ppf-scale>>
+  \newcommand*{\Qx}{6.32455}
+  \newcommand*{\Qy}{\Qx}
+  \newcommand*{\Sx}{7.745967}
+  \newcommand*{\Ty}{\Sx}
+
+  \coordinate (Q) at (\Qx, \Qy) ;
+  \coordinate (S) at (\Sx, \Qy) ;
+  \coordinate (T) at (\Qx, \Ty) ;
+
+
+  \fill[fillB]
+  plot[domain=\Qx:\Sx] (\x,{(100-\x^2)^0.5}) --
+  (Q) -- cycle
+  ;
+
+  \draw[help lines] (Q) -- (T) (Q) -- (S) ;
+
+  \draw[curve, semithick]
+  plot[domain=10:0] (\x,{(100-\x^2)^0.5})
+  ;
+
+  \draw[curve, ultra thick]
+  plot[domain=\Qx:\Sx] (\x,{(100-\x^2)^0.5})
+  ;
+
+  \node[dot, label={left:$M$}] at (Q) {} ;
+  % \node[dot, label={above:$S$}] at (S) {} ;
+  % \node[dot, label={above:$T$}] at (T) {} ;
+
+
+  \draw[axis] (0,11) node[left] {$Y$} |- (11,0) node[below] {$X$};
+\end{tikzpicture}
+#+end_src
+
+
+** Relación marginal de transformación
+
+#+begin_src latex :tangle fig-Welfare_1047-31.tex :noweb yes
+\begin{tikzpicture}<<ppf-scale>>
+
+  \draw[curve, ultra thick]
+  plot[domain=10:0] (\x,{(100-\x^2)^0.5})
+  ;
+
+  \draw[curve, semithick]
+  (7.444272, 7.472136) -- (9.944272, 2.472136)
+  ;
+
+  \node[dot] at (8.944272, 4.472136) {} ;
+
+
+  \draw[axis] (0,11) node[left] {$Y$} |- (11,0) node[below] {$X$};
+\end{tikzpicture}
+#+end_src

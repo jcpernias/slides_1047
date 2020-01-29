@@ -1,0 +1,88 @@
+%% Identification
+%% -------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-presentation}[2018/11/10 v 0.1 Part of docs-bundle]
+
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+\usefonttheme[stillsansserifsmall]{serif}
+\usefonttheme{professionalfonts}
+
+\setbeamercovered{invisible}
+
+% Quotes and quotation
+\setbeamerfont{quote}{shape=\upshape,family=\rmfamily}
+\setbeamerfont{quotation}{shape=\upshape,family=\rmfamily}
+
+\setbeamercolor{alerted text}{fg=DarkBlue}
+\setbeamerfont{alerted text}{series=\bfseries}
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{enumerate items}[circle]
+\setbeamertemplate{footline}[default]
+
+\setbeamercolor{enumerate item}{fg=green!20!black}
+\setbeamertemplate{enumerate items}[default]
+
+% \setbeamertemplate{section in toc}[circle]
+% \setbeamertemplate{subsection in toc}[ball unnumbered]
+
+%% Disable navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+
+%% TOC: disable decorations for section numbers
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
+\setbeamertemplate{subsection in toc}{%
+  \hspace{1em}\inserttocsectionnumber.%
+  \inserttocsubsectionnumber.~\inserttocsubsection\par}
+
+
+
+%% List formatting: same font size for nested lists.
+\setbeamerfont*{itemize/enumerate subbody}{parent=itemize/enumerate body}
+\setbeamerfont*{itemize/enumerate subsubbody}{parent=itemize/enumerate body}
+
+\setbeamertemplate{itemize subitem}{%
+  \scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\setbeamertemplate{itemize subsubitem}{%
+  \scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+
+\makeatletter
+\let\@listii\@listi
+\let\@listiii\@listi
+\makeatother
+
+
+% TODO Why cannot overwrite the Outline translation?
+\deftranslation[to=English]{outline}{Outline}
+\deftranslation[to=Spanish]{outline}{Esquema}
+\newcommand*{\OutlineLabel}{\translate{outline}}
+
+
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{\OutlineLabel}
+    \tableofcontents[currentsection,subsectionstyle=show/show/hide]
+  \end{frame}
+}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}
+    \frametitle{\OutlineLabel}
+    \tableofcontents[currentsection, subsectionstyle=show/shaded/hide,]
+  \end{frame}
+}
+
+\newcommand*{\firstframes}{%
+  \begin{frame}[plain]\titlepage\end{frame}%
+  \begin{frame}<presentation>%
+    \frametitle{\OutlineLabel}%
+    \tableofcontents[hideallsubsections]%
+  \end{frame}
+}
+
+\AtBeginDocument{\firstframes}

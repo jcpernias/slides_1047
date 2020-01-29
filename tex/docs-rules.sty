@@ -1,0 +1,49 @@
+%% Identification
+%% -------------------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-rules}[2018/10/04 v 0.1 Part of docs-bundle]
+
+%% Package loading
+%% -------------------------------------------------------------------------------
+\RequirePackage{pgfkeys}
+
+
+%% Code
+%% -------------------------------------------------------------------------------
+
+\newlength{\@xrulethickness}
+\newlength{\@xrulewidth}
+\newif\if@widthset
+
+\pgfkeys{/docs/rules/.cd,
+  % rule thickness
+  thickness/.value required,
+  thickness/.code = {\setlength{\@xrulethickness}{#1}},
+  ultra thin/.style = {thickness = 0.1pt},
+  very thin/.style = {thickness = 0.2pt},
+  thin/.style = {thickness = 0.4pt},
+  semithick/.style = {thickness = 0.6pt},
+  thick/.style = {thickness = 0.8pt},
+  very thick/.style = {thickness = 1.2pt},
+  ultra thick/.style = {thickness = 1.6pt},
+  % rule width
+  width/.value required,
+  width/.code={\@widthsettrue\setlength{\@xrulewidth}{#1}},
+}
+
+% Rules that extends as much as possible
+\newcommand*{\@xrulefill}[1]{%
+  \leavevmode\leaders\hrule height #1\hfill\kern0pt}
+
+\newcommand*{\xrule}[1][]{%
+  % Reset \@widthset
+  \@widthsetfalse%
+  % default thickness
+  \setlength{\@xrulethickness}{0.6pt}%
+  \pgfkeys{/docs/rules/.cd, #1}%
+  \if@widthset%
+  \rule{\@xrulewidth}{\@xrulethickness}%
+  \else%
+  \@xrulefill{\@xrulethickness}%
+  \fi}

@@ -1,0 +1,13 @@
+#+STARTUP: indent hidestars content
+
+#+AUTHOR: Economía del Sector Público\\
+#+AUTHOR: EC1047
+#+DATE: Curso 2019--2020
+
+#+OPTIONS: toc:nil ':t *:t ^:{} num:1 H:2 title:nil
+
+#+LATEX_CLASS: unit
+#+LATEX_CLASS_OPTIONS: [Spanish]
+
+#+LANGUAGE: es
+#+LATEX_HEADER: \newcommand*{\LANG}{es}

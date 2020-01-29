@@ -1,0 +1,5 @@
+% -*- LaTeX -*-
+
+\ProvidesDictionary{docs-header}{English}
+
+\providetranslation{General Instructions}{General Instructions}

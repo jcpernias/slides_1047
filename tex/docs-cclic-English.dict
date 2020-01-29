@@ -1,0 +1,7 @@
+% -*- LaTeX -*-
+
+\ProvidesDictionary{docs-cclic}{English}
+
+\providetranslation{CCstart}{This work is licensed under a}
+\providetranslation{CClink}{Creative Commons Attribution-ShareAlike
+  4.0 International License.}

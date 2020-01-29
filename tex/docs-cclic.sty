@@ -1,0 +1,44 @@
+%% Identification
+%% ----------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-cclic}[2018/10/08 v 0.1 Part of docs-bundle]
+
+%% Two minipages side by side that fill the width of the line.
+%% 1st arg (optional): width of the left cell (default 3.5cm).
+%% 2nd arg: contents of the left cell.
+%% 3rd arg: contents of the right cell.
+\newlength{\@leftcell}
+\newlength{\@rightcell}
+
+\newcommand{\@twocells}[3][3.5cm]{
+  {\scriptsize%
+    \setlength{\@leftcell}{#1}%
+    \setlength{\@rightcell}{\linewidth}%
+    \addtolength{\@rightcell}{-\@leftcell}%
+    \begin{minipage}{\@leftcell}#2\end{minipage}%
+    \begin{minipage}{\@rightcell}#3\end{minipage}}}
+
+
+%% Licensse translations
+\RequirePackage{translator}
+\usedictionary{docs-cclic}
+
+% For includegraphics
+\RequirePackage{graphicx}
+
+%% For url macro
+\RequirePackage{docs-hyper}
+
+%% Inserts a page stating the CC license
+\newcommand{\ccpage}{%
+  \newpage%
+  \vspace*{\stretch{5}}%
+  \thispagestyle{empty}%
+  \@twocells{\includegraphics[scale=1]{by-sa}}{%
+    \translate{CCstart}
+    \href{http://creativecommons.org/licenses/by-sa/4.0/}{%
+      \translate{CClink}}}%
+  \cleardoublepage{}}
+
+

@@ -1,0 +1,17 @@
+%% Identification
+%% ----------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-lists}[2018/10/08 v 0.1 Part of docs-bundle]
+
+
+\RequirePackage{enumitem}
+
+% \setlist{noitemsep}
+% \setlist[1]{leftmargin=\parindent, noitemsep}
+
+\setlist{leftmargin=*}
+
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=-}
+\setlist[description]{font=\sffamily\bfseries, labelindent=\parindent}

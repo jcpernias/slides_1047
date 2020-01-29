@@ -1,0 +1,53 @@
+%% Identification
+%% ----------------------------------------------------------------------
+
+% A very recent version of LaTeX is required to ensure that default
+% input encoding is utf8. This saves to explicitely require utf8
+% encoding and especial handling of some characters:
+%
+\usepackage[utf8]{inputenc}     % Make csquotes package happy
+% \DeclareUnicodeCharacter{00A0}{~}
+
+\NeedsTeXFormat{LaTeX2e}[2018/04/01]
+\ProvidesPackage{docs-base}[2018/10/04 v 0.1 Part of docs-bundle]
+
+%% Load packages required by all documents
+%% ----------------------------------------------------------------------
+
+\RequirePackage{etoolbox}
+
+% Internationalization
+\providebool{langES}
+\providebool{langEN}
+
+\ifbool{langES}{%
+  \RequirePackage[english, spanish, es-noindentfirst]{babel}%
+}{% English is the default language
+  \RequirePackage[spanish,  es-noindentfirst, english]{babel}}
+
+\addto\shorthandsspanish{\spanishdeactivate{"<>}}%
+\RequirePackage[english, spanish]{translator}
+
+% Fonts
+\RequirePackage[T1]{fontenc}
+\RequirePackage{kpfonts}
+\RequirePackage{biolinum}
+
+% Symbols
+\RequirePackage{marvosym}
+\RequirePackage[nointegrals]{wasysym}
+
+% Quotes
+\RequirePackage[autostyle=true,spanish=spanish,english=american]{csquotes}
+
+% Better left justification
+\RequirePackage{ragged2e}
+
+% Underlined text
+\RequirePackage[normalem]{ulem}
+
+% Graphics
+\RequirePackage{graphicx}
+
+% Microtypography
+\RequirePackage{microtype}

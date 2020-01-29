@@ -1,0 +1,25 @@
+%% Identification
+%% -------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-envs}[2018/11/10 v 0.1 Part of docs-bundle]
+
+
+%% Tightcenter: removes vertical space of center environment
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}%
+  % \setlength\parskip{0pt}%
+  \begin{center}}{%
+  \end{center}}
+
+\newenvironment{tightquotation}{%
+  \setlength\topsep{0pt}%
+  % \setlength\parskip{0pt}%
+  \footnotesize%
+  \begin{displayquote}}{\end{displayquote}}
+
+\newenvironment{tightquote}{%
+  \setlength\topsep{0pt}%
+  % \setlength\parskip{0pt}%
+  % \setlength\leftmargin{0pt}%
+  \footnotesize%
+  \begin{displayquote}}{\end{displayquote}}

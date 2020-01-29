@@ -1,0 +1,38 @@
+%% Identification
+%% ----------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-answers}[2018/10/08 v 0.1 Part of docs-bundle]
+
+
+\RequirePackage{tcolorbox}
+\RequirePackage{verbatim}   % for the comment environment
+
+\tcbuselibrary{breakable, skins}
+
+\RequirePackage{etoolbox}
+
+\providebool{answers}
+\providebool{shortanswers}
+
+\ifbool{answers}{%
+  \newtcolorbox{answer}{coltext=Black!70, colframe=SlateGray!70!Black,%
+    colback=LightSteelBlue!5!White, notitle, boxrule=0.5pt,%
+    fontupper=\small, breakable, skin=enhanced, parbox=false,%
+    before upper=\csname @totalleftmargin\endcsname0pt}}{%
+  \newenvironment{answer}{\expandafter\comment}{\expandafter\endcomment}}
+
+\ifbool{shortanswers}{%
+  \newtcolorbox{shortanswer}{colframe=SlateGray!70!Black,%
+    colback=LightSteelBlue!5!White, notitle, boxrule=0.5pt,%
+    fontupper=\small, breakable, skin=enhanced, parbox=false,%
+    before upper=\csname @totalleftmargin\endcsname0pt}}{%
+  \newenvironment{shortanswer}{\expandafter\comment}{\expandafter\endcomment}}
+
+\ifbool{answers}{%
+  \newcommand*{\ClearPage}{\clearpage}}{%
+  \newcommand*{\ClearPage}{\relax}}
+
+\ifbool{shortanswers}{%
+  \newcommand*{\ClearPageShort}{\clearpage}}{%
+  \newcommand*{\ClearPageShort}{\relax}}

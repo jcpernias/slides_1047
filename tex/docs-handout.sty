@@ -1,0 +1,181 @@
+%% Identification
+%% -------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-handout}[2018/11/10 v 0.1 Part of docs-bundle]
+
+% \RequirePackage[hyperref]{beamerarticle}%
+\RequirePackage{beamerarticle}%
+
+
+%% Disable hyphenation
+\RequirePackage{hyphsubst}
+\HyphSubstLet{spanish}{nohyphenation}
+\HyphSubstLet{english}{nohyphenation}
+
+%% Disable justification
+% \RequirePackage[document]{ragged2e}
+
+%% Redefine beamer frames to paragraphs
+\setbeamertemplate{frametitle}{%
+  \paragraph{\insertframetitle}}
+
+%% Fix column environment in article mode
+\mode<article>{\renewenvironment{column}[1]{\begin{minipage}{#1}}{%
+    \end{minipage}}}
+
+%% Fix columns environment in article mode
+\mode<article>{%
+  \renewenvironment{columns}[1][]{\let\par\empty}{}}
+
+%% Redefine beamer alert
+\setbeamertemplate{alerted text begin}{\ifmmode\else\begin{bfseries}\fi}
+  \setbeamertemplate{alerted text end}{\ifmmode\else\end{bfseries}\fi}
+
+%% Disable indentation
+\parindent=0pt
+
+%% Page layout
+\RequirePackage{geometry}
+\geometry{twoside, hmargin={6.2cm,1.5cm}, asymmetric,
+  bindingoffset=0.7cm, vmargin=4cm, head=14pt}
+
+%% Lists formating
+
+%% Hack: avoid TeX hang when handling description environment (I)
+%% See: http://tex.stackexchange.com/questions/31505/trouble-combining-enumitem-and-beamer
+\let\olddescription\description
+\let\oldenddescription\enddescription
+
+\RequirePackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\setlist[itemize,1]{label={\textcolor{SteelBlue!80!White}{\RIGHTarrow}}}
+\setlist[itemize,2]{%
+  label={\textcolor{SteelBlue!80!White}{\footnotesize\RIGHTarrow}}}
+\setlist[itemize,3]{%
+  label={\textcolor{SteelBlue!80!White}{\textbullet}}}
+\setlist[enumerate]{labelsep=*, leftmargin=1.5pc}
+\setlist[enumerate,1]{label=\arabic*., ref=\arabic*}
+\setlist[enumerate,2]{label=\beameroriginal\emph{\alph*}),%
+  ref=\theenumi.\beameroriginal\emph{\alph*}}
+\setlist[enumerate,3]{label=\roman*), ref=\theenumii.\roman*}
+\setlist[description]{font=\sffamily\bfseries}
+
+%% Hack: avoid TeX hang when handling description environment (and II)
+\let\description\olddescription
+\let\enddescription\oldenddescription
+
+%% Section headings formatting
+\RequirePackage[pagestyles, outermarks, nobottomtitles*,
+compact, noindentafter]{titlesec}
+
+%% Solves bug in titlesec version 2.10.1. Version 2.10.2 does not have
+%% this bug. See http://tex.stackexchange.com/a/300259
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+
+\titleformat{\section}{%
+  \color{DarkRed!60!Black}\Large\sffamily\bfseries}{%
+  \makebox[2pc][r]{\thesection.}}{1pc}{}
+
+\titlespacing{\section}
+{-3pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+
+\titleformat{name=\section, numberless}
+{\color{DarkRed!60!Black}\Large\sffamily\bfseries}
+{}{0pc}{}
+
+\titlespacing{name=\section, numberless}
+{0pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+
+\titleformat{\subsection}
+{\color{DarkRed!30!Black}\large\sffamily\bfseries}
+{\makebox[2pc][r]{\thesubsection.}}{1pc}{}[{\titlerule[0.8pt]}\vspace{6pt}]
+
+
+\titlespacing{\subsection}
+{-3pc}{3.5ex plus .1ex minus .2ex}{1.5ex minus .1ex}
+
+
+\titleformat{name=\paragraph}[block]
+{{\color{SlateGray}\titlerule[.25pt]}\vspace*{.8ex}%
+  \normalfont\small\bfseries\sffamily\filright}
+{\theparagraph}{0em}{\color{Indigo!30!Black}}
+
+\titlespacing*{name=\paragraph}
+{0cm}{3ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+
+%% Page headers and footers
+\settitlemarks{section,subsection}
+
+\newcommand*{\headfmt}{\color{DarkRed!30!Black}\small\bfseries\scshape\sffamily}
+\newcommand*{\footfmt}{\small\bfseries\sffamily}
+
+\newpagestyle{fancy}{%
+  \sethead[\headfmt\ifthesection{%
+    \thesection\ \sectiontitle}{\doctitle}\filright][][] % even
+  {}{}{%
+    \headfmt{}\ifthesubsection{%
+      \thesubsection\ \subsectiontitle}{\thesection\ \sectiontitle}}    % odd
+  \setfoot*{}{}{\footfmt\thepage}   % odd
+}
+\newpagestyle{first}{%
+  \setfoot*{}{}{\footfmt\thepage}   % odd
+}
+\widenhead[5cm][0pt]{0pt}{0pt}
+\pagestyle{fancy}
+
+%% TOC
+\RequirePackage{titletoc}
+\contentsmargin{2pc}
+\titlecontents{section}[0pc]
+{\addvspace{1ex}\sffamily\bfseries}
+{\contentslabel{2pc}}
+{}
+{\hfill\contentspage}
+
+\dottedcontents{subsection}[3pc]{\sffamily}{3pc}{0.5pc}
+
+%% Title
+\RequirePackage{titling}
+\pretitle{%
+  \begin{flushleft}\Huge\sffamily\bfseries%
+    \color{DarkRed!60!Black}%
+  }
+  \posttitle{\par\end{flushleft}}
+\preauthor{\begin{flushleft}\Large\sffamily\bfseries\color{DarkRed!30!Black}}
+  \postauthor{\par\end{flushleft}}
+\predate{\begin{flushleft}\Large\sffamily\bfseries\color{DarkRed!30!Black}}
+  \postdate{\par\end{flushleft}}
+
+%% Internacionalization
+% \deftranslation[to=Spanish]{CCLicense}{%
+%   Esta obra est\'{a} licenciada bajo la Licencia Creative Commons
+%   Atribuci\'{o}n-CompartirIgual 3.0 Unported.  Para ver una copia de esta
+%   licencia, visite: }
+
+% \deftranslation[to=English]{CCLicense}{%
+%   This work is made available under the terms of the Creative Commons
+%   Attribution-ShareAlike 3.0 license,}
+
+
+%% Compose frontmatter
+%\AtBeginDocument{%
+\AfterEndPreamble{%
+  \hypersetup{pageanchor=false}
+  \let\doctitle\thetitle
+  \pagenumbering{gobble}
+  \let\oldmaketitle\maketitle
+  \renewcommand{\maketitle}{%
+    \oldmaketitle%
+    \tableofcontents%
+    \thispagestyle{empty}%
+    \newpage%
+    \ccpage%
+    \hypersetup{pageanchor=true}
+    \pagenumbering{arabic}
+    \oldmaketitle
+    \thispagestyle{first}
+    \let\maketitle\oldmaketitle%
+  }
+  \maketitle%
+}
