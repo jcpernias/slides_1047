@@ -9,9 +9,11 @@
 
 #+MATS: bib
 
+#+begin_bibbox
 - *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 3.
 
 - *Albi y otros*:  /Economía Pública I/. Capítulo 3.
+#+end_bibbox
 
 * Introducción
 
@@ -265,15 +267,13 @@ El principio de Pareto es individualista en dos sentidos:
 
 - Dos bienes: $X$ e $Y$.
 
-- Dos factores de producción: $L$ y $K$.
-
 
 ** Producción
 
-- Las empresas combinan los factores para producir los bienes de
-  consumo.
+- Dos factores de producción: $L$ y $K$.
 
-- Funciones de producción:
+- Dos empresas combinan los factores para producir los bienes de
+  consumo. Funciones de producción de cada empresa:
   #+begin_export latex
   \begin{gather*}
     X = F_{X}(L_{X}, K_{X}) \\
