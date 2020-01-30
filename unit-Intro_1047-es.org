@@ -1,0 +1,89 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: El sector público en una economía mixta
+
+#+LATEX_CLASS: unit
+
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 1.
+#+end_bibbox
+
+
+* El papel económico del Estado
+
+
+** Las economías mixtas
+
+- En una *economía mixta* el Estado influye e interviene en la economía:
+
+  + *Producción* y *provisión* de bienes y servicios.
+
+  + *Regulación*.
+
+  + *Impuestos* y *subsidios*.
+
+  + *Transferencias*.
+
+
+** Perspectiva histórica
+
+- Diversos puntos de vista a lo largo de la historia. Por ejemplo:
+
+  + Adam Smith: /laissez faire/.
+
+  + John Maynard Keynes: papel activo en la estabilización de la
+    economía, solución de fallos de mercado y distribución de la renta.
+
+
+** Consenso actual
+
+- *Fallos del Estado*.
+
+- *Desregulación* y *privatización*.
+
+
+* El análisis económico del sector público
+
+
+** Preguntas básicas
+
+- ¿*Qué* producir?
+
+- ¿*Cómo* producir?
+
+- ¿*Para quién* producir?
+
+- ¿*Cómo se toman las decisiones* dentro del sector público?
+
+
+** Análisis del sector público
+
+- ¿Qué actividades realiza el sector público?
+
+- ¿Cuáles son las consecuencias de esas actividades?
+
+- ¿Consiguen esas medidas los objetivos que perseguían? ¿Hay alternativas mejores?
+
+- ¿Cómo afecta el proceso político a las decisiones sobre qué
+  actividades se llevan a cabo y cuáles no?
+
+
+** Modelos económicos
+
+- Análisis *positivo*: ¿cómo funciona la economía?.
+
+- Análisis *normativo*: ¿cómo debería funcionar la economía?.
+
+
+** Los tres brazos de Musgrave
+
+- *Estabilización*.
+
+- *Asignación*.
+
+- *Distribución*.
