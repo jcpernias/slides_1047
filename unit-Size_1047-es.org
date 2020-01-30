@@ -2,7 +2,7 @@
 
 #+SETUPFILE: ./course-es.org
 
-#+TITLE: El tamaño del sector público
+#+TITLE: Delimitación del sector público
 
 #+LATEX_CLASS: unit
 
