@@ -1,0 +1,135 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: El tamaño del sector público
+
+#+LATEX_CLASS: unit
+
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 2.
+
+- *Albi et al*: /Economía Pública/, Capítulo 2, volumen I.
+#+end_bibbox
+
+
+* ¿Qué es el sector público?
+
+** Entidades públicas
+
+- ¿Qué distingue las entidades públicas, que conforman el sector
+  público, de las entidades privadas?
+
+  + Los responsables de las entidades públicas son cargos electos o
+    nombrados por otros cargos electos.
+
+  + El Estado y las entidades que lo forman actúan de acuerdo al
+    *principio de autoridad*.
+
+** El sector público en España
+
+- Administraciones Públicas.
+
+- Sector Público Empresarial.
+
+
+** Administraciones Públicas (I)
+
+- Entidades que no realizan actividades de mercado o empresariales:
+
+  + Producción no destinada a la venta.
+
+  + Redistribución.
+
+** Administraciones Públicas (y II)
+
+- Administración Central:
+
+  + Estado.
+
+  + Organismos de la Administración Central.
+
+- Administración Regional.
+
+- Administración Local.
+
+- Fondos de la Seguridad Social.
+
+** Sector Público Empresarial
+
+- Las entidades del Sector Público Empresarial se financian
+  (parcialmente) con sus ventas y son controladas por las
+  Administraciones Públicas.
+
+- Comprende:
+
+  + Sociedades no financieras.
+
+  + Instituciones financieras públicas.
+
+* Actividades del Estado
+
+** Actividades del sector público
+
+- Producción de bienes y servicios.
+
+- Influencia sobre la producción privada.
+
+- Compra de bienes y servicios.
+
+- Redistribución de la renta.
+
+
+** Producción pública
+
+- La frontera entre producción pública y privada cambia con el tiempo:
+  oleadas de *privatizaciones* o *nacionalizaciones*.
+
+- Es difícil establecer el carácter público o privado de algunas
+  empresas.
+
+** Influencia sobre la producción privada
+
+- Subvenciones e impuestos.
+
+- Crédito oficial.
+
+- Regulación.
+
+** Compra de bienes y servicios
+
+- Cantidades gastadas en bienes y servicios que se ponen a disposición
+  del público: defensa nacional, escuelas, autopistas, etc.
+
+** Redistribución de la renta
+
+- Programas de seguridad social: pensiones; prestaciones por
+  desempleo, invalidez u otras causas; sanidad pública.
+
+- Programas de asistencia social.
+
+
+* El déficit público
+
+** Gastos e ingresos del Estado
+
+- Información estadística:
+
+  + Intervención General de la Administración del Estado, [[https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Paginas/inicio.aspx][IGAE]]: [[https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Contabilidad/ContabilidadNacional/Publicaciones/Paginas/Publicaciones.aspx][Publicaciónes de la Contabilidad Nacional]].
+
+  + Autoridad Independiente de Responsabilidad Fiscal, [[https://www.airef.es/es/][AIReF]].
+
+  + [[https://www.oecd-ilibrary.org/statistics][OECD]]: [[https://www.oecd-ilibrary.org/governance/government-at-a-glance_22214399][Government at a glance]].
+
+** Déficit público
+
+- Comúnmente sólo se refiere a las Administraciones Públicas.
+
+- Capacidad o necesidad de financiación (superávit o déficit no
+  financiero): diferencia entre ingresos y gastos no financieros.
+
+- Superávit o déficit primario: la suma del saldo no financiero y los
+  intereses de la deuda pública.
