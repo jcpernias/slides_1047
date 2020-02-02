@@ -343,7 +343,22 @@
 #+begin_src latex :tangle fig-Welfare_1047-09b.tex :noweb yes
 \begin{tikzpicture}<<output-box-scale>>
 
-  \draw[curve] plot[domain=0:100] <<contract-curve>> ;
+  \draw[help lines]
+  (65, 0) node[below] {$X_{A}^{S}$} --
+  (65, 100) node[above] {$X_{B}^{S}$}
+  ;
+
+  \draw[help lines]
+  (0, 31.70732) node[left] {$Y_{A}^{S}$} --
+  (100, 31.70732) node[right] {$Y_{B}^{S}$}
+  ;
+
+
+
+ \draw[curve] plot[domain=0:100] <<contract-curve>> ;
+
+ \node[dot, label={above left:$S$}] at (65, 31.70732) {} ;
+
 
   <<output-box>>
 \end{tikzpicture}
@@ -355,7 +370,14 @@
 #+begin_src latex :tangle fig-Welfare_1047-10.tex :noweb yes
 \begin{tikzpicture}<<upf-scale>>
 
+
+  \draw[help lines]
+    (0, 40)  node[left] {$U_{B}(S)$} -|
+    (79.10204, 0)  node[below] {$U_{A}(S)$} ;
+
   \draw[curve] plot[domain=0:100] <<upf-curve>> ;
+
+  \node[dot, label={above:$S$}] at (79.10204, 40) {} ;
 
   <<upf-axes>>
 \end{tikzpicture}
@@ -609,9 +631,7 @@
   ;
 
 
-  \draw[curve, semithick]
-  plot[domain=0:100] (\x, \x)
-  ;
+  \draw[curve, semithick] (0, 0) -- (100, 100)  ;
 
 
   \node[dot] at (25, 25) {} ;
@@ -645,13 +665,9 @@
   ;
 
 
-  \draw[curve, semithick]
-  plot[domain=0:100] (\x, \x)
-  ;
+  \draw[curve, semithick] (0, 0) -- (100, 100) ;
 
-  \draw[curve, ultra thick]
-  plot[domain=40:60] (\x, \x)
-  ;
+  \draw[curve, ultra thick] (40, 40) -- (60, 60) ;
 
   \node[dot, label={above right:$M$}] at (\Mx, \My) {} ;
 
@@ -665,10 +681,21 @@
 #+begin_src latex :tangle fig-Welfare_1047-29b.tex :noweb yes
 \begin{tikzpicture}<<input-box-scale>>
 
-  \draw[curve]
-  plot[domain=0:100] (\x, \x)
-  ;
+  \newcommand*{\Lx}{60}
+  \newcommand*{\Kx}{60}
 
+  \coordinate (N) at (\Lx, \Kx) ;
+
+  \draw[help lines]
+    (0, \Kx) node[left] {$K_{X}^{N}$} --
+    (100, \Kx) node[right] {$K_{Y}^{N}$}
+    (\Lx, 0) node[below] {$L_{X}^{N}$} --
+    (\Lx, 100) node[above] {$L_{Y}^{N}$}
+    ;
+
+  \draw[curve] (0, 0) -- (100, 100)  ;
+
+  \node[dot, label={above left:$N$}] at (N) {} ;
   <<input-box>>
 \end{tikzpicture}
 #+end_src
@@ -682,9 +709,20 @@
 #+begin_src latex :tangle fig-Welfare_1047-30.tex :noweb yes
 \begin{tikzpicture}<<ppf-scale>>
 
+  \newcommand*{\Qy}{6.32455}
+  \newcommand*{\Sx}{7.745967}
+
+  \coordinate (S) at (\Sx, \Qy) ;
+
+  \draw[help lines]
+    (0, \Qy) node[left] {$Y(N)$} -|
+    (\Sx, 0) node[below] {$X(N)$} ;
+
   \draw[curve]
   plot[domain=10:0] (\x,{(100-\x^2)^0.5})
   ;
+
+  \node[dot, label={above right:$N$}] at (S) {} ;
 
   \draw[axis] (0,11) node[left] {$Y$} |- (11,0) node[below] {$X$};
 \end{tikzpicture}
