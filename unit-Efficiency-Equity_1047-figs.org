@@ -1,0 +1,88 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Eficiencia y equidad
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+
+* Chunks
+
+
+** Frontera de posibilidades de utilidad
+
+#+begin_src latex :noweb-ref upf-scale
+  [xscale=0.04, yscale=0.04, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref upf-axes
+  \draw[axis] (0,110) node[left] {$U_{B}$} |-
+    (110,0) node[below] {$U_{A}$};
+#+end_src
+
+#+begin_src latex :noweb-ref upf-curve
+  (\x,{8.75*(100-\x)^0.5})
+#+end_src
+
+
+* Elección social
+
+#+begin_src latex :tangle fig-Efficiency-Equity_1047-01.tex :noweb yes
+\begin{tikzpicture}<<upf-scale>>
+
+  \draw[curve] plot[domain=0:100] <<upf-curve>> ;
+
+  <<upf-axes>>
+\end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :tangle fig-Efficiency-Equity_1047-02.tex :noweb yes
+\begin{tikzpicture}<<upf-scale>>
+
+  \draw[curve] plot[domain=0:100] <<upf-curve>> ;
+
+  \draw[curve, semithick]
+  (19.1406, 100) -- (100, 19.1406) node[right] {$W_{3}$}
+  (10, 50) -- (50, 10)  node[right] {$W_{1}$}
+  (15, 75) -- (80, 10)  node[right] {$W_{2}$}
+  (45, 100) -- (100, 45)  node[right] {$W_{4}$}
+  ;
+
+  \node[dot, label={right:$C_{U}$}] at (80.85938, 38.28124) {} ;
+
+  <<upf-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Efficiency-Equity_1047-05.tex :noweb yes
+\begin{tikzpicture}<<upf-scale>>
+
+  \draw[curve] plot[domain=0:100] <<upf-curve>> ;
+
+  \draw[curve, semithick]
+  (57.22636, 100) |- (100, 57.22636) node[right] {$W_{3}$}
+  (75, 100) |- (100, 75)  node[right] {$W_{4}$}
+  (37, 100) |- (100, 37)  node[right] {$W_{2}$}
+  (17, 100) |- (100, 17)  node[right] {$W_{1}$}
+  ;
+
+  \node[dot, label={above right:$C_{I}$}] at (57.22636, 57.22636) {} ;
+
+
+  <<upf-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Efficiency-Equity_1047-06.tex :noweb yes
+\begin{tikzpicture}<<upf-scale>>
+
+  \draw[curve] plot[domain=0:100] <<upf-curve>> ;
+
+
+  \node[dot, label={above:$C_{I}$}] at (57.22636, 57.22636) {} ;
+  \node[dot, label={right:$C_{U}$}] at (80.85938, 38.28124) {} ;
+
+
+  <<upf-axes>>
+\end{tikzpicture}
+#+end_src

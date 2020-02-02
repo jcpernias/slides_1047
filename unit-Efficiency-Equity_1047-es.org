@@ -1,0 +1,122 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Eficiencia y equidad
+
+#+LATEX_CLASS: unit
+
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 7.
+#+end_bibbox
+
+
+* Introducción
+
+
+** Disyuntiva entre eficiencia y equidad
+
+- Los mercados proporcionan una asignación eficiente, pero no
+  necesariamente equitativa.
+
+- La intervención pública en pos de la equidad puede reducir la
+  eficiencia.
+
+
+* Elección social
+
+** La frontera de posibilidades de utilidad
+
+#+MATS: figcol fig-Efficiency-Equity_1047-01-*.pdf 0.55
+
+- La frontera de posibilidades de utilidad muestra la máxima utilidad
+  que obtiene una persona dada la utilidad de la otra persona.
+
+
+** La función social de bienestar
+
+- La *función social de bienestar* indica el nivel de bienestar social
+  asociado a las utilidades alcanzadas por todos los miembros de la
+  sociedad:
+  #+begin_export latex
+  \[
+    W = W(U_{A}, U_{B})
+  \]
+  #+end_export
+
+** Curvas de indiferencia social
+
+- Una *curva de indiferencia social* es el conjunto de combinaciones
+  de utilidad individual que proporcionan el mismo bienestar social.
+  #+begin_export latex
+  \[
+    \Wbar = W(U_{A}, U_{B})
+  \]
+  #+end_export
+
+
+** Utilitarismo
+
+#+MATS: figcol fig-Efficiency-Equity_1047-02-*.pdf 0.55
+
+- *Utilitarismo*: $W = U_A + U_B$.
+
+
+** Rawlsianismo
+
+#+MATS: figcol fig-Efficiency-Equity_1047-05-*.pdf 0.55
+
+- *Rawlsianismo*: $W = \min\{U_A, U_B\}$.
+
+
+** La elección social (I)
+
+#+MATS: figcol fig-Efficiency-Equity_1047-06-*.pdf 0.55
+
+- Cada función de bienestar social determina una elección óptima
+  diferente.
+
+
+** La elección social (y II)
+
+- Problemas:
+
+  + ¿Como podemos comparar la utilidad de diferentes personas?
+
+  + ¿De dónde viene la función de bienestar social?
+
+
+* La elección social en la práctica
+
+** Medición de los beneficios de un programa
+
+- Disposición a pagar.
+
+- Curva de demanda compensada.
+
+- Excedente del consumidor.
+
+** Medición de la ineficiencia
+
+- Pérdida irrecuperable de eficiencia (/deadweight loss/).
+
+- Triángulos de Harberger.
+
+** Medición de los efectos redistributivos
+
+- Índice de Gini.
+
+- Índice de pobreza.
+
+- Brecha de pobreza.
+
+** Tres enfoques
+
+- Principio de compensación
+
+- Comparación medidas eficiencia y equidad.
+
+- Beneficios netos ponderados.

@@ -5,9 +5,12 @@ units := \
 	Intro \
 	Size \
 	Welfare \
-	Market-Failure
+	Market-Failure \
+	Efficiency-Equity
 
-unit_figs := Welfare
+unit_figs := \
+	Welfare \
+	Efficiency-Equity
 
 TEXI2DVI_SILENT := -q
 # TEXI2DVI_SILENT :=
