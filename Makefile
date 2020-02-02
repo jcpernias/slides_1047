@@ -1,8 +1,13 @@
 SHELL := /bin/sh
 
 subject_code := 1047
-units := Intro Welfare Size # 1B 1C 1D 1E 2A 2B 2C 3A 3B 4A 5A 5B 6A 6B
-unit_figs := Welfare # 1B 1C 1D 1E 2A 2B 2C 3A 3B 4A 5A 5B 6A 6B
+units := \
+	Intro \
+	Size \
+	Welfare \
+	Market-Failure
+
+unit_figs := Welfare
 
 TEXI2DVI_SILENT := -q
 # TEXI2DVI_SILENT :=

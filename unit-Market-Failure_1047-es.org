@@ -1,0 +1,190 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Fallos de mercado
+
+#+LATEX_CLASS: unit
+
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 4.
+#+end_bibbox
+
+
+* Mercados competitivos
+
+
+** Condiciones para eficiencia
+
+- Eficiencia en el intercambio:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B}
+  \]
+  #+end_export
+
+- Eficiencia en la asignación de factores:
+  #+begin_export latex
+  \[
+    \RMST_{X} = \RMST_{Y}
+  \]
+  #+end_export
+
+- Eficiencia en la combinación de productos:
+  #+begin_export latex
+  \[
+    \RMS_A = \RMS_B = RMT
+  \]
+  #+end_export
+
+
+** Mercados competitivos
+
+- ¿Son eficientes los resultados de los mercados competitivos?
+
+- *Primer teorema del bienestar*: las economías competitivas alcanzan
+  la eficiencia de Pareto.
+
+
+** Eficiencia en el intercambio
+
+- Equilibrio del consumidor:
+  #+begin_export latex
+  \begin{gather*}
+    \RMS_{A} = p_{X}/p_{Y} \\
+    \RMS_{B} = p_{X}/p_{Y}
+  \end{gather*}
+  #+end_export
+
+- Como todos los consumidores se enfrentan a los mismos precios:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B}
+  \]
+  #+end_export
+
+
+** Eficiencia en la asignación de factores
+
+- Minimización de costes:
+  #+begin_export latex
+  \begin{gather*}
+    \RMST_{X} = w/r \\
+    \RMST_{Y} = w/r
+  \end{gather*}
+  #+end_export
+
+- Como todas las empresas competitivas pagan lo mismo por sus
+  factores:
+  #+begin_export latex
+  \[
+    \RMST_{X} = \RMST_{Y}
+  \]
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (I)
+
+- Maximización de beneficios de la empresa competitiva:
+  #+begin_export latex
+  \begin{gather*}
+    p_X = \CMg_X \\
+    p_Y = \CMg_Y
+  \end{gather*}
+  #+end_export
+
+- Podemos expresar el coste marginal como:
+  #+begin_export latex
+  \begin{gather*}
+    \CMg_X = w / \PMgL_X \\
+    \CMg_Y = w / \PMgL_Y
+  \end{gather*}
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (II)
+
+- Maximización de beneficios de la empresa competitiva:
+  #+begin_export latex
+  \begin{gather*}
+    p_X = w / \PMgL_X \\
+    p_Y = w / \PMgL_Y
+  \end{gather*}
+  #+end_export
+
+- Dividiendo las dos expresiones anteriores:
+  #+begin_export latex
+  \[
+    \frac{p_X}{p_Y} = \frac{\PMgL_Y}{\PMgL_X} = \RMT
+  \]
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (y III)
+
+- La optimización del consumidor implica:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B} = p_X/p_Y
+  \]
+  #+end_export
+
+- La maximización del beneficio de las empresas competitivas implica:
+  #+begin_export latex
+  \[
+    \RMT = p_X/p_Y
+  \]
+  #+end_export
+
+- Eficiencia en la combinación de productos:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B} = \RMT
+  \]
+  #+end_export
+
+
+** Eficiencia y equidad
+
+- ¿Hay que renunciar a la eficiencia si se persigue algún tipo de equidad?
+
+- *Segundo teorema del bienestar*: toda asignación eficiente puede ser
+  alcanzada por los mercados competitivos, partiendo de una
+  redistribución inicial adecuada.
+
+
+* Fallos de mercado e intervención pública
+
+** Razones para la intervención pública
+
+- Derechos de propiedad y cumplimiento de los contratos.
+
+- Eficiencia.
+
+- Redistribución.
+
+** Fallos de mercado
+
+- Poder de mercado.
+
+- Bienes públicos.
+
+- Externalidades.
+
+- Mercados incompletos.
+
+- Información imperfecta.
+
+- Desempleo y otros desequilibrios macroeconómicos.
+
+** Redistribución y bienes preferentes
+
+- Aunque la economía sea eficiente dos razones para intervenir:
+
+  + Redistribución de la renta.
+
+  + Los individuos pueden actuar en contra de sus propios intereses:
+    *paternalismo* y *bienes preferentes*.
