@@ -1,0 +1,53 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Bienes públicos
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulos 5 y 8.
+#+end_bibbox
+
+
+* Bienes públicos y bienes privados
+
+** Características de los bienes públicos
+
+** Bienes públicos y bienes privados
+
+** Ineficiencias en la provisión de bienes públicos
+
+** El problema del polizón
+
+
+* Provisión eficiente de bienes públicos
+
+** Condiciones de eficiencia con bienes públicos
+
+** Curvas de demanda de bienes públicos
+
+** Eficiencia y distribución de la renta
+
+* Provisión pública de bienes privados
+
+** Provisión gratuita
+
+** Mecanismos de racionamiento
+
+** Tasas por uso
+
+** Provisión uniforme
+
+** Colas
+
+* Producción pública
+
+** El monopolio natural
+
+** La eficiencia del sector público
+
+** Fuentes de ineficiencia
+
+** Privatización

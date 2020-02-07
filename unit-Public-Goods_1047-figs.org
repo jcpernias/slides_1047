@@ -1,0 +1,32 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Bienes públicos
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+
+* Chunks
+
+
+** Frontera de posibilidades de utilidad
+
+#+begin_src latex :noweb-ref upf-scale
+  [xscale=0.04, yscale=0.04, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref upf-axes
+  \draw[axis] (0,110) node[left] {$U_{B}$} |-
+    (110,0) node[below] {$U_{A}$};
+#+end_src
+
+
+* Elección social
+
+# #+begin_src latex :tangle fig-Efficiency-Equity_1047-01.tex :noweb yes
+# \begin{tikzpicture}<<upf-scale>>
+
+#   \draw[curve] plot[domain=0:100] <<upf-curve>> ;
+
+#   <<upf-axes>>
+# \end{tikzpicture}
+# #+end_src

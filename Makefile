@@ -6,11 +6,13 @@ units := \
 	Size \
 	Welfare \
 	Market-Failure \
-	Efficiency-Equity
+	Efficiency-Equity \
+	Public-Goods
 
 unit_figs := \
 	Welfare \
-	Efficiency-Equity
+	Efficiency-Equity \
+	Public-Goods
 
 TEXI2DVI_SILENT := -q
 # TEXI2DVI_SILENT :=
