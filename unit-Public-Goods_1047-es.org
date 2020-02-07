@@ -15,12 +15,31 @@
 
 ** Características de los bienes públicos
 
+- *No rivalidad* en el consumo.
+
+- *No exclusión*.
+
 ** Bienes públicos y bienes privados
+
+|--------------+-----------------+------------------|
+|              | No rival        | Rival            |
+|--------------+-----------------+------------------|
+| No excluible | B. público puro | Recursos comunes |
+| Excluible    | Club            | B. privado puro  |
+|--------------+-----------------+------------------|
 
 ** Ineficiencias en la provisión de bienes públicos
 
+- *Subconsumo*.
+
+- *Suministro insuficiente*.
+
 ** El problema del polizón
 
+- El sistema de precios es inviable si no es posible la exclusión.
+
+- *Problema del polizón*: No existen incentivos al pago voluntario por
+  el sus de un bien público.
 
 * Provisión eficiente de bienes públicos
 
@@ -34,13 +53,35 @@
 
 ** Provisión gratuita
 
+- Consumo excesivo.
+
 ** Mecanismos de racionamiento
+
+- Tasas por uso.
+
+- Provisión uniforme.
+
+- Colas.
 
 ** Tasas por uso
 
+- Pagan aquellos que usan.
+
+- Subconsumo.
+
+- *Costes de transacción*
+
 ** Provisión uniforme
 
+- Ahorra costes de transacción.
+
+- Subconsumo y consumo excesivo.
+
 ** Colas
+
+- La renta no determina la asignación.
+
+- La asignación se basa en quién tiene tiempo disponible.
 
 * Producción pública
 
