@@ -4,8 +4,6 @@
 
 #+TITLE: Eficiencia y equidad
 
-#+LATEX_CLASS: unit
-
 
 #+MATS: bib
 

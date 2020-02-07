@@ -4,9 +4,6 @@
 
 #+TITLE: Delimitación del sector público
 
-#+LATEX_CLASS: unit
-
-
 #+MATS: bib
 
 #+begin_bibbox
@@ -18,6 +15,7 @@
 
 * ¿Qué es el sector público?
 
+
 ** Entidades públicas
 
 - ¿Qué distingue las entidades públicas, que conforman el sector
@@ -28,6 +26,7 @@
 
   + El Estado y las entidades que lo forman actúan de acuerdo al
     *principio de autoridad*.
+
 
 ** El sector público en España
 
@@ -44,6 +43,7 @@
 
   + Redistribución.
 
+
 ** Administraciones Públicas (y II)
 
 - Administración Central:
@@ -58,6 +58,7 @@
 
 - Fondos de la Seguridad Social.
 
+
 ** Sector Público Empresarial
 
 - Las entidades del Sector Público Empresarial se financian
@@ -70,7 +71,9 @@
 
   + Instituciones financieras públicas.
 
+
 * Actividades del Estado
+
 
 ** Actividades del sector público
 
@@ -91,6 +94,7 @@
 - Es difícil establecer el carácter público o privado de algunas
   empresas.
 
+
 ** Influencia sobre la producción privada
 
 - Subvenciones e impuestos.
@@ -99,10 +103,12 @@
 
 - Regulación.
 
+
 ** Compra de bienes y servicios
 
 - Cantidades gastadas en bienes y servicios que se ponen a disposición
   del público: defensa nacional, escuelas, autopistas, etc.
+
 
 ** Redistribución de la renta
 
@@ -114,6 +120,7 @@
 
 * El déficit público
 
+
 ** Gastos e ingresos del Estado
 
 - Información estadística:
@@ -123,6 +130,7 @@
   + Autoridad Independiente de Responsabilidad Fiscal, [[https://www.airef.es/es/][AIReF]].
 
   + [[https://www.oecd-ilibrary.org/statistics][OECD]]: [[https://www.oecd-ilibrary.org/governance/government-at-a-glance_22214399][Government at a glance]].
+
 
 ** Déficit público
 

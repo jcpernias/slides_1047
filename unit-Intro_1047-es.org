@@ -4,9 +4,6 @@
 
 #+TITLE: El sector público en una economía mixta
 
-#+LATEX_CLASS: unit
-
-
 #+MATS: bib
 
 #+begin_bibbox

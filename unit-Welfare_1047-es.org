@@ -4,9 +4,6 @@
 
 #+TITLE: Eficiencia
 
-#+LATEX_CLASS: unit
-
-
 #+MATS: bib
 
 #+begin_bibbox
