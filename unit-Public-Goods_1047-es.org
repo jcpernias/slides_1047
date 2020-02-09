@@ -7,88 +7,324 @@
 #+MATS: bib
 
 #+begin_bibbox
-- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulos 5 y 8.
+- *Stiglitz y Rosengard*: Capítulos 5 y 8.
 #+end_bibbox
 
 
 * Bienes públicos y bienes privados
 
+
 ** Características de los bienes públicos
 
-- *No rivalidad* en el consumo.
+El *consumo* de un *bien público puro* se caracteriza por:
+- *No rivalidad*.
 
 - *No exclusión*.
 
+
 ** Bienes públicos y bienes privados
 
-|--------------+-----------------+------------------|
-|              | No rival        | Rival            |
-|--------------+-----------------+------------------|
-| No excluible | B. público puro | Recursos comunes |
-| Excluible    | Club            | B. privado puro  |
-|--------------+-----------------+------------------|
+#+ATTR_LATEX: :booktabs t :center t :align lll
+|--------------+-----------------------+-----------------------|
+|              | No rival              | Rival                 |
+|--------------+-----------------------+-----------------------|
+| No excluible | Bienes públicos puros | Recursos comunes      |
+| Excluible    | Bienes club           | Bienes privados puros |
+|--------------+-----------------------+-----------------------|
 
-** Ineficiencias en la provisión de bienes públicos
+** Bienes públicos impuros
 
-- *Subconsumo*.
+- En ocasiones, se habla de *bienes públicos impuros* en casos en los
+  que se cumple una de las condiciones pero no las dos.
 
-- *Suministro insuficiente*.
+** Bienes no rivales
 
-** El problema del polizón
+- La exclusión no es socialmente deseable porque provoca *subconsumo*.
+
+- Sin exclusión, la provisión privada conlleva *suministro
+  insuficiente*.
+
+** Bienes no excluibles
 
 - El sistema de precios es inviable si no es posible la exclusión.
 
 - *Problema del polizón*: No existen incentivos al pago voluntario por
-  el sus de un bien público.
+  el uso del bien.
+
+
+* Provisión eficiente de bienes privados
+
+** Condiciones de eficiencia y bienes privados
+
+- Reconsideramos las condiciones de eficiencia que vimos antes.
+
+** Bienes privados
+
+- Sólo se producen dos bienes privados:
+
+  + $C$: Chocolate.
+
+  + $B$: Buñuelos.
+
+** Preferencias
+
+- Las preferencias de los consumidores son regulares.
+
+- $\RMS_i$: cuántas tazas de chocolate está dispuesto a sacrificar el
+  consumidor $i$ a cambio de un buñuelo adicional.
+
+** Mercados y precios
+
+- Los consumidores compran los bienes en mercados competitivos:
+
+  + $P_C$: precio del chocolate (€ por taza).
+
+  + $P_B$: precio de los buñuelos (€ por buñuelo).
+
+- *Numerario*: elegimos el chocolate como numerario: $P_C =
+  \text{\money{1} por taza}$.
+
+** Elección óptima
+
+- El consumidor $i$ ajusta su consumo hasta que el precio de mercado
+  coincide con su valoración de un buñuelo adicional:
+  #+begin_export latex
+  \[
+    P_B = \RMS_i
+  \]
+  #+end_export
+
+** Demanda individual
+
+- En todos los puntos de la curva de demanda: $P_B = \RMS_i$.
+
+- La curva de demanda del consumidor $i$ refleja su disposición a
+  pagar por un buñuelo más.
+
+** Demanda de mercado (I)
+
+- La curva de *demanda de mercado* de un bien privado es la suma
+  horizontal de las curvas de demanda individuales.
+
+** Demanda de mercado (y II)
+
+- En cada punto de la demanda de mercado:
+  #+begin_export latex
+  \[
+    P_B = \RMS_1 = \RMS_2 = \cdots
+  \]
+  #+end_export
+
+** Producción
+
+- En una economía competitiva la maximización de beneficios implica la
+  eficiencia en la producción:
+  #+begin_export latex
+  \begin{gather*}
+    P_B = \CM_B \\
+    P_C = \CM_C
+  \end{gather*}
+  #+end_export
+
+** La relación marginal de transformación
+
+- $\RMT$: cuántas tazas de chocolate hay que dejar de producir para
+  poder elaborar un buñuelo adicional.
+
+- La $\RMT$ puede expresarse como:
+  #+begin_export latex
+  \[
+    \RMT = \frac{\CM_B}{\CM_C}
+  \]
+  #+end_export
+
+** Oferta (I)
+
+- Oferta de $B$: $P_B = \CM_B$
+
+** Oferta (y II)
+
+- $C$ es numerario: $P_C = \CM_C = \text{\money{1} por taza}$.
+
+- Entonces: $\RMT = \CM_B$
+
+- Oferta de $B$: $P_B = \RMT$.
+
+** Equilibrio de mercado (I)
+
+- La igualdad de la demanda y la oferta de mercado implica:
+  #+begin_export latex
+  \[
+    \RMS_1 = \RMS_2 = \dots = \RMT
+  \]
+  #+end_export
+
+** Equilibrio de mercado (y II)
+
+- Todos los consumidores pagan el mismo precio por un bien privado
+  pero consumen cantidades diferentes.
 
 * Provisión eficiente de bienes públicos
 
-** Condiciones de eficiencia con bienes públicos
+** Condiciones de eficiencia y bienes públicos
 
-** Curvas de demanda de bienes públicos
+- Las condiciones de eficiencia son diferentes en presencia de bienes
+  públicos.
 
-** Eficiencia y distribución de la renta
+- Cada consumidor decide qué cantidad consume de un bien privado.
+
+- Todos los consumidores consumen la misma cantidad de un bien público.
+
+
+** Bienes
+
+- Sólo se producen dos bienes:
+
+  + $C$: tazas de chocolate; un bien privado.
+
+  + $M$: minutos de /mascletades/; un bien público.
+
+- $C$ es el bien numerario.
+
+** Preferencias
+
+- Las preferencias de los consumidores son regulares.
+
+- $\RMS_i$: cuántas tazas de chocolate está dispuesto a sacrificar el
+  consumidor $i$ a cambio de un minuto adicional de /mascletà/.
+
+** Curva de demanda individual del bien público
+
+- La curva de demanda individual refleja la disposición a pagar del
+  consumidor $i$ por un minuto adicional de /mascletà/.
+
+** Curva de demanda colectiva
+
+- La *curva de demanda colectiva* muestra la disposición a pagar por
+  parte de toda la sociedad por un minuto adicional de /mascletà/.
+
+- Se obtiene como la *suma vertical* de las curvas de demanda
+  individuales.
+
+** Curva de oferta del bien público
+
+- Coincide con el coste marginal de producir el bien público.
+
+- Dado que el numerario es $C$, coincide con la $\RMT$.
+
+** Eficiencia (I)
+
+- Cuando se proporcionan $M^*$ minutos de /mascletades/ coinciden la
+  valoración social y el coste social del último minuto:
+  #+begin_export latex
+  \[
+    \RMS_1 + \RMS_2 + \cdots = \RMT
+  \]
+  #+end_export
+
+** Eficiencia (II)
+
+- La condición de eficiencia con bienes públicos no es un equilibrio
+  de mercado ni hay fuerzas que lleven a la economía a esta situación.
+
+** Eficiencia (y III)
+
+- Todos los consumidores consumen las mismas unidades del bien público
+  aunque cada uno lo valora de una forma diferente.
+
+
 
 * Provisión pública de bienes privados
 
+
+** Razones para intervenir
+
+- *Costes de transacción*.
+
+- Equidad.
+
 ** Provisión gratuita
 
-- Consumo excesivo.
+- La provisión gratuita de un bien con coste marginal positivo no es
+  eficiente: *consumo excesivo*.
+
+** Costes de transacción
+
+- Si el suministro gratuito evita costes de transacción, las ganancias
+  de bienestar pueden compensar las ineficiencias.
 
 ** Mecanismos de racionamiento
 
-- Tasas por uso.
+- Si la provisión gratuita genera grandes ineficiencias se puede usar
+  algún tipo de *racionamiento*:
 
-- Provisión uniforme.
+  + *Tasas por uso*.
 
-- Colas.
+  + *Provisión uniforme*.
 
-** Tasas por uso
+  + *Colas*.
 
-- Pagan aquellos que usan.
-
-- Subconsumo.
-
-- *Costes de transacción*
-
-** Provisión uniforme
-
-- Ahorra costes de transacción.
-
-- Subconsumo y consumo excesivo.
-
-** Colas
-
-- La renta no determina la asignación.
-
-- La asignación se basa en quién tiene tiempo disponible.
 
 * Producción pública
 
+** Provisión y producción
+
+- Hasta ahora hemos visto razones que justifican la *provisión* de
+  bienes y servicios por parte del Sector Público.
+
+- *Provisión* pública no implica *producción* pública.
+
+** Justificación de la producción pública
+
+- Competencia insuficiente.
+
+- El Estado quiere alcanzar objetivos más amplios que la mera
+  eficiencia económica.
+
 ** El monopolio natural
 
-** La eficiencia del sector público
+- Costes decrecientes en el rango relevante de producción:
 
-** Fuentes de ineficiencia
+  + Costes fijos muy grandes, costes marginales pequeños.
 
-** Privatización
+  + Es muy ineficiente que cada empresa construya su propia
+    infraestructura.
+
+** Fijación de precios monopolista
+
+- El monopolista puede obtener beneficios, limitando la producción
+  para soportar precios por encima del coste marginal.
+
+** Competencia latente
+
+- Si es fácil que entren competidores en el mercado, el monopolista
+  podría fijar un precio cercano al coste unitario.
+
+- Si hay costes hundidos importantes, esta situación es poco probable.
+
+
+** Intervención pública
+
+- *Nacionalizar* el monopolio natural.
+
+- *Regulación*.
+
+- No hacer nada.
+
+** Los fallos del Estado (I)
+
+- La intervención sólo sería justificable si la ineficiencia del
+  monopolio es grande en relación a los costes de intervenir.
+
+- La intervención puede ser peor que el monopolio: *fallos del
+  Estado*.
+
+** Los fallos del Estado (y II)
+
+- Información limitada.
+
+- Capacidad limitada de controlar las empresas privadas.
+
+- Capacidad limitada de controlar la burocracia.
+
+- Proceso político.
