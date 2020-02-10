@@ -68,6 +68,8 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Preferencias
 
+#+MATS: figcol fig-Public-Goods_1047-01-*.pdf 0.45
+
 - Las preferencias de los consumidores son regulares.
 
 - $\RMS_i$: cuántas tazas de chocolate está dispuesto a sacrificar el
@@ -82,9 +84,11 @@ El *consumo* de un *bien público puro* se caracteriza por:
   + $P_B$: precio de los buñuelos (€ por buñuelo).
 
 - *Numerario*: elegimos el chocolate como numerario: $P_C =
-  \text{\money{1} por taza}$.
+  \text{\money{1}}$ por taza.
 
 ** Elección óptima
+
+#+MATS: figcol fig-Public-Goods_1047-02-*.pdf 0.45
 
 - El consumidor $i$ ajusta su consumo hasta que el precio de mercado
   coincide con su valoración de un buñuelo adicional:
@@ -96,17 +100,19 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Demanda individual
 
+#+MATS: figcol fig-Public-Goods_1047-03-*.pdf 0.45
+
 - En todos los puntos de la curva de demanda: $P_B = \RMS_i$.
 
 - La curva de demanda del consumidor $i$ refleja su disposición a
   pagar por un buñuelo más.
 
-** Demanda de mercado (I)
+** Demanda de mercado
+
+#+MATS: figcol fig-Public-Goods_1047-04-*.pdf 0.45
 
 - La curva de *demanda de mercado* de un bien privado es la suma
   horizontal de las curvas de demanda individuales.
-
-** Demanda de mercado (y II)
 
 - En cada punto de la demanda de mercado:
   #+begin_export latex
@@ -138,19 +144,19 @@ El *consumo* de un *bien público puro* se caracteriza por:
   \]
   #+end_export
 
-** Oferta (I)
+** Oferta
+
+#+MATS: figcol fig-Public-Goods_1047-05-*.pdf 0.45
 
 - Oferta de $B$: $P_B = \CM_B$
 
-** Oferta (y II)
-
-- $C$ es numerario: $P_C = \CM_C = \text{\money{1} por taza}$.
-
-- Entonces: $\RMT = \CM_B$
+- $C$ es numerario: $\RMT = \CM_B$
 
 - Oferta de $B$: $P_B = \RMT$.
 
 ** Equilibrio de mercado (I)
+
+#+MATS: figcol fig-Public-Goods_1047-06-*.pdf 0.45
 
 - La igualdad de la demanda y la oferta de mercado implica:
   #+begin_export latex
@@ -160,6 +166,8 @@ El *consumo* de un *bien público puro* se caracteriza por:
   #+end_export
 
 ** Equilibrio de mercado (y II)
+
+#+MATS: figcol fig-Public-Goods_1047-06-*.pdf 0.45
 
 - Todos los consumidores pagan el mismo precio por un bien privado
   pero consumen cantidades diferentes.
@@ -188,17 +196,23 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Preferencias
 
+#+MATS: figcol fig-Public-Goods_1047-11-*.pdf 0.45
+
 - Las preferencias de los consumidores son regulares.
 
 - $\RMS_i$: cuántas tazas de chocolate está dispuesto a sacrificar el
-  consumidor $i$ a cambio de un minuto adicional de /mascletà/.
+  consumidor $i$ a cambio de un minuto adicional de /mascletà/.
 
 ** Curva de demanda individual del bien público
+
+#+MATS: figcol fig-Public-Goods_1047-13-*.pdf 0.45
 
 - La curva de demanda individual refleja la disposición a pagar del
   consumidor $i$ por un minuto adicional de /mascletà/.
 
 ** Curva de demanda colectiva
+
+#+MATS: figcol fig-Public-Goods_1047-14-*.pdf 0.45
 
 - La *curva de demanda colectiva* muestra la disposición a pagar por
   parte de toda la sociedad por un minuto adicional de /mascletà/.
@@ -208,11 +222,15 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Curva de oferta del bien público
 
+#+MATS: figcol fig-Public-Goods_1047-15-*.pdf 0.45
+
 - Coincide con el coste marginal de producir el bien público.
 
-- Dado que el numerario es $C$, coincide con la $\RMT$.
+- $C$ es numerario: coincide con la $\RMT$.
 
 ** Eficiencia (I)
+
+#+MATS: figcol fig-Public-Goods_1047-16-*.pdf 0.45
 
 - Cuando se proporcionan $M^*$ minutos de /mascletades/ coinciden la
   valoración social y el coste social del último minuto:
@@ -223,6 +241,8 @@ El *consumo* de un *bien público puro* se caracteriza por:
   #+end_export
 
 ** Eficiencia (II)
+
+#+MATS: figcol fig-Public-Goods_1047-16-*.pdf 0.45
 
 - La condición de eficiencia con bienes públicos no es un equilibrio
   de mercado ni hay fuerzas que lleven a la economía a esta situación.
@@ -245,10 +265,14 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Provisión gratuita
 
+#+MATS: figcol fig-Public-Goods_1047-20-*.pdf 0.45
+
 - La provisión gratuita de un bien con coste marginal positivo no es
   eficiente: *consumo excesivo*.
 
 ** Costes de transacción
+
+#+MATS: figcol fig-Public-Goods_1047-21-*.pdf 0.45
 
 - Si el suministro gratuito evita costes de transacción, las ganancias
   de bienestar pueden compensar las ineficiencias.
@@ -283,25 +307,32 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** El monopolio natural
 
-- Costes decrecientes en el rango relevante de producción:
+#+MATS: figcol fig-Public-Goods_1047-30-*.pdf 0.45
 
-  + Costes fijos muy grandes, costes marginales pequeños.
-
-  + Es muy ineficiente que cada empresa construya su propia
-    infraestructura.
+- Costes decrecientes en el rango relevante de producción.
 
 ** Fijación de precios monopolista
+
+#+MATS: figcol fig-Public-Goods_1047-31-*.pdf 0.45
 
 - El monopolista puede obtener beneficios, limitando la producción
   para soportar precios por encima del coste marginal.
 
 ** Competencia latente
 
+#+MATS: figcol fig-Public-Goods_1047-32-*.pdf 0.45
+
 - Si es fácil que entren competidores en el mercado, el monopolista
   podría fijar un precio cercano al coste unitario.
 
 - Si hay costes hundidos importantes, esta situación es poco probable.
 
+** Producción eficiente
+
+#+MATS: figcol fig-Public-Goods_1047-33-*.pdf 0.45
+
+- Si el precio coincide con el coste marginal, el monopolio incurre en
+  pérdidas.
 
 ** Intervención pública
 

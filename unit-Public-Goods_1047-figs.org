@@ -8,25 +8,390 @@
 * Chunks
 
 
-** Frontera de posibilidades de utilidad
+** Eficiencia
 
-#+begin_src latex :noweb-ref upf-scale
-  [xscale=0.04, yscale=0.04, samples=128]
+#+begin_src latex :noweb-ref bc-scale
+  [xscale=0.4, yscale=0.4, samples=128]
 #+end_src
 
-#+begin_src latex :noweb-ref upf-axes
-  \draw[axis] (0,110) node[left] {$U_{B}$} |-
-    (110,0) node[below] {$U_{A}$};
+#+begin_src latex :noweb-ref bc-axes
+  \draw[axis] (0,10) node[left] {$C$} |-
+    (10,0) node[below] {$B$};
+#+end_src
+
+#+begin_src latex :noweb-ref bp-scale
+  [xscale=0.4, yscale=0.4, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref bp-axes
+  \draw[axis] (0,10) node[left] {$P_B$} |-
+    (10,0) node[below] {$B$};
+#+end_src
+
+#+begin_src latex :noweb-ref mc-scale
+  [xscale=0.4, yscale=0.4, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref mc-axes
+  \draw[axis] (0,10) node[left] {$C$} |-
+    (10,0) node[below] {$M$};
+#+end_src
+
+#+begin_src latex :noweb-ref mp-scale
+  [xscale=0.4, yscale=0.4, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref mp-axes
+  \draw[axis] (0,10) node[left] {$P_M$} |-
+    (10,0) node[below] {$M$};
 #+end_src
 
 
-* Elección social
 
-# #+begin_src latex :tangle fig-Efficiency-Equity_1047-01.tex :noweb yes
-# \begin{tikzpicture}<<upf-scale>>
+#+begin_src latex :noweb-ref bc-curve1
+  (\x, 10/\x)
+#+end_src
 
-#   \draw[curve] plot[domain=0:100] <<upf-curve>> ;
+#+begin_src latex :noweb-ref bc-curve2
+  (\x, 20/\x)
+#+end_src
 
-#   <<upf-axes>>
-# \end{tikzpicture}
-# #+end_src
+
+* Eficiencia bienes privados
+
+#+begin_src latex :tangle fig-Public-Goods_1047-01.tex :noweb yes
+\begin{tikzpicture}<<bc-scale>>
+
+  \draw[curve A] plot[domain=1.111111:9] <<bc-curve1>> ;
+
+  \draw[curve A] plot[domain=2.222222:9] <<bc-curve2>> ;
+
+  <<bc-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-02.tex :noweb yes
+\begin{tikzpicture}<<bc-scale>>
+
+  \draw[help lines]
+    (0, 3.162278) node[left] {$C_i$} -|
+    (3.162278, 0) node[below] {$B_i$} ;
+
+  \draw[curve A] plot[domain=1.111111:9] <<bc-curve1>> ;
+
+  \draw[curve, colorD] (0, 6.324555) -- (6.324555, 0) ;
+
+  \node[dot] at (3.162278, 3.162278) { } ;
+
+  <<bc-axes>>
+\end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :tangle fig-Public-Goods_1047-03.tex :noweb yes
+\begin{tikzpicture}<<bp-scale>>
+
+  \draw[help lines]
+    (0, 5.7) node[left] {$P_B$} -|
+    (1, 0) node[below] {$B_i$} ;
+
+  \draw[curve A] (0.5, 7) -- (3, 0.5)  node[right, pos=0.85] { $B^d_i$ } ;
+
+  \node[dot] at (1, 5.7) { } ;
+
+  <<bp-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-04.tex :noweb yes
+\begin{tikzpicture}<<bp-scale>>
+
+  \draw[help lines]
+    (0, 5.7) node[left] {$P_B$} -|
+    (3.475, 0) node[below] {$\sum B_i$} ;
+
+  \draw[curve A] (0.5, 8.5) -- (9, 0.5) node[above right, pos=0.95] { $B^d$ };
+
+  \node[dot] at (3.475, 5.7) { } ;
+
+  <<bp-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-05.tex :noweb yes
+\begin{tikzpicture}<<bp-scale>>
+
+  \draw[curve B] (0.5, 3) -- (9, 5) node[right] { $B^s$ };
+
+  <<bp-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-06.tex :noweb yes
+\begin{tikzpicture}<<bp-scale>>
+
+  \draw[help lines]
+    (0, 4.09998) node[left] {$P^*_B$} -|
+    (5.1750, 0) node[below] {$B^*$} ;
+  \draw[curve A] (0.5, 8.5) -- (9, 0.5) node[above right, pos=0.95] { $B^d$ };
+
+  \draw[curve B] (0.5, 3) -- (9, 5) node[right] { $B^s$ };
+
+  \node[dot] at (5.1750, 4.09998) { } ;
+
+  <<bp-axes>>
+\end{tikzpicture}
+#+end_src
+
+
+* Eficiencia bienes públicos
+
+#+begin_src latex :tangle fig-Public-Goods_1047-11.tex :noweb yes
+\begin{tikzpicture}<<mc-scale>>
+
+  \draw[curve A] plot[domain=1:9] (\x, 9/\x^0.5) ;
+
+  \draw[curve A] plot[domain=1:9] (\x, 4.5/\x^0.5) ;
+
+  <<mc-axes>>
+\end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :tangle fig-Public-Goods_1047-13.tex :noweb yes
+\begin{tikzpicture}<<mp-scale>>
+
+  \draw[help lines]
+    (0, 3.4) node[left] {$\RMS_i$} -|
+    (3, 0) node[below] {$M_1$} ;
+
+  \draw[curve A] (1, 5) -- (6, 1)  node[right] { $M^d_i$ } ;
+
+  \node[dot] at (3, 3.4) { } ;
+
+  <<mp-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-14.tex :noweb yes
+\begin{tikzpicture}<<mp-scale>>
+
+  \draw[help lines]
+    (0, 6.714286) node[left] {$\sum \RMS_i$} -|
+    (3, 0) node[below] {$M_1$} ;
+
+  \draw[curve A] (1, 9) -- (8, 1) node[right] { $M^d$ };
+
+  \node[dot] at (3, 6.714286) { } ;
+
+  <<mp-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-15.tex :noweb yes
+\begin{tikzpicture}<<mp-scale>>
+
+  \draw[curve B] (1, 1.5) -- (9, 7) node[right] { $M^s$ };
+
+  <<mp-axes>>
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-16.tex :noweb yes
+\begin{tikzpicture}<<mp-scale>>
+
+  \draw[help lines]
+    (5.09756, 4.31707) --
+    (5.09756, 0) node[below] {$M^*$} ;
+
+
+  \draw[curve A] (1, 9) -- (8, 1) node[right] { $M^d$ };
+
+  \draw[curve B] (1, 1.5) -- (9, 7) node[right] { $M^s$ };
+
+  \node[dot] at (5.09756, 4.31707) { } ;
+
+  <<mp-axes>>
+\end{tikzpicture}
+#+end_src
+
+
+
+* Provisión pública de bienes privados
+
+#+begin_src latex :tangle fig-Public-Goods_1047-20.tex :noweb yes
+  \begin{tikzpicture}[xscale=0.36, yscale=0.36]
+
+    \draw[fill, fillA]
+       (6, 3) -- (6, 0) -- (9,0) -- cycle ;
+
+    \draw[help lines]
+       (6, 3) --
+       (6, 0) node[below] {$Q_e$}
+       (9, 0) node[below] {$Q_m$} ;
+
+    \draw[curve A] (0, 9) -- (9, 0) node[above right, pos=0.2] { $D$ };
+
+    \draw[curve, colorD] (0, 3) -- (9, 3) node[right] { $c_p$ };
+
+    \draw[axis] (0,11) node[left] {$P$} |-
+      (11,0) node[below] {$Q$};
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-21.tex :noweb yes
+  \begin{tikzpicture}[xscale=0.36, yscale=0.36]
+
+    \draw[fill, fillA]
+       (6, 3) -- (6, 0) -- (9,0) -- cycle ;
+
+    \draw[fill, fillB]
+       (0, 4.5) -- (4.5, 4.5) -- (6, 3) -- (0, 3) -- cycle ;
+
+    \draw[help lines]
+       (4.5, 4.5) -- (4.5, 0) node[below] {$Q_p$}
+       (6, 3) -- (6, 0) node[below] {$Q_e$}
+       (9, 0) node[below] {$Q_m$} ;
+
+    \draw[curve A] (0, 9) -- (9, 0) node[above right, pos=0.2] { $D$ };
+
+    \draw[curve, colorD] (0, 3) -- (9, 3) node[right] { $c_p$ };
+
+    \draw[curve, colorD] (0, 4.5) -- (9, 4.5) node[right] { $c_p + c_t$ };
+
+    \draw[axis] (0,11) node[left] {$P$} |-
+      (11,0) node[below] {$Q$};
+  \end{tikzpicture}
+#+end_src
+
+
+* Monopolio natural
+
+
+#+begin_src latex :tangle fig-Public-Goods_1047-30.tex :noweb yes
+  \begin{tikzpicture}[xscale=0.4, yscale=0.4, samples = 128]
+
+
+    % P = 10.59375 - 1.13 Q
+    \draw[curve, colorE] (3, 7.20375) node[above] { $D$ } -- (9, 0.42375)
+      ;
+
+    % CMe = 0.75 + 6.75 / Q
+    \draw[curve, colorD] plot[domain=1.8:9]  (\x, 6.75/\x + 0.75)
+      (9, 1.8) node[right] { $\CMe$ };
+
+    % CM = 0.75
+    \draw[curve, colorB] (0.85, 0.75) -- (9, 0.75) node[right] { $\CM$ };
+
+
+    \draw[axis] (0,10) node[left] {$P$} |-
+      (10,0) node[below] {$Q$};
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-31.tex :noweb yes
+  \begin{tikzpicture}[xscale=0.4, yscale=0.4, samples = 128]
+
+    % Monopoly
+    \draw[fill, fillC]
+       (0, 2.299715) rectangle (4.35564, 5.671875) ;
+
+    \draw[help lines]
+       (4.35564, 0) node[below] {$Q_m$} |-
+       (0, 5.671875) node[left] {$P_m$}
+       (4.35564, 2.299715) -- (0, 2.299715)
+       ;
+
+
+    % P = 10.59375 - 1.13 Q
+    \draw[curve, colorE] (3, 7.20375) node[above] { $D$ } -- (9, 0.42375)
+      ;
+
+
+    % IM = 10.59375 - 2.26 Q
+    \draw[curve, colorE] (1.5, 7.20375) node[above] { $\IMg$ } -- (4.5, 0.42375)
+      ;
+
+    % CMe = 0.75 + 6.75 / Q
+    \draw[curve, colorD] plot[domain=1.8:9]  (\x, 6.75/\x + 0.75)
+      (9, 1.8) node[right] { $\CMe$ };
+
+    % CM = 0.75
+    \draw[curve, colorB] (0.85, 0.75) -- (9, 0.75) node[right] { $\CM$ };
+
+
+    % IM = CM
+    \node[dot] at (4.35564, 0.75) { } ;
+
+    % Monopoly
+    \node[dot] at (4.35564, 5.671875) { } ;
+
+    \draw[axis] (0,10) node[left] {$P$} |-
+      (10,0) node[below] {$Q$};
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-32.tex :noweb yes
+  \begin{tikzpicture}[xscale=0.4, yscale=0.4, samples = 128]
+
+    % Zero profit
+    \draw[help lines]
+       (8, 0) node[below] {$Q_s$} |-
+       (0, 1.59375) node[left] {$P_s$}
+       ;
+
+
+    % P = 10.59375 - 1.13 Q
+    \draw[curve, colorE] (3, 7.20375) node[above] { $D$ } -- (9, 0.42375)
+      ;
+
+    % CMe = 0.75 + 6.75 / Q
+    \draw[curve, colorD] plot[domain=1.8:9]  (\x, 6.75/\x + 0.75)
+      (9, 1.8) node[right] { $\CMe$ };
+
+    % CM = 0.75
+    \draw[curve, colorB] (0.85, 0.75) -- (9, 0.75) node[right] { $\CM$ };
+
+
+
+    % Zero profit
+    \node[dot] at (8, 1.59375) { } ;
+
+    \draw[axis] (0,10) node[left] {$P$} |-
+      (10,0) node[below] {$Q$};
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Public-Goods_1047-33.tex :noweb yes
+  \begin{tikzpicture}[xscale=0.4, yscale=0.4, samples = 128]
+
+    % p = CM
+    \draw[fill, fillB]
+       (0, 0.75) rectangle (8.71128, 1.52486) ;
+
+    \draw[help lines]
+       (8.71128, 0) node[below] {$Q_e$} |-
+       (0, 1.52486)
+       ;
+
+
+    % P = 10.59375 - 1.13 Q
+    \draw[curve, colorE] (3, 7.20375) node[above] { $D$ } -- (9, 0.42375)
+      ;
+
+
+    % CMe = 0.75 + 6.75 / Q
+    \draw[curve, colorD] plot[domain=1.8:9]  (\x, 6.75/\x + 0.75)
+      (9, 1.8) node[right] { $\CMe$ };
+
+    % CM = 0.75
+    \draw[curve, colorB] (0.85, 0.75) -- (9, 0.75) node[right] { $\CM$ };
+
+
+    % p = CM
+    \node[dot] at (8.71128, 0.75) { } ;
+
+    \draw[axis] (0,10) node[left] {$P$} |-
+      (10,0) node[below] {$Q$};
+  \end{tikzpicture}
+#+end_src
