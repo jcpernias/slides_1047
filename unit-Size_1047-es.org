@@ -125,7 +125,8 @@
 
 - Información estadística:
 
-  + Intervención General de la Administración del Estado, [[https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Paginas/inicio.aspx][IGAE]]: [[https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Contabilidad/ContabilidadNacional/Publicaciones/Paginas/Publicaciones.aspx][Publicaciónes de la Contabilidad Nacional]].
+  + Intervención General de la Administración del Estado, [[https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Paginas/inicio.aspx][IGAE]]:
+    [[https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Contabilidad/ContabilidadNacional/Publicaciones/Paginas/Publicaciones.aspx][Publicaciónes de la Contabilidad Nacional]].
 
   + Autoridad Independiente de Responsabilidad Fiscal, [[https://www.airef.es/es/][AIReF]].
 
@@ -139,5 +140,5 @@
 - Capacidad o necesidad de financiación (superávit o déficit no
   financiero): diferencia entre ingresos y gastos no financieros.
 
-- Superávit o déficit primario: la suma del saldo no financiero y los
+- Superávit o déficit primario: el saldo no financiero menos los
   intereses de la deuda pública.
