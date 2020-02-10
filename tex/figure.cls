@@ -94,6 +94,8 @@
   colorA/.style={color = solarizedBlue!70!Black},
   colorB/.style={color = solarizedRed!70!Black},
   colorC/.style={color = solarizedGreen!70!Black},
+  colorD/.style={color = solarizedOrange!70!Black},
+  colorE/.style={color = solarizedViolet!70!Black},
   fillA/.style={color = solarizedCyan!25!White},
   fillB/.style={color = solarizedOrange!25!White},
   fillC/.style={color = solarizedGreen!25!White},
