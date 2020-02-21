@@ -1,0 +1,63 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Externalidades
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*: Capítulo 6.
+#+end_bibbox
+
+* La naturaleza de las externalidades
+
+
+** Externalidades
+
+- Se produce una *externalidad* cuando las acciones de un agente
+  afectan el bienestar de otro agente directamente, sin la mediación
+  de un mercado.
+
+
+** Tipos de externalidades
+
+- Originadas en la producción (contaminación del aire) o en el consumo
+  (fumadores pasivos).
+
+- Externalidades negativas o positivas (vacunas, abejas).
+
+** Consecuencias
+
+** Cuestiones prácticas
+
+- ¿Qué actividades producen la externalidad?
+- ¿Cuál es el valor de los daños causados por la externalidad?
+
+** Recursos comunes
+
+* Soluciones privadas
+
+** Internalizar la externalidad
+
+** Establecer derechos de propiedad
+
+- El teorema de Coase
+
+** Uso del sistema legal
+
+** Convenciones sociales
+
+** Limitaciones de las soluciones privadas
+
+* Soluciones públicas
+
+** Impuestos
+
+** Subsidios
+
+** Creación de mercados
+
+** Regulación
+
+* Externalidades y distribución de la renta

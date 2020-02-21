@@ -7,12 +7,14 @@ units := \
 	Welfare \
 	Market-Failure \
 	Efficiency-Equity \
-	Public-Goods
+	Public-Goods \
+	Externalities
 
 unit_figs := \
 	Welfare \
 	Efficiency-Equity \
-	Public-Goods
+	Public-Goods \
+	Externalities
 
 TEXI2DVI_SILENT := -q
 # TEXI2DVI_SILENT :=

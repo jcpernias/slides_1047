@@ -1,0 +1,8 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Externalidades
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+
+* Chunks
