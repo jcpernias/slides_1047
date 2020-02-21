@@ -30,10 +30,13 @@
 
 ** Externalidades negativas
 
+#+MATS: figcol fig-Externalities_1047-01-*.pdf 0.45
+
 - Externalidad negativa en la producción: el coste marginal privado es
   menor que el coste marginal social.
 
 - Producción excesiva.
+
 
 ** Externalidades positivas
 
