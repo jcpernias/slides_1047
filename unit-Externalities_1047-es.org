@@ -64,35 +64,82 @@
 ** Internalizar la externalidad
 
 
+- Crear unidades económicas con el suficiente tamaño.
+
 ** Establecer derechos de propiedad
 
-- El teorema de Coase
+- Establecer *derechos de propiedad*.
 
+- *Teorema de Coase*: se obtiene la solución eficiente mediante
+  negociación entre las partes, independientemente de como se asignen
+  los derechos de propiedad y si los costes de negociación son bajos
 
-** Uso del sistema legal
+** Otras soluciones
 
+- El sistema legal.
 
-** Convenciones sociales
-
+- Convenciones sociales.
 
 ** Limitaciones de las soluciones privadas
 
+- Problemas de /free-riders/.
+
+- Costes de transacción y negociación.
+
+- Información imperfecta.
+
+- Costes de litigar.
 
 * Soluciones públicas
 
 
 ** Impuestos
 
+- Los *impuestos correctores* reducen el nivel de producción de las
+  empresas que generan la externalidad.
 
 ** Subsidios
 
+- Ofrecer *subsidios* a las empresas para que reduzcan su nivel de
+  producción.
 
 ** Multas
+
+- *Multas* relacionadas directamente con el nivel de contaminación.
 
 ** Creación de mercados
 
 
+- *Permisos transferibles*:
+
+  + El Estado fija la cantidad total de permisos.
+
+  + Las empresas pueden venderse entre ellas los permisos.
+
 ** Regulación
 
+- Regulación sobre los resultados.
 
-* Externalidades y distribución de la renta
+- Regulación sobre los factores.
+
+** Efectividad de las soluciones públicas
+
+- Impuestos y multas internalizan las externalidades; las subvenciones
+  no.
+
+- Incertidumbre sobre los resultados que se obtendrán con los
+  impuestos y las multas; no es un problema con la regulación directa.
+
+- Permisos transferibles pueden ser más eficientes que la regulación y
+  no tienen problemas de incertidumbre de los resultados.
+
+- Complejidad del diseño de los mercados de permisos.
+
+** Externalidades y distribución
+
+- ¿Quién se beneficia? Si los pobres son los más expuestos a la
+  contaminación, las medidas que la reduzcan son mejoras
+  distributivas.
+
+- ¿Quién soporta los costes? La empresas que reducen su producción;
+  los consumidores que soportan mayores precios.
