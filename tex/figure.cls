@@ -104,6 +104,9 @@
   curve/.style={very thick, every node/.style={black, curve label}},
   curve A/.style={very thick, colorA, every node/.style={black, curve label}},
   curve B/.style={very thick, colorB, every node/.style={black, curve label}},
+  curve C/.style={very thick, colorC, every node/.style={black, curve label}},
+  curve D/.style={very thick, colorD, every node/.style={black, curve label}},
+  curve E/.style={very thick, colorE, every node/.style={black, curve label}},
   shaded/.style={opacity=0.4},
   help lines/.style = {thin, gray, every node/.style={black, curve label}},
   shift arrow/.style={%
