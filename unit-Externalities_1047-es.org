@@ -27,37 +27,70 @@
 
 - Externalidades negativas o positivas (vacunas, abejas).
 
-** Consecuencias
+
+** Externalidades negativas
+
+- Externalidad negativa en la producción: el coste marginal privado es
+  menor que el coste marginal social.
+
+- Producción excesiva.
+
+** Externalidades positivas
+
+- Externalidad positiva en el consumo: el beneficio marginal social es
+  mayor que el beneficio marginal privado.
+
+- Consumo insuficiente.
+
+
+** Recursos comunes
+
+- Libre entrada: el valor del producto medio coincide con el coste medio.
+
+- Eficiencia: el valor del producto marginal coincide con el coste marginal.
+
+- Sobreexplotación del recurso común.
 
 ** Cuestiones prácticas
 
 - ¿Qué actividades producen la externalidad?
+
 - ¿Cuál es el valor de los daños causados por la externalidad?
 
-** Recursos comunes
 
 * Soluciones privadas
 
+
 ** Internalizar la externalidad
+
 
 ** Establecer derechos de propiedad
 
 - El teorema de Coase
 
+
 ** Uso del sistema legal
+
 
 ** Convenciones sociales
 
+
 ** Limitaciones de las soluciones privadas
+
 
 * Soluciones públicas
 
+
 ** Impuestos
+
 
 ** Subsidios
 
+
 ** Creación de mercados
 
+
 ** Regulación
+
 
 * Externalidades y distribución de la renta
