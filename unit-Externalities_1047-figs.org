@@ -7,21 +7,20 @@
 
 * Chunks
 
-#+begin_src latex :noweb-ref qp-scale
+** Market figures
+
+#+begin_src latex :noweb-ref market-scale
   [xscale=0.4, yscale=0.4, samples=128]
 #+end_src
 
-#+begin_src latex :noweb-ref qp-axes
-  \draw[axis] (0,10) node[left] {$P$} |-
-    (10,0) node[below] {$Q$};
+#+begin_src latex :noweb-ref market-axes
+  \draw[axis]
+    (0, 10) node[left]  {$P$} |-
+    (10, 0) node[below] {$Q$}
+    ;
 #+end_src
 
-* Naturaleza
-
-** Externalidad negativa producción
-
-#+begin_src latex :tangle fig-Externalities_1047-01.tex :noweb yes
-\begin{tikzpicture}<<qp-scale>>
+#+begin_src latex :noweb-ref market-coordinates
   \coordinate (x-axis) (1, 0) ;
   \coordinate (y-axis) (0, 1) ;
   \coordinate (Da-1) at (1, 7.5) ;
@@ -30,35 +29,86 @@
   \coordinate (Sa-2) at (8.5, 6) ;
   \coordinate (Sb-1) at ($ (Sa-1) + (0, 2) $) ;
   \coordinate (Sb-2) at ($ (Sa-2) + (0, 2) $) ;
+  \coordinate (Db-1) at (1, 5) ;
+  \coordinate (Db-2) at (8.5, 2) ;
+  \coordinate (Dc-1) at ($ (Db-1) + (0, 2) $) ;
+  \coordinate (Dc-2) at ($ (Db-2) + (0, 2) $) ;
+  \coordinate (Sc-1) at (1, 1.5) ;
+  \coordinate (Sc-2) at (8.5, 8) ;
+#+end_src
 
 
-  \path[save path=\pathDa, name path=Da] (Da-1) -- (Da-2) ;
+* Naturaleza
 
-  \draw[save path=\pathSa, name path=Sa] (Sa-1) -- (Sa-2) ;
 
-  \draw[save path=\pathSb, name path=Sb] (Sb-1) -- (Sb-2) ;
+** Externalidad negativa producción
 
-  \path[name intersections={of=Da and Sa, name=Ia}] ;
+#+begin_src latex :tangle fig-Externalities_1047-01.tex :noweb yes
+  \begin{tikzpicture}<<market-scale>>
+    <<market-coordinates>>
 
-  \path[name intersections={of=Da and Sb, name=Ib}] ;
+    \path[save path=\pathDa, name path=Da] (Da-1) -- (Da-2) ;
 
-  \draw[help lines]
-    (Ia-1 -| y-axis) node[left] {$P_m$} -|
-    (Ia-1 |- x-axis) node[below] {$Q_m$}
-    (Ib-1 -| y-axis) node[left] {$P_e$} -|
-    (Ib-1 |- x-axis) node[below] {$Q_e$}
-    ;
+    \path[save path=\pathSa, name path=Sa] (Sa-1) -- (Sa-2) ;
 
-  \draw[curve A, use path=\pathDa] (Da-2) node[right] { $D$ } ;
+    \path[save path=\pathSb, name path=Sb] (Sb-1) -- (Sb-2) ;
 
-  \draw[curve B, use path=\pathSa] (Sa-2) node[right] { $\CMP$ };
+    \path[name intersections={of=Da and Sa, name=Ia}] ;
 
-  \draw[curve B, use path=\pathSb] (Sb-2) node[right] { $\CMS$ };
+    \path[name intersections={of=Da and Sb, name=Ib}] ;
 
-  \node[dot] at (Ia-1) {} ;
+    \draw[help lines]
+      (Ia-1 -| y-axis) node[left] {$P_m$} -|
+      (Ia-1 |- x-axis) node[below] {$Q_m$}
+      (Ib-1 -| y-axis) node[left] {$P_e$} -|
+      (Ib-1 |- x-axis) node[below] {$Q_e$}
+      ;
 
-  \node[dot] at (Ib-1) {} ;
+    \draw[curve A, use path=\pathDa] (Da-2) node[right] { $\BMP$ } ;
 
-  <<qp-axes>>
-\end{tikzpicture}
+    \draw[curve B, use path=\pathSa] (Sa-2) node[right] { $\CMP$ };
+
+    \draw[curve B, use path=\pathSb] (Sb-2) node[right] { $\CMS$ };
+
+    \node[dot] at (Ia-1) {} ;
+
+    \node[dot] at (Ib-1) {} ;
+
+    <<market-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Externalities_1047-02.tex :noweb yes
+  \begin{tikzpicture}<<market-scale>>
+    <<market-coordinates>>
+
+    \path[save path=\pathDb, name path=Db] (Db-1) -- (Db-2) ;
+
+    \path[save path=\pathDc, name path=Dc] (Dc-1) -- (Dc-2) ;
+
+    \path[save path=\pathSc, name path=Sc] (Sc-1) -- (Sc-2) ;
+
+    \path[name intersections={of=Db and Sc, name=Ib}] ;
+
+    \path[name intersections={of=Dc and Sc, name=Ic}] ;
+
+    \draw[help lines]
+      (Ib-1 -| y-axis) node[left] {$P_m$} -|
+      (Ib-1 |- x-axis) node[below] {$Q_m$}
+      (Ic-1 -| y-axis) node[left] {$P_e$} -|
+      (Ic-1 |- x-axis) node[below] {$Q_e$}
+      ;
+
+    \draw[curve A, use path=\pathDb] (Db-2) node[right] { $\BMP$ } ;
+
+    \draw[curve A, use path=\pathDc] (Dc-2) node[right] { $\BMS$ };
+
+    \draw[curve B, use path=\pathSc] (Sc-2) node[right] { $\CMS$ };
+
+    \node[dot] at (Ic-1) {} ;
+
+    \node[dot] at (Ib-1) {} ;
+
+    <<market-axes>>
+  \end{tikzpicture}
 #+end_src

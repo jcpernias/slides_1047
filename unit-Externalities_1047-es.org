@@ -40,6 +40,8 @@
 
 ** Externalidades positivas
 
+#+MATS: figcol fig-Externalities_1047-02-*.pdf 0.45
+
 - Externalidad positiva en el consumo: el beneficio marginal social es
   mayor que el beneficio marginal privado.
 
