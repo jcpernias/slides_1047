@@ -2,7 +2,7 @@
 
 #+TITLE: Externalidades
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 
 * Chunks
@@ -20,21 +20,9 @@
     ;
 #+end_src
 
-#+begin_src latex :noweb-ref market-coordinates
+#+begin_src latex :noweb-ref market-axes-coordinates
   \coordinate (x-axis) (1, 0) ;
   \coordinate (y-axis) (0, 1) ;
-  \coordinate (Da-1) at (1, 7.5) ;
-  \coordinate (Da-2) at (7.5, 1.5) ;
-  \coordinate (Sa-1) at (1, 2.5) ;
-  \coordinate (Sa-2) at (8.5, 6) ;
-  \coordinate (Sb-1) at ($ (Sa-1) + (0, 2) $) ;
-  \coordinate (Sb-2) at ($ (Sa-2) + (0, 2) $) ;
-  \coordinate (Db-1) at (1, 5) ;
-  \coordinate (Db-2) at (8.5, 2) ;
-  \coordinate (Dc-1) at ($ (Db-1) + (0, 2) $) ;
-  \coordinate (Dc-2) at ($ (Db-2) + (0, 2) $) ;
-  \coordinate (Sc-1) at (1, 1.5) ;
-  \coordinate (Sc-2) at (8.5, 8) ;
 #+end_src
 
 
@@ -43,44 +31,165 @@
 
 ** Externalidad negativa producción
 
-#+begin_src latex :tangle fig-Externalities_1047-01.tex :noweb yes
+#+begin_src latex  :noweb-ref curve-BMS
+  \coordinate (BMS-1) at (1, 7.5) ;
+  \coordinate (BMS-2) at (7.5, 1.5) ;
+  \path[save path=\pathBMS, name path=BMS] (BMS-1) -- (BMS-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-BMS
+  \draw[curve A, use path=\pathBMS] (BMS-2) node[right] { $\BMS$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref curve-CMP
+  \coordinate (CMP-1) at (1, 1.5) ;
+  \coordinate (CMP-2) at (8.5, 5) ;
+  \path[save path=\pathCMP, name path=CMP] (CMP-1) -- (CMP-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-CMP
+  \draw[curve B, use path=\pathCMP] (CMP-2) node[right] { $\CMP$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref curve-CMS
+  \coordinate (CMS-1) at (1, 4.5) ;
+  \coordinate (CMS-2) at (8.5, 8) ;
+  \path[save path=\pathCMS, name path=CMS] (CMS-1) -- (CMS-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-CMS
+  \draw[curve B, use path=\pathCMS] (CMS-2) node[right] { $\CMS$ } ;
+#+end_src
+
+
+#+begin_src latex :tangle fig-Externalities_1047-10.tex
   \begin{tikzpicture}<<market-scale>>
-    <<market-coordinates>>
+    <<market-axes-coordinates>>
 
-    \path[save path=\pathDa, name path=Da] (Da-1) -- (Da-2) ;
+    <<curve-BMS>>
+    <<curve-CMS>>
 
-    \path[save path=\pathSa, name path=Sa] (Sa-1) -- (Sa-2) ;
-
-    \path[save path=\pathSb, name path=Sb] (Sb-1) -- (Sb-2) ;
-
-    \path[name intersections={of=Da and Sa, name=Ia}] ;
-
-    \path[name intersections={of=Da and Sb, name=Ib}] ;
+    \path[name intersections={of=BMS and CMS, name=Im}] ;
 
     \draw[help lines]
-      (Ia-1 -| y-axis) node[left] {$P_m$} -|
-      (Ia-1 |- x-axis) node[below] {$Q_m$}
-      (Ib-1 -| y-axis) node[left] {$P_e$} -|
-      (Ib-1 |- x-axis) node[below] {$Q_e$}
+      (Im-1 -| y-axis) node[left] {$P_m$} -|
+      (Im-1 |- x-axis) node[below] {$Q_m$}
       ;
 
-    \draw[curve A, use path=\pathDa] (Da-2) node[right] { $\BMP$ } ;
+    <<draw-curve-BMS>>
+    <<draw-curve-CMS>>
 
-    \draw[curve B, use path=\pathSa] (Sa-2) node[right] { $\CMP$ };
-
-    \draw[curve B, use path=\pathSb] (Sb-2) node[right] { $\CMS$ };
-
-    \node[dot] at (Ia-1) {} ;
-
-    \node[dot] at (Ib-1) {} ;
+    \node[dot] at (Im-1) {} ;
 
     <<market-axes>>
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Externalities_1047-02.tex :noweb yes
+
+#+begin_src latex :tangle fig-Externalities_1047-11.tex
   \begin{tikzpicture}<<market-scale>>
-    <<market-coordinates>>
+     <<market-axes-coordinates>>
+
+    <<curve-CMP>>
+    <<curve-CMS>>
+
+    <<draw-curve-CMP>>
+    <<draw-curve-CMS>>
+
+    \path[name path=vert] (6, 0) -- (6, 9);
+    \path[name intersections={of=CMS and vert, name=top}] ;
+    \path[name intersections={of=CMP and vert, name=bot}] ;
+
+    \draw[shift arrow, <->] (top-1) -- (bot-1) node[pos=0.4, right] {$\DM$ } ;
+
+    <<market-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Externalities_1047-12.tex
+  \begin{tikzpicture}<<market-scale>>
+     <<market-axes-coordinates>>
+
+    <<curve-BMS>>
+    <<curve-CMP>>
+    <<curve-CMS>>
+
+    \path[name intersections={of=BMS and CMP, name=Im}] ;
+
+    \path[name intersections={of=BMS and CMS, name=Ie}] ;
+
+    \draw[help lines]
+      (Im-1 -| y-axis) node[left] {$P_m$} -|
+      (Im-1 |- x-axis) node[below] {$Q_m$}
+      (Ie-1 -| y-axis) node[left] {$P_e$} -|
+      (Ie-1 |- x-axis) node[below] {$Q_e$}
+      ;
+
+    <<draw-curve-BMS>>
+    <<draw-curve-CMP>>
+    <<draw-curve-CMS>>
+
+    \node[dot] at (Im-1) {} ;
+
+    \node[dot] at (Ie-1) {} ;
+
+    <<market-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Externalities_1047-13.tex
+  \begin{tikzpicture}<<market-scale>>
+     <<market-axes-coordinates>>
+
+    <<curve-BMS>>
+    <<curve-CMP>>
+    <<curve-CMS>>
+
+    \path[name intersections={of=BMS and CMP, name=Im}] ;
+
+    \path[name intersections={of=BMS and CMS, name=Ie}] ;
+
+    \path[name path=vert] (Im-1) -- (Im-1 |- {(0, 9)});
+    \path[name intersections={of=CMS and vert, name=top}] ;
+
+    \fill[fillA] (Im-1) -- (Ie-1) -- (top-1) -- cycle ;
+
+    \draw[help lines]
+      (Im-1 -| y-axis) node[left] {$P_m$} -|
+      (Im-1 |- x-axis) node[below] {$Q_m$}
+      (Im-1) -- (top-1)
+      (Ie-1 -| y-axis) node[left] {$P_e$} -|
+      (Ie-1 |- x-axis) node[below] {$Q_e$}
+      ;
+
+    <<draw-curve-BMS>>
+    <<draw-curve-CMP>>
+    <<draw-curve-CMS>>
+
+    \node[dot] at (Im-1) {} ;
+
+    \node[dot] at (Ie-1) {} ;
+
+    <<market-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Externalidad positiva consumo
+
+#+begin_src latex  :noweb-ref ext-coordinates-2
+  <<market-axes-coordinates>>
+  \coordinate (Db-1) at (1, 5) ;
+  \coordinate (Db-2) at (8.5, 2) ;
+  \coordinate (Dc-1) at ($ (Db-1) + (0, 2) $) ;
+  \coordinate (Dc-2) at ($ (Db-2) + (0, 2) $) ;
+  \coordinate (Sc-1) at (1, 1.5) ;
+  \coordinate (Sc-2) at (8.5, 8) ;
+#+end_src
+
+#+begin_src latex :tangle fig-Externalities_1047-20.tex
+  \begin{tikzpicture}<<market-scale>>
+    <<ext-coordinates-2>>
 
     \path[save path=\pathDb, name path=Db] (Db-1) -- (Db-2) ;
 
