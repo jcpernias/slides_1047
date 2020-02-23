@@ -17,42 +17,42 @@
 
 #+MATS: figcol fig-Externalities_1047-10-*.pdf 0.45
 
-- En un mercado competitivo de un bien:
+- En un mercado competitivo:
 
   + La demanda coincide con el *beneficio marginal social*, \BMS.
 
   + La oferta coincide con el *coste marginal social*, \CMS.
 
+
 ** Externalidades
 
 - Se produce una *externalidad* cuando las acciones de un agente
-  afectan el bienestar de otro agente directamente, sin la mediación
+  afectan el bienestar de otros agentes directamente, sin la mediación
   de un mercado.
-
-
-** Tipos de externalidades
-
-- Originadas en la producción (contaminación del aire) o en el consumo
-  (fumadores pasivos).
-
-- Externalidades negativas o positivas (vacunas, abejas).
 
 
 ** Externalidad negativa en la producción (I)
 
 - Un proceso productivo puede generar polución que impacte
-  negativamente sobre algunos grupos de la sociedad.
+  negativamente sobre algunos grupos de la sociedad que no reciben
+  ninguna compensación.
 
-- *Coste marginal privado*, \CMP: pagos a los factores productivos.
 
-- *Coste marginal social*, \CMS: pagos a los factores y costes
-  soportados por parte de la sociedad sin compensación alguna.
 
 ** Externalidad negativa en la producción (II)
 
 #+MATS: figcol fig-Externalities_1047-11-*.pdf 0.45
 
-- Daño marginal: $\DM = \CMS - \CMP$.
+- *Coste marginal privado*, \CMP: pagos a los factores productivos.
+
+- *Daño marginal*, \DM: costes asociados a la polución.
+
+- *Coste marginal social*, \CMS:
+  #+begin_export latex
+  \[
+    \CMS = \CMP + \DM
+  \]
+  #+end_export
 
 
 ** Externalidad negativa en la producción (III)
@@ -61,7 +61,7 @@
 
 - La decisión privada sólo tiene en cuenta costes y beneficios privados.
 
-- La solución eficiente considera los beneficios y costes sociales.
+- La solución eficiente considera los costes y beneficios sociales.
 
 
 ** Externalidad negativa en la producción (y IV)
@@ -72,29 +72,33 @@
 
 - El área sombreada muestra la pérdida irrecuperable de eficiencia.
 
-** Externalidades positivas
 
-#+MATS: figcol fig-Externalities_1047-20-*.pdf 0.45
+** Externalidad negativa en el consumo
 
-- Externalidad positiva en el consumo: el beneficio marginal social es
-  mayor que el beneficio marginal privado.
+#+MATS: figcol fig-Externalities_1047-15-*.pdf 0.45
 
-- Consumo insuficiente.
+- El mercado produciría más de lo socialmente óptimo.
+
+- El área sombreada muestra la pérdida irrecuperable de eficiencia.
+
+
+
+** Externalidad positiva en la producción
+
+#+MATS: figcol fig-Externalities_1047-16-*.pdf 0.45
+
+- El mercado produciría menos de lo socialmente óptimo.
+
+- El área sombreada muestra la pérdida irrecuperable de eficiencia.
 
 
 ** Recursos comunes
 
-- Libre entrada: el valor del producto medio coincide con el coste medio.
+- La utilización del recurso depende de los beneficios privados de los
+  usuarios, sin tener en cuenta los efectos externos sobre otros
+  usuarios.
 
-- Eficiencia: el valor del producto marginal coincide con el coste marginal.
-
-- Sobreexplotación del recurso común.
-
-** Cuestiones prácticas
-
-- ¿Qué actividades producen la externalidad?
-
-- ¿Cuál es el valor de los daños causados por la externalidad?
+- *Sobreexplotación* del recurso común.
 
 
 * Soluciones privadas
