@@ -137,12 +137,14 @@
 
 ** Impuestos (I)
 
-- Un *impuesto corrector* persigue eliminar una externalidad haciendo
-  que se reduzca el nivel de producción.
+#+MATS: figcol fig-Externalities_1047-50-*.pdf 0.45
+
+- Un *impuesto corrector* persigue eliminar la ineficiencia generada
+  por una externalidad haciendo que se reduzca el nivel de producción.
 
 ** Impuestos (y II)
 
-#+MATS: figcol fig-Externalities_1047-50-*.pdf 0.45
+#+MATS: figcol fig-Externalities_1047-51-*.pdf 0.45
 
 - Un impuesto de $t$ euros por unidad producida puede conseguir que el
   nivel de producción sea eficiente.
@@ -151,6 +153,8 @@
   al Estado.
 
 ** Subvenciones (I)
+
+#+MATS: figcol fig-Externalities_1047-50-*.pdf 0.45
 
 - Ofrecer *subvenciones* a las empresas para que reduzcan su nivel de
   producción puede conseguir también el nivel de producción eficiente.
@@ -165,9 +169,76 @@
 - La zona sombreada muestra cuánto habría que pagar en total a las
   empresas.
 
-** Multas
+** Multas (I)
 
-- *Multas* relacionadas directamente con el nivel de contaminación.
+- Las empresas también pueden reducir la contaminación mediante
+  cambios en el proceso productivo.
+
+- En vez de actuar sobre la producción, el Estado puede usar impuestos
+  o *multas* relacionadas directamente con el nivel de contaminación.
+
+** Multas (II)
+
+#+MATS: figcol fig-Externalities_1047-60-*.pdf 0.45
+
+- Cuanto más a la derecha, más toneladas se reducen las emisiones
+  contaminantes y la polución es menor.
+
+- En el eje vertical se miden costes y ganancias de reducir las
+  emisiones.
+
+** Multas (III)
+
+#+MATS: figcol fig-Externalities_1047-61-*.pdf 0.45
+
+- \BMS: ganancias de la sociedad por emitir una tonelada menos.
+
+- \BMP: ganancias de la empresa por emitir una tonelada menos.
+
+- \CMP: costes de la empresa para reducir una tonelada las emisiones.
+
+
+** Multas (y IV)
+
+#+MATS: figcol fig-Externalities_1047-62-*.pdf 0.45
+
+- Resultado de mercado: $R_m = 0$.
+
+- Fijando una multa de $f$ euros por tonelada emitida se obtiene el
+  nivel de reducción socialmente óptimo, $R_e$.
+
+
+** Regulación (I)
+
+#+MATS: figcol fig-Externalities_1047-65-*.pdf 0.45
+
+- La efectividad de impuestos y multas en conseguir una determinada
+  reducción requiere de mucha información.
+
+- Puede ser más simple para el Estado obligar a las empresas a reducir
+  las emisiones en una determinada cantidad.
+
+
+** Regulación (II)
+
+- La regulación sigue requiriendo mucha información para obtener el
+  nivel óptimo de $R$.
+
+- La regulación puede ser muy ineficiente si las empresas no son
+  idénticas.
+
+
+** Regulación (y III)
+
+#+MATS: figcol fig-Externalities_1047-70-*.pdf 0.45
+
+- Cada empresa debe reducir sus emisiones en $R_r$ toneladas.
+
+- A la empresa $A$ le resulta menos costoso alcanzar cualquier nivel
+  de $R$.
+
+- Dado que $\CMP_B(R_r) > \CMP_A(R_r)$, se podría haber obtenido la
+  misma reducción total con menos costes.
 
 ** Creación de mercados
 
@@ -177,30 +248,25 @@
 
   + Las empresas pueden venderse entre ellas los permisos.
 
-** Regulación
-
-- Regulación sobre los resultados.
-
-- Regulación sobre los factores.
-
 ** Efectividad de las soluciones públicas
 
-- Impuestos y multas internalizan las externalidades; las subvenciones
-  no.
+- Los impuestos y las multas internalizan las externalidades; las
+  subvenciones no.
 
-- Incertidumbre sobre los resultados que se obtendrán con los
+- Existe incertidumbre sobre los resultados que se obtendrán con los
   impuestos y las multas; no es un problema con la regulación directa.
 
-- Permisos transferibles pueden ser más eficientes que la regulación y
-  no tienen problemas de incertidumbre de los resultados.
+- Los permisos transferibles pueden ser más eficientes que la
+  regulación y eliminan la incertidumbre de los resultados.
 
-- Complejidad del diseño de los mercados de permisos.
+- El diseño de los mercados de permisos es complejo.
 
 ** Externalidades y distribución
 
-- ¿Quién se beneficia? Si los pobres son los más expuestos a la
-  contaminación, las medidas que la reduzcan son mejoras
-  distributivas.
+- Un impuesto correctivo:
 
-- ¿Quién soporta los costes? La empresas que reducen su producción;
-  los consumidores que soportan mayores precios.
+  - Beneficia a los que soportan la externalidad. Si son las capas más
+    pobres de la sociedad, el impuesto es una mejora distributiva.
+
+  - Perjudica a las empresas gravadas por el impuesto y a sus
+    consumidores que soportan mayores precios.

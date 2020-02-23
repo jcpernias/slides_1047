@@ -20,7 +20,7 @@
     ;
 #+end_src
 
-#+begin_src latex :noweb-ref market-axes-coordinates
+#+begin_src latex :noweb-ref axes-coordinates
   \coordinate (x-axis) (1, 0) ;
   \coordinate (y-axis) (0, 1) ;
 #+end_src
@@ -64,7 +64,7 @@
 
 #+begin_src latex :tangle fig-Externalities_1047-10.tex
   \begin{tikzpicture}<<market-scale>>
-    <<market-axes-coordinates>>
+    <<axes-coordinates>>
 
     <<curve-BMS>>
     <<curve-CMS>>
@@ -88,7 +88,7 @@
 
 #+begin_src latex :tangle fig-Externalities_1047-11.tex
   \begin{tikzpicture}<<market-scale>>
-     <<market-axes-coordinates>>
+     <<axes-coordinates>>
 
     <<curve-CMP>>
     <<curve-CMS>>
@@ -108,7 +108,7 @@
 
 #+begin_src latex :tangle fig-Externalities_1047-12.tex
   \begin{tikzpicture}<<market-scale>>
-     <<market-axes-coordinates>>
+     <<axes-coordinates>>
 
     <<curve-BMS>>
     <<curve-CMP>>
@@ -139,7 +139,7 @@
 
 #+begin_src latex :tangle fig-Externalities_1047-13.tex
   \begin{tikzpicture}<<market-scale>>
-     <<market-axes-coordinates>>
+     <<axes-coordinates>>
 
     <<curve-BMS>>
     <<curve-CMP>>
@@ -209,7 +209,7 @@
 
 #+begin_src latex :tangle fig-Externalities_1047-15.tex
   \begin{tikzpicture}<<market-scale>>
-     <<market-axes-coordinates>>
+     <<axes-coordinates>>
 
     <<curve-BMPb>>
     <<curve-BMSb>>
@@ -279,7 +279,7 @@
 
 #+begin_src latex :tangle fig-Externalities_1047-16.tex
   \begin{tikzpicture}<<market-scale>>
-     <<market-axes-coordinates>>
+     <<axes-coordinates>>
 
     <<curve-BMSc>>
     <<curve-CMPc>>
@@ -348,10 +348,36 @@
 #+end_src
 
 
-
 #+begin_src latex :tangle fig-Externalities_1047-50.tex
   \begin{tikzpicture}<<market-scale>>
-     <<market-axes-coordinates>>
+     <<axes-coordinates>>
+
+    <<curve-BMSd>>
+    <<curve-CMPd>>
+    <<curve-CMSd>>
+
+    \path[name intersections={of=BMSd and CMPd, name=Im}] ;
+
+    \draw[help lines]
+      (Im-1 -| y-axis) node[left] {$P_m$} -|
+      (Im-1 |- x-axis) node[below] {$Q_m$}
+      ;
+
+    <<draw-curve-BMSd>>
+    <<draw-curve-CMPd>>
+    <<draw-curve-CMSd>>
+
+
+    \node[dot] at (Im-1) {} ;
+
+    <<market-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :tangle fig-Externalities_1047-51.tex
+  \begin{tikzpicture}<<market-scale>>
+     <<axes-coordinates>>
 
     <<curve-BMSd>>
     <<curve-CMPd>>
@@ -369,7 +395,6 @@
     \coordinate (T) at ($ (Ie-1) - (Z-1) $) ;
 
     \draw[help lines]
-      (Im-1) -- (Im-1 |- x-axis) node[below] {$Q_m$}
       (Z-1) -- (Z-1 -| y-axis)
       (Ie-1 -| y-axis) node[left] {$P_e$} -|
       (Ie-1 |- x-axis) node[below] {$Q_e$}
@@ -392,7 +417,7 @@
 
 #+begin_src latex :tangle fig-Externalities_1047-55.tex
   \begin{tikzpicture}<<market-scale>>
-     <<market-axes-coordinates>>
+     <<axes-coordinates>>
 
     <<curve-BMSd>>
     <<curve-CMPd>>
@@ -429,5 +454,189 @@
     \node[dot] at (Ie-1) {} ;
 
     <<market-axes>>
+  \end{tikzpicture}
+#+end_src
+
+** Multas
+
+#+begin_src latex :noweb-ref red-scale
+  [xscale=0.4, yscale=0.4, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref red-axes
+  \draw[axis]
+    (0, 10) node[left]  {$\text{€}/\mathrm{Tm}$} |-
+    (10, 0) node[below] {$R$}
+    ;
+#+end_src
+
+#+begin_src latex :tangle fig-Externalities_1047-60.tex
+  \begin{tikzpicture}<<market-scale>>
+    <<axes-coordinates>>
+    \node[right, font=\sffamily\scriptsize]
+      (A) at (0.5, 1) { Mayor reducción } ;
+
+    \node[left, font=\sffamily\scriptsize]
+      (B) at (9.5, 2.25) { Más contaminación } ;
+
+    \draw[shift arrow, ->]
+      (A)  -- (9.5, 1)
+      ;
+
+    \draw[shift arrow, ->]
+      (B) -- (0.5, 2.25)
+      ;
+    <<red-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex  :noweb-ref red-curve-BMS
+  \coordinate (BMS-1) at (0, 4) ;
+  \coordinate (BMS-2) at (9, 4) ;
+  \path[save path=\pathBMS, name path=BMS] (BMS-1) -- (BMS-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-draw-curve-BMS
+  \draw[curve A, use path=\pathBMS] (BMS-2) node[above] { $\BMS$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-curve-BMP
+  \coordinate (BMP-1) at (0, 0.1) ;
+  \coordinate (BMP-2) at (9, 0.1) ;
+  \path[save path=\pathBMP, name path=BMP] (BMP-1) -- (BMP-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-draw-curve-BMP
+  \draw[curve A, use path=\pathBMP] (BMP-2) node[above] { $\BMP$ } ;
+#+end_src
+
+
+#+begin_src latex  :noweb-ref red-curve-CMP
+  \coordinate (CMP-1) at (0, 0) ;
+  \coordinate (CMP-2) at (7.5, 8) ;
+  \path[save path=\pathCMP, name path=CMP] (CMP-1) -- (CMP-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-draw-curve-CMP
+  \draw[curve B, use path=\pathCMP] (CMP-2) node[right] { $\CMP$ } ;
+#+end_src
+
+#+begin_src latex :tangle fig-Externalities_1047-61.tex
+  \begin{tikzpicture}<<market-scale>>
+    <<axes-coordinates>>
+
+    <<red-curve-BMS>>
+    <<red-curve-BMP>>
+    <<red-curve-CMP>>
+
+    <<red-draw-curve-BMS>>
+    <<red-draw-curve-BMP>>
+    <<red-draw-curve-CMP>>
+
+    <<red-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Externalities_1047-62.tex
+  \begin{tikzpicture}<<market-scale>>
+    <<axes-coordinates>>
+
+    <<red-curve-BMS>>
+    <<red-curve-BMP>>
+    <<red-curve-CMP>>
+
+    \path[name intersections={of=BMS and CMP, name=Ie}] ;
+    \coordinate (Im-1) at (0, 0) ;
+
+    \draw[help lines]
+      (BMS-1) node[left] { $f$ }
+      (Im-1) node[below] {$R_m$}
+      (Ie-1) -- (Ie-1 |- x-axis) node[below] {$R_e$}
+      ;
+
+    <<red-draw-curve-BMS>>
+    <<red-draw-curve-BMP>>
+    <<red-draw-curve-CMP>>
+
+    \node[dot] at (Im-1) {} ;
+    \node[dot] at (Ie-1) {} ;
+
+    <<red-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-Externalities_1047-65.tex
+  \begin{tikzpicture}<<market-scale>>
+    <<axes-coordinates>>
+
+    <<red-curve-BMS>>
+    <<red-curve-CMP>>
+
+    \path[name intersections={of=BMS and CMP, name=Ie}] ;
+
+    \draw[curve, black]
+      (Ie-1 |- {(0, 9)}) -- (Ie-1 |- x-axis) node[below] {$R_e$}
+      ;
+
+    <<red-draw-curve-BMS>>
+    <<red-draw-curve-CMP>>
+
+    \node[dot] at (Ie-1) {} ;
+
+    <<red-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex  :noweb-ref red-curve-CMPa
+  \coordinate (CMPa-1) at (0, 0) ;
+  \coordinate (CMPa-2) at (7, 5.5) ;
+  \path[save path=\pathCMPa, name path=CMPa] (CMPa-1) -- (CMPa-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-draw-curve-CMPa
+  \draw[curve B, use path=\pathCMPa] (CMPa-2) node[right] { $\CMP_A$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-curve-CMPb
+  \coordinate (CMPb-1) at (0, 0) ;
+  \coordinate (CMPb-2) at (4.5, 8) ;
+  \path[save path=\pathCMPb, name path=CMPb] (CMPb-1) -- (CMPb-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-draw-curve-CMPb
+  \draw[curve B, use path=\pathCMPb] (CMPb-2) node[right] { $\CMP_B$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-curve-R
+  \coordinate (R-1) at (3, 9) ;
+  \coordinate (R-2) at (3, 0) ;
+  \path[save path=\pathR, name path=R] (R-1) -- (R-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref red-draw-curve-R
+  \draw[curve, black, use path=\pathR] (R-2) node[below] { $\R_r$ } ;
+#+end_src
+
+
+#+begin_src latex :tangle fig-Externalities_1047-70.tex
+  \begin{tikzpicture}<<market-scale>>
+    <<axes-coordinates>>
+
+    <<red-curve-R>>
+    <<red-curve-CMPa>>
+    <<red-curve-CMPb>>
+
+    \path[name intersections={of=R and CMPa, name=Ia}] ;
+    \path[name intersections={of=R and CMPb, name=Ib}] ;
+
+    <<red-draw-curve-R>>
+    <<red-draw-curve-CMPa>>
+    <<red-draw-curve-CMPb>>
+
+    \node[dot] at (Ia-1) {} ;
+    \node[dot] at (Ib-1) {} ;
+
+    <<red-axes>>
   \end{tikzpicture}
 #+end_src
