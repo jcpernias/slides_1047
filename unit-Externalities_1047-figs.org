@@ -312,3 +312,122 @@
     <<market-axes>>
   \end{tikzpicture}
 #+end_src
+
+* Soluciones públicas
+
+** Impuestos
+
+#+begin_src latex  :noweb-ref curve-BMSd
+  \coordinate (BMSd-1) at (1, 7.5) ;
+  \coordinate (BMSd-2) at (6, 1) ;
+  \path[save path=\pathBMSd, name path=BMSd] (BMSd-1) -- (BMSd-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-BMSd
+  \draw[curve A, use path=\pathBMSd] (BMSd-2) node[right] { $\BMS$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref curve-CMPd
+  \coordinate (CMPd-1) at (1, 1.5) ;
+  \coordinate (CMPd-2) at (8.5, 4) ;
+  \path[save path=\pathCMPd, name path=CMPd] (CMPd-1) -- (CMPd-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-CMPd
+  \draw[curve B, use path=\pathCMPd] (CMPd-2) node[right] { $\CMP$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref curve-CMSd
+  \coordinate (CMSd-1) at (1, 2.5) ;
+  \coordinate (CMSd-2) at (8.5, 8) ;
+  \path[save path=\pathCMSd, name path=CMSd] (CMSd-1) -- (CMSd-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-CMSd
+  \draw[curve B, use path=\pathCMSd] (CMSd-2) node[right] { $\CMS$ } ;
+#+end_src
+
+
+
+#+begin_src latex :tangle fig-Externalities_1047-50.tex
+  \begin{tikzpicture}<<market-scale>>
+     <<market-axes-coordinates>>
+
+    <<curve-BMSd>>
+    <<curve-CMPd>>
+    <<curve-CMSd>>
+
+    \path[name intersections={of=BMSd and CMPd, name=Im}] ;
+
+    \path[name intersections={of=BMSd and CMSd, name=Ie}] ;
+
+    \path[name path=vert1] (Ie-1) -- (Ie-1 |- {(0, 0)});
+    \path[name intersections={of=CMPd and vert1, name=Z}] ;
+
+    \fill[fillA] (Ie-1 -| y-axis) rectangle (Z-1) ;
+
+    \coordinate (T) at ($ (Ie-1) - (Z-1) $) ;
+
+    \draw[help lines]
+      (Im-1) -- (Im-1 |- x-axis) node[below] {$Q_m$}
+      (Z-1) -- (Z-1 -| y-axis)
+      (Ie-1 -| y-axis) node[left] {$P_e$} -|
+      (Ie-1 |- x-axis) node[below] {$Q_e$}
+      ;
+
+    <<draw-curve-BMSd>>
+    <<draw-curve-CMPd>>
+    <<draw-curve-CMSd>>
+
+    \draw[curve C]
+      ($ (CMPd-1) + (T) $) -- ($ (CMPd-2) + (T) $)
+      node[right] { $\CMP + t$ } ;
+
+    \node[dot] at (Ie-1) {} ;
+
+    <<market-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :tangle fig-Externalities_1047-55.tex
+  \begin{tikzpicture}<<market-scale>>
+     <<market-axes-coordinates>>
+
+    <<curve-BMSd>>
+    <<curve-CMPd>>
+    <<curve-CMSd>>
+
+    \path[name intersections={of=BMSd and CMPd, name=Im}] ;
+
+    \path[name intersections={of=BMSd and CMSd, name=Ie}] ;
+
+    \path[name path=vert1] (Ie-1) -- (Ie-1 |- {(0, 0)});
+    \path[name intersections={of=CMPd and vert1, name=Z}] ;
+
+
+    \coordinate (T) at ($ (Ie-1) - (Z-1) $) ;
+    \coordinate (X) at ($ (Z-1) - (Z-1 -| Im-1) $) ;
+
+    \fill[fillB] (Z-1) rectangle ($ (Ie-1) - (X) $) ;
+
+    \draw[help lines]
+      (Ie-1) -| (Im-1 |- x-axis) node[below] {$Q_m$}
+      ($ (Z-1) - (X) $) -- (Z-1 -| y-axis)
+      (Ie-1 -| y-axis) node[left] {$P_e$} -|
+      (Ie-1 |- x-axis) node[below] {$Q_e$}
+      ;
+
+    <<draw-curve-BMSd>>
+    <<draw-curve-CMPd>>
+    <<draw-curve-CMSd>>
+
+    \draw[curve C]
+      ($ (CMPd-1) + (T) $) -- ($ (CMPd-2) + (T) $)
+      node[right] { $\CMP + s$ } ;
+
+    \node[dot] at (Ie-1) {} ;
+
+    <<market-axes>>
+  \end{tikzpicture}
+#+end_src
