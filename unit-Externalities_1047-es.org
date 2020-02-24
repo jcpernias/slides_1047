@@ -109,6 +109,7 @@
 
 - Crear unidades económicas con el suficiente tamaño.
 
+
 ** Establecer derechos de propiedad
 
 - Establecer *derechos de propiedad*.
@@ -117,11 +118,13 @@
   negociación entre las partes, independientemente de como se asignen
   los derechos de propiedad y si los costes de negociación son bajos
 
+
 ** Otras soluciones
 
 - Recurso al sistema judicial.
 
 - Convenciones sociales.
+
 
 ** Limitaciones de las soluciones privadas
 
@@ -133,7 +136,9 @@
 
 - Costes de litigar.
 
+
 * Soluciones públicas
+
 
 ** Impuestos (I)
 
@@ -141,6 +146,7 @@
 
 - Un *impuesto corrector* persigue eliminar la ineficiencia generada
   por una externalidad haciendo que se reduzca el nivel de producción.
+
 
 ** Impuestos (y II)
 
@@ -152,6 +158,7 @@
 - *Doble dividendo*: la recaudación proporciona recursos adicionales
   al Estado.
 
+
 ** Subvenciones (I)
 
 #+MATS: figcol fig-Externalities_1047-50-*.pdf 0.45
@@ -159,15 +166,18 @@
 - Ofrecer *subvenciones* a las empresas para que reduzcan su nivel de
   producción puede conseguir también el nivel de producción eficiente.
 
+
 ** Subvenciones (y II)
 
 #+MATS: figcol fig-Externalities_1047-55-*.pdf 0.45
 
-- Una subvención de $s$ euros por cada unidad producida por debajo de
-  $Q_m$ puede conseguir que el nivel de producción sea eficiente.
+- Una subvención de $s$ euros por cada unidad que deje de producirse
+  por debajo de $Q_m$ puede conseguir que el nivel de producción sea
+  eficiente.
 
 - La zona sombreada muestra cuánto habría que pagar en total a las
   empresas.
+
 
 ** Multas (I)
 
@@ -176,6 +186,7 @@
 
 - En vez de actuar sobre la producción, el Estado puede usar impuestos
   o *multas* relacionadas directamente con el nivel de contaminación.
+
 
 ** Multas (II)
 
@@ -186,6 +197,7 @@
 
 - En el eje vertical se miden costes y ganancias de reducir las
   emisiones.
+
 
 ** Multas (III)
 
@@ -240,6 +252,7 @@
 - Dado que $\CMP_B(R_r) > \CMP_A(R_r)$, se podría haber obtenido la
   misma reducción total con menos costes.
 
+
 ** Creación de mercados
 
 - *Permisos transferibles*:
@@ -247,6 +260,7 @@
   + El Estado fija la cantidad total de permisos.
 
   + Las empresas pueden venderse entre ellas los permisos.
+
 
 ** Efectividad de las soluciones públicas
 
@@ -260,6 +274,7 @@
   regulación y eliminan la incertidumbre de los resultados.
 
 - El diseño de los mercados de permisos es complejo.
+
 
 ** Externalidades y distribución
 
