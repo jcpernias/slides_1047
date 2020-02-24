@@ -7,6 +7,7 @@
 
 * Chunks
 
+
 ** Market figures
 
 #+begin_src latex :noweb-ref market-scale
@@ -176,8 +177,8 @@
 
 
 #+begin_src latex  :noweb-ref curve-BMSb
-  \coordinate (BMSb-1) at (1, 7.5) ;
-  \coordinate (BMSb-2) at (4, 1) ;
+  \coordinate (BMSb-1) at (1, 7.25) ;
+  \coordinate (BMSb-2) at (5, 1) ;
   \path[save path=\pathBMSb, name path=BMSb] (BMSb-1) -- (BMSb-2) ;
 #+end_src
 
@@ -197,7 +198,7 @@
 
 #+begin_src latex  :noweb-ref curve-CMSb
   \coordinate (CMSb-1) at (1, 2) ;
-  \coordinate (CMSb-2) at (7, 8.5) ;
+  \coordinate (CMSb-2) at (8, 8.5) ;
   \path[save path=\pathCMSb, name path=CMSb] (CMSb-1) -- (CMSb-2) ;
 #+end_src
 
@@ -219,15 +220,14 @@
 
     \path[name intersections={of=BMSb and CMSb, name=Ie}] ;
 
-    \path[name path=vert] (Ie-1) -- (Ie-1 |- {(0, 9)});
-    \path[name intersections={of=BMPb and vert, name=top}] ;
+    \path[name path=vert] (Im-1) -- (Im-1 |- x-axis);
+    \path[name intersections={of=BMSb and vert, name=bot}] ;
 
-    \fill[fillA] (Im-1) -- (Ie-1) -- (top-1) -- cycle ;
+    \fill[fillA] (Im-1) -- (Ie-1) -- (bot-1) -- cycle ;
 
     \draw[help lines]
       (Im-1 -| y-axis) node[left] {$P_m$} -|
       (Im-1 |- x-axis) node[below] {$Q_m$}
-      (Ie-1) -- (top-1)
       (Ie-1 -| y-axis) node[left] {$P_e$} -|
       (Ie-1 |- x-axis) node[below] {$Q_e$}
       ;
@@ -313,7 +313,9 @@
   \end{tikzpicture}
 #+end_src
 
+
 * Soluciones públicas
+
 
 ** Impuestos
 
@@ -456,6 +458,7 @@
     <<market-axes>>
   \end{tikzpicture}
 #+end_src
+
 
 ** Multas
 
