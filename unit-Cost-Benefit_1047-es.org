@@ -1,0 +1,11 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Análisis coste beneficio
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*: Capítulo 11.
+#+end_bibbox

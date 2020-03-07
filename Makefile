@@ -8,7 +8,8 @@ units := \
 	Market-Failure \
 	Efficiency-Equity \
 	Public-Goods \
-	Externalities
+	Externalities \
+	Cost-Benefit
 
 unit_figs := \
 	Welfare \
