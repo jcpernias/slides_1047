@@ -9,3 +9,63 @@
 #+begin_bibbox
 - *Stiglitz y Rosengard*: Capítulo 11.
 #+end_bibbox
+
+* Análisis de los costes y beneficios privados
+
+
+** Evaluación de proyectos
+
+- ¿Qué proyectos son *admisibles*?
+
+- ¿Qué proyectos son *preferibles*?
+
+
+** Flujos de beneficios netos
+
+- Durante la vida de un proyecto genera una *corriente de ingresos y
+  gastos*.
+
+- *Beneficio neto* en el periodo $t$, $R_t$: la diferencia entre los
+  ingresos y gastos que se producen en $t$.
+
+** La tasa de descuento
+
+- La *tasa de descuento*, $r$, determina la valoración actual de una
+  cantidad de dinero en el futuro.
+
+- El *factor de descuento* de un euro dentro de $t$ periodos es $(1 +
+  r)^t$.
+
+** El valor actual descontado (I)
+
+- El *valor actual descontado* de un proyecto que genera un flujo de
+  beneficios netos $R_0, R_1, R_2, \dots, R_T$ es:
+  #+begin_export latex
+  \[
+    \VAD = R_0 + \frac{R_1}{1 + r} + \frac{R_2}{(1 + r)^2} +
+    \dots + \frac{R_T}{(1 + r)^T}
+  \]
+  #+end_export
+
+** El valor actual descontado (y II)
+
+- Un proyecto es admisible si $\VAD > 0$.
+
+- Es preferible el proyecto con mayor \VAD.
+
+** Otros criterios (I)
+
+- *Tasa interna de rentabilidad*, $\rho$:
+  #+begin_export latex
+  \[
+    R_0 + \frac{R_1}{1 + \rho} + \frac{R_2}{(1 + \rho)^2} +
+    \dots + \frac{R_T}{(1 + \rho)^T} = 0
+  \]
+  #+end_export
+
+- *Ratio coste-beneficio*: el cociente entre los valores actualizados
+  de ingresos y costes de un proyecto.
+
+- Para comparar diferentes proyectos el \VAD es preferible.
+
+
