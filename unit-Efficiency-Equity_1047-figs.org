@@ -2,8 +2,7 @@
 
 #+TITLE: Eficiencia y equidad
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
-
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * Chunks
 
@@ -26,7 +25,7 @@
 
 * Elección social
 
-#+begin_src latex :tangle fig-Efficiency-Equity_1047-01.tex :noweb yes
+#+begin_src latex :tangle fig-Efficiency-Equity_1047-01.tex
 \begin{tikzpicture}<<upf-scale>>
 
   \draw[curve] plot[domain=0:100] <<upf-curve>> ;
@@ -36,7 +35,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Efficiency-Equity_1047-02.tex :noweb yes
+#+begin_src latex :tangle fig-Efficiency-Equity_1047-02.tex
 \begin{tikzpicture}<<upf-scale>>
 
   \draw[curve] plot[domain=0:100] <<upf-curve>> ;
@@ -54,7 +53,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Efficiency-Equity_1047-05.tex :noweb yes
+#+begin_src latex :tangle fig-Efficiency-Equity_1047-05.tex
 \begin{tikzpicture}<<upf-scale>>
 
   \draw[curve] plot[domain=0:100] <<upf-curve>> ;
@@ -73,7 +72,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Efficiency-Equity_1047-06.tex :noweb yes
+#+begin_src latex :tangle fig-Efficiency-Equity_1047-06.tex
 \begin{tikzpicture}<<upf-scale>>
 
   \draw[curve] plot[domain=0:100] <<upf-curve>> ;

@@ -2,8 +2,7 @@
 
 #+TITLE: Bienes públicos
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
-
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * Chunks
 
@@ -59,7 +58,7 @@
 
 * Eficiencia bienes privados
 
-#+begin_src latex :tangle fig-Public-Goods_1047-01.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-01.tex
 \begin{tikzpicture}<<bc-scale>>
 
   \draw[curve A] plot[domain=1.111111:9] <<bc-curve1>> ;
@@ -70,7 +69,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-02.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-02.tex
 \begin{tikzpicture}<<bc-scale>>
 
   \draw[help lines]
@@ -88,7 +87,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Public-Goods_1047-03.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-03.tex
 \begin{tikzpicture}<<bp-scale>>
 
   \draw[help lines]
@@ -103,7 +102,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-04.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-04.tex
 \begin{tikzpicture}<<bp-scale>>
 
   \draw[help lines]
@@ -118,7 +117,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-05.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-05.tex
 \begin{tikzpicture}<<bp-scale>>
 
   \draw[curve B] (0.5, 3) -- (9, 5) node[right] { $B^s$ };
@@ -127,7 +126,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-06.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-06.tex
 \begin{tikzpicture}<<bp-scale>>
 
   \draw[help lines]
@@ -146,7 +145,7 @@
 
 * Eficiencia bienes públicos
 
-#+begin_src latex :tangle fig-Public-Goods_1047-11.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-11.tex
 \begin{tikzpicture}<<mc-scale>>
 
   \draw[curve A] plot[domain=1:9] (\x, 9/\x^0.5) ;
@@ -158,7 +157,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Public-Goods_1047-13.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-13.tex
 \begin{tikzpicture}<<mp-scale>>
 
   \draw[help lines]
@@ -173,7 +172,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-14.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-14.tex
 \begin{tikzpicture}<<mp-scale>>
 
   \draw[help lines]
@@ -188,7 +187,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-15.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-15.tex
 \begin{tikzpicture}<<mp-scale>>
 
   \draw[curve B] (1, 1.5) -- (9, 7) node[right] { $M^s$ };
@@ -197,7 +196,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-16.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-16.tex
 \begin{tikzpicture}<<mp-scale>>
 
   \draw[help lines]
@@ -219,7 +218,7 @@
 
 * Provisión pública de bienes privados
 
-#+begin_src latex :tangle fig-Public-Goods_1047-20.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-20.tex
   \begin{tikzpicture}[xscale=0.36, yscale=0.36]
 
     \draw[fill, fillA]
@@ -240,7 +239,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-21.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-21.tex
   \begin{tikzpicture}[xscale=0.36, yscale=0.36]
 
     \draw[fill, fillA]
@@ -270,7 +269,7 @@
 * Monopolio natural
 
 
-#+begin_src latex :tangle fig-Public-Goods_1047-30.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-30.tex
   \begin{tikzpicture}[xscale=0.4, yscale=0.4, samples = 128]
 
 
@@ -291,7 +290,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-31.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-31.tex
   \begin{tikzpicture}[xscale=0.4, yscale=0.4, samples = 128]
 
     % Monopoly
@@ -333,7 +332,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-32.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-32.tex
   \begin{tikzpicture}[xscale=0.4, yscale=0.4, samples = 128]
 
     % Zero profit
@@ -364,7 +363,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Public-Goods_1047-33.tex :noweb yes
+#+begin_src latex :tangle fig-Public-Goods_1047-33.tex
   \begin{tikzpicture}[xscale=0.4, yscale=0.4, samples = 128]
 
     % p = CM

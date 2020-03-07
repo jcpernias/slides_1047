@@ -7,7 +7,7 @@
 #+MATS: bib
 
 #+begin_bibbox
-- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 1.
+- *Stiglitz y Rosengard*: /La economía del sector público/. Capítulo 1.
 #+end_bibbox
 
 
