@@ -22,11 +22,12 @@
 
 ** Flujos de beneficios netos
 
-- Durante la vida de un proyecto genera una *corriente de ingresos y
+- Durante la vida de un proyecto se genera una *corriente de ingresos y
   gastos*.
 
-- *Beneficio neto* en el periodo $t$, $R_t$: la diferencia entre los
-  ingresos y gastos que se producen en $t$.
+- El *beneficio neto* en el periodo $t$, $R_t$, es la diferencia entre
+  los ingresos y gastos que se producen en $t$.
+
 
 ** La tasa de descuento
 
@@ -35,6 +36,7 @@
 
 - El *factor de descuento* de un euro dentro de $t$ periodos es $1/(1 +
   r)^t$.
+
 
 ** El valor actual descontado (I)
 
@@ -47,11 +49,13 @@
   \]
   #+end_export
 
+
 ** El valor actual descontado (y II)
 
 - Un proyecto es admisible si $\VAD > 0$.
 
 - Es preferible el proyecto con mayor \VAD.
+
 
 ** Otros criterios (I)
 
@@ -69,3 +73,147 @@
 - Para comparar diferentes proyectos el \VAD es preferible.
 
 
+* Análisis de los costes y beneficios sociales
+
+
+** Diferencias con el análisis privado
+
+- El Sector Público tiene en cuenta aspectos que el análisis privado
+  no considera.
+
+- Los precios de mercado no siempre son adecuados.
+
+- La tasa de descuento privada puede no ser apropiada.
+
+
+** Excedente de los consumidores
+
+- La valoración del proyecto debe de incluir las variaciones del
+  bienestar de todas las partes implicadas.
+
+- Los beneficios totales de un proyecto son la suma de los ingresos
+  más el excedente de los consumidores.
+
+
+** El valor del tiempo
+
+- Un proyecto que mejora algún sistema de transporte puede ahorrar
+  tiempo a los miembros de la sociedad.
+
+- El salario (neto de impuestos) se ha usado como una medida del valor
+  del tiempo para un trabajador.
+
+- Otros métodos estadísticos tratan de determinar la disposición a
+  pagar por reducir el tiempo de viaje.
+
+
+** El valor de la vida
+
+- ¿Cuánto vale una vida?
+
+  + Alguna estimaciones se basan en calcular cuánto hubiera ganado un
+    individuo si hubiera seguido vivo.
+
+  + Otras estimaciones tratan de inferir a partir de los diferenciales
+    salariales en cuánto valoran su vida los trabajadores que aceptan
+    trabajos más peligrosos.
+
+
+** Precios de mercado y precios sombra
+
+- El *precio sombra* de un bien coincide con su coste marginal social.
+
+- El precio de mercado no siempre es igual al precio sombra.
+
+
+** Precios sombra: desempleo
+
+- La valoración de los costes laborales depende del coste de
+  oportunidad de los trabajadores que se contraten:
+
+  + Si ya estaban empleados los costes laborales se valoran utilizando
+    el salario de mercado.
+
+  + Si estaban desempleados su coste de oportunidad es el valor del
+    ocio, muy inferior al salario de mercado.
+
+
+** Precios sombra: monopolio
+
+- Si para realizar el proyecto se necesita el producto de un
+  monopolista, estas compras deben valorarse:
+
+  + De acuerdo al *coste marginal* si el monopolista aumenta su
+    producción para abastecer al proyecto público.
+
+  + De acuerdo al *precio de mercado* si el monopolista no aumenta su
+    producción y las compras públicas sustituyen a compras privadas.
+
+
+** Precios sombra: externalidades
+
+- Si para realizar el proyecto se necesita un bien cuya producción
+  genera contaminación:
+
+  + El precio de mercado no refleja el coste de la contaminación.
+
+  + El precio sombra debe recoger el daño causado por la contaminación.
+
+
+** Tasa de descuento social (I)
+
+- La *tasa de descuento social* puede basarse en el tipo de interés de
+  mercado:
+
+  + si no hay fallos de mercado; y
+
+  + si los que se benefician del proyecto son los mismos que soportan
+    los costes.
+
+** Tasa de descuento social (y II)
+
+- La valoración de proyectos que tienen efectos en el largo plazo es
+  muy sensible al tipo de interés:
+
+  #+begin_center
+  #+latex: \mode<presentation>{\vspace*{1ex}}
+  #+ATTR_LATEX: :booktabs :center :align cp{0.75cm}c
+  |-----------------+---+---------------------|
+  | Tipo de interés |   | \VAD de \money{100} |
+  |                 |   | dentro de 50 años   |
+  |-----------------+---+---------------------|
+  |              5% |   | \money{8.72}        |
+  |              4% |   | \money{14.07}       |
+  |              3% |   | \money{22.81}       |
+  |              2% |   | \money{37.15}       |
+  |-----------------+---+---------------------|
+  #+latex: \mode<presentation>{\vspace*{1ex}}
+  #+end_center
+
+- En la valoración de proyectos que afecten a distintas generaciones
+  deberían utilizarse tasas de descuento sociales bajas.
+** Otras cuestiones
+
+- Valoración de recursos naturales.
+
+- Valoración en condiciones de incertidumbre.
+
+- Efectos distributivos.
+
+
+** Análisis coste efectividad
+
+- El *análisis coste efectividad* compara sólo los costes de
+  diferentes alternativas.
+
+- Este tipo más simple de análisis se usa cuando es difícil estimar
+  los beneficios de las diferentes alternativas y estos beneficios se
+  suponen razonablemente similares.
+
+** Errores comunes
+
+- Contabilizar beneficios secundarios.
+
+- Considerar los puestos de trabajo creados como un beneficio.
+
+- Contabilizar dos veces los beneficios.
