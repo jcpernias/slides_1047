@@ -33,7 +33,7 @@
 - La *tasa de descuento*, $r$, determina la valoración actual de una
   cantidad de dinero en el futuro.
 
-- El *factor de descuento* de un euro dentro de $t$ periodos es $(1 +
+- El *factor de descuento* de un euro dentro de $t$ periodos es $1/(1 +
   r)^t$.
 
 ** El valor actual descontado (I)
