@@ -176,7 +176,7 @@
   muy sensible al tipo de interés:
 
   #+begin_center
-  #+latex: \mode<presentation>{\vspace*{1ex}}
+  # #+latex: \mode<presentation>{\vspace*{1ex}}
   #+ATTR_LATEX: :booktabs :center :align cp{0.75cm}c
   |-----------------+---+---------------------|
   | Tipo de interés |   | \VAD de \money{100} |
@@ -187,7 +187,7 @@
   |              3% |   | \money{22.81}       |
   |              2% |   | \money{37.15}       |
   |-----------------+---+---------------------|
-  #+latex: \mode<presentation>{\vspace*{1ex}}
+  # #+latex: \mode<presentation>{\vspace*{1ex}}
   #+end_center
 
 - En la valoración de proyectos que afecten a distintas generaciones
