@@ -21,11 +21,10 @@
 \providebool{langEN}
 
 \ifbool{langES}{%
-  \RequirePackage[english, spanish, es-noindentfirst]{babel}%
+  \RequirePackage[english, spanish, es-noindentfirst, es-noquoting]{babel}%
 }{% English is the default language
-  \RequirePackage[spanish,  es-noindentfirst, english]{babel}}
+  \RequirePackage[spanish,  es-noindentfirst, es-noquoting, english]{babel}}
 
-\addto\shorthandsspanish{\spanishdeactivate{"<>}}%
 \RequirePackage[english, spanish]{translator}
 
 % Fonts
