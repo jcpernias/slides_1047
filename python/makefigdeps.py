@@ -71,7 +71,7 @@ if __name__ == '__main__':
     with open(output_file, 'w') as f:
         f.write('{}: {}\n\n'.format(output_file, input_file))
         f.write('{}: \\\n'.format(' \\\n'.join(deps)))
-        f.write('\t{}\n\n'.format(intermediate))
+        f.write('\t{}\n\t@:\n'.format(intermediate))
         f.write('\n.INTERMEDIATE: {}\n'.format(intermediate))
         f.write('{}: {}\n'.format(intermediate, input_file))
         f.write('\t$(EMACS) $(emacs_loads) --visit=$< $(tangle)\n')
