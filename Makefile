@@ -17,6 +17,9 @@ unit_figs := \
 	Public-Goods \
 	Externalities
 
+LANGUAGES := es
+DOC_TYPES := hdout pres
+
 ## Directories
 ## ================================================================================
 
@@ -67,16 +70,10 @@ MAKEFIGDEPS := $(pythonbin) $(pythondir)/makefigdeps.py
 
 RSCRIPT := $(Rscriptbin) -e
 
-docs_es := $(addsuffix _$(subject_code)-es, \
-	$(addprefix hdout-, $(units)) \
-	$(addprefix pres-, $(units)))
-docs_en := $(addsuffix _$(subject_code)-en, \
-	$(addprefix hdout-, $(units)) \
-	$(addprefix pres-, $(units)))
+docs_suffixes := $(addprefix _$(subject_code)-, $(LANGUAGES))
+docs_prefixes := $(foreach type,$(DOC_TYPES),$(addprefix $(type)-,$(units)))
+docs_base := $(foreach suffix,$(docs_suffixes),$(addsuffix $(suffix),$(docs_prefixes)))
 
-# TODO: Add English documents based on an variable
-# docs_base := $(docs_es) $(docs_en)
-docs_base := $(docs_es)
 docs_pdf := $(addprefix $(outdir)/, $(addsuffix .pdf, $(docs_base)))
 
 real_rootdir := $(realpath $(rootdir))
@@ -84,23 +81,16 @@ tex_check_dirs := $(builddir) $(figdir) $(depsdir)
 
 ## Automatic dependencies
 ## ================================================================================
-docs_deps := $(addprefix $(depsdir)/, \
-	$(addsuffix .pdf.d, $(docs_base)))
+docs_deps := $(addprefix $(depsdir)/, $(addsuffix .pdf.d, $(docs_base)))
 
-
-# TODO: Add English dependencies based on an variable
-# tex_deps := $(addprefix $(depsdir)/unit-, \
-# 	$(addsuffix _$(subject_code)-es.tex.d, $(units))) \
-# 	$(addprefix $(depsdir)/unit-, \
-# 	$(addsuffix _$(subject_code)-en.tex.d, $(units)))
-
-tex_deps := $(addprefix $(depsdir)/unit-, \
-	$(addsuffix _$(subject_code)-es.tex.d, $(units)))
+tex_deps_base := $(foreach suffix,$(docs_suffixes),$(addsuffix $(suffix),$(units)))
+tex_deps := $(addprefix $(depsdir)/unit-, $(addsuffix .tex.d, $(tex_deps_base)))
 
 unit_figs_deps := $(addprefix $(depsdir)/unit-,\
 	$(addsuffix _$(subject_code)-figs.d, $(unit_figs)))
 
 all_deps := $(docs_deps) $(tex_deps) $(unit_figs_deps)
+
 
 FIGURES :=
 
