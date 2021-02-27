@@ -58,7 +58,7 @@ TEXI2DVI_FLAGS := --batch $(TEXI2DVI_SILENT) -I $(texdir) --pdf \
 	--build=tidy --build-dir=$(notdir $(builddir))
 
 ifneq ($(LATEX_OUTPUT), yes)
-TEXI2DVI_FLAGS := $(TEXI2DVI_FLAGS) -q
+TEXI2DVI_FLAGS += -q
 endif
 
 TEXI2DVI := $(envbin) TEXI2DVI_USE_RECORDER=yes \
