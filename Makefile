@@ -17,9 +17,6 @@ unit_figs := \
 	Public-Goods \
 	Externalities
 
-TEXI2DVI_SILENT := -q
-# TEXI2DVI_SILENT :=
-
 ## Directories
 ## ================================================================================
 
@@ -53,10 +50,16 @@ org_to_latex := --eval "(tolatex (file-name-as-directory \"$(builddir)\"))"
 org_to_beamer := --eval "(tobeamer (file-name-as-directory \"$(builddir)\"))"
 tangle := --eval "(tangle-to (file-name-as-directory \"$(builddir)\"))"
 
+LATEX_OUTPUT := no
+TEXI2DVI_FLAGS := --batch $(TEXI2DVI_SILENT) -I $(texdir) --pdf \
+	--build=tidy --build-dir=$(notdir $(builddir))
+
+ifneq ($(LATEX_OUTPUT), yes)
+TEXI2DVI_FLAGS := $(TEXI2DVI_FLAGS) -q
+endif
+
 TEXI2DVI := $(envbin) TEXI2DVI_USE_RECORDER=yes \
-	$(texi2dvibin) --batch $(TEXI2DVI_SILENT) \
-	-I $(texdir) --pdf --build=tidy \
-	--build-dir=$(notdir $(builddir))
+	$(texi2dvibin) $(TEXI2DVI_FLAGS)
 
 MAKEORGDEPS := $(pythonbin) $(pythondir)/makeorgdeps.py
 MAKETEXDEPS := $(pythonbin) $(pythondir)/maketexdeps.py
