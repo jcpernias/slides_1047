@@ -104,9 +104,9 @@ endif
 # $(call tex-wrapper,pres-or-hdout,tex-src,lang) -> write to a file
 define tex-wrapper
 \PassOptionsToClass{$1}{unit}
-\AtBeginDocument{\graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}}
 \RequirePackage{etoolbox}
 \AtEndPreamble{%
+  \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}%
   \InputIfFileExists{$(subject_code)-macros.tex}{}{}%
   \InputIfFileExists{$2-macros.tex}{}{}}
 \input{$(realpath $(builddir))/$2-$3}
