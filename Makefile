@@ -117,7 +117,7 @@ define fig-wrapper
 \documentclass[$1]{figure}
 \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}
 \InputIfFileExists{$(subject_code)-macros.tex}{}{}
-\InputIfFileExists{unit-$3-macros.tex}{}{}
+\InputIfFileExists{unit-$3_$(subject_code)-macros.tex}{}{}
 \begin{document}
 \input{$(realpath $(builddir))/fig-$2}
 \end{document}
@@ -175,11 +175,11 @@ $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
 # figure wrappers
 .PRECIOUS: $(builddir)/fig-%-en.tex
 $(builddir)/fig-%-en.tex: $(builddir)/fig-%.tex
-	$(file > $@, $(call fig-wrapper,English,$*,$(shell echo $* | sed 's/\([^-]*\)-.*/\1/')))
+	$(file > $@, $(call fig-wrapper,English,$*,$(call get-unit,$*)))
 
 .PRECIOUS: $(builddir)/fig-%-es.tex
 $(builddir)/fig-%-es.tex: $(builddir)/fig-%.tex
-	$(file > $@, $(call fig-wrapper,Spanish,$*,$(shell echo $* | sed 's/\([^-]*\)-.*/\1/')))
+	$(file > $@, $(call fig-wrapper,Spanish,$*,$(call get-unit,$*)))
 
 # figure latex to pdf
 $(figdir)/fig-%.pdf: $(builddir)/fig-%.tex | $(figdir)
