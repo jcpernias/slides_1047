@@ -38,12 +38,9 @@
 \PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
 \ifbool{modeHandout}{%
   \LoadClass[a4paper, 11pt]{article}
-  % \RequirePackage[hyperref]{beamerarticle}%
 }{%
   \LoadClass[presentation, %
   compress, %% Navigation bars as small as possible
-  hyperref, %
-  % fleqn, tbtags, leqno, %% amsmath options
   11pt %
   ]{beamer}%
 }
@@ -57,21 +54,16 @@
 \RequirePackage{docs-colors}
 \ifbool{modeHandout}{%
   \RequirePackage{docs-handout}%
-  \RequirePackage{docs-units}
-  \RequirePackage{docs-tables}
-  \RequirePackage{docs-envs}
-  \RequirePackage{docs-blocks}
   \RequirePackage{docs-cclic}
-  \RequirePackage{docs-hyper}
-  \makeatletter\def\Hy@xspace@end{}\makeatother
-  %\newcommand*{\hypersetup}[1]{}%
 }{%
   \RequirePackage{docs-presentation}%
-  \RequirePackage{docs-units}
-  \RequirePackage{docs-tables}
-  \RequirePackage{docs-envs}
-  \RequirePackage{docs-blocks}
-  \RequirePackage{docs-hyper}
 }
+\RequirePackage{docs-units}
+\RequirePackage{docs-tables}
+\RequirePackage{docs-envs}
+\RequirePackage{docs-blocks}
+\RequirePackage{docs-hyper}
+
 \ifbool{modeHandout}{%
+  \def\Hy@xspace@end{}
 }{}
