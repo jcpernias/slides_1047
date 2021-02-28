@@ -129,10 +129,6 @@ define knit
 "source(\"./R/common.R\"); library(knitr); options(knitr.package.root.dir=\"${rootdir}\"); knit(\"$1\", \"$2\")"
 endef
 
-vpath %.pdf $(figdir)
-vpath %.png $(imgdir)
-vpath %.jpg $(imgdir)
-
 ## Rules
 ## ================================================================================
 
