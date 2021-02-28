@@ -115,6 +115,7 @@ endef
 # $(call tex-wrapper,spanish-or-english,fig-basename,unit-code) -> write to a file
 define fig-wrapper
 \documentclass[$1]{figure}
+\graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}
 \InputIfFileExists{$(subject_code)-macros.tex}{}{}
 \InputIfFileExists{unit-$3-macros.tex}{}{}
 \begin{document}
