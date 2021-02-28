@@ -108,8 +108,8 @@ define tex-wrapper
 \AtEndPreamble{%
   \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}%
   \InputIfFileExists{$(subject_code)-macros.tex}{}{}%
-  \InputIfFileExists{unit-$2-macros.tex}{}{}}
-\input{$(realpath $(builddir))/unit-$2-$3}
+  \InputIfFileExists{unit-$2_$(subject_code)-macros.tex}{}{}}
+\input{$(realpath $(builddir))/unit-$2_$(subject_code)-$3}
 endef
 
 # $(call tex-wrapper,spanish-or-english,fig-basename,unit-code) -> write to a file
@@ -148,21 +148,21 @@ $(depsdir)/%.tex.d: $(rootdir)/%.org | $(depsdir)
 	$(MAKEORGDEPS) -o $@ -t $(builddir)/$*.tex $<
 
 # latex wrappers
-.PRECIOUS: $(builddir)/pres-%-es.tex
-$(builddir)/pres-%-es.tex: $(builddir)/unit-%-es.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Presentation,$*,es))
+get-unit = $(shell echo $(1) | sed 's/\([^_]*\)_.*/\1/')
+get-lang = $(shell echo $(1) | sed 's/.*-\([^-]*\)/\1/')
 
-.PRECIOUS: $(builddir)/hdout-%-es.tex
-$(builddir)/hdout-%-es.tex: $(builddir)/unit-%-es.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Handout,$*,es))
+$(builddir)/pres-%.tex: $(builddir)/unit-%.tex | $(figdir)
+	$(file > $@,$(call tex-wrapper,Presentation,$(call get-unit,$*),$(call get-lang,$*)))
 
-.PRECIOUS: $(builddir)/pres-%-en.tex
-$(builddir)/pres-%-en.tex: $(builddir)/unit-%-en.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Presentation,$*,en))
+$(builddir)/hdout-%.tex: $(builddir)/unit-%.tex | $(figdir)
+	$(file > $@,$(call tex-wrapper,Handout,$(call get-unit,$*),$(call get-lang,$*)))
 
-.PRECIOUS: $(builddir)/hdout-%-en.tex
-$(builddir)/hdout-%-en.tex: $(builddir)/unit-%-en.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Handout,$*,en))
+.PRECIOUS: $(builddir)/pres-%.tex
+.PRECIOUS: $(builddir)/hdout-%.tex
+
+
+
+
 
 ## latex to pdf
 $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
