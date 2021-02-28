@@ -18,13 +18,13 @@
 \newbool{langES}
 \newbool{langEN}
 
-\DeclareOption{Spanish}{\booltrue{langES}\boolfalse{langEN}}
-\DeclareOption{English}{\booltrue{langEN}\boolfalse{langES}}
+\DeclareOption{es}{\booltrue{langES}\boolfalse{langEN}}
+\DeclareOption{en}{\booltrue{langEN}\boolfalse{langES}}
 
 \DeclareOption*{%
   \ClassError{exam}{Unknown option `\CurrentOption'}{%
     Check the options passed to the `figure' class}}
-\ExecuteOptions{Spanish}
+\ExecuteOptions{es}
 \ProcessOptions*\relax
 
 %% Class loading

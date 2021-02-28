@@ -161,9 +161,6 @@ $(builddir)/hdout-%.tex: $(builddir)/unit-%.tex | $(figdir)
 .PRECIOUS: $(builddir)/hdout-%.tex
 
 
-
-
-
 ## latex to pdf
 $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
 	$(TEXI2DVI) --output=$@ $<
@@ -173,13 +170,13 @@ $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
 	$(MAKETEXDEPS) -o $@ -t $(outdir)/$*.pdf $<
 
 # figure wrappers
-.PRECIOUS: $(builddir)/fig-%-en.tex
-$(builddir)/fig-%-en.tex: $(builddir)/fig-%.tex
-	$(file > $@, $(call fig-wrapper,English,$*,$(call get-unit,$*)))
+define fig_wrapper_rule =
+.PRECIOUS: $(builddir)/fig-%-$(1).tex
+$(builddir)/fig-%-$(1).tex: $(builddir)/fig-%.tex
+	$$(file > $$@,$$(call fig-wrapper,$(1),$$*,$$(call get-unit,$$*)))
+endef
 
-.PRECIOUS: $(builddir)/fig-%-es.tex
-$(builddir)/fig-%-es.tex: $(builddir)/fig-%.tex
-	$(file > $@, $(call fig-wrapper,Spanish,$*,$(call get-unit,$*)))
+$(foreach lang,$(LANGUAGES),$(eval $(call fig_wrapper_rule,$(lang))))
 
 # figure latex to pdf
 $(figdir)/fig-%.pdf: $(builddir)/fig-%.tex | $(figdir)
