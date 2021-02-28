@@ -152,10 +152,10 @@ get-unit = $(shell echo $(1) | sed 's/\([^_]*\)_.*/\1/')
 get-lang = $(shell echo $(1) | sed 's/.*-\([^-]*\)/\1/')
 
 $(builddir)/pres-%.tex: $(builddir)/unit-%.tex | $(figdir)
-	$(file > $@,$(call tex-wrapper,Presentation,$(call get-unit,$*),$(call get-lang,$*)))
+	$(file > $@,$(call tex-wrapper,pres,$(call get-unit,$*),$(call get-lang,$*)))
 
 $(builddir)/hdout-%.tex: $(builddir)/unit-%.tex | $(figdir)
-	$(file > $@,$(call tex-wrapper,Handout,$(call get-unit,$*),$(call get-lang,$*)))
+	$(file > $@,$(call tex-wrapper,hdout,$(call get-unit,$*),$(call get-lang,$*)))
 
 .PRECIOUS: $(builddir)/pres-%.tex
 .PRECIOUS: $(builddir)/hdout-%.tex

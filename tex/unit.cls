@@ -19,16 +19,16 @@
 \newbool{langEN}
 \newbool{modeHandout}
 
-\DeclareOption{Spanish}{\booltrue{langES}\boolfalse{langEN}}
-\DeclareOption{English}{\booltrue{langEN}\boolfalse{langES}}
-\DeclareOption{Handout}{\booltrue{modeHandout}}
-\DeclareOption{Presentation}{\boolfalse{modeHandout}}
+\DeclareOption{es}{\booltrue{langES}\boolfalse{langEN}}
+\DeclareOption{en}{\booltrue{langEN}\boolfalse{langES}}
+\DeclareOption{hdout}{\booltrue{modeHandout}}
+\DeclareOption{pres}{\boolfalse{modeHandout}}
 
 
 \DeclareOption*{%
   \ClassError{unit}{Unknown option `\CurrentOption'}{%
     Check the options passed to the `unit' class}}
-\ExecuteOptions{Spanish}
+\ExecuteOptions{es}
 \ProcessOptions*\relax
 
 %% Class loading
@@ -46,7 +46,7 @@
   % fleqn, tbtags, leqno, %% amsmath options
   11pt %
   ]{beamer}%
-}  
+}
 
 
 %% Load packages
@@ -75,4 +75,3 @@
 }
 \ifbool{modeHandout}{%
 }{}
-

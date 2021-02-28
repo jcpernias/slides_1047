@@ -8,7 +8,7 @@
 #+OPTIONS: toc:nil ':t *:t ^:{} num:1 H:2 title:nil
 
 #+LATEX_CLASS: unit
-#+LATEX_CLASS_OPTIONS: [Spanish]
+#+LATEX_CLASS_OPTIONS: [es]
 
 #+LANGUAGE: es
 #+LATEX_HEADER: \newcommand*{\LANG}{es}
