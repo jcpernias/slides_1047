@@ -26,7 +26,7 @@
 
 
 \DeclareOption*{%
-  \ClassError{slides}{Unknown option `\CurrentOption'}{%
+  \ClassError{unit}{Unknown option `\CurrentOption'}{%
     Check the options passed to the `unit' class}}
 \ExecuteOptions{Spanish}
 \ProcessOptions*\relax
