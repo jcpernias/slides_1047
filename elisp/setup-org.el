@@ -35,48 +35,6 @@
  pdflang={%L}}}
 ")
 
-(setq docs-labq-class
-      '("labq"
-        "\\documentclass{labq}
-[NO-DEFAULT-PACKAGES]
-[EXTRA]
-[NO-PACKAGES]"
-        ("\\section{%s}" . "\\section*{%s}")
-        ("\\subsection{%s}" . "\\subsection*{%s}")))
-
-
-(setq docs-exam-class
-      '("exam"
-        "\\documentclass{exam}
-[NO-DEFAULT-PACKAGES]
-[EXTRA]
-[NO-PACKAGES]"
-        ("\\section{%s}" . "\\section*{%s}")
-        ("\\subsection{%s}" . "\\subsection*{%s}")))
-
-
-(setq docs-probl-class
-      '("probl"
-        "\\documentclass{probl}
-[NO-DEFAULT-PACKAGES]
-[EXTRA]
-[NO-PACKAGES]"
-        ("\\section{%s}" . "\\section*{%s}")
-        ("\\subsection{%s}" . "\\subsection*{%s}")))
-
-(setq docs-syllabus-class
-      '("syllabus"
-        "\\documentclass{syllabus}
-\\usepackage[AUTO]{inputenc}
-[NO-DEFAULT-PACKAGES]
-[EXTRA]
-[NO-PACKAGES]"
-        ("\\section{%s}" . "\\section*{%s}")
-        ("\\subsection{%s}" . "\\subsection*{%s}")
-        ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-        ("\\paragraph{%s}" . "\\paragraph*{%s}")
-        ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
-
 (setq docs-unit-class
       '("unit"
         "\\documentclass{unit}
@@ -105,10 +63,6 @@ available to use with Org"
               (delq elem org-latex-classes)))))
 
 
-(install-custom-class docs-labq-class)
-(install-custom-class docs-exam-class)
-(install-custom-class docs-probl-class)
-(install-custom-class docs-syllabus-class)
 (install-custom-class docs-unit-class)
 
 ;; Export settings
