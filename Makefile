@@ -151,15 +151,13 @@ $(depsdir)/%.tex.d: $(rootdir)/%.org | $(depsdir)
 get-unit = $(shell echo $(1) | sed 's/\([^_]*\)_.*/\1/')
 get-lang = $(shell echo $(1) | sed 's/.*-\([^-]*\)/\1/')
 
-$(builddir)/pres-%.tex: $(builddir)/unit-%.tex | $(figdir)
-	$(file > $@,$(call tex-wrapper,pres,$(call get-unit,$*),$(call get-lang,$*)))
+define unit_wrapper_rule =
+.PRECIOUS: $(builddir)/$(1)-%.tex
+$(builddir)/$(1)-%.tex: $(builddir)/unit-%.tex | $(figdir)
+	$$(file > $$@,$$(call tex-wrapper,$(1),$$(call get-unit,$$*),$$(call get-lang,$$*)))
+endef
 
-$(builddir)/hdout-%.tex: $(builddir)/unit-%.tex | $(figdir)
-	$(file > $@,$(call tex-wrapper,hdout,$(call get-unit,$*),$(call get-lang,$*)))
-
-.PRECIOUS: $(builddir)/pres-%.tex
-.PRECIOUS: $(builddir)/hdout-%.tex
-
+$(foreach type,$(DOC_TYPES),$(eval $(call unit_wrapper_rule,$(type))))
 
 ## latex to pdf
 $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
