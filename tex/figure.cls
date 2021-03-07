@@ -32,7 +32,7 @@
 \PassOptionsToPackage{svgnames}{xcolor}
 \PassOptionsToPackage{english, spanish}{translator}
 \PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
-\LoadClass[12pt, tikz, crop]{standalone}
+\LoadClass{standalone}
 
 
 %% Load packages
