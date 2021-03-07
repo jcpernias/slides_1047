@@ -18,11 +18,26 @@
 \DeclareSIUnit{\@EUR}{\text{\texteuro}}
 \DeclareSIUnit{\@UNIT}{\text{u}}
 
-\sisetup{%
-  group-digits=integer,
-  group-minimum-digits=5,
-  group-separator=\,,
-  per-mode=symbol
+\ifbool{langES}{%
+  \sisetup{%
+    exponent-product=\ensuremath{times},%
+    output-decimal-marker={,},%
+    group-digits=integer,%
+    group-minimum-digits=4,%
+    group-separator=.,%
+    per-mode=symbol,%
+    inter-unit-product=\,%
+  }%
+}{%
+  \sisetup{%
+    exponent-product=\ensuremath{times},%
+    output-decimal-marker=.,%
+    group-digits=integer,%
+    group-minimum-digits=4,%
+    group-separator={,},%
+    per-mode=symbol,%
+    inter-unit-product=\,%
+  }
 }
 
 \newcommand*{\money}[1]{\SI{#1}{\@EUR}}
