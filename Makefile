@@ -76,7 +76,6 @@ docs_base := $(foreach suffix,$(docs_suffixes),$(addsuffix $(suffix),$(docs_pref
 
 docs_pdf := $(addprefix $(outdir)/, $(addsuffix .pdf, $(docs_base)))
 
-real_rootdir := $(realpath $(rootdir))
 tex_check_dirs := $(builddir) $(figdir) $(depsdir)
 
 ## Automatic dependencies
