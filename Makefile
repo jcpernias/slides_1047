@@ -53,11 +53,11 @@ org_to_latex := --eval "(tolatex (file-name-as-directory \"$(builddir)\"))"
 org_to_beamer := --eval "(tobeamer (file-name-as-directory \"$(builddir)\"))"
 tangle := --eval "(tangle-to (file-name-as-directory \"$(builddir)\"))"
 
-LATEX_OUTPUT := no
+LATEX_MESSAGES := no
 TEXI2DVI_FLAGS := --batch -I $(texdir) --pdf \
 	--build=tidy --build-dir=$(notdir $(builddir))
 
-ifneq ($(LATEX_OUTPUT), yes)
+ifneq ($(LATEX_MESSAGES), yes)
 TEXI2DVI_FLAGS += -q
 endif
 
