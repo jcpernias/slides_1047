@@ -54,7 +54,7 @@ org_to_beamer := --eval "(tobeamer (file-name-as-directory \"$(builddir)\"))"
 tangle := --eval "(tangle-to (file-name-as-directory \"$(builddir)\"))"
 
 LATEX_OUTPUT := no
-TEXI2DVI_FLAGS := --batch $(TEXI2DVI_SILENT) -I $(texdir) --pdf \
+TEXI2DVI_FLAGS := --batch -I $(texdir) --pdf \
 	--build=tidy --build-dir=$(notdir $(builddir))
 
 ifneq ($(LATEX_OUTPUT), yes)
