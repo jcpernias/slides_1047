@@ -3,3 +3,4 @@ build/
 figures/
 pdf/
 .Auto/
+/local.mk
