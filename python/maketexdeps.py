@@ -66,6 +66,8 @@ def process_line(line, matchers):
 
 def handle_figure(m):
     name = m.group(1)
+    if len(os.path.dirname(name)) != 0:
+        return name
     ext = os.path.splitext(name)[1]
     if ext == ".pdf":
         folder = "figures"
