@@ -1,25 +1,5 @@
 SHELL := /bin/sh
 
-subject_code := 1047
-units := \
-	Intro \
-	Size \
-	Welfare \
-	Market-Failure \
-	Efficiency-Equity \
-	Public-Goods \
-	Externalities \
-	Cost-Benefit
-
-unit_figs := \
-	Welfare \
-	Efficiency-Equity \
-	Public-Goods \
-	Externalities
-
-LANGUAGES := es
-DOC_TYPES := hdout pres
-
 ## Directories
 ## ================================================================================
 
@@ -73,25 +53,7 @@ MAKEFIGDEPS := $(pythonbin) $(pythondir)/makefigdeps.py
 
 RSCRIPT := $(Rscriptbin) -e
 
-docs_suffixes := $(addprefix _$(subject_code)-, $(LANGUAGES))
-docs_prefixes := $(foreach type,$(DOC_TYPES),$(addprefix $(type)-,$(units)))
-docs_base := $(foreach suffix,$(docs_suffixes),$(addsuffix $(suffix),$(docs_prefixes)))
-
-docs_pdf := $(addprefix $(outdir)/, $(addsuffix .pdf, $(docs_base)))
-
 tex_check_dirs := $(builddir) $(figdir) $(depsdir)
-
-## Automatic dependencies
-## ================================================================================
-docs_deps := $(addprefix $(depsdir)/, $(addsuffix .pdf.d, $(docs_base)))
-
-tex_deps_base := $(foreach suffix,$(docs_suffixes),$(addsuffix $(suffix),$(units)))
-tex_deps := $(addprefix $(depsdir)/unit-, $(addsuffix .tex.d, $(tex_deps_base)))
-
-unit_figs_deps := $(addprefix $(depsdir)/unit-,\
-	$(addsuffix _$(subject_code)-figs.d, $(unit_figs)))
-
-all_deps := $(docs_deps) $(tex_deps) $(unit_figs_deps)
 
 
 FIGURES :=
@@ -130,6 +92,8 @@ endef
 define knit
 "source(\"./R/common.R\"); library(knitr); options(knitr.package.root.dir=\"${rootdir}\"); knit(\"$1\", \"$2\")"
 endef
+
+include course.mk
 
 ## Rules
 ## ================================================================================
