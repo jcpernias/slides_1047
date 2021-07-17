@@ -1,0 +1,36 @@
+# -*- ispell-dictionary: "castellano" -*-
+#+SETUPFILE: ./course-es.org
+#+TITLE: Presentaciones
+
+
+* El sector público en una economía mixta
+
+#+include: "unit-Intro_1047-es.org" :lines "6-"
+
+* Delimitación del sector público
+
+#+include: "unit-Size_1047-es.org" :lines "6-"
+
+* Eficiencia
+
+#+include: "unit-Welfare_1047-es.org" :lines "6-"
+
+* Fallos de mercado
+
+#+include: "unit-Market-Failure_1047-es.org" :lines "6-"
+
+* Eficiencia y equidad
+
+#+include: "unit-Efficiency-Equity_1047-es.org" :lines "6-"
+
+* Bienes públicos
+
+#+include: "unit-Public-Goods_1047-es.org" :lines "6-"
+
+* Externalidades
+
+#+include: "unit-Externalities_1047-es.org" :lines "6-"
+
+* Análisis coste beneficio
+
+#+include: "unit-Cost-Benefit_1047-es.org" :lines "6-"
