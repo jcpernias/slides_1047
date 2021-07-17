@@ -17,6 +17,18 @@ unit_figs := \
 	Public-Goods \
 	Externalities
 
+
+LANGUAGES := es
+
+
+docs_suffixes := $(addprefix _$(subject_code)-, $(LANGUAGES))
+docs_prefixes := $(addprefix pres-,$(units)) hdout-all
+docs_base := $(foreach suffix,$(docs_suffixes),$(addsuffix $(suffix),$(docs_prefixes)))
+$(info $(docs_base))
+
+# OLD CODE
+# ================================================================================
+ifdef FALSE
 LANGUAGES := es
 DOC_TYPES := hdout pres
 
@@ -37,3 +49,4 @@ unit_figs_deps := $(addprefix $(depsdir)/unit-,\
 	$(addsuffix _$(subject_code)-figs.d, $(unit_figs)))
 
 all_deps := $(docs_deps) $(tex_deps) $(unit_figs_deps)
+endif
