@@ -11,7 +11,7 @@
 
 #+include: "unit-Size_1047-es.org" :lines "6-"
 
-* Eficiencia
+* COMMENT Eficiencia
 
 #+include: "unit-Welfare_1047-es.org" :lines "6-"
 
@@ -19,15 +19,15 @@
 
 #+include: "unit-Market-Failure_1047-es.org" :lines "6-"
 
-* Eficiencia y equidad
+* COMMENT Eficiencia y equidad
 
 #+include: "unit-Efficiency-Equity_1047-es.org" :lines "6-"
 
-* Bienes públicos
+* COMMENT Bienes públicos
 
 #+include: "unit-Public-Goods_1047-es.org" :lines "6-"
 
-* Externalidades
+* COMMENT Externalidades
 
 #+include: "unit-Externalities_1047-es.org" :lines "6-"
 
