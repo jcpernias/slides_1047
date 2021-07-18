@@ -17,14 +17,6 @@ unit_figs := \
 	Public-Goods \
 	Externalities
 
-units := \
-	Intro \
-	Size \
-	Market-Failure \
-	Cost-Benefit
-
-unit_figs :=
-
 LANGUAGES := es
 DOC_TYPES := hdout pres
 

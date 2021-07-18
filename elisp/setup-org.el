@@ -35,12 +35,22 @@
  pdflang={%L}}}
 ")
 
-(setq docs-unit-class
-      '("unit"
-        "\\documentclass{unit}
+(setq docs-pres-class
+      '("pres"
+        "\\documentclass{pres}
 [NO-DEFAULT-PACKAGES]
 [EXTRA]
 [NO-PACKAGES]"
+        ("\\section{%s}" . "\\section*{%s}")
+        ("\\subsection{%s}" . "\\subsection*{%s}")))
+
+(setq docs-hdout-class
+      '("hdout"
+        "\\documentclass{hdout}
+[NO-DEFAULT-PACKAGES]
+[EXTRA]
+[NO-PACKAGES]"
+;;        ("\\chapter{%s}" . "\\chapter*{%s}")
         ("\\section{%s}" . "\\section*{%s}")
         ("\\subsection{%s}" . "\\subsection*{%s}")))
 
@@ -63,7 +73,8 @@ available to use with Org"
               (delq elem org-latex-classes)))))
 
 
-(install-custom-class docs-unit-class)
+(install-custom-class docs-pres-class)
+(install-custom-class docs-hdout-class)
 
 ;; Export settings
 ;; --------------------------------------------------------------------------------

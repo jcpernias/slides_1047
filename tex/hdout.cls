@@ -9,7 +9,7 @@
 % \DeclareUnicodeCharacter{00A0}{~}
 
 \NeedsTeXFormat{LaTeX2e}[2018/04/01]
-\ProvidesClass{unit}[2018/11/10 v 0.1 Part of docs-bundle]
+\ProvidesClass{hdout}[2021/07/18 v 0.1]
 
 \RequirePackage{etoolbox}
 
@@ -21,13 +21,12 @@
 
 \DeclareOption{es}{\booltrue{langES}\boolfalse{langEN}}
 \DeclareOption{en}{\booltrue{langEN}\boolfalse{langES}}
-\DeclareOption{hdout}{\booltrue{modeHandout}}
-\DeclareOption{pres}{\boolfalse{modeHandout}}
+\booltrue{modeHandout}
 
 
 \DeclareOption*{%
-  \ClassError{unit}{Unknown option `\CurrentOption'}{%
-    Check the options passed to the `unit' class}}
+  \ClassError{hdout}{Unknown option `\CurrentOption'}{%
+    Check the options passed to the `hdout' class}}
 \ExecuteOptions{es}
 \ProcessOptions*\relax
 
@@ -38,6 +37,7 @@
 \PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
 \ifbool{modeHandout}{%
   \LoadClass[a4paper, 11pt]{article}
+  \RequirePackage{beamerarticle}
 }{%
   \LoadClass[presentation, %
   compress, %% Navigation bars as small as possible

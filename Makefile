@@ -65,15 +65,14 @@ ifneq (,$(findstring clean,$(MAKECMDGOALS)))
 INCLUDEDEPS := no
 endif
 
-# $(call tex-wrapper,pres-or-hdout,tex-src,lang) -> write to a file
+# $(call tex-wrapper,tex-src,lang) -> write to a file
 define tex-wrapper
-\PassOptionsToClass{$1}{unit}
 \RequirePackage{etoolbox}
 \AtEndPreamble{%
   \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}%
   \InputIfFileExists{$(subject_code)-macros.tex}{}{}%
-  \InputIfFileExists{unit-$2_$(subject_code)-macros.tex}{}{}}
-\input{$(realpath $(builddir))/unit-$2_$(subject_code)-$3}
+  \InputIfFileExists{unit-$1_$(subject_code)-macros.tex}{}{}}
+\input{$(realpath $(builddir))/unit-$1_$(subject_code)-$2}
 endef
 
 # $(call tex-wrapper,spanish-or-english,fig-basename,unit-code) -> write to a file
@@ -113,13 +112,14 @@ $(depsdir)/%.tex.d: $(rootdir)/%.org | $(depsdir)
 get-unit = $(shell echo $(1) | sed 's/\([^_]*\)_.*/\1/')
 get-lang = $(shell echo $(1) | sed 's/.*-\([^-]*\)/\1/')
 
-define unit_wrapper_rule =
-.PRECIOUS: $(builddir)/$(1)-%.tex
-$(builddir)/$(1)-%.tex: $(builddir)/unit-%.tex | $(figdir)
-	$$(file > $$@,$$(call tex-wrapper,$(1),$$(call get-unit,$$*),$$(call get-lang,$$*)))
-endef
+.PRECIOUS: $(builddir)/pres-%.tex
+$(builddir)/pres-%.tex: $(builddir)/unit-%.tex | $(figdir)
+	$(file > $@,$(call tex-wrapper,$(call get-unit,$*),$(call get-lang,$*)))
 
-$(foreach type,$(DOC_TYPES),$(eval $(call unit_wrapper_rule,$(type))))
+.PRECIOUS: $(builddir)/hdout-%.tex
+$(builddir)/hdout-%.tex: $(builddir)/unit-%.tex | $(figdir)
+	$(file > $@,$(call tex-wrapper,$(call get-unit,$*),$(call get-lang,$*)))
+
 
 ## latex to pdf
 $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)

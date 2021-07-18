@@ -1,36 +1,48 @@
 # -*- ispell-dictionary: "castellano" -*-
-#+SETUPFILE: ./course-es.org
-#+TITLE: Presentaciones
+
+#+STARTUP: indent hidestars content
+
+#+TITLE: Economía del Sector Público
+#+AUTHOR: EC1047
+#+DATE: Curso 2020--2021
+
+#+OPTIONS: toc:nil ':t *:t ^:{} num:2 H:3 title:nil
+
+#+LATEX_CLASS: hdout
+#+LATEX_CLASS_OPTIONS: [es]
+
+#+LANGUAGE: es
+#+LATEX_HEADER: \newcommand*{\LANG}{es}
 
 
 * El sector público en una economía mixta
 
-#+include: "unit-Intro_1047-es.org" :lines "6-"
+#+include: "unit-Intro_1047-es.org" :lines "13-"
 
 * Delimitación del sector público
 
-#+include: "unit-Size_1047-es.org" :lines "6-"
+#+include: "unit-Size_1047-es.org" :lines "15-"
 
-* COMMENT Eficiencia
+* Eficiencia
 
-#+include: "unit-Welfare_1047-es.org" :lines "6-"
+#+include: "unit-Welfare_1047-es.org" :lines "12-"
 
 * Fallos de mercado
 
-#+include: "unit-Market-Failure_1047-es.org" :lines "6-"
+#+include: "unit-Market-Failure_1047-es.org" :lines "12-"
 
-* COMMENT Eficiencia y equidad
+* Eficiencia y equidad
 
-#+include: "unit-Efficiency-Equity_1047-es.org" :lines "6-"
+#+include: "unit-Efficiency-Equity_1047-es.org" :lines "14-"
 
-* COMMENT Bienes públicos
+* Bienes públicos
 
-#+include: "unit-Public-Goods_1047-es.org" :lines "6-"
+#+include: "unit-Public-Goods_1047-es.org" :lines "12-"
 
-* COMMENT Externalidades
+* Externalidades
 
-#+include: "unit-Externalities_1047-es.org" :lines "6-"
+#+include: "unit-Externalities_1047-es.org" :lines "12-"
 
 * Análisis coste beneficio
 
-#+include: "unit-Cost-Benefit_1047-es.org" :lines "6-"
+#+include: "unit-Cost-Benefit_1047-es.org" :lines "12-"
