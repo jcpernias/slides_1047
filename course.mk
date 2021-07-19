@@ -18,8 +18,6 @@ unit_figs := \
 	Externalities
 
 LANGUAGES := es
-DOC_TYPES := hdout pres
-
 
 docs_suffixes := $(addprefix _$(subject_code)-, $(LANGUAGES))
 docs_prefixes := $(addprefix pres-,$(units)) hdout-all
