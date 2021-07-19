@@ -65,7 +65,7 @@ ifneq (,$(findstring clean,$(MAKECMDGOALS)))
 INCLUDEDEPS := no
 endif
 
-# $(call tex-wrapper,tex-src,lang) -> write to a file
+# $(call tex-wrapper,unit,lang) -> write to a file
 define tex-wrapper
 \RequirePackage{etoolbox}
 \AtEndPreamble{%
@@ -75,7 +75,7 @@ define tex-wrapper
 \input{$(realpath $(builddir))/unit-$1_$(subject_code)-$2}
 endef
 
-# $(call tex-wrapper,spanish-or-english,fig-basename,unit-code) -> write to a file
+# $(call fig-wrapper,language,name,unit) -> write to a file
 define fig-wrapper
 \documentclass[$1]{figure}
 \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}
