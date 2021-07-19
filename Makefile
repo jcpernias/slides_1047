@@ -138,8 +138,7 @@ $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
 	$(MAKETEXDEPS) -o $@ -t $(outdir)/$*.pdf $<
 
 # figure wrappers
-get-unit = $(shell echo $(1) | sed 's/\([^_]*\)_.*/\1/')
-# get-lang = $(shell echo $(1) | sed 's/.*-\([^-]*\)/\1/')
+get-unit = $(firstword $(subst _, ,$(1)))
 
 define fig_wrapper_rule =
 .PRECIOUS: $(builddir)/fig-%-$(1).tex
