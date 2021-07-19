@@ -5,9 +5,13 @@
 \ProvidesPackage{docs-math}[2018/10/08 v 0.1 Part of docs-bundle]
 
 \RequirePackage{latexsym}
-\RequirePackage{amssymb}
+%\RequirePackage{amssymb}
 \RequirePackage{mathtools}
 \mathtoolsset{mathic}
+
+
+\usepackage{xspace}
+\newcommand*{\mlabel}[1]{\ensuremath{\mathit{#1}}\xspace}
 
 
 %% Like amsmath \text command, but insert a space, a quad or a qquad
