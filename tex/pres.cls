@@ -17,11 +17,9 @@
 %% --------------------------------------------------------------------------------
 \newbool{langES}
 \newbool{langEN}
-\newbool{modeHandout}
 
 \DeclareOption{es}{\booltrue{langES}\boolfalse{langEN}}
 \DeclareOption{en}{\booltrue{langEN}\boolfalse{langES}}
-\boolfalse{modeHandout}
 
 
 \DeclareOption*{%
@@ -35,14 +33,12 @@
 \PassOptionsToPackage{english,spanish}{translator}
 \PassOptionsToPackage{svgnames}{xcolor}
 \PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
-\ifbool{modeHandout}{%
-  \LoadClass[a4paper, 11pt]{book}
-}{%
-  \LoadClass[presentation, %
+\LoadClass[%
+  presentation, %
   compress, %% Navigation bars as small as possible
   11pt %
-  ]{beamer}%
-}
+]{beamer}
+
 
 
 %% Load packages
@@ -51,18 +47,9 @@
 \RequirePackage{docs-base}
 \RequirePackage{docs-math}
 \RequirePackage{docs-colors}
-\ifbool{modeHandout}{%
-  \RequirePackage{docs-handout}%
-  \RequirePackage{docs-cclic}
-}{%
-  \RequirePackage{docs-presentation}%
-}
+\RequirePackage{docs-presentation}%
 \RequirePackage{docs-units}
 \RequirePackage{docs-tables}
 \RequirePackage{docs-envs}
 \RequirePackage{docs-blocks}
 \RequirePackage{docs-hyper}
-
-\ifbool{modeHandout}{%
-  \def\Hy@xspace@end{}
-}{}
