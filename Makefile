@@ -55,6 +55,20 @@ RSCRIPT := $(Rscriptbin) -e
 
 tex_check_dirs := $(builddir) $(figdir) $(depsdir)
 
+hdout_tex_deps := \
+	$(texdir)/hdout.cls \
+	$(texdir)/docs-base.sty \
+	$(texdir)/docs-math.sty \
+	$(texdir)/docs-colors.sty \
+	$(texdir)/docs-cclic.sty \
+	$(texdir)/docs-cclic-English.dict \
+	$(texdir)/docs-cclic-Spanish.dict \
+	$(texdir)/docs-units.sty \
+	$(texdir)/docs-tables.sty \
+	$(texdir)/docs-envs.sty \
+	$(texdir)/docs-blocks.sty \
+	$(texdir)/docs-hyper.sty \
+	$(rootdir)/hyperref.cfg \
 
 FIGURES :=
 
@@ -132,6 +146,10 @@ $(foreach lang,$(LANGUAGES),$(eval $(call hdout_wrapper_rule,$(lang))))
 ## latex to pdf
 $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
 	$(TEXI2DVI) --output=$@ $<
+
+$(outdir)/hdout-%.pdf: $(builddir)/hdout-%.tex $(hdout_tex_deps) | $(outdir)
+	$(TEXI2DVI) --output=$@ $<
+
 
 # pdf dependencies
 $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
