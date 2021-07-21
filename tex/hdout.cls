@@ -118,7 +118,7 @@ compact]{titlesec}
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 
 \titleformat{name=\section}[hang]{%
-  \color{Section}\LARGE\sffamily\bfseries}{%
+  \color{Section}\huge\sffamily\bfseries}{%
   \makebox[1.25cm][l]{\rmfamily\slshape\HUGE\thesection.}}{0pt}{}
 
 \titlespacing{name=\section}{-1.25cm}{0pt}{*1.5}
@@ -156,10 +156,14 @@ compact]{titlesec}
 %% --------------------------------------------------------------------------------
 \settitlemarks{section,subsection}
 
-\newcommand*{\headfmt}{\color{DarkRed!30!Black}\small\bfseries\scshape\sffamily}
+\newcommand*{\headfmt}{\color{Section}\small\bfseries\sffamily}
 \newcommand*{\footfmt}{\small\bfseries\sffamily}
 
 \newpagestyle{fancy}{%
+  \renewcommand{\makeheadrule}{%
+    \color{Section}\rule[-0.3\baselineskip]{\linewidth}{1.2pt}}
+  \renewcommand{\makefootrule}{%
+    \color{Section}\rule[0.8\baselineskip]{\linewidth}{1.2pt}}
   \sethead[\headfmt\ifthesection{%
     \thesection\ \sectiontitle}{\doctitle}\filright][][] % even
   {}{}{%
@@ -168,7 +172,13 @@ compact]{titlesec}
   \setfoot*{}{}{\footfmt\thepage}   % odd
 }
 \newpagestyle{first}{%
+  \renewcommand{\makefootrule}{%
+    \color{Section}\rule[0.8\baselineskip]{\linewidth}{1.2pt}}
   \setfoot*{}{}{\footfmt\thepage}   % odd
+}
+
+\newpagestyle{front}{%
+  \setfoot*{}{\footfmt\thepage}{}   % odd
 }
 \widenhead*{0.8cm}{4.5cm}
 \pagestyle{fancy}
@@ -188,15 +198,14 @@ compact]{titlesec}
 %% Title
 %% --------------------------------------------------------------------------------
 \RequirePackage{titling}
-\pretitle{%
-  \begin{flushleft}\Huge\sffamily\bfseries%
-    \color{DarkRed!60!Black}%
-  }
-  \posttitle{\par\end{flushleft}}
-\preauthor{\begin{flushleft}\Large\sffamily\bfseries\color{DarkRed!30!Black}}
-  \postauthor{\par\end{flushleft}}
-\predate{\begin{flushleft}\Large\sffamily\bfseries\color{DarkRed!30!Black}}
-  \postdate{\par\end{flushleft}}
+\pretitle{\begin{flushleft}\HUGE\sffamily\bfseries\color{Title}}
+\posttitle{\par\end{flushleft}}
+
+\preauthor{\begin{flushleft}\LARGE\sffamily\bfseries\color{Title}}
+\postauthor{\par\end{flushleft}}
+
+\predate{\begin{flushleft}\Large\sffamily\bfseries\color{Title}}
+\postdate{\par\end{flushleft}}
 
 
 %% Compose frontmatter
@@ -214,10 +223,12 @@ compact]{titlesec}
     \ccpage%
     \hypersetup{pageanchor=true}
     \newpage%
+    \pagestyle{front}
     \pagenumbering{roman}
     \oldmaketitle%
     \tableofcontents%
     \cleardoublepage%
+    \pagestyle{fancy}
     \pagenumbering{arabic}
     % \oldmaketitle
     \thispagestyle{first}
