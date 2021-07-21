@@ -33,7 +33,7 @@
 \PassOptionsToPackage{english,spanish}{translator}
 \PassOptionsToPackage{svgnames}{xcolor}
 \PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
-\LoadClass[a4paper, 11pt]{article}
+\LoadClass[a4paper, 11pt, twoside]{article}
 
 %% Beamer
 %% --------------------------------------------------------------------------------
@@ -100,8 +100,13 @@
 
 %% Section headings formatting
 %% --------------------------------------------------------------------------------
-\RequirePackage[pagestyles, outermarks, nobottomtitles*,
-compact, noindentafter]{titlesec}
+\RequirePackage[%
+clearempty, %
+pagestyles, %
+outermarks, %
+noindentafter, %
+nobottomtitles*, %
+compact]{titlesec}
 
 %% Solves bug in titlesec version 2.10.1. Version 2.10.2 does not have
 %% this bug. See http://tex.stackexchange.com/a/300259
@@ -196,16 +201,22 @@ compact, noindentafter]{titlesec}
   \let\oldmaketitle\maketitle
   \renewcommand{\maketitle}{%
     \oldmaketitle%
-    \tableofcontents%
     \thispagestyle{empty}%
     \newpage%
     \ccpage%
     \hypersetup{pageanchor=true}
+    \newpage%
+    \pagenumbering{roman}
+    \oldmaketitle%
+    \tableofcontents%
+    \cleardoublepage%
     \pagenumbering{arabic}
-    \oldmaketitle
+    % \oldmaketitle
     \thispagestyle{first}
     \let\maketitle\oldmaketitle%
-  }
+    \newcommand{\sectionbreak}{%
+      \cleardoublepage\phantomsection%
+      \thispagestyle{first}}}
   \maketitle%
 }
 
