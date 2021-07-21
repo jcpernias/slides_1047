@@ -66,11 +66,15 @@
 %% --------------------------------------------------------------------------------
 \parindent=0pt
 
+%% More font sizes
+%% --------------------------------------------------------------------------------
+\RequirePackage{moresize}
+
 %% Page layout
 %% --------------------------------------------------------------------------------
 \RequirePackage{geometry}
-\geometry{twoside, hmargin={6.2cm,1.5cm}, asymmetric,
-  bindingoffset=0.7cm, vmargin=4cm, head=14pt}
+\geometry{twoside, hmargin={2cm,5.7cm},
+  bindingoffset=0.7cm, vmargin=4cm}
 
 %% List formatting
 %% --------------------------------------------------------------------------------
@@ -113,36 +117,40 @@ compact]{titlesec}
 \patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 
-\titleformat{\section}{%
-  \color{DarkRed!60!Black}\Large\sffamily\bfseries}{%
-  \makebox[2pc][r]{\thesection.}}{1pc}{}
+\titleformat{name=\section}[hang]{%
+  \color{Section}\LARGE\sffamily\bfseries}{%
+  \makebox[1.25cm][l]{\rmfamily\slshape\HUGE\thesection.}}{0pt}{}
 
-\titlespacing{\section}
+\titlespacing{name=\section}{-1.25cm}{0pt}{*1.5}
+
+\titleformat{name=\section, numberless}{%
+  \color{Section}\LARGE\sffamily\bfseries}{}{0pc}{}
+
+\titlespacing{name=\section, numberless}{0pc}{*7}{*1.5}
+
+\titleformat{name=\subsection}{%
+  \color{Subsection}\Large\sffamily\bfseries}{%
+  \makebox[2pc][r]{\thesubsection.}}{1pc}{}
+
+\titlespacing{name=\subsection}
 {-3pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
 
-\titleformat{name=\section, numberless}
-{\color{DarkRed!60!Black}\Large\sffamily\bfseries}
+\titleformat{name=\subsection, numberless}
+{\color{Subsection}\Large\sffamily\bfseries}
 {}{0pc}{}
 
-\titlespacing{name=\section, numberless}
+\titlespacing{name=\subsection, numberless}
 {0pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
-
-\titleformat{\subsection}
-{\color{DarkRed!30!Black}\large\sffamily\bfseries}
-{\makebox[2pc][r]{\thesubsection.}}{1pc}{}[{\titlerule[0.8pt]}\vspace{6pt}]
-
-
-\titlespacing{\subsection}
-{-3pc}{3.5ex plus .1ex minus .2ex}{1.5ex minus .1ex}
-
 
 \titleformat{name=\paragraph}[block]
 {{\color{SlateGray}\titlerule[.25pt]}\vspace*{.8ex}%
   \normalfont\small\bfseries\sffamily\filright}
-{\theparagraph}{0em}{\color{Indigo!30!Black}}
+{\theparagraph}{0em}{\color{Paragraph}}
 
 \titlespacing*{name=\paragraph}
 {0cm}{3ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+
+
 
 %% Page headers and footers
 %% --------------------------------------------------------------------------------
@@ -162,7 +170,7 @@ compact]{titlesec}
 \newpagestyle{first}{%
   \setfoot*{}{}{\footfmt\thepage}   % odd
 }
-\widenhead[5cm][0pt]{0pt}{0pt}
+\widenhead*{0.8cm}{4.5cm}
 \pagestyle{fancy}
 
 %% TOC
