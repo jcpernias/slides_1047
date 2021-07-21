@@ -68,7 +68,20 @@ hdout_tex_deps := \
 	$(texdir)/docs-envs.sty \
 	$(texdir)/docs-blocks.sty \
 	$(texdir)/docs-hyper.sty \
-	$(rootdir)/hyperref.cfg \
+	$(rootdir)/hyperref.cfg
+
+pres_tex_deps := \
+	$(texdir)/pres.cls \
+	$(texdir)/docs-base.sty \
+	$(texdir)/docs-math.sty \
+	$(texdir)/docs-colors.sty \
+	$(texdir)/docs-units.sty \
+	$(texdir)/docs-tables.sty \
+	$(texdir)/docs-envs.sty \
+	$(texdir)/docs-blocks.sty \
+	$(texdir)/docs-hyper.sty \
+	$(rootdir)/hyperref.cfg
+
 
 FIGURES :=
 
@@ -148,6 +161,9 @@ $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
 	$(TEXI2DVI) --output=$@ $<
 
 $(outdir)/hdout-%.pdf: $(builddir)/hdout-%.tex $(hdout_tex_deps) | $(outdir)
+	$(TEXI2DVI) --output=$@ $<
+
+$(outdir)/pres-%.pdf: $(builddir)/pres-%.tex $(pres_tex_deps) | $(outdir)
 	$(TEXI2DVI) --output=$@ $<
 
 
