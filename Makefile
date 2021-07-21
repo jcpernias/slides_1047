@@ -60,9 +60,6 @@ hdout_tex_deps := \
 	$(texdir)/docs-base.sty \
 	$(texdir)/docs-math.sty \
 	$(texdir)/docs-colors.sty \
-	$(texdir)/docs-cclic.sty \
-	$(texdir)/docs-cclic-English.dict \
-	$(texdir)/docs-cclic-Spanish.dict \
 	$(texdir)/docs-units.sty \
 	$(texdir)/docs-tables.sty \
 	$(texdir)/docs-envs.sty \
@@ -82,6 +79,15 @@ pres_tex_deps := \
 	$(texdir)/docs-hyper.sty \
 	$(rootdir)/hyperref.cfg
 
+fig_tex_deps := \
+	$(texdir)/figure.cls \
+	$(texdir)/docs-base.sty \
+	$(texdir)/docs-math.sty \
+	$(texdir)/docs-colors.sty \
+	$(texdir)/docs-units.sty \
+	$(texdir)/docs-hyper.sty \
+	$(rootdir)/standalone.cfg \
+	$(rootdir)/hyperref.cfg
 
 FIGURES :=
 
@@ -183,7 +189,7 @@ endef
 $(foreach lang,$(LANGUAGES),$(eval $(call fig_wrapper_rule,$(lang))))
 
 # figure latex to pdf
-$(figdir)/fig-%.pdf: $(builddir)/fig-%.tex | $(figdir)
+$(figdir)/fig-%.pdf: $(builddir)/fig-%.tex $(fig_tex_deps) | $(figdir)
 	$(TEXI2DVI) --output=$@ $<
 
 $(depsdir)/unit-%-figs.d: unit-%-figs.org | $(depsdir)
