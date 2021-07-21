@@ -1,7 +1,0 @@
-% -*- LaTeX -*-
-
-\ProvidesDictionary{docs-cclic}{Spanish}
-
-\providetranslation{CCstart}{Esta obra está bajo una}
-\providetranslation{CClink}{licencia de Reconocimiento-CompartirIgual
-  4.0 de Creative Commons.}

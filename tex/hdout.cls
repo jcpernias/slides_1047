@@ -185,16 +185,6 @@ compact, noindentafter]{titlesec}
 \predate{\begin{flushleft}\Large\sffamily\bfseries\color{DarkRed!30!Black}}
   \postdate{\par\end{flushleft}}
 
-%% Internacionalization
-% \deftranslation[to=Spanish]{CCLicense}{%
-%   Esta obra est\'{a} licenciada bajo la Licencia Creative Commons
-%   Atribuci\'{o}n-CompartirIgual 3.0 Unported.  Para ver una copia de esta
-%   licencia, visite: }
-
-% \deftranslation[to=English]{CCLicense}{%
-%   This work is made available under the terms of the Creative Commons
-%   Attribution-ShareAlike 3.0 license,}
-
 
 %% Compose frontmatter
 %% --------------------------------------------------------------------------------
@@ -219,6 +209,42 @@ compact, noindentafter]{titlesec}
   \maketitle%
 }
 
+%% CC notice
+%% --------------------------------------------------------------------------------
+%% Two minipages side by side that fill the width of the line.
+%% 1st arg (optional): width of the left cell (default 3.5cm).
+%% 2nd arg: contents of the left cell.
+%% 3rd arg: contents of the right cell.
+\newlength{\@leftcell}
+\newlength{\@rightcell}
+
+\newcommand{\@twocells}[3][3.5cm]{
+  {\scriptsize%
+    \setlength{\@leftcell}{#1}%
+    \setlength{\@rightcell}{\linewidth}%
+    \addtolength{\@rightcell}{-\@leftcell}%
+    \begin{minipage}{\@leftcell}#2\end{minipage}%
+    \begin{minipage}{\@rightcell}#3\end{minipage}}}
+
+%% License translations
+\deftranslation[to=English]{CCstart}{This work is licensed under a}
+\deftranslation[to=English]{CClink}{Creative Commons Attribution-ShareAlike
+  4.0 International License.}
+\deftranslation[to=Spanish]{CCstart}{Esta obra está bajo una}
+\deftranslation[to=Spanish]{CClink}{licencia de Reconocimiento-CompartirIgual
+  4.0 de Creative Commons.}
+
+
+%% Inserts a page stating the CC license
+\newcommand{\ccpage}{%
+  \newpage%
+  \vspace*{\stretch{5}}%
+  \thispagestyle{empty}%
+  \@twocells{\includegraphics[scale=1]{by-sa}}{%
+    \translate{CCstart}
+    \href{http://creativecommons.org/licenses/by-sa/4.0/}{%
+      \translate{CClink}}}%
+  \cleardoublepage{}}
 
 
 %% Load packages
@@ -227,7 +253,6 @@ compact, noindentafter]{titlesec}
 \RequirePackage{docs-base}
 \RequirePackage{docs-math}
 \RequirePackage{docs-colors}
-\RequirePackage{docs-cclic}
 \RequirePackage{docs-units}
 \RequirePackage{docs-tables}
 \RequirePackage{docs-envs}
