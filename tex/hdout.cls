@@ -280,10 +280,6 @@ compact]{titlesec}
 %% Load packages
 %% --------------------------------------------------------------------------------
 \PassOptionsToPackage{document}{ragged2e}
-\RequirePackage{docs-base}
-\RequirePackage{docs-tables}
-\RequirePackage{docs-envs}
-\RequirePackage{docs-blocks}
-\RequirePackage{docs-hyper}
+\RequirePackage{docs-full}
 
 \def\Hy@xspace@end{}

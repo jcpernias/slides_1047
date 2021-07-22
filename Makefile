@@ -58,34 +58,18 @@ tex_check_dirs := $(builddir) $(figdir) $(depsdir)
 hdout_tex_deps := \
 	$(texdir)/hdout.cls \
 	$(texdir)/docs-base.sty \
-	$(texdir)/docs-math.sty \
-	$(texdir)/docs-colors.sty \
-	$(texdir)/docs-units.sty \
-	$(texdir)/docs-tables.sty \
-	$(texdir)/docs-envs.sty \
-	$(texdir)/docs-blocks.sty \
-	$(texdir)/docs-hyper.sty \
+	$(texdir)/docs-full.sty \
 	$(rootdir)/hyperref.cfg
 
 pres_tex_deps := \
 	$(texdir)/pres.cls \
 	$(texdir)/docs-base.sty \
-	$(texdir)/docs-math.sty \
-	$(texdir)/docs-colors.sty \
-	$(texdir)/docs-units.sty \
-	$(texdir)/docs-tables.sty \
-	$(texdir)/docs-envs.sty \
-	$(texdir)/docs-blocks.sty \
-	$(texdir)/docs-hyper.sty \
+	$(texdir)/docs-full.sty \
 	$(rootdir)/hyperref.cfg
 
 fig_tex_deps := \
 	$(texdir)/figure.cls \
 	$(texdir)/docs-base.sty \
-	$(texdir)/docs-math.sty \
-	$(texdir)/docs-colors.sty \
-	$(texdir)/docs-units.sty \
-	$(texdir)/docs-hyper.sty \
 	$(rootdir)/standalone.cfg \
 	$(rootdir)/hyperref.cfg
 

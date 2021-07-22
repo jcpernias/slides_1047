@@ -1,0 +1,91 @@
+%% Identification
+%% ----------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}[2018/04/01]
+\ProvidesPackage{docs-full}[2021/22/07 v 0.1]
+
+%% Load packages required by all documents
+%% ----------------------------------------------------------------------
+
+\RequirePackage{docs-base}
+
+%% Boxes
+%% --------------------------------------------------------------------------------
+
+\RequirePackage{tcolorbox}
+
+
+\tcbset{problem/.style={colback=PapayaWhip,
+    colframe=Tan, coltitle=SaddleBrown, fontupper=\footnotesize,
+    toprule=1.1mm, bottomrule=1.1mm}}
+
+\tcbset{bibliography/.style={colframe=SlateGray!10!White,
+    %colback=LightSteelBlue!10!White,
+    colback=White,
+    coltitle=Black,
+    %size=small,
+    fonttitle=\sffamily\bfseries, fontupper=\small}}
+
+\newtcolorbox{bibbox}{bibliography, title=\translate{Bibliography}}
+
+%% Tables
+%% --------------------------------------------------------------------------------
+
+% Load some packages
+\RequirePackage{array}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+
+\newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
+
+%% Hyperlinks
+%% --------------------------------------------------------------------------------
+\RequirePackage{hyperref}%
+\RequirePackage{bookmark}%
+
+% Fix problem with bookmark
+\RequirePackage{auxhook}
+\AddLineBeginAux{%
+  \string\providecommand{\string\BKM@Entry}[1]{}%
+}
+
+% Web links
+\newcommand*{\link}[1]{\url{#1}}
+
+%% Environments
+%% --------------------------------------------------------------------------------
+
+%% Tightcenter: removes vertical space of center environment
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}%
+  % \setlength\parskip{0pt}%
+  \begin{center}}{%
+  \end{center}}
+
+\newenvironment{tightquotation}{%
+  \setlength\topsep{0pt}%
+  % \setlength\parskip{0pt}%
+  \footnotesize%
+  \begin{displayquote}}{\end{displayquote}}
+
+\newenvironment{tightquote}{%
+  \setlength\topsep{0pt}%
+  % \setlength\parskip{0pt}%
+  % \setlength\leftmargin{0pt}%
+  \footnotesize%
+  \begin{displayquote}}{\end{displayquote}}
+
+
+%% Environments
+%% --------------------------------------------------------------------------------
+
+\RequirePackage{enumitem}
+
+% \setlist{noitemsep}
+% \setlist[1]{leftmargin=\parindent, noitemsep}
+
+\setlist{leftmargin=*}
+
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=-}
+\setlist[description]{font=\sffamily\bfseries, labelindent=\parindent}
