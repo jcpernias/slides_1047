@@ -126,9 +126,6 @@
 %% --------------------------------------------------------------------------------
 \PassOptionsToPackage{document}{ragged2e}
 \RequirePackage{docs-base}
-\RequirePackage{docs-math}
-\RequirePackage{docs-colors}
-\RequirePackage{docs-units}
 \RequirePackage{docs-tables}
 \RequirePackage{docs-envs}
 \RequirePackage{docs-blocks}
