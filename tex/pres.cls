@@ -45,22 +45,15 @@
 
 \usetheme[numbering=none,nofirafonts]{focus}
 \usefonttheme{professionalfonts}
-
 \setbeamercovered{invisible}
 
 % Quotes and quotation
 \setbeamerfont{quote}{shape=\upshape,family=\rmfamily}
 \setbeamerfont{quotation}{shape=\upshape,family=\rmfamily}
 
-\setbeamercolor{alerted text}{fg=DarkBlue}
-\setbeamerfont{alerted text}{series=\bfseries}
-
 \setbeamertemplate{itemize items}[triangle]
 \setbeamertemplate{enumerate items}[circle]
 \setbeamertemplate{footline}[default]
-
-\setbeamercolor{enumerate item}{fg=green!20!black}
-\setbeamertemplate{enumerate items}[default]
 
 % \setbeamertemplate{section in toc}[circle]
 % \setbeamertemplate{subsection in toc}[ball unnumbered]
@@ -126,3 +119,12 @@
 %% --------------------------------------------------------------------------------
 \PassOptionsToPackage{document}{ragged2e}
 \RequirePackage{docs-full}
+
+\colorlet{main}{MainText}
+\setbeamercolor{titlelike}{fg=background, bg=Section}
+
+\setbeamercolor{alerted text}{fg=Title}
+\setbeamerfont{alerted text}{series=\bfseries}
+
+\setbeamercolor{enumerate item}{fg=Section}
+\setbeamertemplate{enumerate items}[default]
