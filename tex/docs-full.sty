@@ -81,10 +81,11 @@
 
 \RequirePackage{enumitem}
 
-% \setlist{noitemsep}
-% \setlist[1]{leftmargin=\parindent, noitemsep}
+%\setlist{nosep}
+\setlist{topsep=0.5\baselineskip, itemsep=0.5\baselineskip,
+  parsep=0pt, partopsep=0pt}
 
-\setlist{leftmargin=*}
+\setlist[1]{leftmargin=*}
 
 \setlist[itemize,1]{label=\textbullet}
 \setlist[itemize,2]{label=-}
