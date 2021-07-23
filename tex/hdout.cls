@@ -74,7 +74,7 @@
 %% --------------------------------------------------------------------------------
 \RequirePackage{geometry}
 \geometry{twoside, hmargin={2cm,5.7cm},
-  bindingoffset=0.7cm, vmargin=4cm}
+  bindingoffset=0.7cm, vmargin=3cm}
 
 %% List formatting
 %% --------------------------------------------------------------------------------
@@ -121,34 +121,31 @@ compact]{titlesec}
   \color{Section}\huge\sffamily\bfseries}{%
   \makebox[1.25cm][l]{\rmfamily\slshape\HUGE\thesection.}}{0pt}{}
 
-\titlespacing{name=\section}{-1.25cm}{0pt}{*1.5}
+\titlespacing{name=\section}{-1.25cm}{0pt}{*6}
 
 \titleformat{name=\section, numberless}{%
   \color{Section}\LARGE\sffamily\bfseries}{}{0pc}{}
 
-\titlespacing{name=\section, numberless}{0pc}{*7}{*1.5}
+\titlespacing{name=\section, numberless}{0pc}{*7}{*6}
 
 \titleformat{name=\subsection}{%
   \color{Subsection}\Large\sffamily\bfseries}{%
   \makebox[2pc][r]{\thesubsection.}}{1pc}{}
 
-\titlespacing{name=\subsection}
-{-3pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+\titlespacing{name=\subsection}{-3pc}{*7}{*1.5}
 
 \titleformat{name=\subsection, numberless}
 {\color{Subsection}\Large\sffamily\bfseries}
 {}{0pc}{}
 
-\titlespacing{name=\subsection, numberless}
-{0pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+\titlespacing{name=\subsection, numberless}{0pc}{*7}{*1.5}
 
 \titleformat{name=\paragraph}[block]
 {{\color{SlateGray}\titlerule[.25pt]}\vspace*{.8ex}%
   \normalfont\small\bfseries\sffamily\filright}
 {\theparagraph}{0em}{\color{Paragraph}}
 
-\titlespacing*{name=\paragraph}
-{0cm}{3ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+\titlespacing*{name=\paragraph}{0cm}{*3}{*1.5}
 
 
 
