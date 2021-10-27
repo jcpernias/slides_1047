@@ -69,7 +69,7 @@
 
 \ifbool{langES}{%
   \sisetup{%
-    exponent-product=\ensuremath{times},%
+    exponent-product=\ensuremath{\cdot},%
     output-decimal-marker={,},%
     group-digits=integer,%
     group-minimum-digits=4,%
@@ -79,7 +79,7 @@
   }%
 }{%
   \sisetup{%
-    exponent-product=\ensuremath{times},%
+    exponent-product=\ensuremath{\cdot},%
     output-decimal-marker=.,%
     group-digits=integer,%
     group-minimum-digits=4,%
@@ -154,10 +154,11 @@
 
 
 % Document colors
-\definecolor{titleGreen}{HTML}{186632}
+\InputIfFileExists{course-colors.cfg}{}{%
+  \definecolor{CourseColor}{HTML}{186632}}
 \colorlet{MainText}{Black}
-\colorlet{Title}{titleGreen!45!Black}
-\colorlet{Section}{titleGreen!55!Black}
-\colorlet{Subsection}{titleGreen!65!Black}
-\colorlet{Paragraph}{titleGreen!75!Black}
-\colorlet{Subparagraph}{titleGreen!85!Black}
+\colorlet{Title}{CourseColor!45!Black}
+\colorlet{Section}{CourseColor!55!Black}
+\colorlet{Subsection}{CourseColor!65!Black}
+\colorlet{Paragraph}{CourseColor!75!Black}
+\colorlet{Subparagraph}{CourseColor!85!Black}

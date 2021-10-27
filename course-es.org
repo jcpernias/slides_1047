@@ -1,14 +1,20 @@
-
 #+STARTUP: indent hidestars content
 
-#+AUTHOR: Economía del Sector Público\\
-#+AUTHOR: EC1047
-#+DATE: Curso 2020--2021
+#+AUTHOR: José Pernías
+#+DATE: Curso 2021--2022
 
-#+OPTIONS: toc:nil ':t *:t ^:{} num:1 H:2 title:nil
-
-#+LATEX_CLASS: pres
 #+LATEX_CLASS_OPTIONS: [es]
-
 #+LANGUAGE: es
 #+LATEX_HEADER: \newcommand*{\LANG}{es}
+
+
+## Títulos de los temas
+## ================================================================================
+#+MACRO: unit01 El sector público en una economía mixta
+#+MACRO: unit02 Delimitación del sector público
+#+MACRO: unit03 Eficiencia
+#+MACRO: unit04 Fallos de mercado
+#+MACRO: unit05 Eficiencia y equidad
+#+MACRO: unit06 Bienes públicos
+#+MACRO: unit07 Externalidades
+#+MACRO: unit08 Análisis coste beneficio

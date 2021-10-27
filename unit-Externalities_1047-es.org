@@ -1,8 +1,8 @@
 # -*- ispell-dictionary: "castellano" -*-
 
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Externalidades
+#+TITLE: {{{unit07}}}
 
 #+MATS: bib
 

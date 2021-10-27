@@ -1,48 +1,51 @@
 # -*- ispell-dictionary: "castellano" -*-
 
-#+STARTUP: indent hidestars content
+#+SETUPFILE: ./course-es.org
 
 #+TITLE: Economía del Sector Público
-#+AUTHOR: EC1047
-#+DATE: Curso 2020--2021
-
-#+OPTIONS: toc:nil ':t *:t ^:{} num:2 H:3 title:nil
+#+SUBTITLE: EC1047
 
 #+LATEX_CLASS: hdout
-#+LATEX_CLASS_OPTIONS: [es]
+#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
 
-#+LANGUAGE: es
-#+LATEX_HEADER: \newcommand*{\LANG}{es}
+* Análisis del gasto público
 
 
-* El sector público en una economía mixta
+** {{{unit01}}}
 
 #+include: "unit-Intro_1047-es.org" :lines "13-"
 
-* Delimitación del sector público
+
+** {{{unit02}}}
 
 #+include: "unit-Size_1047-es.org" :lines "15-"
 
-* Eficiencia
+
+** {{{unit03}}}
 
 #+include: "unit-Welfare_1047-es.org" :lines "12-"
 
-* Fallos de mercado
+
+** {{{unit04}}}
 
 #+include: "unit-Market-Failure_1047-es.org" :lines "12-"
 
-* Eficiencia y equidad
+
+** {{{unit05}}}
 
 #+include: "unit-Efficiency-Equity_1047-es.org" :lines "14-"
 
-* Bienes públicos
+
+** {{{unit06}}}
 
 #+include: "unit-Public-Goods_1047-es.org" :lines "12-"
 
-* Externalidades
+
+** {{{unit07}}}
 
 #+include: "unit-Externalities_1047-es.org" :lines "12-"
 
-* Análisis coste beneficio
+
+** {{{unit08}}}
 
 #+include: "unit-Cost-Benefit_1047-es.org" :lines "12-"

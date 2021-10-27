@@ -1,8 +1,8 @@
 # -*- ispell-dictionary: "castellano" -*-
 
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Bienes públicos
+#+TITLE: {{{unit06}}}
 
 #+MATS: bib
 

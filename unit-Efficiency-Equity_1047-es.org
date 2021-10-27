@@ -1,8 +1,8 @@
 # -*- ispell-dictionary: "castellano" -*-
 
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Eficiencia y equidad
+#+TITLE: {{{unit05}}}
 
 
 #+MATS: bib

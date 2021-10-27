@@ -28,12 +28,16 @@
 \ExecuteOptions{es}
 \ProcessOptions*\relax
 
+\InputIfFileExists{hdout.cfg}{}{}
+
 %% Class loading
 %% --------------------------------------------------------------------------------
 \PassOptionsToPackage{english,spanish}{translator}
 \PassOptionsToPackage{svgnames}{xcolor}
 \PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
-\LoadClass[a4paper, 11pt, twoside]{article}
+\LoadClass[%
+a4paper,
+twoside]{article}
 
 %% Beamer
 %% --------------------------------------------------------------------------------
@@ -76,35 +80,11 @@
 \geometry{twoside, hmargin={2cm,5.7cm},
   bindingoffset=0.7cm, vmargin=3cm}
 
-%% List formatting
-%% --------------------------------------------------------------------------------
-
-%% Hack: avoid TeX hang when handling description environment (I)
-%% See: http://tex.stackexchange.com/questions/31505/trouble-combining-enumitem-and-beamer
-\let\olddescription\description
-\let\oldenddescription\enddescription
-
-\RequirePackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-\setlist[itemize,1]{label={\textcolor{SteelBlue!80!White}{\RIGHTarrow}}}
-\setlist[itemize,2]{%
-  label={\textcolor{SteelBlue!80!White}{\footnotesize\RIGHTarrow}}}
-\setlist[itemize,3]{%
-  label={\textcolor{SteelBlue!80!White}{\textbullet}}}
-\setlist[enumerate]{labelsep=*, leftmargin=1.5pc}
-\setlist[enumerate,1]{label=\arabic*., ref=\arabic*}
-\setlist[enumerate,2]{label=\beameroriginal\emph{\alph*}),%
-  ref=\theenumi.\beameroriginal\emph{\alph*}}
-\setlist[enumerate,3]{label=\roman*), ref=\theenumii.\roman*}
-\setlist[description]{font=\sffamily\bfseries}
-
-%% Hack: avoid TeX hang when handling description environment (and II)
-\let\description\olddescription
-\let\enddescription\oldenddescription
 
 %% Section headings formatting
 %% --------------------------------------------------------------------------------
 \RequirePackage[%
+newparttoc, %
 clearempty, %
 pagestyles, %
 outermarks, %
@@ -117,11 +97,18 @@ compact]{titlesec}
 \patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 
+\titleformat{name=\part}[display]{%
+  \color{Section}\HUGE\sffamily\bfseries}{%
+  \filleft\HUGE \partname\ \thepart}{1pc}{\filleft}
+
+\titlespacing{name=\part}{0pt}{*20}{*6}
+
+
 \titleformat{name=\section}[hang]{%
   \color{Section}\huge\sffamily\bfseries}{%
-  \makebox[1.25cm][l]{\rmfamily\slshape\HUGE\thesection.}}{0pt}{}
+  \makebox[2pc][r]{\rmfamily\slshape\HUGE\thesection.}}{1pc}{}
 
-\titlespacing{name=\section}{-1.25cm}{0pt}{*6}
+\titlespacing{name=\section}{-3pc}{0pt}{*6}
 
 \titleformat{name=\section, numberless}{%
   \color{Section}\LARGE\sffamily\bfseries}{}{0pc}{}
@@ -184,6 +171,14 @@ compact]{titlesec}
 %% --------------------------------------------------------------------------------
 \RequirePackage{titletoc}
 \contentsmargin{2pc}
+
+\titlecontents{part}[0pc]
+{\addvspace{1pc}\sffamily\large\bfseries}
+{\partname\ \thecontentslabel:\enspace}
+{}
+{\hfill\contentspage}
+[\addvspace{.25pc}]
+
 \titlecontents{section}[0pc]
 {\addvspace{1ex}\sffamily\bfseries}
 {\contentslabel{2pc}}
@@ -191,6 +186,18 @@ compact]{titlesec}
 {\hfill\contentspage}
 
 \dottedcontents{subsection}[3pc]{\sffamily}{3pc}{0.5pc}
+
+
+%% Parts
+%% --------------------------------------------------------------------------------
+%\newcommand{\partbreak}{\cleardoublepage}
+\titleclass{\part}{page}
+\assignpagestyle{\part}{empty}
+\newcommand{\partbreak}{%
+%   \cleardoublepage\phantomsection%
+   \thispagestyle{first}}
+% \let\oldpart\part% Store \part in \oldpart
+% \renewcommand{\part}{\thispagestyle{first}\oldpart}% Insert \clearpage before every \part
 
 %% Title
 %% --------------------------------------------------------------------------------
@@ -234,6 +241,13 @@ compact]{titlesec}
       \cleardoublepage\phantomsection%
       \thispagestyle{first}}}
   \maketitle%
+}
+
+\mode
+<article>
+{
+  \renewcommand{\subtitle}[2][]{%
+    \def\insertsubtitle{#2}\g@addto@macro\@title{\\<article>{\huge#2}}}
 }
 
 %% CC notice

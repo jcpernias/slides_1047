@@ -1,8 +1,8 @@
 # -*- ispell-dictionary: "castellano" -*-
 
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Delimitación del sector público
+#+TITLE: {{{unit02}}}
 
 #+MATS: bib
 

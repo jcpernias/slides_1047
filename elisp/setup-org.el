@@ -50,7 +50,7 @@
 [NO-DEFAULT-PACKAGES]
 [EXTRA]
 [NO-PACKAGES]"
-;;        ("\\chapter{%s}" . "\\chapter*{%s}")
+        ("\\part{%s}" . "\\part*{%s}")
         ("\\section{%s}" . "\\section*{%s}")
         ("\\subsection{%s}" . "\\subsection*{%s}")))
 

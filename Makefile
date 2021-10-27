@@ -29,9 +29,10 @@ Rscriptbin := /usr/local/bin/Rscript
 ## Variables
 ## ================================================================================
 
+elisp_files := $(addprefix $(elispdir)/, setup-org.el mats.el)
+
 EMACS := $(emacsbin) -Q -nw --batch
-emacs_loads := --load=$(elispdir)/setup-org.el \
-	--load=$(elispdir)/mats.el
+emacs_loads := $(addprefix --load=, $(elisp_files))
 org_to_latex := --eval "(tolatex (file-name-as-directory \"$(builddir)\"))"
 org_to_beamer := --eval "(tobeamer (file-name-as-directory \"$(builddir)\"))"
 tangle := --eval "(tangle-to (file-name-as-directory \"$(builddir)\"))"
@@ -59,18 +60,25 @@ hdout_tex_deps := \
 	$(texdir)/hdout.cls \
 	$(texdir)/docs-base.sty \
 	$(texdir)/docs-full.sty \
+	$(rootdir)/course-colors.cfg \
+	$(rootdir)/hdout.cfg \
+	$(rootdir)/course.cfg \
 	$(rootdir)/hyperref.cfg
 
 pres_tex_deps := \
 	$(texdir)/pres.cls \
 	$(texdir)/docs-base.sty \
 	$(texdir)/docs-full.sty \
+	$(rootdir)/course-colors.cfg \
+	$(rootdir)/pres.cfg \
+	$(rootdir)/course.cfg \
 	$(rootdir)/hyperref.cfg
 
 fig_tex_deps := \
 	$(texdir)/figure.cls \
 	$(texdir)/docs-base.sty \
 	$(rootdir)/standalone.cfg \
+	$(rootdir)/course.cfg \
 	$(rootdir)/hyperref.cfg
 
 FIGURES :=
@@ -118,7 +126,7 @@ all: $(docs_pdf)
 
 # org to latex
 .PRECIOUS: $(builddir)/%.tex
-$(builddir)/%.tex: $(rootdir)/%.org | $(builddir)
+$(builddir)/%.tex: $(rootdir)/%.org $(elisp_files) | $(builddir)
 	$(EMACS) $(emacs_loads) --visit=$< $(org_to_beamer)
 
 # dependencies for latex file

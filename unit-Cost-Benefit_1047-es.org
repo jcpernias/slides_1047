@@ -1,8 +1,8 @@
 # -*- ispell-dictionary: "castellano" -*-
 
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Análisis coste beneficio
+#+TITLE: {{{unit08}}}
 
 #+MATS: bib
 

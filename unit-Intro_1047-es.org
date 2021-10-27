@@ -1,11 +1,10 @@
 # -*- ispell-dictionary: "castellano" -*-
 
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: El sector público en una economía mixta
+#+TITLE: {{{unit01}}}
 
 #+MATS: bib
-
 #+begin_bibbox
 - *Stiglitz y Rosengard*: /La economía del sector público/. Capítulo 1.
 #+end_bibbox
