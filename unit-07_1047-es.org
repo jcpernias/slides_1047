@@ -15,7 +15,7 @@
 
 ** Eficiencia
 
-#+MATS: figcol fig-Externalities_1047-10-*.pdf 0.45
+#+MATS: figcol fig-07_1047-10-*.pdf 0.45
 
 - En un mercado competitivo:
 
@@ -41,7 +41,7 @@
 
 ** Externalidad negativa en la producción (II)
 
-#+MATS: figcol fig-Externalities_1047-11-*.pdf 0.45
+#+MATS: figcol fig-07_1047-11-*.pdf 0.45
 
 - *Coste marginal privado*, \CMP: pagos a los factores productivos.
 
@@ -57,7 +57,7 @@
 
 ** Externalidad negativa en la producción (III)
 
-#+MATS: figcol fig-Externalities_1047-12-*.pdf 0.45
+#+MATS: figcol fig-07_1047-12-*.pdf 0.45
 
 - La decisión privada sólo tiene en cuenta costes y beneficios privados.
 
@@ -66,7 +66,7 @@
 
 ** Externalidad negativa en la producción (y IV)
 
-#+MATS: figcol fig-Externalities_1047-13-*.pdf 0.45
+#+MATS: figcol fig-07_1047-13-*.pdf 0.45
 
 - El mercado produciría más de lo socialmente óptimo.
 
@@ -75,7 +75,7 @@
 
 ** Externalidad negativa en el consumo
 
-#+MATS: figcol fig-Externalities_1047-15-*.pdf 0.45
+#+MATS: figcol fig-07_1047-15-*.pdf 0.45
 
 - El mercado produciría más de lo socialmente óptimo.
 
@@ -85,7 +85,7 @@
 
 ** Externalidad positiva en la producción
 
-#+MATS: figcol fig-Externalities_1047-16-*.pdf 0.45
+#+MATS: figcol fig-07_1047-16-*.pdf 0.45
 
 - El mercado produciría menos de lo socialmente óptimo.
 
@@ -142,7 +142,7 @@
 
 ** Impuestos (I)
 
-#+MATS: figcol fig-Externalities_1047-50-*.pdf 0.45
+#+MATS: figcol fig-07_1047-50-*.pdf 0.45
 
 - Un *impuesto corrector* persigue eliminar la ineficiencia generada
   por una externalidad haciendo que se reduzca el nivel de producción.
@@ -150,7 +150,7 @@
 
 ** Impuestos (y II)
 
-#+MATS: figcol fig-Externalities_1047-51-*.pdf 0.45
+#+MATS: figcol fig-07_1047-51-*.pdf 0.45
 
 - Un impuesto de $t$ euros por unidad producida puede conseguir que el
   nivel de producción sea eficiente.
@@ -161,7 +161,7 @@
 
 ** Subvenciones (I)
 
-#+MATS: figcol fig-Externalities_1047-50-*.pdf 0.45
+#+MATS: figcol fig-07_1047-50-*.pdf 0.45
 
 - Ofrecer *subvenciones* a las empresas para que reduzcan su nivel de
   producción puede conseguir también el nivel de producción eficiente.
@@ -169,7 +169,7 @@
 
 ** Subvenciones (y II)
 
-#+MATS: figcol fig-Externalities_1047-55-*.pdf 0.45
+#+MATS: figcol fig-07_1047-55-*.pdf 0.45
 
 - Una subvención de $s$ euros por cada unidad que deje de producirse
   por debajo de $Q_m$ puede conseguir que el nivel de producción sea
@@ -190,7 +190,7 @@
 
 ** Multas (II)
 
-#+MATS: figcol fig-Externalities_1047-60-*.pdf 0.45
+#+MATS: figcol fig-07_1047-60-*.pdf 0.45
 
 - Cuanto más a la derecha, más toneladas se reducen las emisiones
   contaminantes y la polución es menor.
@@ -201,7 +201,7 @@
 
 ** Multas (III)
 
-#+MATS: figcol fig-Externalities_1047-61-*.pdf 0.45
+#+MATS: figcol fig-07_1047-61-*.pdf 0.45
 
 - \BMS: ganancias de la sociedad por emitir una tonelada menos.
 
@@ -212,7 +212,7 @@
 
 ** Multas (y IV)
 
-#+MATS: figcol fig-Externalities_1047-62-*.pdf 0.45
+#+MATS: figcol fig-07_1047-62-*.pdf 0.45
 
 - Resultado de mercado: $R_m = 0$.
 
@@ -222,7 +222,7 @@
 
 ** Regulación (I)
 
-#+MATS: figcol fig-Externalities_1047-65-*.pdf 0.45
+#+MATS: figcol fig-07_1047-65-*.pdf 0.45
 
 - La efectividad de impuestos y multas en conseguir una determinada
   reducción requiere de mucha información.
@@ -242,7 +242,7 @@
 
 ** Regulación (y III)
 
-#+MATS: figcol fig-Externalities_1047-70-*.pdf 0.45
+#+MATS: figcol fig-07_1047-70-*.pdf 0.45
 
 - Cada empresa debe reducir sus emisiones en $R_r$ toneladas.
 

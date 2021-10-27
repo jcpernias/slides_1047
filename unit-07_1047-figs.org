@@ -63,7 +63,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Externalities_1047-10.tex
+#+begin_src latex :tangle fig-07_1047-10.tex
   \begin{tikzpicture}<<market-scale>>
     <<axes-coordinates>>
 
@@ -87,7 +87,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Externalities_1047-11.tex
+#+begin_src latex :tangle fig-07_1047-11.tex
   \begin{tikzpicture}<<market-scale>>
      <<axes-coordinates>>
 
@@ -107,7 +107,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Externalities_1047-12.tex
+#+begin_src latex :tangle fig-07_1047-12.tex
   \begin{tikzpicture}<<market-scale>>
      <<axes-coordinates>>
 
@@ -138,7 +138,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Externalities_1047-13.tex
+#+begin_src latex :tangle fig-07_1047-13.tex
   \begin{tikzpicture}<<market-scale>>
      <<axes-coordinates>>
 
@@ -208,7 +208,7 @@
 
 
 
-#+begin_src latex :tangle fig-Externalities_1047-15.tex
+#+begin_src latex :tangle fig-07_1047-15.tex
   \begin{tikzpicture}<<market-scale>>
      <<axes-coordinates>>
 
@@ -277,7 +277,7 @@
 
 
 
-#+begin_src latex :tangle fig-Externalities_1047-16.tex
+#+begin_src latex :tangle fig-07_1047-16.tex
   \begin{tikzpicture}<<market-scale>>
      <<axes-coordinates>>
 
@@ -350,7 +350,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Externalities_1047-50.tex
+#+begin_src latex :tangle fig-07_1047-50.tex
   \begin{tikzpicture}<<market-scale>>
      <<axes-coordinates>>
 
@@ -377,7 +377,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Externalities_1047-51.tex
+#+begin_src latex :tangle fig-07_1047-51.tex
   \begin{tikzpicture}<<market-scale>>
      <<axes-coordinates>>
 
@@ -417,7 +417,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Externalities_1047-55.tex
+#+begin_src latex :tangle fig-07_1047-55.tex
   \begin{tikzpicture}<<market-scale>>
      <<axes-coordinates>>
 
@@ -473,7 +473,7 @@
     ;
 #+end_src
 
-#+begin_src latex :tangle fig-Externalities_1047-60.tex
+#+begin_src latex :tangle fig-07_1047-60.tex
   \begin{tikzpicture}<<market-scale>>
     <<axes-coordinates>>
     \node[right, font=\sffamily\scriptsize]
@@ -525,7 +525,7 @@
   \draw[curve B, use path=\pathCMP] (CMP-2) node[right] { $\CMP$ } ;
 #+end_src
 
-#+begin_src latex :tangle fig-Externalities_1047-61.tex
+#+begin_src latex :tangle fig-07_1047-61.tex
   \begin{tikzpicture}<<market-scale>>
     <<axes-coordinates>>
 
@@ -541,7 +541,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Externalities_1047-62.tex
+#+begin_src latex :tangle fig-07_1047-62.tex
   \begin{tikzpicture}<<market-scale>>
     <<axes-coordinates>>
 
@@ -569,7 +569,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Externalities_1047-65.tex
+#+begin_src latex :tangle fig-07_1047-65.tex
   \begin{tikzpicture}<<market-scale>>
     <<axes-coordinates>>
 
@@ -622,7 +622,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-Externalities_1047-70.tex
+#+begin_src latex :tangle fig-07_1047-70.tex
   \begin{tikzpicture}<<market-scale>>
     <<axes-coordinates>>
 

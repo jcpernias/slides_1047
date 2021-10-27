@@ -2,20 +2,20 @@
 
 subject_code := 1047
 units := \
-	Intro \
-	Size \
-	Welfare \
-	Market-Failure \
-	Efficiency-Equity \
-	Public-Goods \
-	Externalities \
-	Cost-Benefit
+	01 \
+	02 \
+	03 \
+	04 \
+	05 \
+	06 \
+	06 \
+	07
 
 unit_figs := \
-	Welfare \
-	Efficiency-Equity \
-	Public-Goods \
-	Externalities
+	03 \
+	05 \
+	06 \
+	07
 
 LANGUAGES := es
 

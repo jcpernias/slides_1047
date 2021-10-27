@@ -89,7 +89,7 @@
 
 ** La caja de Edgeworth
 
-#+begin_src latex :tangle fig-Welfare_1047-01.tex
+#+begin_src latex :tangle fig-03_1047-01.tex
   \begin{tikzpicture}<<output-box-scale>>
 
     \draw[shift arrow, <->] (3, 3) -- (3, 99)
@@ -107,7 +107,7 @@
 
 ** Dotaciones iniciales
 
-#+begin_src latex :tangle fig-Welfare_1047-02.tex
+#+begin_src latex :tangle fig-03_1047-02.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \draw[shift arrow, ->] (3, 3) -- (20.44104, 3) ;
@@ -134,7 +134,7 @@
 
 ** Curvas indiferencia A
 
-#+begin_src latex :tangle fig-Welfare_1047-03.tex
+#+begin_src latex :tangle fig-03_1047-03.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \draw[curve A]
@@ -159,7 +159,7 @@
 
 ** Curvas indiferencia B
 
-#+begin_src latex :tangle fig-Welfare_1047-04.tex
+#+begin_src latex :tangle fig-03_1047-04.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \draw[curve B]
@@ -184,7 +184,7 @@
 
 ** Asignación ineficiente
 
-#+begin_src latex :tangle fig-Welfare_1047-05.tex
+#+begin_src latex :tangle fig-03_1047-05.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \fill[fillA]
@@ -216,7 +216,7 @@
 
 ** Mejora paretiana
 
-#+begin_src latex :tangle fig-Welfare_1047-06.tex
+#+begin_src latex :tangle fig-03_1047-06.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \fill[fillA]
@@ -244,7 +244,7 @@
 
 ** Asignación eficiente
 
-#+begin_src latex :tangle fig-Welfare_1047-07.tex
+#+begin_src latex :tangle fig-03_1047-07.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \draw[curve A] plot[domain=19.4:88] <<indiff-curve-A>> ;
@@ -271,7 +271,7 @@
 
 ** Curva de contrato
 
-#+begin_src latex :tangle fig-Welfare_1047-08.tex
+#+begin_src latex :tangle fig-03_1047-08.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \draw[curve A] plot[domain=30:55] <<indiff-curve-A>> ;
@@ -311,7 +311,7 @@
 
 ** Curva de contrato (II)
 
-#+begin_src latex :tangle fig-Welfare_1047-09.tex
+#+begin_src latex :tangle fig-03_1047-09.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \fill[fillA]
@@ -340,7 +340,7 @@
 
 ** Curva de contrato (III)
 
-#+begin_src latex :tangle fig-Welfare_1047-09b.tex
+#+begin_src latex :tangle fig-03_1047-09b.tex
 \begin{tikzpicture}<<output-box-scale>>
 
   \draw[help lines]
@@ -367,7 +367,7 @@
 
 ** Frontera de posibilidades de utilidad
 
-#+begin_src latex :tangle fig-Welfare_1047-10.tex
+#+begin_src latex :tangle fig-03_1047-10.tex
 \begin{tikzpicture}<<upf-scale>>
 
 
@@ -386,7 +386,7 @@
 
 ** Frontera de posibilidades de utilidad (II)
 
-#+begin_src latex :tangle fig-Welfare_1047-10b.tex
+#+begin_src latex :tangle fig-03_1047-10b.tex
 \begin{tikzpicture}<<upf-scale>>
   \coordinate (Q) at (30, 40) ;
   \coordinate (S) at (79.10204, 40) ;
@@ -419,7 +419,7 @@
 
 * Elección social
 
-#+begin_src latex :tangle fig-Welfare_1047-11.tex
+#+begin_src latex :tangle fig-03_1047-11.tex
 \begin{tikzpicture}[xscale=0.04545, yscale=0.04545, samples=128]
 
   \draw[curve, ultra thick]
@@ -440,7 +440,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Welfare_1047-12.tex
+#+begin_src latex :tangle fig-03_1047-12.tex
 \begin{tikzpicture}[xscale=0.04545, yscale=0.04545, samples=128]
 
   \draw[curve, ultra thick]
@@ -461,7 +461,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-Welfare_1047-13.tex
+#+begin_src latex :tangle fig-03_1047-13.tex
 \begin{tikzpicture}[xscale=0.04545, yscale=0.04545, samples=128]
 
   \draw[curve, ultra thick]
@@ -483,7 +483,7 @@
 
 ** Caja de Edgeworth
 
-#+begin_src latex :tangle fig-Welfare_1047-22.tex
+#+begin_src latex :tangle fig-03_1047-22.tex
 \begin{tikzpicture}<<input-box-scale>>
   \newcommand*{\Mx}{80}
   \newcommand*{\My}{20}
@@ -513,7 +513,7 @@
 
 ** Isocuantas X
 
-#+begin_src latex :tangle fig-Welfare_1047-23.tex
+#+begin_src latex :tangle fig-03_1047-23.tex
 \begin{tikzpicture}<<input-box-scale>>
 
   \draw[curve A]
@@ -539,7 +539,7 @@
 ** Isocuantas Y
 
 
-#+begin_src latex :tangle fig-Welfare_1047-24.tex
+#+begin_src latex :tangle fig-03_1047-24.tex
 \begin{tikzpicture}<<input-box-scale>>
 
   \draw[curve B]
@@ -564,7 +564,7 @@
 
 ** Combinación ineficiente
 
-#+begin_src latex :tangle fig-Welfare_1047-25.tex
+#+begin_src latex :tangle fig-03_1047-25.tex
 \begin{tikzpicture}<<input-box-scale>>
   \newcommand*{\Mx}{80}
   \newcommand*{\My}{20}
@@ -603,7 +603,7 @@
 
 ** Curva de contrato
 
-#+begin_src latex :tangle fig-Welfare_1047-28.tex
+#+begin_src latex :tangle fig-03_1047-28.tex
 \begin{tikzpicture}<<input-box-scale>>
 
   \draw[curve A]
@@ -645,7 +645,7 @@
 
 ** Mejoras paretianas
 
-#+begin_src latex :tangle fig-Welfare_1047-29.tex
+#+begin_src latex :tangle fig-03_1047-29.tex
 \begin{tikzpicture}<<input-box-scale>>
   \newcommand*{\Mx}{80}
   \newcommand*{\My}{20}
@@ -678,7 +678,7 @@
 
 ** Curva de contrato
 
-#+begin_src latex :tangle fig-Welfare_1047-29b.tex
+#+begin_src latex :tangle fig-03_1047-29b.tex
 \begin{tikzpicture}<<input-box-scale>>
 
   \newcommand*{\Lx}{60}
@@ -706,7 +706,7 @@
 
 ** Frontera de posibilidades de producción
 
-#+begin_src latex :tangle fig-Welfare_1047-30.tex
+#+begin_src latex :tangle fig-03_1047-30.tex
 \begin{tikzpicture}<<ppf-scale>>
 
   \newcommand*{\Qy}{6.32455}
@@ -731,7 +731,7 @@
 
 ** FPP e ineficiencia
 
-#+begin_src latex :tangle fig-Welfare_1047-30b.tex
+#+begin_src latex :tangle fig-03_1047-30b.tex
 \begin{tikzpicture}<<ppf-scale>>
   \newcommand*{\Qx}{6.32455}
   \newcommand*{\Qy}{\Qx}
@@ -770,7 +770,7 @@
 
 ** Relación marginal de transformación
 
-#+begin_src latex :tangle fig-Welfare_1047-31.tex
+#+begin_src latex :tangle fig-03_1047-31.tex
 \begin{tikzpicture}<<ppf-scale>>
 
   \draw[curve]

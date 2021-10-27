@@ -28,7 +28,7 @@
 
 ** La frontera de posibilidades de utilidad
 
-#+MATS: figcol fig-Efficiency-Equity_1047-01-*.pdf 0.55
+#+MATS: figcol fig-05_1047-01-*.pdf 0.55
 
 - La frontera de posibilidades de utilidad muestra la máxima utilidad
   que obtiene una persona dada la utilidad de la otra persona.
@@ -58,21 +58,21 @@
 
 ** Utilitarismo
 
-#+MATS: figcol fig-Efficiency-Equity_1047-02-*.pdf 0.55
+#+MATS: figcol fig-05_1047-02-*.pdf 0.55
 
 - *Utilitarismo*: $W = U_A + U_B$.
 
 
 ** Rawlsianismo
 
-#+MATS: figcol fig-Efficiency-Equity_1047-05-*.pdf 0.55
+#+MATS: figcol fig-05_1047-05-*.pdf 0.55
 
 - *Rawlsianismo*: $W = \min\{U_A, U_B\}$.
 
 
 ** La elección social (I)
 
-#+MATS: figcol fig-Efficiency-Equity_1047-06-*.pdf 0.55
+#+MATS: figcol fig-05_1047-06-*.pdf 0.55
 
 - Cada función de bienestar social determina una elección óptima
   diferente.
