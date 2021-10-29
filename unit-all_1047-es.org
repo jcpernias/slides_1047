@@ -2,11 +2,12 @@
 
 #+SETUPFILE: ./course-es.org
 
-#+TITLE: Economía del Sector Público
-#+SUBTITLE: EC1047
+#+TITLE: \coursename
+#+SUBTITLE: \coursecode
+
 
 #+LATEX_CLASS: hdout
-#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
+#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4
 
 * Análisis del gasto público
 

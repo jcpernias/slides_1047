@@ -7,6 +7,8 @@
 #+LANGUAGE: es
 #+LATEX_HEADER: \newcommand*{\LANG}{es}
 
+#+LATEX_HEADER: \newcommand*{\coursename}{Economía del Sector Público}
+#+LATEX_HEADER: \newcommand*{\coursecode}{EC1047}
 
 ## Títulos de los temas
 ## ================================================================================
