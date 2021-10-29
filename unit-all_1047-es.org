@@ -7,7 +7,7 @@
 
 
 #+LATEX_CLASS: hdout
-#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4
+#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
 
 * Análisis del gasto público
 
