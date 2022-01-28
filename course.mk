@@ -20,7 +20,7 @@ unit_figs := \
 LANGUAGES := es
 
 docs_suffixes := $(addprefix _$(subject_code)-, $(LANGUAGES))
-docs_prefixes := $(addprefix pres-,$(units)) hdout-all
+docs_prefixes := $(addprefix pres-,$(units)) $(addprefix hdout-,$(units)) hdout-all
 docs_base := $(foreach suffix,$(docs_suffixes),$(addsuffix $(suffix),$(docs_prefixes)))
 docs_pdf := $(addprefix $(outdir)/, $(addsuffix .pdf, $(docs_base)))
 
