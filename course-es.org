@@ -3,7 +3,6 @@
 #+AUTHOR: José Pernías
 #+DATE: Curso 2021--2022
 
-#+LATEX_CLASS_OPTIONS: [es]
 #+LANGUAGE: es
 #+LATEX_HEADER: \newcommand*{\LANG}{es}
 

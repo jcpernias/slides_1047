@@ -54,6 +54,15 @@
         ("\\section{%s}" . "\\section*{%s}")
         ("\\subsection{%s}" . "\\subsection*{%s}")))
 
+(setq docs-singlehdout-class
+      '("singlehdout"
+        "\\documentclass[single]{hdout}
+[NO-DEFAULT-PACKAGES]
+[EXTRA]
+[NO-PACKAGES]"
+        ("\\section{%s}" . "\\section*{%s}")
+        ("\\subsection{%s}" . "\\subsection*{%s}")))
+
 
 (defun install-custom-class (description)
   "Make a LaTeX class available to use with Org"
@@ -75,6 +84,7 @@ available to use with Org"
 
 (install-custom-class docs-pres-class)
 (install-custom-class docs-hdout-class)
+(install-custom-class docs-singlehdout-class)
 
 ;; Export settings
 ;; --------------------------------------------------------------------------------

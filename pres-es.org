@@ -1,6 +1,5 @@
-#+SETUPFILE: ./course-es.org
-
 #+LATEX_HEADER: \institute{\coursename{} (\coursecode)}
 
 #+LATEX_CLASS: pres
+#+LATEX_CLASS_OPTIONS: [es]
 #+OPTIONS: toc:nil ':t ^:{} num:1 H:2 title:nil

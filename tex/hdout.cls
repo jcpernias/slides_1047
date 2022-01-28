@@ -21,11 +21,15 @@
 \DeclareOption{es}{\booltrue{langES}\boolfalse{langEN}}
 \DeclareOption{en}{\booltrue{langEN}\boolfalse{langES}}
 
+\newbool{hdoutFull}
+
+\DeclareOption{single}{\boolfalse{hdoutFull}}
+\DeclareOption{full}{\booltrue{hdoutFull}}
 
 \DeclareOption*{%
   \ClassError{hdout}{Unknown option `\CurrentOption'}{%
     Check the options passed to the `hdout' class}}
-\ExecuteOptions{es}
+\ExecuteOptions{es,single}
 \ProcessOptions*\relax
 
 \InputIfFileExists{hdout.cfg}{}{}
@@ -97,43 +101,72 @@ compact]{titlesec}
 \patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 
-\titleformat{name=\part}[display]{%
-  \color{Section}\HUGE\sffamily\bfseries}{%
-  \filleft\HUGE \partname\ \thepart}{1pc}{\filleft}
+\ifbool{hdoutFull}{%
+  \titleformat{name=\part}[display]{%
+    \color{Section}\HUGE\sffamily\bfseries}{%
+    \filleft\HUGE \partname\ \thepart}{1pc}{\filleft}
 
-\titlespacing{name=\part}{0pt}{*20}{*6}
+  \titlespacing{name=\part}{0pt}{*20}{*6}
 
+  \titleformat{name=\section}[hang]{%
+    \color{Section}\huge\sffamily\bfseries}{%
+    \makebox[2pc][r]{\rmfamily\slshape\HUGE\thesection.}}{1pc}{}
 
-\titleformat{name=\section}[hang]{%
-  \color{Section}\huge\sffamily\bfseries}{%
-  \makebox[2pc][r]{\rmfamily\slshape\HUGE\thesection.}}{1pc}{}
+  \titlespacing{name=\section}{-3pc}{0pt}{*6}
 
-\titlespacing{name=\section}{-3pc}{0pt}{*6}
+  \titleformat{name=\section, numberless}{%
+    \color{Section}\LARGE\sffamily\bfseries}{}{0pc}{}
 
-\titleformat{name=\section, numberless}{%
-  \color{Section}\LARGE\sffamily\bfseries}{}{0pc}{}
+  \titlespacing{name=\section, numberless}{0pc}{*7}{*6}
 
-\titlespacing{name=\section, numberless}{0pc}{*7}{*6}
+  \titleformat{name=\subsection}{%
+    \color{Subsection}\Large\sffamily\bfseries}{%
+    \makebox[2pc][r]{\thesubsection.}}{1pc}{}
 
-\titleformat{name=\subsection}{%
-  \color{Subsection}\Large\sffamily\bfseries}{%
-  \makebox[2pc][r]{\thesubsection.}}{1pc}{}
+  \titlespacing{name=\subsection}{-3pc}{*7}{*1.5}
 
-\titlespacing{name=\subsection}{-3pc}{*7}{*1.5}
+  \titleformat{name=\subsection, numberless}
+  {\color{Subsection}\Large\sffamily\bfseries}
+  {}{0pc}{}
 
-\titleformat{name=\subsection, numberless}
-{\color{Subsection}\Large\sffamily\bfseries}
-{}{0pc}{}
+  \titlespacing{name=\subsection, numberless}{0pc}{*7}{*1.5}
 
-\titlespacing{name=\subsection, numberless}{0pc}{*7}{*1.5}
+  \titleformat{name=\paragraph}[block]
+  {{\color{SlateGray}\titlerule[.25pt]}\vspace*{.8ex}%
+    \normalfont\small\bfseries\sffamily\filright}
+  {\theparagraph}{0em}{\color{Paragraph}}
 
-\titleformat{name=\paragraph}[block]
-{{\color{SlateGray}\titlerule[.25pt]}\vspace*{.8ex}%
-  \normalfont\small\bfseries\sffamily\filright}
-{\theparagraph}{0em}{\color{Paragraph}}
+  \titlespacing*{name=\paragraph}{0cm}{*3}{*1.5}
+}{%
+  \titleformat{\section}{%
+    \color{Section}\Large\sffamily\bfseries}{%
+    \makebox[2pc][r]{\thesection.}}{1pc}{}
 
-\titlespacing*{name=\paragraph}{0cm}{*3}{*1.5}
+  \titlespacing{\section}
+  {-3pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
 
+  \titleformat{name=\section, numberless}
+  {\color{Section}\Large\sffamily\bfseries}
+  {}{0pc}{}
+
+  \titlespacing{name=\section, numberless}
+  {0pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+
+  \titleformat{\subsection}
+  {\color{Subsection}\large\sffamily\bfseries}
+  {\makebox[2pc][r]{\thesubsection.}}{1pc}{}[{\titlerule[0.8pt]}\vspace{6pt}]
+
+  \titlespacing{\subsection}
+  {-3pc}{3.5ex plus .1ex minus .2ex}{1.5ex minus .1ex}
+
+  \titleformat{name=\paragraph}[block]
+  {{\color{SlateGray}\titlerule[.25pt]}\vspace*{.8ex}%
+    \normalfont\small\bfseries\sffamily\filright}
+  {\theparagraph}{0em}{\color{Paragraph}}
+
+  \titlespacing*{name=\paragraph}
+  {0cm}{3ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+}
 
 
 %% Page headers and footers
@@ -172,12 +205,14 @@ compact]{titlesec}
 \RequirePackage{titletoc}
 \contentsmargin{2pc}
 
-\titlecontents{part}[0pc]
-{\addvspace{1pc}\sffamily\large\bfseries}
-{\partname\ \thecontentslabel:\enspace}
-{}
-{\hfill\contentspage}
-[\addvspace{.25pc}]
+\ifbool{hdoutFull}{%
+  \titlecontents{part}[0pc]
+  {\addvspace{1pc}\sffamily\large\bfseries}
+  {\partname\ \thecontentslabel:\enspace}
+  {}
+  {\hfill\contentspage}
+  [\addvspace{.25pc}]
+}{}
 
 \titlecontents{section}[0pc]
 {\addvspace{1ex}\sffamily\bfseries}
@@ -190,14 +225,14 @@ compact]{titlesec}
 
 %% Parts
 %% --------------------------------------------------------------------------------
-%\newcommand{\partbreak}{\cleardoublepage}
+
+\ifbool{hdoutFull}{%
 \titleclass{\part}{page}
 \assignpagestyle{\part}{empty}
 \newcommand{\partbreak}{%
-%   \cleardoublepage\phantomsection%
    \thispagestyle{first}}
-% \let\oldpart\part% Store \part in \oldpart
-% \renewcommand{\part}{\thispagestyle{first}\oldpart}% Insert \clearpage before every \part
+}{}
+
 
 %% Title
 %% --------------------------------------------------------------------------------
@@ -205,42 +240,63 @@ compact]{titlesec}
 \pretitle{\begin{flushleft}\HUGE\sffamily\bfseries\color{Title}}
 \posttitle{\par\end{flushleft}}
 
-\preauthor{\begin{flushleft}\LARGE\sffamily\bfseries\color{Title}}
+\preauthor{\begin{flushleft}\huge\sffamily\bfseries\color{Title}}
 \postauthor{\par\end{flushleft}}
 
-\predate{\begin{flushleft}\Large\sffamily\bfseries\color{Title}}
+\predate{\begin{flushleft}\LARGE\sffamily\bfseries\color{Title}}
 \postdate{\par\end{flushleft}}
 
 
 %% Compose frontmatter
 %% --------------------------------------------------------------------------------
-%\AtBeginDocument{%
-\AfterEndPreamble{%
-  \hypersetup{pageanchor=false}
-  \let\doctitle\thetitle
-  \pagenumbering{gobble}
-  \let\oldmaketitle\maketitle
-  \renewcommand{\maketitle}{%
-    \oldmaketitle%
-    \thispagestyle{empty}%
-    \newpage%
-    \ccpage%
-    \hypersetup{pageanchor=true}
-    \newpage%
-    \pagestyle{front}
-    \pagenumbering{roman}
-    \oldmaketitle%
-    \tableofcontents%
-    \cleardoublepage%
-    \pagestyle{fancy}
-    \pagenumbering{arabic}
-    % \oldmaketitle
-    \thispagestyle{first}
-    \let\maketitle\oldmaketitle%
-    \newcommand{\sectionbreak}{%
-      \cleardoublepage\phantomsection%
-      \thispagestyle{first}}}
-  \maketitle%
+\ifbool{hdoutFull}{%
+  \AfterEndPreamble{%
+    \hypersetup{pageanchor=false}
+    \let\doctitle\thetitle
+    \pagenumbering{gobble}
+    \let\oldmaketitle\maketitle
+    \renewcommand{\maketitle}{%
+      \oldmaketitle%
+      \thispagestyle{empty}%
+      \newpage%
+      \ccpage%
+      \hypersetup{pageanchor=true}
+      \newpage%
+      \pagestyle{front}
+      \pagenumbering{roman}
+      \oldmaketitle%
+      \tableofcontents%
+      \cleardoublepage%
+      \pagestyle{fancy}
+      \pagenumbering{arabic}
+      % \oldmaketitle
+      \thispagestyle{first}
+      \let\maketitle\oldmaketitle%
+      \newcommand{\sectionbreak}{%
+        \cleardoublepage\phantomsection%
+        \thispagestyle{first}}}
+    \maketitle%
+  }
+}{%
+  \AfterEndPreamble{%
+    \hypersetup{pageanchor=false}
+    \let\doctitle\thetitle
+    \pagenumbering{gobble}
+    \let\oldmaketitle\maketitle
+    \renewcommand{\maketitle}{%
+      \oldmaketitle%
+      \tableofcontents%
+      \thispagestyle{empty}%
+      \newpage%
+      \ccpage%
+      \hypersetup{pageanchor=true}
+      \pagenumbering{arabic}
+      \oldmaketitle
+      \thispagestyle{first}
+      \let\maketitle\oldmaketitle%
+    }
+    \maketitle%
+  }
 }
 
 \mode

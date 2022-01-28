@@ -90,14 +90,14 @@ ifneq (,$(findstring clean,$(MAKECMDGOALS)))
 INCLUDEDEPS := no
 endif
 
-# $(call tex-wrapper,unit,lang) -> write to a file
+# $(call tex-wrapper,unit,lang,type) -> write to a file
 define tex-wrapper
 \RequirePackage{etoolbox}
 \AtEndPreamble{%
   \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}%
   \InputIfFileExists{$(subject_code)-macros.tex}{}{}%
   \InputIfFileExists{unit-$1-macros.tex}{}{}}
-\input{$(realpath $(builddir))/unit-$1-$2}
+\input{$(realpath $(builddir))/$(3)-$(1)-$(2)}
 endef
 
 # $(call fig-wrapper,language,name,unit) -> write to a file
@@ -109,6 +109,12 @@ define fig-wrapper
 \begin{document}
 \input{$(realpath $(builddir))/fig-$2}
 \end{document}
+endef
+
+# $(call org-wrapper,unit,lang,class) -> write to a file
+define org-wrapper
+#+SETUPFILE: ./$(3)-$(2).org
+#+include: "../unit-$(1)-$(2).org"
 endef
 
 
@@ -124,10 +130,45 @@ include course.mk
 
 all: $(docs_pdf)
 
+# org to org
+define org_to_inner_pres_rule
+.PRECIOUS: $(builddir)/inner-pres-%-$(1).org
+$(builddir)/inner-pres-%-$(1).org: $(rootdir)/unit-%-$(1).org | $(builddir)
+	$$(file > $$@,$$(call org-wrapper,$$*,$(1),pres))
+endef
+$(foreach lang,$(LANGUAGES),$(eval $(call org_to_inner_pres_rule,$(lang))))
+
+define org_to_inner_hdout_rule
+.PRECIOUS: $(builddir)/inner-hdout-%-$(1).org
+$(builddir)/inner-hdout-%-$(1).org: $(rootdir)/unit-%-$(1).org | $(builddir)
+	$$(file > $$@,$$(call org-wrapper,$$*,$(1),hdout))
+endef
+$(foreach lang,$(LANGUAGES),$(eval $(call org_to_inner_hdout_rule,$(lang))))
+
 # org to latex
-.PRECIOUS: $(builddir)/%.tex
-$(builddir)/%.tex: $(rootdir)/%.org $(elisp_files) | $(builddir)
-	$(EMACS) $(emacs_loads) --visit=$< $(org_to_beamer)
+define inner_rule
+.PRECIOUS: $(builddir)/inner-pres-%-$(1).tex
+$(builddir)/inner-pres-%-$(1).tex: $(builddir)/inner-pres-%-$(1).org \
+	$(elisp_files) $(builddir)/course-$(1).org $(builddir)/pres-$(1).org
+	$(EMACS) $(emacs_loads) --visit=$$< \
+		--eval "(tobeamer (file-name-as-directory \".\"))"
+
+.PRECIOUS: $(builddir)/inner-hdout-%-$(1).tex
+$(builddir)/inner-hdout-%-$(1).tex: $(builddir)/inner-hdout-%-$(1).org \
+	$(elisp_files) $(builddir)/course-$(1).org $(builddir)/hdout-$(1).org
+	$(EMACS) $(emacs_loads) --visit=$$< \
+		--eval "(tobeamer (file-name-as-directory \".\"))"
+endef
+$(foreach lang,$(LANGUAGES),$(eval $(call inner_rule,$(lang))))
+
+define hdout_all_rule
+.PRECIOUS: $(builddir)/hdout-all_$(subject_code)-$(1).tex
+$(builddir)/hdout_all_$(subject_code)-$(1).tex: \
+	$(rootdir)/hdout_all_$(subject_code)-$(1).org $(elisp_files) | $(builddir)
+	$(EMACS) $(emacs_loads) --visit=$$< \
+		--eval "(tobeamer (file-name-as-directory \"$(builddir)\"))"
+endef
+$(foreach lang,$(LANGUAGES),$(eval $(call hdout_all_rule,$(lang))))
 
 # dependencies for latex file
 $(depsdir)/%.tex.d: $(rootdir)/%.org | $(depsdir)
@@ -138,8 +179,8 @@ $(depsdir)/%.tex.d: $(rootdir)/%.org | $(depsdir)
 ## pres wrapper
 define pres_wrapper_rule
 .PRECIOUS: $(builddir)/pres-%-$(1).tex
-$(builddir)/pres-%-$(1).tex: $(builddir)/unit-%-$(1).tex | $(figdir)
-	$$(file > $$@,$$(call tex-wrapper,$$*,$(1)))
+$(builddir)/pres-%-$(1).tex: $(builddir)/inner-pres-%-$(1).tex | $(figdir)
+	$$(file > $$@,$$(call tex-wrapper,$$*,$(1),inner-pres))
 endef
 
 $(foreach lang,$(LANGUAGES),$(eval $(call pres_wrapper_rule,$(lang))))
@@ -147,8 +188,8 @@ $(foreach lang,$(LANGUAGES),$(eval $(call pres_wrapper_rule,$(lang))))
 ## hdout wrapper
 define hdout_wrapper_rule
 .PRECIOUS: $(builddir)/hdout-%-$(1).tex
-$(builddir)/hdout-%-$(1).tex: $(builddir)/unit-%-$(1).tex | $(figdir)
-	$$(file > $$@,$$(call tex-wrapper,$$*,$(1)))
+$(builddir)/hdout-%-$(1).tex: $(builddir)/inner-hdout-%-$(1).tex | $(figdir)
+	$$(file > $$@,$$(call tex-wrapper,$$*,$(1),inner-hdout))
 endef
 
 $(foreach lang,$(LANGUAGES),$(eval $(call hdout_wrapper_rule,$(lang))))
@@ -190,6 +231,18 @@ $(depsdir)/unit-%-figs.d: unit-%-figs.org | $(depsdir)
 # from R to latex
 $(builddir)/%.tex: $(builddir)/%.Rnw | $(builddir)
 	$(RSCRIPT) $(call knit,$<,$@)
+
+define cp_rule
+$(builddir)/course-$(1).org: $(rootdir)/course-$(1).org | $(builddir)
+	cp $$< $$@
+
+$(builddir)/pres-$(1).org: $(rootdir)/pres-$(1).org | $(builddir)
+	cp $$< $$@
+
+$(builddir)/hdout-$(1).org: $(rootdir)/hdout-$(1).org | $(builddir)
+	cp $$< $$@
+endef
+$(foreach lang,$(LANGUAGES),$(eval $(call cp_rule,$(lang))))
 
 ## automatic dependencies
 ifeq ($(INCLUDEDEPS),yes)

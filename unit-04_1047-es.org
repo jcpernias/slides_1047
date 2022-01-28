@@ -1,6 +1,6 @@
 # -*- ispell-dictionary: "castellano" -*-
 
-#+SETUPFILE: ./pres-es.org
+#+SETUPFILE: ./course-es.org
 
 #+TITLE: {{{unit04}}}
 

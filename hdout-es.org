@@ -1,0 +1,4 @@
+#+LATEX_CLASS: singlehdout
+#+LATEX_CLASS_OPTIONS: [es,single]
+#+OPTIONS: toc:nil ':t ^:{} num:1 H:2 title:nil
+#+LATEX_HEADER: \renewcommand{\maketitlehooka}{\begin{flushleft}\LARGE\sffamily\bfseries\color{Title}\coursename{} (\coursecode)\par\end{flushleft}}
