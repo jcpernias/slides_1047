@@ -7,7 +7,7 @@
 #+MATS: bib
 
 #+begin_bibbox
-- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 3.
+- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulos 3 y 4.
 #+end_bibbox
 
 * Introducción
@@ -15,15 +15,14 @@
 
 ** Eficiencia en el sentido de Pareto
 
-- Una asignación es *eficiente en el sentido de Pareto* si no es posible
-  mejorar el bienestar de ninguna persona sin empeorar el de alguna
-  otra.
+Una asignación es *eficiente en el sentido de Pareto* si no es posible
+mejorar el bienestar de ninguna persona sin que empeore el de otra.
 
 
 ** El principio de Pareto
 
-- Una *mejora en el sentido de Pareto* es un cambio que mejora el
-  bienestar de algunas personas sin empeorar el de ninguna otra.
+Una *mejora en el sentido de Pareto* es un cambio que mejora el
+bienestar de algunas personas sin empeorar el de ninguna otra.
 
 
 ** Individualismo
@@ -50,22 +49,22 @@ El principio de Pareto es individualista en dos sentidos:
 
 ** Dotaciones iniciales
 
-- Cada consumidor posee inicialmente algunas unidades de cada uno de
-  los bienes:
+Cada consumidor posee una *dotación inicial* de los bienes:
 
-  + Consumidor $A$: $(\Xbar_A, \Ybar_A)$.
+- Consumidor $A$: $(\Xbar_A, \Ybar_A)$.
 
-  + Consumidor $B$: $(\Xbar_B, \Ybar_B)$.
+- Consumidor $B$: $(\Xbar_B, \Ybar_B)$.
 
 
 ** Intercambio puro
 
-- No hay producción: la cantidad total de los dos bienes es fija.
+- No hay producción: las cantidades totales de cada uno de los bienes,
+  $\Xbar$ e $\Ybar$, son fijas.
 
 - Los consumidores pueden *intercambiar* unidades *libremente*.
   #+begin_export latex
   \begin{gather*}
-    \Xbar = \Xbar_{A} + \Xbar_{B} = X_A + X_B\\
+    \Xbar = \Xbar_{A} + \Xbar_{B} = X_A + X_B \\
     \Ybar = \Ybar_{A} + \Ybar_{B} = Y_A + Y_B
   \end{gather*}
   #+end_export
@@ -73,28 +72,32 @@ El principio de Pareto es individualista en dos sentidos:
 
 ** Preferencias
 
-- Funciones de utilidad:
+Funciones de utilidad:
 
-  + Consumidor $A$: $U_A = U_A(X_A, Y_A)$.
++ Consumidor $A$: $U_A = U_A(X_A, Y_A)$.
 
-  + Consumidor $B$: $U_B = U_B(X_B, Y_B)$.
++ Consumidor $B$: $U_B = U_B(X_B, Y_B)$.
 
 
 ** La caja de Edgeworth (I)
 
 #+MATS: figcol fig-03_1047-01-*.pdf 0.55
 
+- Las esquinas $O_A$ y $O_B$ son los orígenes de coordenadas de cada
+  uno de los consumidores.
+
 - Las dimensiones de la caja representan las cantidades totales de los
   bienes: $\Xbar$ e $\Ybar$.
 
-- $O_A$ y $O_B$ son los orígenes de coordenadas de $A$ y $B$.
 
 
 ** La caja de Edgeworth (y II)
 
 #+MATS: figcol fig-03_1047-02-*.pdf 0.55
 
-- Cada punto representa una posible asignación:
+- $Q$: dotaciones iniciales.
+
+- Cada punto dentro de la caja representa una posible asignación de los dos bienes entre los dos consumidores:
   #+begin_export latex
   \begin{gather*}
     \Xbar = X_{A} + X_{B} \\
@@ -102,19 +105,18 @@ El principio de Pareto es individualista en dos sentidos:
   \end{gather*}
   #+end_export
 
-- $Q$: dotaciones iniciales.
 
 
 ** Relación marginal de sustitución
 
-- La *relación marginal de sustitución*, \RMS, es el número máximo de
-  unidades del bien $Y$ que un consumidor estaría dispuesto
+- La *relación marginal de sustitución*, $\RMS_i$, es el número máximo
+  de unidades del bien $Y$ que el consumidor $i$ estaría dispuesto
   intercambiar por una unidad adicional del bien $X$.
 
 - Se puede calcular como el cociente entre utilidades marginales:
   #+begin_export latex
   \[
-    \RMS = \frac{\UMgX}{\UMgY}
+    \RMS_i = \frac{\UMgX_i}{\UMgY_i} \quad (i = A, B)
   \]
   #+end_export
 
@@ -125,8 +127,8 @@ El principio de Pareto es individualista en dos sentidos:
 
 - Curvas de indiferencia del consumidor $A$.
 
-- La $\RMS_A$ es la pendiente, en valor absoluto, de las curvas de
-  indiferencia de $A$.
+- La $\RMS_A$ es igual a la pendiente con el signo cambiado de las
+  curvas de indiferencia de $A$.
 
 
 ** Curvas de indiferencia (y II)
@@ -152,11 +154,11 @@ El principio de Pareto es individualista en dos sentidos:
 
 #+MATS: figcol fig-03_1047-06-*.pdf 0.55
 
-- Al pasar de $Q$ a $R$:
+Al pasar de $Q$ a $R$:
 
-  + $A$ mejora.
++ $A$ mejora.
 
-  + $B$ se queda igual.
++ $B$ se queda igual.
 
 
 ** Intercambio (y III)
@@ -170,52 +172,52 @@ El principio de Pareto es individualista en dos sentidos:
 
 ** Eficiencia en el intercambio
 
-- La eficiencia en el intercambio requiere que la valoración relativa
-  de los bienes sea la misma para todos los consumidores:
-  #+begin_export latex
-  \[
-    \RMS_{A} = \RMS_{B}
-  \]
-  #+end_export
+La *eficiencia en el intercambio* requiere que la valoración relativa
+de los bienes sea la misma para todos los consumidores:
+#+begin_export latex
+\[
+  \RMS_{A} = \RMS_{B}
+\]
+#+end_export
 
 
 ** La curva de contrato (I)
 
 #+MATS: figcol fig-03_1047-08-*.pdf 0.55
 
-- La *curva de contrato* es el conjunto de todas las asignaciones
-  eficientes.
+La *curva de contrato* es el conjunto de todas las asignaciones
+eficientes.
 
 
 ** La curva de contrato (y II)
 
 #+MATS: figcol fig-03_1047-09-*.pdf 0.55
 
-- El intercambio libre permite alcanzar una asignación eficiente
-  partiendo de una asignación ineficiente.
+El intercambio libre permite alcanzar una asignación eficiente
+partiendo de una asignación ineficiente.
 
 
 ** La frontera de posibilidades de utilidad (I)
 
 #+MATS: figcol fig-03_1047-09b-*.pdf 0.55
 
-- Utilidades de los consumidores en cada una de las asignaciones
-  eficientes:
-  #+begin_export latex
-  \begin{gather*}
-    U_A(S) = U_A(X_{A}^{S}, Y_{A}^{S}) \\
-    U_B(S) = U_B(X_{B}^{S}, Y_{B}^{S})
-  \end{gather*}
-  #+end_export
+Utilidades de los consumidores en cada una de las asignaciones
+eficientes:
+#+begin_export latex
+\begin{gather*}
+  U_A(S) = U_A(X_{A}^{S}, Y_{A}^{S}) \\
+  U_B(S) = U_B(X_{B}^{S}, Y_{B}^{S})
+\end{gather*}
+#+end_export
 
 
 ** La frontera de posibilidades de utilidad (II)
 
 #+MATS: figcol fig-03_1047-10-*.pdf 0.55
 
-- La *frontera de posibilidades de utilidad* representa los niveles de
-  utilidad que obtienen los consumidores en las asignaciones
-  eficientes.
+La *frontera de posibilidades de utilidad* representa los niveles de
+utilidad que obtienen los consumidores en las asignaciones
+eficientes.
 
 
 ** La frontera de posibilidades de utilidad (III)
@@ -243,27 +245,28 @@ El principio de Pareto es individualista en dos sentidos:
 
 ** Intercambio y producción
 
-- Ampliamos el modelo para incluir la producción.
+Ampliamos el modelo para incluir la producción.
 
 
 ** Consumidores
 
 - Dos consumidores: $A$ y $B$.
 
-- Dos bienes: $X$ e $Y$.
+- Dos bienes de consumo: $X$ e $Y$.
 
 
 ** Producción
 
-- Las empresas combinan factores de producción para elaborar
-  bienes de consumo.
+- Dos empresas.
+
+- Cada empresa produce un único bien de consumo.
 
 
 ** Factores de producción
 
 - Dos factores de producción: $L$ y $K$.
 
-- La cantidad total de los dos factores es fija:
+- La cantidad total de cada uno de los factores es fija:
   #+begin_export latex
   \begin{gather*}
     \Kbar = \Kbar_{X} + \Kbar_{Y} \\
@@ -274,25 +277,26 @@ El principio de Pareto es individualista en dos sentidos:
 
 ** Tecnología
 
-- Funciones de producción de cada empresa:
-  #+begin_export latex
-  \begin{gather*}
-    X = F_{X}(L_{X}, K_{X}) \\
-    Y = F_{Y}(L_{Y}, K_{Y})
-  \end{gather*}
-  #+end_export
+Funciones de producción de cada empresa:
+#+begin_export latex
+\begin{gather*}
+  X = F_{X}(L_{X}, K_{X}) \\
+  Y = F_{Y}(L_{Y}, K_{Y})
+\end{gather*}
+#+end_export
 
 
 ** Relación marginal de sustitución técnica
 
-- La *relación marginal de sustitución técnica*, \RMST, es el número
-  máximo de unidades de $K$ que una tecnología permite sustituir por
-  una unidad de $L$ sin que disminuya la producción.
+- La *relación marginal de sustitución técnica*, $\RMST_j$, en la
+  producción del bien $j$ son las unidades de $K$ que pueden
+  sustituirse por una unidad de $L$ sin que disminuya la producción de
+  $j$.
 
 - Se puede calcular como el cociente entre productos marginales:
   #+begin_export latex
   \[
-    \RMST = \frac{\PMgL}{\PMgK}
+    \RMST_j = \frac{\PMgL_j}{\PMgK_j} \quad (j = X, Y)
   \]
   #+end_export
 
@@ -300,7 +304,7 @@ El principio de Pareto es individualista en dos sentidos:
 
 ** Intercambio
 
-- Podemos seguir analizando el intercambio igual que antes.
+- Podemos seguir analizando el intercambio (casi) igual que antes.
 
 - Las dimensiones de la caja de Edgeworth, $\Xbar$ e $\Ybar$, se
   corresponden ahora con las producciones de los bienes $X$ e $Y$.
@@ -310,14 +314,14 @@ El principio de Pareto es individualista en dos sentidos:
 
 #+MATS: figcol fig-03_1047-22-*.pdf 0.55
 
-- En otra caja de Edgeworth representamos todas las posibles
-  asignaciones de factores:
-  #+begin_export latex
-  \begin{gather*}
-    \Kbar = K_{X} + K_{Y} \\
-    \Lbar = L_{X} + L_{Y}
-  \end{gather*}
-  #+end_export
+En otra caja de Edgeworth representamos todas las posibles
+asignaciones de factores:
+#+begin_export latex
+\begin{gather*}
+  \Kbar = K_{X} + K_{Y} \\
+  \Lbar = L_{X} + L_{Y}
+\end{gather*}
+#+end_export
 
 
 ** Isocuantas (I)
@@ -351,7 +355,7 @@ El principio de Pareto es individualista en dos sentidos:
 
 ** Eficiencia en la producción (y II)
 
-- La eficiencia en la producción requiere que la tasa de sustitución
+- La *eficiencia en la producción* requiere que la tasa de sustitución
   de los factores sea la misma en la producción de cada uno de los
   bienes:
   #+begin_export latex
@@ -365,29 +369,29 @@ El principio de Pareto es individualista en dos sentidos:
 
 #+MATS: figcol fig-03_1047-28-*.pdf 0.55
 
-- En la curva de contrato todas las asignaciones son eficientes:
-  $\RMST_X = \RMST_Y$
+En la curva de contrato todas las asignaciones son eficientes:
+$\RMST_X = \RMST_Y$
 
 
 ** Mejoras de Pareto
 
 #+MATS: figcol fig-03_1047-29-*.pdf 0.55
 
-- Es posible encontrar mejoras de Pareto desde cualquier asignación
-  ineficiente.
+Es posible encontrar mejoras de Pareto desde cualquier asignación
+ineficiente.
 
 
 ** La frontera de posibilidades de producción (I)
 
 #+MATS: figcol fig-03_1047-29b-*.pdf 0.55
 
-- Producción de cada bien en las asignaciones eficientes:
-  #+begin_export latex
-  \begin{gather*}
-    X(N) = F_{X}(L_{X}^{N}, K_{X}^{N}) \\
-    Y(N) = F_{Y}(L_{Y}^{N}, K_{Y}^{N})
-  \end{gather*}
-  #+end_export
+Producción de cada bien en las asignaciones eficientes:
+#+begin_export latex
+\begin{gather*}
+  X(N) = F_{X}(L_{X}^{N}, K_{X}^{N}) \\
+  Y(N) = F_{Y}(L_{Y}^{N}, K_{Y}^{N})
+\end{gather*}
+#+end_export
 
 
 
@@ -395,24 +399,24 @@ El principio de Pareto es individualista en dos sentidos:
 
 #+MATS: figcol fig-03_1047-30-*.pdf 0.55
 
-- La *frontera de posibilidades de producción* representa la máxima
-  producción que puede obtenerse de un bien dada la producción del
-  otro bien.
+La *frontera de posibilidades de producción* representa la máxima
+producción que puede obtenerse de un bien dada la producción del
+otro bien.
 
 
 ** La frontera de posibilidades de producción (III)
 
 #+MATS: figcol fig-03_1047-29-*.pdf 0.55
 
-- $M$ no es una asignación eficiente.
+$M$ no es una asignación eficiente.
 
 
 ** La frontera de posibilidades de producción (y IV)
 
 #+MATS: figcol fig-03_1047-30b-*.pdf 0.55
 
-- Las combinaciones de producción asociadas a asignaciones
-  ineficientes se encuentran debajo de la FPP.
+Las combinaciones de producción asociadas a asignaciones
+ineficientes se encuentran debajo de la FPP.
 
 
 * Eficiencia en la combinación de productos
@@ -422,8 +426,8 @@ El principio de Pareto es individualista en dos sentidos:
 
 #+MATS: figcol fig-03_1047-31-*.pdf 0.55
 
-- La pendiente de la FPP, en valor absoluto, es la *relación marginal
-  de transformación*, $\RMT$.
+La pendiente de la FPP, en valor absoluto, es la *relación marginal
+de transformación*, $\RMT$.
 
 
 ** La relación marginal de transformación (y II)
@@ -442,15 +446,19 @@ El principio de Pareto es individualista en dos sentidos:
 
 ** Eficiencia en la combinación de productos
 
-- La eficiencia en la combinación de productos requiere que:
-  #+begin_export latex
-  \[
-    \RMS_A = \RMS_B = RMT
-  \]
-  #+end_export
+La *eficiencia en la combinación de productos* requiere que:
+#+begin_export latex
+\[
+  \RMS_A = \RMS_B = RMT
+\]
+#+end_export
 
 
-** Condiciones para eficiencia
+
+* Mercados competitivos
+
+
+** Condiciones para la eficiencia
 
 - Eficiencia en el intercambio:
   #+begin_export latex
@@ -472,3 +480,169 @@ El principio de Pareto es individualista en dos sentidos:
     \RMS_A = \RMS_B = RMT
   \]
   #+end_export
+
+
+** Mercados competitivos
+
+- ¿Son eficientes los resultados de los mercados competitivos?
+
+- *Primer teorema del bienestar*: las economías competitivas alcanzan
+  la eficiencia de Pareto.
+
+
+** Eficiencia en el intercambio
+
+- Equilibrio del consumidor:
+  #+begin_export latex
+  \begin{gather*}
+    \RMS_{A} = p_{X}/p_{Y} \\
+    \RMS_{B} = p_{X}/p_{Y}
+  \end{gather*}
+  #+end_export
+
+- Como todos los consumidores se enfrentan a los mismos precios:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B}
+  \]
+  #+end_export
+
+
+** Eficiencia en la asignación de factores
+
+- Minimización de costes:
+  #+begin_export latex
+  \begin{gather*}
+    \RMST_{X} = w/r \\
+    \RMST_{Y} = w/r
+  \end{gather*}
+  #+end_export
+
+- Como todas las empresas competitivas pagan lo mismo por sus
+  factores:
+  #+begin_export latex
+  \[
+    \RMST_{X} = \RMST_{Y}
+  \]
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (I)
+
+- Maximización de beneficios de la empresa competitiva:
+  #+begin_export latex
+  \begin{gather*}
+    p_X = \CMg_X \\
+    p_Y = \CMg_Y
+  \end{gather*}
+  #+end_export
+
+- Podemos expresar el coste marginal como:
+  #+begin_export latex
+  \begin{gather*}
+    \CMg_X = w / \PMgL_X \\
+    \CMg_Y = w / \PMgL_Y
+  \end{gather*}
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (II)
+
+- Maximización de beneficios de la empresa competitiva:
+  #+begin_export latex
+  \begin{gather*}
+    p_X = w / \PMgL_X \\
+    p_Y = w / \PMgL_Y
+  \end{gather*}
+  #+end_export
+
+- Dividiendo las dos expresiones anteriores:
+  #+begin_export latex
+  \[
+    \frac{p_X}{p_Y} = \frac{\PMgL_Y}{\PMgL_X} = \RMT
+  \]
+  #+end_export
+
+
+** Eficiencia en la combinación de productos (y III)
+
+- La optimización del consumidor implica:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B} = p_X/p_Y
+  \]
+  #+end_export
+
+- La maximización del beneficio de las empresas competitivas implica:
+  #+begin_export latex
+  \[
+    \RMT = p_X/p_Y
+  \]
+  #+end_export
+
+- Eficiencia en la combinación de productos:
+  #+begin_export latex
+  \[
+    \RMS_{A} = \RMS_{B} = \RMT
+  \]
+  #+end_export
+
+
+** Eficiencia y equidad
+
+- ¿Hay que renunciar a la eficiencia si se persigue algún tipo de equidad?
+
+- *Segundo teorema del bienestar*: toda asignación eficiente puede ser
+  alcanzada por los mercados competitivos, partiendo de una
+  redistribución inicial adecuada.
+
+
+* Fallos de mercado e intervención pública
+
+
+** Razones para la intervención pública
+
+- Derechos de propiedad y cumplimiento de los contratos.
+
+- Eficiencia.
+
+- Redistribución.
+
+
+** Fallos de mercado
+
+- Poder de mercado.
+
+- Bienes públicos.
+
+- Externalidades.
+
+- Mercados incompletos.
+
+- Información imperfecta.
+
+- Desempleo y otros desequilibrios macroeconómicos.
+
+
+** Redistribución y bienes preferentes
+
+Aunque la economía sea eficiente dos razones para intervenir:
+
++ Redistribución de la renta.
+
++ Los individuos pueden actuar en contra de sus propios intereses:
+  *paternalismo* y *bienes preferentes*.
+
+** El papel del Estado
+
+- La existencia de fallos de mercado es una razón para la intervención
+  del Estado, pero eso no quiere decir que siempre sea deseable esa
+  intervención.
+
+  + *Fallos del sector público*.
+
+  + Problemas en la recogida de información.
+
+- Los fallos de mercado pueden utilizarse para justificar programas
+  cuyos resultados tienen poco que ver con los pretendidos objetivos
+  de los mismos.

@@ -21,7 +21,7 @@
 #+end_src
 
 #+begin_src latex :noweb-ref output-box-scale
-  [xscale=0.045, yscale=0.045, samples=128]
+  [xscale=0.045, yscale=0.04, samples=128]
 #+end_src
 
 
@@ -73,7 +73,7 @@
 #+end_src
 
 #+begin_src latex :noweb-ref input-box-scale
-  [xscale=0.045, yscale=0.045, samples=128]
+  [xscale=0.045, yscale=0.04, samples=128]
 #+end_src
 
 
