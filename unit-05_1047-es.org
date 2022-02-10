@@ -14,6 +14,33 @@
 
 * Introducción
 
+** Eficiencia
+
+El *primer teorema fundamental de la Economía del Bienestar* afirma
+que los mercados competitivos consiguen la eficiencia de Pareto.
+
+** Eficiencia y equidad
+
+El *segundo teorema fundamental de la Economía del Bienestar*
+establece que se pueden lograr objetivos de equidad si primero se
+redistribuye y luego se deja funcionar al mercado.
+
+** Redistribución
+
+La *redistribución* requiere:
+
+- Información sobre preferencias y dotaciones.
+
+- Utilizar impuestos no distorsionadores (/lump-sum/).
+
+** Redistribución y eficiencia
+
+La redistribución puede suponer pérdidas de eficiencia:
+
+- Coste de obtención de la información y de implementar la
+  redistribución.
+
+- Los impuestos no distorsionadores pueden no ser factibles.
 
 ** Disyuntiva entre eficiencia y equidad
 
@@ -26,6 +53,7 @@
 
 * Elección social
 
+
 ** La frontera de posibilidades de utilidad
 
 #+MATS: figcol fig-05_1047-01-*.pdf 0.55
@@ -36,14 +64,14 @@
 
 ** La función social de bienestar
 
-- La *función social de bienestar* indica el nivel de bienestar social
-  asociado a las utilidades alcanzadas por todos los miembros de la
-  sociedad:
+- La *función social de bienestar* agrega las utilidades alcanzadas
+  por todos los miembros de la sociedad:
   #+begin_export latex
   \[
     W = W(U_{A}, U_{B})
   \]
   #+end_export
+
 
 ** Curvas de indiferencia social
 
@@ -63,11 +91,11 @@
 - *Utilitarismo*: $W = U_A + U_B$.
 
 
-** Rawlsianismo
+** Igualitarismo
 
 #+MATS: figcol fig-05_1047-05-*.pdf 0.55
 
-- *Rawlsianismo*: $W = \min\{U_A, U_B\}$.
+- *Igualitarismo* (Rawls): $W = \min\{U_A, U_B\}$.
 
 
 ** La elección social (I)
@@ -80,14 +108,15 @@
 
 ** La elección social (y II)
 
-- Problemas:
+Problemas:
 
-  + ¿Como podemos comparar la utilidad de diferentes personas?
+- ¿Podemos comparar la utilidad de diferentes personas?
 
-  + ¿De dónde viene la función de bienestar social?
+- ¿Qué representa la función de bienestar social?
 
 
 * La elección social en la práctica
+
 
 ** Medición de los beneficios de un programa
 
@@ -97,11 +126,13 @@
 
 - Excedente del consumidor.
 
+
 ** Medición de la ineficiencia
 
 - Pérdida irrecuperable de eficiencia (/deadweight loss/).
 
 - Triángulos de Harberger.
+
 
 ** Medición de los efectos redistributivos
 
@@ -111,9 +142,10 @@
 
 - Brecha de pobreza.
 
+
 ** Tres enfoques
 
-- Principio de compensación
+- *Principio de compensación* (Kaldor-Hicks).
 
 - Comparación medidas eficiencia y equidad.
 
