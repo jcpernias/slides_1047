@@ -32,10 +32,12 @@ El *consumo* de un *bien público puro* se caracteriza por:
 | Excluible    | Bienes club           | Bienes privados puros |
 |--------------+-----------------------+-----------------------|
 
+
 ** Bienes públicos impuros
 
 - En ocasiones, se habla de *bienes públicos impuros* en casos en los
   que se cumple una de las condiciones pero no las dos.
+
 
 ** Bienes no rivales
 
@@ -43,6 +45,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - Sin exclusión, la provisión privada conlleva *suministro
   insuficiente*.
+
 
 ** Bienes no excluibles
 
@@ -54,9 +57,11 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 * Provisión eficiente de bienes privados
 
+
 ** Condiciones de eficiencia y bienes privados
 
 - Reconsideramos las condiciones de eficiencia que vimos antes.
+
 
 ** Bienes privados
 
@@ -66,6 +71,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
   + $B$: Buñuelos.
 
+
 ** Preferencias
 
 #+MATS: figcol fig-06_1047-01-*.pdf 0.45
@@ -74,6 +80,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - $\RMS_i$: cuántas tazas de chocolate está dispuesto a sacrificar el
   consumidor $i$ a cambio de un buñuelo adicional.
+
 
 ** Mercados y precios
 
@@ -85,6 +92,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - *Numerario*: elegimos el chocolate como numerario: $P_C =
   \text{\money{1}}$ por taza.
+
 
 ** Elección óptima
 
@@ -98,6 +106,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
   \]
   #+end_export
 
+
 ** Demanda individual
 
 #+MATS: figcol fig-06_1047-03-*.pdf 0.45
@@ -106,6 +115,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - La curva de demanda del consumidor $i$ refleja su disposición a
   pagar por un buñuelo más.
+
 
 ** Demanda de mercado
 
@@ -121,6 +131,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
   \]
   #+end_export
 
+
 ** Producción
 
 - En una economía competitiva la maximización de beneficios implica la
@@ -131,6 +142,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
     P_C = \CM_C
   \end{gather*}
   #+end_export
+
 
 ** La relación marginal de transformación
 
@@ -144,6 +156,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
   \]
   #+end_export
 
+
 ** Oferta
 
 #+MATS: figcol fig-06_1047-05-*.pdf 0.45
@@ -153,6 +166,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 - $C$ es numerario: $\RMT = \CM_B$
 
 - Oferta de $B$: $P_B = \RMT$.
+
 
 ** Equilibrio de mercado (I)
 
@@ -165,6 +179,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
   \]
   #+end_export
 
+
 ** Equilibrio de mercado (y II)
 
 #+MATS: figcol fig-06_1047-06-*.pdf 0.45
@@ -172,7 +187,9 @@ El *consumo* de un *bien público puro* se caracteriza por:
 - Todos los consumidores pagan el mismo precio por un bien privado
   pero consumen cantidades diferentes.
 
+
 * Provisión eficiente de bienes públicos
+
 
 ** Condiciones de eficiencia y bienes públicos
 
@@ -194,6 +211,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - $C$ es el bien numerario.
 
+
 ** Preferencias
 
 #+MATS: figcol fig-06_1047-11-*.pdf 0.45
@@ -203,12 +221,14 @@ El *consumo* de un *bien público puro* se caracteriza por:
 - $\RMS_i$: cuántas tazas de chocolate está dispuesto a sacrificar el
   consumidor $i$ a cambio de un minuto adicional de /mascletà/.
 
+
 ** Curva de demanda individual del bien público
 
 #+MATS: figcol fig-06_1047-13-*.pdf 0.45
 
 - La curva de demanda individual refleja la disposición a pagar del
   consumidor $i$ por un minuto adicional de /mascletà/.
+
 
 ** Curva de demanda colectiva
 
@@ -220,6 +240,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 - Se obtiene como la *suma vertical* de las curvas de demanda
   individuales.
 
+
 ** Curva de oferta del bien público
 
 #+MATS: figcol fig-06_1047-15-*.pdf 0.45
@@ -227,6 +248,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 - Coincide con el coste marginal de producir el bien público.
 
 - $C$ es numerario: coincide con la $\RMT$.
+
 
 ** Eficiencia (I)
 
@@ -240,12 +262,14 @@ El *consumo* de un *bien público puro* se caracteriza por:
   \]
   #+end_export
 
+
 ** Eficiencia (II)
 
 #+MATS: figcol fig-06_1047-16-*.pdf 0.45
 
 - La condición de eficiencia con bienes públicos no es un equilibrio
   de mercado ni hay fuerzas que lleven a la economía a esta situación.
+
 
 ** Eficiencia (y III)
 
@@ -263,6 +287,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - Equidad.
 
+
 ** Provisión gratuita
 
 #+MATS: figcol fig-06_1047-20-*.pdf 0.45
@@ -270,12 +295,14 @@ El *consumo* de un *bien público puro* se caracteriza por:
 - La provisión gratuita de un bien con coste marginal positivo no es
   eficiente: *consumo excesivo*.
 
+
 ** Costes de transacción
 
 #+MATS: figcol fig-06_1047-21-*.pdf 0.45
 
 - Si el suministro gratuito evita costes de transacción, las ganancias
   de bienestar pueden compensar las ineficiencias.
+
 
 ** Mecanismos de racionamiento
 
@@ -291,12 +318,14 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 * Producción pública
 
+
 ** Provisión y producción
 
 - Hasta ahora hemos visto razones que justifican la *provisión* de
   bienes y servicios por parte del Sector Público.
 
 - *Provisión* pública no implica *producción* pública.
+
 
 ** Justificación de la producción pública
 
@@ -305,11 +334,13 @@ El *consumo* de un *bien público puro* se caracteriza por:
 - El Estado quiere alcanzar objetivos más amplios que la mera
   eficiencia económica.
 
+
 ** El monopolio natural
 
 #+MATS: figcol fig-06_1047-30-*.pdf 0.45
 
 - Costes decrecientes en el rango relevante de producción.
+
 
 ** Fijación de precios monopolista
 
@@ -317,6 +348,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - El monopolista puede obtener beneficios, limitando la producción
   para soportar precios por encima del coste marginal.
+
 
 ** Competencia latente
 
@@ -327,12 +359,14 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - Si hay costes hundidos importantes, esta situación es poco probable.
 
+
 ** Producción eficiente
 
 #+MATS: figcol fig-06_1047-33-*.pdf 0.45
 
 - Si el precio coincide con el coste marginal, el monopolio incurre en
   pérdidas.
+
 
 ** Intervención pública
 
@@ -342,6 +376,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - No hacer nada.
 
+
 ** Los fallos del Estado (I)
 
 - La intervención sólo sería justificable si la ineficiencia del
@@ -349,6 +384,7 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 - La intervención puede ser peor que el monopolio: *fallos del
   Estado*.
+
 
 ** Los fallos del Estado (y II)
 
