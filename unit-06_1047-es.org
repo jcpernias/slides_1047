@@ -17,6 +17,7 @@
 ** Características de los bienes públicos
 
 El *consumo* de un *bien público puro* se caracteriza por:
+
 - *No rivalidad*.
 
 - *No exclusión*.
@@ -35,41 +36,40 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Bienes públicos impuros
 
-- En ocasiones, se habla de *bienes públicos impuros* en casos en los
-  que se cumple una de las condiciones pero no las dos.
+En ocasiones, se habla de *bienes públicos impuros* en casos en los
+que se cumple una de las condiciones pero no las dos.
 
 
 ** Bienes no rivales
 
-- La exclusión no es socialmente deseable porque provoca *subconsumo*.
+En el caso de los *bienes no rivales*:
 
-- Sin exclusión, la provisión privada conlleva *suministro
+- La exclusión no es socialmente deseable: *subconsumo*.
+
+- Sin exclusión la provisión privada conduce a un *suministro
   insuficiente*.
 
 
 ** Bienes no excluibles
 
+En el caso de los *bienes no excluibles*:
+
 - El sistema de precios es inviable si no es posible la exclusión.
 
-- *Problema del polizón*: No existen incentivos al pago voluntario por
-  el uso del bien.
+- *Problema del polizón*: no hay incentivos al pago voluntario.
 
 
 * Provisión eficiente de bienes privados
 
 
-** Condiciones de eficiencia y bienes privados
-
-- Reconsideramos las condiciones de eficiencia que vimos antes.
-
 
 ** Bienes privados
 
-- Sólo se producen dos bienes privados:
+Sólo se producen dos bienes privados:
 
-  + $C$: Chocolate.
+- $C$: Chocolate.
 
-  + $B$: Buñuelos.
+- $B$: Buñuelos.
 
 
 ** Preferencias
@@ -90,21 +90,21 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
   + $P_B$: precio de los buñuelos (€ por buñuelo).
 
-- *Numerario*: elegimos el chocolate como numerario: $P_C =
-  \text{\money{1}}$ por taza.
+- Elegimos el chocolate como *numerario*: $P_C = \text{\money{1}}$ por
+  taza.
 
 
 ** Elección óptima
 
 #+MATS: figcol fig-06_1047-02-*.pdf 0.45
 
-- El consumidor $i$ ajusta su consumo hasta que el precio de mercado
-  coincide con su valoración de un buñuelo adicional:
-  #+begin_export latex
-  \[
-    P_B = \RMS_i
-  \]
-  #+end_export
+El consumidor $i$ ajusta su consumo hasta que el precio de mercado
+coincide con su valoración de un buñuelo adicional:
+#+begin_export latex
+\[
+  P_B = \RMS_i
+\]
+#+end_export
 
 
 ** Demanda individual
@@ -134,14 +134,14 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Producción
 
-- En una economía competitiva la maximización de beneficios implica la
-  eficiencia en la producción:
-  #+begin_export latex
-  \begin{gather*}
-    P_B = \CM_B \\
-    P_C = \CM_C
-  \end{gather*}
-  #+end_export
+En una economía competitiva la maximización de beneficios implica la
+eficiencia en la producción:
+#+begin_export latex
+\begin{gather*}
+  P_B = \CM_B \\
+  P_C = \CM_C
+\end{gather*}
+#+end_export
 
 
 ** La relación marginal de transformación
@@ -168,24 +168,17 @@ El *consumo* de un *bien público puro* se caracteriza por:
 - Oferta de $B$: $P_B = \RMT$.
 
 
-** Equilibrio de mercado (I)
+** Equilibrio de mercado
 
 #+MATS: figcol fig-06_1047-06-*.pdf 0.45
 
-- La igualdad de la demanda y la oferta de mercado implica:
-  #+begin_export latex
-  \[
-    \RMS_1 = \RMS_2 = \dots = \RMT
-  \]
-  #+end_export
-
-
-** Equilibrio de mercado (y II)
-
-#+MATS: figcol fig-06_1047-06-*.pdf 0.45
-
-- Todos los consumidores pagan el mismo precio por un bien privado
-  pero consumen cantidades diferentes.
+La igualdad de la demanda y la oferta de mercado implica el
+cumplimiento de las condiciones de eficiencia:
+#+begin_export latex
+\[
+  \RMS_1 = \RMS_2 = \dots = \RMT
+\]
+#+end_export
 
 
 * Provisión eficiente de bienes públicos
@@ -193,12 +186,12 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Condiciones de eficiencia y bienes públicos
 
-- Las condiciones de eficiencia son diferentes en presencia de bienes
-  públicos.
+Las condiciones de eficiencia son diferentes en presencia de bienes
+públicos.
 
-- Cada consumidor decide qué cantidad consume de un bien privado.
+- Cada individuo decide qué cantidad consume de un bien privado.
 
-- Todos los consumidores consumen la misma cantidad de un bien público.
+- Todos consumen la misma cantidad de un bien público.
 
 
 ** Bienes
@@ -226,8 +219,8 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 #+MATS: figcol fig-06_1047-13-*.pdf 0.45
 
-- La curva de demanda individual refleja la disposición a pagar del
-  consumidor $i$ por un minuto adicional de /mascletà/.
+La curva de demanda individual refleja la disposición a pagar del
+consumidor $i$ por un minuto adicional de /mascletà/.
 
 
 ** Curva de demanda colectiva
@@ -254,8 +247,10 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 #+MATS: figcol fig-06_1047-16-*.pdf 0.45
 
-- Cuando se proporcionan $M^*$ minutos de /mascletades/ coinciden la
-  valoración social y el coste social del último minuto:
+- $M^*$ es la cantidad socialmente óptima de /mascletades/.
+
+- Coinciden la valoración social y el coste social del último
+  minuto de /mascletades/:
   #+begin_export latex
   \[
     \RMS_1 + \RMS_2 + \cdots = \RMT
@@ -263,18 +258,13 @@ El *consumo* de un *bien público puro* se caracteriza por:
   #+end_export
 
 
-** Eficiencia (II)
+** Eficiencia (y II)
 
 #+MATS: figcol fig-06_1047-16-*.pdf 0.45
 
-- La condición de eficiencia con bienes públicos no es un equilibrio
-  de mercado ni hay fuerzas que lleven a la economía a esta situación.
+La condición de eficiencia con bienes públicos no es un equilibrio
+de mercado ni hay fuerzas que lleven a la economía a esta situación.
 
-
-** Eficiencia (y III)
-
-- Todos los consumidores consumen las mismas unidades del bien público
-  aunque cada uno lo valora de una forma diferente.
 
 
 
@@ -282,6 +272,8 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 
 ** Razones para intervenir
+
+¿Qué justifica que el Sector Público provea algunos bienes privados?
 
 - *Costes de transacción*.
 
@@ -292,28 +284,28 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 #+MATS: figcol fig-06_1047-20-*.pdf 0.45
 
-- La provisión gratuita de un bien con coste marginal positivo no es
-  eficiente: *consumo excesivo*.
+La *provisión gratuita* de un bien con coste marginal positivo no es
+eficiente: *consumo excesivo*.
 
 
 ** Costes de transacción
 
 #+MATS: figcol fig-06_1047-21-*.pdf 0.45
 
-- Si el suministro gratuito evita costes de transacción, las ganancias
-  de bienestar pueden compensar las ineficiencias.
+Si se evitan *costes de transacción*, las ganancias de bienestar
+pueden compensar las ineficiencias.
 
 
 ** Mecanismos de racionamiento
 
-- Si la provisión gratuita genera grandes ineficiencias se puede usar
-  algún tipo de *racionamiento*:
+Si la provisión gratuita genera grandes ineficiencias se puede usar
+algún tipo de *racionamiento*:
 
-  + *Tasas por uso*.
++ *Tasas por uso*.
 
-  + *Provisión uniforme*.
++ *Provisión uniforme*.
 
-  + *Colas*.
++ *Colas*.
 
 
 * Producción pública
@@ -329,6 +321,8 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 ** Justificación de la producción pública
 
+Razones para justificar la producción pública:
+
 - Competencia insuficiente.
 
 - El Estado quiere alcanzar objetivos más amplios que la mera
@@ -339,33 +333,34 @@ El *consumo* de un *bien público puro* se caracteriza por:
 
 #+MATS: figcol fig-06_1047-30-*.pdf 0.45
 
-- Costes decrecientes en el rango relevante de producción.
+*Monopolio natural*: costes decrecientes en el rango relevante de
+producción.
 
 
 ** Fijación de precios monopolista
 
 #+MATS: figcol fig-06_1047-31-*.pdf 0.45
 
-- El monopolista puede obtener beneficios, limitando la producción
-  para soportar precios por encima del coste marginal.
+El monopolista puede obtener beneficios, limitando la producción
+para soportar precios por encima del coste marginal.
 
 
 ** Competencia latente
 
 #+MATS: figcol fig-06_1047-32-*.pdf 0.45
 
-- Si es fácil que entren competidores en el mercado, el monopolista
-  podría fijar un precio cercano al coste unitario.
+- El monopolista podría fijar un precio cercano al coste unitario si
+  es fácil que entren competidores en el mercado.
 
-- Si hay costes hundidos importantes, esta situación es poco probable.
+- Esta situación es poco probable si hay costes hundidos importantes.
 
 
 ** Producción eficiente
 
 #+MATS: figcol fig-06_1047-33-*.pdf 0.45
 
-- Si el precio coincide con el coste marginal, el monopolio incurre en
-  pérdidas.
+Si el precio coincide con el coste marginal, el monopolio incurre en
+pérdidas.
 
 
 ** Intervención pública
