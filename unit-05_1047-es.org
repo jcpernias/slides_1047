@@ -14,16 +14,19 @@
 
 * Introducción
 
+
 ** Eficiencia
 
 El *primer teorema fundamental de la Economía del Bienestar* afirma
 que los mercados competitivos consiguen la eficiencia de Pareto.
+
 
 ** Eficiencia y equidad
 
 El *segundo teorema fundamental de la Economía del Bienestar*
 establece que se pueden lograr objetivos de equidad si primero se
 redistribuye y luego se deja funcionar al mercado.
+
 
 ** Redistribución
 
@@ -33,6 +36,7 @@ La *redistribución* requiere:
 
 - Utilizar impuestos no distorsionadores (/lump-sum/).
 
+
 ** Redistribución y eficiencia
 
 La redistribución puede suponer pérdidas de eficiencia:
@@ -41,6 +45,7 @@ La redistribución puede suponer pérdidas de eficiencia:
   redistribución.
 
 - Los impuestos no distorsionadores pueden no ser factibles.
+
 
 ** Disyuntiva entre eficiencia y equidad
 
@@ -62,9 +67,9 @@ La redistribución puede suponer pérdidas de eficiencia:
   que obtiene una persona dada la utilidad de la otra persona.
 
 
-** La función social de bienestar
+** La función de bienestar social
 
-- La *función social de bienestar* agrega las utilidades alcanzadas
+- La *función de bienestar social* agrega las utilidades alcanzadas
   por todos los miembros de la sociedad:
   #+begin_export latex
   \[
