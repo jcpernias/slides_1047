@@ -20,6 +20,19 @@
 - ¿Qué proyectos son *preferibles*?
 
 
+** Etapas
+
+1. Identificación de los proyectos a considerar.
+
+2. Enumeración de los inputs y outputs requeridos en cada proyecto
+   alternativo.
+
+3. Asignación de un valor monetario a cada input y a cada output.
+
+4. Cálculo de la rentabilidad asociada a cada proyecto.
+
+
+
 ** Flujos de beneficios netos
 
 - Durante la vida de un proyecto se genera una *corriente de ingresos y
@@ -40,14 +53,14 @@
 
 ** El valor actual descontado (I)
 
-- El *valor actual descontado* de un proyecto que genera un flujo de
-  beneficios netos $R_0, R_1, R_2, \dots, R_T$ es:
-  #+begin_export latex
-  \[
-    \VAD = R_0 + \frac{R_1}{1 + r} + \frac{R_2}{(1 + r)^2} +
-    \dots + \frac{R_T}{(1 + r)^T}
-  \]
-  #+end_export
+El *valor actual descontado* de un proyecto que genera un flujo de
+beneficios netos $R_0, R_1, R_2, \dots, R_T$ es:
+#+begin_export latex
+\[
+  \VAD = R_0 + \frac{R_1}{1 + r} + \frac{R_2}{(1 + r)^2} +
+  \dots + \frac{R_T}{(1 + r)^T}
+\]
+#+end_export
 
 
 ** El valor actual descontado (y II)
@@ -78,12 +91,14 @@
 
 ** Diferencias con el análisis privado
 
-- El Sector Público tiene en cuenta aspectos que el análisis privado
-  no considera.
+El Sector Público tiene en cuenta aspectos que el análisis privado
+no considera:
 
-- Los precios de mercado no siempre son adecuados.
+- El Sector Público puede tener objetivos más amplios que la obtención
+  de beneficios monetarios.
 
-- La tasa de descuento privada puede no ser apropiada.
+- Los precios de mercado no existen o, a causa de un fallo de mercado,
+  no representan el coste marginal social.
 
 
 ** Excedente de los consumidores
@@ -109,14 +124,23 @@
 
 ** El valor de la vida
 
-- ¿Cuánto vale una vida?
+¿Cuánto vale una vida?
 
-  + Alguna estimaciones se basan en calcular cuánto hubiera ganado un
-    individuo si hubiera seguido vivo.
++ Alguna estimaciones se basan en calcular cuánto hubiera ganado un
+  individuo si hubiera seguido vivo.
 
-  + Otras estimaciones tratan de inferir a partir de los diferenciales
-    salariales en cuánto valoran su vida los trabajadores que aceptan
-    trabajos más peligrosos.
++ Otras estimaciones tratan de inferir a partir de los diferenciales
+  salariales en cuánto valoran su vida los trabajadores que aceptan
+  trabajos más peligrosos.
+
+
+** Recursos naturales
+
+¿Cómo valorar los impactos ambientales?
+
+- *Valoración contingente*.
+
+- *Valores de existencia*.
 
 
 ** Precios de mercado y precios sombra
@@ -128,73 +152,74 @@
 
 ** Precios sombra: desempleo
 
-- La valoración de los costes laborales depende del coste de
-  oportunidad de los trabajadores que se contraten:
+La valoración de los costes laborales depende del coste de
+oportunidad de los trabajadores que se contraten:
 
-  + Si ya estaban empleados los costes laborales se valoran utilizando
-    el salario de mercado.
+- Si ya estaban empleados los costes laborales se valoran utilizando
+  el salario de mercado.
 
-  + Si estaban desempleados su coste de oportunidad es el valor del
-    ocio, muy inferior al salario de mercado.
+- Si estaban desempleados su coste de oportunidad es el valor del
+  ocio, muy inferior al salario de mercado.
 
 
 ** Precios sombra: monopolio
 
-- Si para realizar el proyecto se necesita el producto de un
-  monopolista, estas compras deben valorarse:
+Si para realizar el proyecto se necesita el producto de un
+monopolista, estas compras deben valorarse:
 
-  + De acuerdo al *coste marginal* si el monopolista aumenta su
-    producción para abastecer al proyecto público.
+- De acuerdo al *coste marginal* si el monopolista aumenta su
+  producción para abastecer al proyecto público.
 
-  + De acuerdo al *precio de mercado* si el monopolista no aumenta su
-    producción y las compras públicas sustituyen a compras privadas.
+- De acuerdo al *precio de mercado* si el monopolista no aumenta su
+  producción y las compras públicas sustituyen a compras privadas.
 
 
 ** Precios sombra: externalidades
 
-- Si para realizar el proyecto se necesita un bien cuya producción
-  genera contaminación:
+Si para realizar el proyecto se necesita un bien cuya producción
+genera contaminación:
 
-  + El precio de mercado no refleja el coste de la contaminación.
+- El precio de mercado no refleja el coste de la contaminación.
 
-  + El precio sombra debe recoger el daño causado por la contaminación.
+- El precio sombra debe recoger el daño causado por la contaminación.
 
 
 ** Tasa de descuento social (I)
 
-- La *tasa de descuento social* puede basarse en el tipo de interés de
-  mercado:
+La *tasa de descuento social* puede basarse en el tipo de interés de
+mercado:
 
-  + si no hay fallos de mercado; y
+- si no hay fallos de mercado; y
 
-  + si los que se benefician del proyecto son los mismos que soportan
-    los costes.
+- si los que se benefician del proyecto son los mismos que soportan
+  los costes.
+
 
 ** Tasa de descuento social (y II)
 
 - La valoración de proyectos que tienen efectos en el largo plazo es
-  muy sensible al tipo de interés:
+  muy sensible a la tasa de descuento que se emplee:
 
   #+begin_center
   #+latex: \mode<presentation>{\vspace*{1ex}}
   #+ATTR_LATEX: :booktabs :center :align cp{0.75cm}c
-  |-----------------+---+---------------------|
-  | Tipo de interés |   | \VAD de \money{100} |
-  |                 |   | dentro de 50 años   |
-  |-----------------+---+---------------------|
-  |              5% |   | \money{8.72}        |
-  |              4% |   | \money{14.07}       |
-  |              3% |   | \money{22.81}       |
-  |              2% |   | \money{37.15}       |
-  |-----------------+---+---------------------|
+  |-------------------+---+---------------------|
+  | Tasa de descuento |   | \VAD de \money{100} |
+  |                   |   | dentro de 50 años   |
+  |-------------------+---+---------------------|
+  |                5% |   | \money{8.72}        |
+  |                4% |   | \money{14.07}       |
+  |                3% |   | \money{22.81}       |
+  |                2% |   | \money{37.15}       |
+  |-------------------+---+---------------------|
   #+latex: \mode<presentation>{\vspace*{1ex}}
   #+end_center
 
 - En la valoración de proyectos que afecten a distintas generaciones
   deberían utilizarse tasas de descuento sociales bajas.
-** Otras cuestiones
 
-- Valoración de recursos naturales.
+
+** Otras cuestiones
 
 - Valoración en condiciones de incertidumbre.
 
@@ -209,6 +234,7 @@
 - Este tipo más simple de análisis se usa cuando es difícil estimar
   los beneficios de las diferentes alternativas y estos beneficios se
   suponen razonablemente similares.
+
 
 ** Errores comunes
 
