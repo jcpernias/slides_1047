@@ -121,7 +121,7 @@
 * El déficit público
 
 
-** Gastos e ingresos del Estado
+** COMMENT Gastos e ingresos del sector público
 
 - Información estadística:
 
@@ -135,10 +135,9 @@
 
 ** Déficit público
 
-- Comúnmente sólo se refiere a las Administraciones Públicas.
+a) Capacidad o necesidad de financiación (saldo fiscal): diferencia
+   entre ingresos y gastos no financieros.
 
-- Capacidad o necesidad de financiación (superávit o déficit no
-  financiero): diferencia entre ingresos y gastos no financieros.
-
-- Superávit o déficit primario: el saldo no financiero menos los
-  intereses de la deuda pública.
+b) Saldo primario: se calcula como diferencia de ingresos
+   y gastos, pero no se exluyendo los pagos de los intereses de la
+   deuda pública.
