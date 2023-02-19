@@ -36,7 +36,7 @@
     economía, solución de fallos de mercado y distribución de la renta.
 
 
-** Consenso actual
+** COMMENT Consenso actual
 
 - *Fallos del Estado*.
 
