@@ -1,7 +1,7 @@
 #+STARTUP: indent hidestars content
 
 #+AUTHOR: José Pernías
-#+DATE: Curso 2021--2022
+#+DATE: Curso 2022--2023
 
 #+LANGUAGE: es
 #+LATEX_HEADER: \newcommand*{\LANG}{es}
