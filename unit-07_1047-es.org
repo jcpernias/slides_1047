@@ -17,25 +17,25 @@
 
 #+MATS: figcol fig-07_1047-10-*.pdf 0.45
 
-- En un mercado competitivo:
+En un mercado competitivo:
 
-  + La demanda coincide con el *beneficio marginal social*, \BMS.
+- La demanda coincide con el *beneficio marginal social*, \BMS.
 
-  + La oferta coincide con el *coste marginal social*, \CMS.
+- La oferta coincide con el *coste marginal social*, \CMS.
 
 
 ** Externalidades
 
-- Se produce una *externalidad* cuando las acciones de un agente
-  afectan el bienestar de otros agentes directamente, sin la mediación
-  de un mercado.
+Se produce una *externalidad* cuando las acciones de un agente afectan
+el bienestar de otros agentes directamente, sin la mediación de un
+mercado.
 
 
 ** Externalidad negativa en la producción (I)
 
-- Un proceso productivo puede generar polución que impacte
-  negativamente sobre algunos grupos de la sociedad que no reciben
-  ninguna compensación.
+Un proceso productivo puede generar polución que impacte negativamente
+sobre algunos grupos de la sociedad que no reciben ninguna
+compensación.
 
 
 
@@ -107,12 +107,12 @@
 ** Internalizar la externalidad
 
 
-- Crear unidades económicas con el suficiente tamaño.
+Crear unidades económicas con el suficiente tamaño.
 
 
 ** Establecer derechos de propiedad
 
-- Establecer *derechos de propiedad*.
+- Se asigna el *derecho de propiedad* a una de las partes.
 
 - *Teorema de Coase*: se obtiene la solución eficiente mediante
   negociación entre las partes, independientemente de como se asignen
@@ -144,8 +144,8 @@
 
 #+MATS: figcol fig-07_1047-50-*.pdf 0.45
 
-- Un *impuesto corrector* persigue eliminar la ineficiencia generada
-  por una externalidad haciendo que se reduzca el nivel de producción.
+Un *impuesto corrector* persigue eliminar la ineficiencia generada por
+una externalidad haciendo que se reduzca el nivel de producción.
 
 
 ** Impuestos (y II)
@@ -163,8 +163,8 @@
 
 #+MATS: figcol fig-07_1047-50-*.pdf 0.45
 
-- Ofrecer *subvenciones* a las empresas para que reduzcan su nivel de
-  producción puede conseguir también el nivel de producción eficiente.
+Ofrecer *subvenciones* a las empresas para que reduzcan su nivel de
+producción puede conseguir también el nivel de producción eficiente.
 
 
 ** Subvenciones (y II)
@@ -255,11 +255,11 @@
 
 ** Creación de mercados
 
-- *Permisos transferibles*:
+*Permisos transferibles*:
 
-  + El Estado fija la cantidad total de permisos.
+- El Estado fija la cantidad total de permisos.
 
-  + Las empresas pueden venderse entre ellas los permisos.
+- Las empresas pueden venderse entre ellas los permisos.
 
 
 ** Efectividad de las soluciones públicas
@@ -278,10 +278,10 @@
 
 ** Externalidades y distribución
 
-- Un impuesto correctivo:
+Un impuesto correctivo:
 
-  - Beneficia a los que soportan la externalidad. Si son las capas más
-    pobres de la sociedad, el impuesto es una mejora distributiva.
+- Beneficia a los que soportan la externalidad. Si son las capas más
+  pobres de la sociedad, el impuesto es una mejora distributiva.
 
-  - Perjudica a las empresas gravadas por el impuesto y a sus
-    consumidores que soportan mayores precios.
+- Perjudica a las empresas gravadas por el impuesto y a sus
+  consumidores que soportan mayores precios.
