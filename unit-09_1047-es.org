@@ -18,6 +18,22 @@
 - *Economía política*: Las decisiones públicas son tomadas por agentes
   que tratan de maximizar su binenestar.
 
+* La regla de la mayoría
+
+** Regla de la mayoría
+
+- Una comunidad de votantes tiene que elegir entre tres opciones para
+  la financiación de un bien público: bajo, medio o alto.
+
+- Cada opción se enfrenta a otra y cada ciudadano vota por su opción
+  favorita. La opción ganadora se enfrenta a la tercera opción y se
+  vuelve a votar.
+
+** Preferencias
+
+* El votante mediano
+
+
 * Decisiones por unanimidad
 
 ** Regla de Lindahl
@@ -36,18 +52,3 @@
 
 - Encontrar un equilibrio es extremadamente difícil y la dificultad
   crece con el número de contribuyentes.
-
-* La regla de la mayoría
-
-** Regla de la mayoría
-
-- Una comunidad de votantes tiene que elegir entre tres opciones para
-  la financiación de un bien público: bajo, medio o alto.
-
-- Cada opción se enfrenta a otra y cada ciudadano vota por su opción
-  favorita. La opción ganadora se enfrenta a la tercera opción y se
-  vuelve a votar.
-
-** Preferencias
-
-* El votante mediano
