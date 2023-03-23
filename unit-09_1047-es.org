@@ -12,29 +12,383 @@
 
 * Introducción
 
+
 ** La toma de decisiones públicas
 
-- *Agregación de preferencias*.
-- *Economía política*: Las decisiones públicas son tomadas por agentes
-  que tratan de maximizar su binenestar.
+- El Sector Público idealmente toma sus decisiones tratando de
+  satisfacer las preferencias individuales de los ciudadanos.
+
+- Si las preferencias por los bienes públicos fueran homogéneas el
+  problema de la elección pública sería trivial.
+
+
+** Heterogeneidad de las preferencias
+
+- Las preferencias por los bienes públicos pueden ser heterogéneas
+  debido a diferencias en la renta de los individuos.
+
+- La heterogeneidad también puede ser consecuencia del sistema
+  impositivo con el que se financian los bienes públicos.
+
+
+** Impuestos uniformes (I)
+
+- El gasto en bienes públicos, $G$, se reparte a partes iguales entre
+  los $N$ ciudadanos. Los impuestos que paga el ciudadano $i$, $T_i$,
+  son:
+  #+begin_export latex
+  \[
+    T_i = \frac{G}{N}.
+  \]
+  #+end_export
+
+- En ese caso, el *precio en impuestos* de los bienes públicos es el
+  mismo para todos los consumidores:
+  #+begin_export latex
+  \[
+    \frac{\diff\, T_{i}}{\diff\, G} = \frac{1}{N}.
+  \]
+  #+end_export
+
+
+** Impuestos uniformes (y II)
+
+Con un sistema impositivo uniforme:
+
+- El precio en impuestos es igual para todos los consumidores.
+
+- Si los bienes públicos son normales su demanda crece con la renta.
+
+
+** Impuestos proporcionales (I)
+
+- El ciudadano $i$ paga en impuestos una fracción $t$ de su renta,
+  $Y_i$:
+  #+begin_export latex
+  \[
+    T_{i} = t Y_{i}.
+  \]
+  #+end_export
+
+- Los impuestos tienen que financiar el gasto en bienes públicos:
+  #+begin_export latex
+  \[
+    G = t Y = t N \bar{Y},
+  \]
+  #+end_export
+  donde $Y = \sum Y_i$ es la renta agregada e $\bar{Y}$ es la renta
+  media.
+
+- La tasa impositiva que equilibra el presupuesto es:
+  #+begin_export latex
+  \[
+    t = \frac{G}{N \bar{Y}}.
+  \]
+  #+end_export
+
+
+** Impuestos proporcionales (II)
+
+- Los impuestos pagados por el consumidor $i$ son:
+  #+begin_export latex
+  \[
+    T_{i} = \frac{G Y_i}{N \bar{Y}}.
+  \]
+  #+end_export
+
+- Con un sistema impositivo proporcional, el precio en impuestos de
+  los bienes públicos para el consumidor $i$ es mayor cuanto mayor es
+  su renta:
+  #+begin_export latex
+  \[
+    \frac{\diff\, T_{i}}{\diff\, G} = \frac{1}{N}\frac{Y_i}{\bar{Y}}.
+  \]
+  #+end_export
+
+
+** Impuestos proporcionales (y III)
+
+Con un sistema impositivo proporcional:
+
+- El precio en impuestos es creciente con la renta.
+
+- Si son bienes normales, la demanda de bienes públicos tiende a
+  crecer con la renta. Pero el precio en impuestos también aumenta con
+  la renta lo que reduce la demanda de bienes públicos. El efecto
+  total es ambiguo.
+
+
+** La elección pública
+
+- En el mercado, la función de los precios es agregar y transmitir la
+  información relevante.
+
+- En las decisiones públicas no existe un sistema de precios.
+
+- El problema de la elección pública es *averiguar* y *agregar* las
+  preferencias de los ciudadanos.
+
 
 * La regla de la mayoría
 
+** Votaciones
+
+- En una democracia muchas decisiones colectivas se toman mediante
+  algún tipo de votación.
+
+- Diferentes sistemas de votación se usan en diferentes instituciones
+  y países: mayoría simple, mayoría cualificada, unanimidad,
+  pluralidad, etc.
+
+- De todos los sistemas, el más utilizado es mayoría simple.
+
 ** Regla de la mayoría
 
-- Una comunidad de votantes tiene que elegir entre tres opciones para
-  la financiación de un bien público: bajo, medio o alto.
+- *Regla de la mayoría*: la opción preferida colectivamente es la
+  preferida por la mayoría de los votantes.
 
-- Cada opción se enfrenta a otra y cada ciudadano vota por su opción
-  favorita. La opción ganadora se enfrenta a la tercera opción y se
-  vuelve a votar.
+- Se alcanza un equilibrio con la regla de la mayoría cuando una
+  alternativa ganaría una votación contra cualquier otra alternativa.
 
-** Preferencias
+** Ejemplo (I)
+
+- Tres votantes: A, B y C con preferencias transitivas.
+
+- Tres alternativas: Parque, piscina o biblioteca.
+
+- Preferencias de los votantes: alternativas ordenadas de más a menos
+  preferida para cada votante:
+
+  |           | A          | B          | C          |
+  |-----------+------------+------------+------------|
+  | 1ª opción | Parque     | Piscina    | Biblioteca |
+  | 2ª opción | Piscina    | Biblioteca | Piscina    |
+  | 3ª opción | Biblioteca | Parque     | Parque     |
+  |-----------+------------+------------+------------|
+
+** Ejemplo (y II)
+
+- Votaciones:
+
+  | Alternativas         | Resultado        |
+  |----------------------+------------------|
+  | Parque y Piscina     | Piscina (1-2)    |
+  | Parque y Biblioteca  | Biblioteca (1-2) |
+  | Piscina y Biblioteca | Piscina (2-1)    |
+  |----------------------+------------------|
+
+- En este caso la regla de la mayoría agrega las preferencias
+  individuales. Las preferencias colectivas son transitivas:
+  #+begin_export latex
+  \[
+    \text{Piscina} \succ \text{Biblioteca} \succ \text{Parque}
+  \]
+  #+end_export
+
+** Paradoja del voto
+
+- La regla de la mayoría no siempre produce una ordenación social de
+  las alternativas que cumpla con la propiedad transitiva.
+
+- *Paradoja del voto*: se produce cuando las preferencias colectivas
+  son *cíclicas* (no transitivas) aunque las preferencias individuales
+  sean transitivas.
+
+
+** Ejemplo (I)
+
+- Tres votantes (A, B y C) deciden entre tres alternativas (parque,
+  piscina o biblioteca).
+
+- Preferencias de los votantes:
+
+  |           | A          | B          | C          |
+  |-----------+------------+------------+------------|
+  | 1ª opción | Parque     | Piscina    | Biblioteca |
+  | 2ª opción | Piscina    | Biblioteca | Parque     |
+  | 3ª opción | Biblioteca | Parque     | Piscina    |
+  |-----------+------------+------------+------------|
+
+** Ejemplo (y II)
+
+- Votaciones:
+
+  | Alternativas         | Resultado        |
+  |----------------------+------------------|
+  | Parque y Piscina     | Parque (2-1)     |
+  | Parque y Biblioteca  | Biblioteca (1-2) |
+  | Piscina y Biblioteca | Piscina (2-1)    |
+  |----------------------+------------------|
+
+- En este caso, la regla de la mayoría no produce una ordenación
+  transitiva de las alternativas:
+  #+begin_export latex
+  \[
+    \text{Parque} \succ \text{Piscina}; \;
+    \text{Piscina} \succ \text{Biblioteca}; \;
+    \text{Biblioteca} \succ \text{Parque}.
+  \]
+  #+end_export
+
+
+** Votaciones cíclicas
+
+- Con preferencias colectivas cíclicas las votaciones se prolongarían
+  indefinidamente.
+
+- Eliminando alternativas que sean derrotadas en una votación se
+  evitan las votaciones cíclicas.
+
+
+
+** Comportamientos estratégicos en las votaciones
+
+La eliminación de alternativas no ganadoras puede incentivar
+comportamientos estratégicos:
+
+- *Control de la agenda*: quien decide el orden de las votaciones
+  puede determinar el resultado final.
+
+- *Votación estratégica*: votar en contra de las preferencias propias
+  con el fin de influir en el resultado final.
+
+
+** Alternativas a la regla de la mayoría
+
+- No siempre se alcanza un equilibrio con la regla de la mayoría.
+
+- En esos casos hay incentivos a la manipulación de los resultados.
+
+- ¿Existe alguna regla de votación que no tenga esos problemas?
+
+** Condiciones ideales
+
+Idealmente, una regla de elección colectiva debe de cumplir las siguientes condiciones:
+
+1. *Pareto optimalidad débil*.
+
+2. *Transitividad*.
+
+3. *Ausencia de dictadores*.
+
+4. *Independencia de las alternativas irrelevantes*.
+
+5. *Dominio no restringido*.
+
+** Teorema de imposibilidad de Arrow
+
+- El *Teorema de imposibilidad de Arrow* estable ce que si existen al
+  menos tres alternativas y un número finito de individuos, no existe
+  ninguna regla de elección colectiva que cumpla las 5 condiciones
+  ideales.
+
+- Una consecuencia es que no podemos esperar que un gobierno actúe
+  como un individuo racional, a menos que se otorguen poderes
+  dictatoriales a un individuo.
+
+- No existe ningún sistema de votación en el que los individuos voten
+  siempre de acuerdo con sus preferencias.
+
+** Restricciones de las preferencias individuales
+
+Bajo ciertas condiciones sobre las preferencias individuales, la
+votación mayoritaria produciría siempre un equilibrio:
+
+- Se votan *alternativas unidimensionales* (p.ej., diferentes niveles
+  del presupuesto público).
+
+- Los individuos tienen  *preferencias unimodales*.
+
+** Preferencias unimodales
+
+** Preferencias unimodales
+
+Bajo ciertas condiciones la existencia de preferencias unimodales es
+poco probable:
+
+- Presencia de bienes privados sustitutivos.
+
+- Alternativas multidimensionales.
+
+- Cuestiones distributivas.
+
 
 * El votante mediano
 
 
+** Equilibrio
+
+- En las situaciones en las que la regla de la mayoría conduce a un
+  equilibrio, ¿qué propiedades tiene? ¿Se corresponde con el nivel
+  eficiente de bienes públicos?
+
+** El votante mediano
+
+- Con preferencias unimodales podemos ordenar a los individuos de
+  acuerdo a sus preferencias sobre gasto en el bien público.
+
+- El gasto preferido del *votante mediano* divide a la población en
+  dos mitades: la mitad de los individuos prefieren un gasto mayor y
+  la otra mitad prefiere un gasto menor.
+
+** La regla de la mayoría y el votante mediano
+
+- Los resultado de la elección por mayoría corresponden a las
+  preferencias del votante mediano.
+
+** La ineficiencia de la regla de la mayoría
+
+- Para determinar si el gasto resultante de la elección por mayoría es
+  excesivo o insuficiente, sólo necesitamos examinar el comportamiento
+  del votante mediano.
+
+- Comparamos la parte del coste social que recae sobre el votante
+  mediano con la parte del beneficio social que disfruta.
+
+
+** Impuestos uniformes
+
+- Con un sistema impositivo uniforme el precio en impuestos es $1/N$ y
+  la fracción del coste total soportada por el votante mediano es
+  $1/N$.
+
+- Si los beneficios del bien público se distribuyen uniformemente, la
+  fracción del beneficio que disfruta el votante mediano es $1/N$.
+
+- En este caso, el votante mediano votaría por un nivel eficiente de
+  gasto público.
+
+** Impuestos proporcionales
+
+- Con impuestos proporcionales o progresivos el precio en impuestos
+  del votante mediano en general es inferior a $1/N$.
+
+- Si los beneficios se reparten uniformemente, el votante mediano
+  votará por un gasto superior al eficiente.
+
+
+
+** Sistemas bipartidistas y el votante mediano
+
+- En un sistema bipartidista, en el que cada partido busca maximizar
+  sus votos dada la postura del rival, ¿donde debería situarse cada
+  partido?
+
+- Las propuestas de los partidos tienden a converger para captar el
+  voto del votante mediano.
+
+** Limitaciones de la teoría del votante mediano
+
+- Sólo es válida en condiciones especiales.
+
+- No tiene en cuenta los costes de participación en el sistema
+  electoral.
+
+- Otras cuestiones además de la ideología pueden influir en el sentido
+  del voto.
+
 * Decisiones por unanimidad
+
 
 ** Regla de Lindahl
 
