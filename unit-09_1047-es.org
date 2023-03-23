@@ -136,9 +136,8 @@ Con un sistema impositivo proporcional o progresivo:
 - En una democracia muchas decisiones colectivas se toman mediante
   algún tipo de votación.
 
-- Diferentes sistemas de votación se usan en diferentes instituciones
-  y países: mayoría simple, mayoría cualificada, unanimidad,
-  pluralidad, etc.
+- Se usan muchos sistemas de votación: mayoría simple, mayoría
+  cualificada, unanimidad, pluralidad, etc.
 
 - De todos los sistemas, el más utilizado es mayoría simple.
 
@@ -152,30 +151,34 @@ Con un sistema impositivo proporcional o progresivo:
 
 ** Ejemplo (I)
 
-- Tres votantes: A, B y C con preferencias transitivas.
+- Tres votantes con preferencias transitivas: A, B y C.
 
-- Tres alternativas: Parque, piscina o biblioteca.
+- Tres alternativas: Parque, piscina y biblioteca.
 
-- Preferencias de los votantes: alternativas ordenadas de más a menos
-  preferida para cada votante:
+- Preferencias de los votantes. Para cada votante se ordenan las
+  alternativas de más a menos preferida:
+  #+latex: \vspace*{1ex}
 
+  #+ATTR_LATEX: :align *{4}{p{2cm}}
   |           | A          | B          | C          |
   |-----------+------------+------------+------------|
   | 1ª opción | Parque     | Piscina    | Biblioteca |
   | 2ª opción | Piscina    | Biblioteca | Piscina    |
   | 3ª opción | Biblioteca | Parque     | Parque     |
-  |-----------+------------+------------+------------|
+
 
 ** Ejemplo (y II)
 
 - Votaciones:
+  #+latex: \vspace*{1ex}
 
+  #+ATTR_LATEX: :align p{5cm}p{3cm}
   | Alternativas         | Resultado        |
   |----------------------+------------------|
   | Parque y Piscina     | Piscina (1-2)    |
   | Parque y Biblioteca  | Biblioteca (1-2) |
   | Piscina y Biblioteca | Piscina (2-1)    |
-  |----------------------+------------------|
+  #+latex: \vspace*{1ex}
 
 - En este caso la regla de la mayoría agrega las preferencias
   individuales. Las preferencias colectivas son transitivas:
@@ -201,24 +204,30 @@ Con un sistema impositivo proporcional o progresivo:
   piscina o biblioteca).
 
 - Preferencias de los votantes:
+  #+latex: \vspace*{1ex}
+
+  #+ATTR_LATEX: :align *{4}{p{2cm}}
 
   |           | A          | B          | C          |
   |-----------+------------+------------+------------|
   | 1ª opción | Parque     | Piscina    | Biblioteca |
   | 2ª opción | Piscina    | Biblioteca | Parque     |
   | 3ª opción | Biblioteca | Parque     | Piscina    |
-  |-----------+------------+------------+------------|
+
 
 ** Ejemplo (y II)
 
 - Votaciones:
+  #+latex: \vspace*{1ex}
+
+  #+ATTR_LATEX: :align p{5cm}p{3cm}
 
   | Alternativas         | Resultado        |
   |----------------------+------------------|
   | Parque y Piscina     | Parque (2-1)     |
   | Parque y Biblioteca  | Biblioteca (1-2) |
   | Piscina y Biblioteca | Piscina (2-1)    |
-  |----------------------+------------------|
+  #+latex: \vspace*{1ex}
 
 - En este caso, la regla de la mayoría no produce una ordenación
   transitiva de las alternativas:
@@ -251,6 +260,9 @@ comportamientos estratégicos:
 
 - *Votación estratégica*: votar en contra de las preferencias propias
   con el fin de influir en el resultado final.
+
+
+* Teorema de imposibilidad de Arrow
 
 
 ** Alternativas a la regla de la mayoría
