@@ -273,23 +273,27 @@ comportamientos estratégicos:
 
 ** Condiciones ideales
 
-Idealmente, una regla de elección colectiva debe de cumplir las siguientes condiciones:
+Idealmente, una regla de elección colectiva debe de cumplir las
+siguientes condiciones:
 
-1. *Pareto optimalidad débil*.
+1. *Transitividad*: Las preferencias sociales no son cíclicas.
 
-2. *Transitividad*.
+2. *Decisión no dictatorial*: las preferencias sociales no deben
+   reflejar simplemente las preferencias de un único individuo y deben
+   tener en cuenta las preferencias de todos los individuos.
 
-3. *Ausencia de dictadores*.
+4. *Independencia de las alternativas irrelevantes*: La ordenación
+   social de A y B sólo depende de como los individuos ordenan A y B y
+   no de como ordenan otras alternativas.
 
-4. *Independencia de las alternativas irrelevantes*.
-
-5. *Dominio no restringido*.
+5. *Dominio no restringido*: Debe de producir una ordenación sean
+   cuales sean las alternativas y las preferencias de los individuos.
 
 ** Teorema de imposibilidad de Arrow
 
 - El *Teorema de imposibilidad de Arrow* establece que si existen al
   menos tres alternativas y un número finito de individuos, no existe
-  ninguna regla de elección colectiva que cumpla las 5 condiciones
+  ninguna regla de elección colectiva que cumpla las 4 condiciones
   ideales.
 
 - Una consecuencia es que no podemos esperar que un gobierno actúe
