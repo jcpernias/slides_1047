@@ -207,7 +207,6 @@ Con un sistema impositivo proporcional o progresivo:
   #+latex: \vspace*{1ex}
 
   #+ATTR_LATEX: :align *{4}{p{2cm}}
-
   |           | A          | B          | C          |
   |-----------+------------+------------+------------|
   | 1ª opción | Parque     | Piscina    | Biblioteca |
@@ -221,7 +220,6 @@ Con un sistema impositivo proporcional o progresivo:
   #+latex: \vspace*{1ex}
 
   #+ATTR_LATEX: :align p{5cm}p{3cm}
-
   | Alternativas         | Resultado        |
   |----------------------+------------------|
   | Parque y Piscina     | Parque (2-1)     |
