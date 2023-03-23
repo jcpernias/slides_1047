@@ -277,7 +277,7 @@ Idealmente, una regla de elección colectiva debe de cumplir las siguientes cond
 
 ** Teorema de imposibilidad de Arrow
 
-- El *Teorema de imposibilidad de Arrow* estable ce que si existen al
+- El *Teorema de imposibilidad de Arrow* establece que si existen al
   menos tres alternativas y un número finito de individuos, no existe
   ninguna regla de elección colectiva que cumpla las 5 condiciones
   ideales.
