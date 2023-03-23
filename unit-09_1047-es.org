@@ -31,7 +31,7 @@
   impositivo con el que se financian los bienes públicos.
 
 
-** Impuestos uniformes (I)
+** COMMENT Impuestos uniformes (I)
 
 - El gasto en bienes públicos, $G$, se reparte a partes iguales entre
   los $N$ ciudadanos. Los impuestos que paga el ciudadano $i$, $T_i$,
@@ -51,7 +51,7 @@
   #+end_export
 
 
-** Impuestos uniformes (y II)
+** COMMENT Impuestos uniformes (y II)
 
 Con un sistema impositivo uniforme:
 
@@ -60,7 +60,7 @@ Con un sistema impositivo uniforme:
 - Si los bienes públicos son normales su demanda crece con la renta.
 
 
-** Impuestos proporcionales (I)
+** COMMENT Impuestos proporcionales (I)
 
 - El ciudadano $i$ paga en impuestos una fracción $t$ de su renta,
   $Y_i$:
@@ -87,7 +87,7 @@ Con un sistema impositivo uniforme:
   #+end_export
 
 
-** Impuestos proporcionales (II)
+** COMMENT Impuestos proporcionales (II)
 
 - Los impuestos pagados por el consumidor $i$ son:
   #+begin_export latex
@@ -106,16 +106,16 @@ Con un sistema impositivo uniforme:
   #+end_export
 
 
-** Impuestos proporcionales (y III)
+** Impuestos y preferencias por los bienes públicos
 
-Con un sistema impositivo proporcional:
+Con un sistema impositivo proporcional o progresivo:
 
 - El precio en impuestos es creciente con la renta.
 
-- Si son bienes normales, la demanda de bienes públicos tiende a
-  crecer con la renta. Pero el precio en impuestos también aumenta con
-  la renta lo que reduce la demanda de bienes públicos. El efecto
-  total es ambiguo.
+- Si los bienes públicos son normales, su demanda tiende a crecer con
+  la renta. Pero el precio en impuestos también aumenta con la renta,
+  lo que reduce la demanda de bienes públicos. El efecto total es
+  ambiguo.
 
 
 ** La elección pública
