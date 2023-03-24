@@ -131,6 +131,7 @@ Con un sistema impositivo proporcional o progresivo:
 
 * La regla de la mayoría
 
+
 ** Votaciones
 
 - En una democracia muchas decisiones colectivas se toman mediante
@@ -141,6 +142,7 @@ Con un sistema impositivo proporcional o progresivo:
 
 - De todos los sistemas, el más utilizado es mayoría simple.
 
+
 ** Regla de la mayoría
 
 - *Regla de la mayoría*: la opción preferida colectivamente es la
@@ -148,6 +150,7 @@ Con un sistema impositivo proporcional o progresivo:
 
 - Se alcanza un equilibrio con la regla de la mayoría cuando una
   alternativa ganaría una votación contra cualquier otra alternativa.
+
 
 ** Ejemplo (I)
 
@@ -159,7 +162,7 @@ Con un sistema impositivo proporcional o progresivo:
   alternativas de más a menos preferida:
   #+latex: \vspace*{1ex}
 
-  #+ATTR_LATEX: :align *{4}{p{2cm}}
+  #+ATTR_LATEX: :booktabs t :align *{4}{p{2cm}}
   |           | A          | B          | C          |
   |-----------+------------+------------+------------|
   | 1ª opción | Parque     | Piscina    | Biblioteca |
@@ -172,7 +175,7 @@ Con un sistema impositivo proporcional o progresivo:
 - Votaciones:
   #+latex: \vspace*{1ex}
 
-  #+ATTR_LATEX: :align p{5cm}p{3cm}
+  #+ATTR_LATEX: :booktabs t :align p{5cm}p{3cm}
   | Alternativas         | Resultado        |
   |----------------------+------------------|
   | Parque y Piscina     | Piscina (1-2)    |
@@ -187,6 +190,7 @@ Con un sistema impositivo proporcional o progresivo:
     \text{Piscina} \succ \text{Biblioteca} \succ \text{Parque}
   \]
   #+end_export
+
 
 ** Paradoja del voto
 
@@ -206,7 +210,7 @@ Con un sistema impositivo proporcional o progresivo:
 - Preferencias de los votantes:
   #+latex: \vspace*{1ex}
 
-  #+ATTR_LATEX: :align *{4}{p{2cm}}
+  #+ATTR_LATEX: :booktabs t :align *{4}{p{2cm}}
   |           | A          | B          | C          |
   |-----------+------------+------------+------------|
   | 1ª opción | Parque     | Piscina    | Biblioteca |
@@ -219,7 +223,7 @@ Con un sistema impositivo proporcional o progresivo:
 - Votaciones:
   #+latex: \vspace*{1ex}
 
-  #+ATTR_LATEX: :align p{5cm}p{3cm}
+  #+ATTR_LATEX: :booktabs t :align p{5cm}p{3cm}
   | Alternativas         | Resultado        |
   |----------------------+------------------|
   | Parque y Piscina     | Parque (2-1)     |
@@ -271,6 +275,7 @@ comportamientos estratégicos:
 
 - ¿Existe alguna regla de votación que no tenga esos problemas?
 
+
 ** Condiciones ideales
 
 Idealmente, una regla de elección colectiva debe de cumplir las
@@ -289,6 +294,7 @@ siguientes condiciones:
 5. *Dominio no restringido*: Debe de producir una ordenación sean
    cuales sean las alternativas y las preferencias de los individuos.
 
+
 ** Teorema de imposibilidad de Arrow
 
 - El *Teorema de imposibilidad de Arrow* establece que si existen al
@@ -303,6 +309,7 @@ siguientes condiciones:
 - No existe ningún sistema de votación en el que los individuos voten
   siempre de acuerdo con sus preferencias.
 
+
 ** Restricciones de las preferencias individuales
 
 Bajo ciertas condiciones sobre las preferencias individuales, la
@@ -313,11 +320,13 @@ votación mayoritaria produciría siempre un equilibrio:
 
 - Los individuos tienen  *preferencias unimodales*.
 
+
 ** Preferencias unimodales
 
 #+MATS: figcol fig-09_1047-unimodal-1-*.pdf 0.5
 
 Las preferencias de todos los individuos son unimodales.
+
 
 ** Preferencias unimodales
 
@@ -340,6 +349,7 @@ poco probable:
   equilibrio, ¿qué propiedades tiene? ¿Se corresponde con el nivel
   eficiente de bienes públicos?
 
+
 ** El votante mediano
 
 - Con preferencias unimodales podemos ordenar a los individuos de
@@ -349,10 +359,12 @@ poco probable:
   dos mitades: la mitad de los individuos prefieren un gasto mayor y
   la otra mitad prefiere un gasto menor.
 
+
 ** La regla de la mayoría y el votante mediano
 
 - Los resultado de la elección por mayoría corresponden a las
   preferencias del votante mediano.
+
 
 ** La ineficiencia de la regla de la mayoría
 
@@ -376,6 +388,7 @@ poco probable:
 - En este caso, el votante mediano votaría por un nivel eficiente de
   gasto público.
 
+
 ** Impuestos proporcionales
 
 - Con impuestos proporcionales o progresivos el precio en impuestos
@@ -395,6 +408,7 @@ poco probable:
 - Las propuestas de los partidos tienden a converger para captar el
   voto del votante mediano.
 
+
 ** Limitaciones de la teoría del votante mediano
 
 - Sólo es válida en condiciones especiales.
@@ -404,6 +418,7 @@ poco probable:
 
 - Otras cuestiones además de la ideología pueden influir en el sentido
   del voto.
+
 
 * Decisiones por unanimidad
 
