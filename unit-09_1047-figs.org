@@ -1,0 +1,40 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: {{unit09}} figures
+
+#+PROPERTY: header-args:latex :noweb yes :eval no
+
+
+* Restricción preferencias
+
+** Chunks
+
+#+begin_src latex :noweb-ref unimodal-scale
+  [xscale=0.85, yscale=0.85, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref unimodal-axes
+  \draw[axis]
+    (0, 6) node[above, xshift=-2pt]  {Utilidad} |-
+    (6, 0)
+    ;
+#+end_src
+
+#+begin_src latex :noweb-ref unimodal-coordinates
+  \coordinate (x-axis) (1, 0) ;
+  \coordinate (y-axis) (0, 1) ;
+#+end_src
+
+
+** Figures
+
+*** Single-peaked preferences
+
+#+begin_src latex :tangle fig-09_1047-unimodal-1.tex
+  \begin{tikzpicture}<<unimodal-scale>>
+     <<unimodal-coordinates>>
+
+
+    <<unimodal-axes>>
+  \end{tikzpicture}
+#+end_src
