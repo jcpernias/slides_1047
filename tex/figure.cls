@@ -39,6 +39,8 @@
 %% --------------------------------------------------------------------------------
 \RequirePackage{docs-base}
 
+\RequirePackage{pgfplots}
+
 
 \colorlet{colorIMg}{DarkBlue!70!Black}
 \colorlet{colorIMe}{DarkBlue!70!White}

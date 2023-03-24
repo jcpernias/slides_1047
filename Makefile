@@ -81,6 +81,7 @@ define fig-wrapper
 \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}
 \InputIfFileExists{$(subject_code)-macros.tex}{}{}
 \InputIfFileExists{unit-$3_$(subject_code)-macros.tex}{}{}
+\pgfplotsset{compat=1.18}
 \begin{document}
 \input{$(realpath $(builddir))/fig-$2}
 \end{document}
