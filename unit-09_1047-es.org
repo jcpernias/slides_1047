@@ -328,6 +328,13 @@ votación mayoritaria produciría siempre un equilibrio:
 Las preferencias de todos los individuos son unimodales.
 
 
+** Preferencias bimodales
+
+#+MATS: figcol fig-09_1047-unimodal-2-*.pdf 0.5
+
+Las preferencias de C son bimodales.
+
+
 ** Preferencias unimodales
 
 Bajo ciertas condiciones la existencia de preferencias unimodales es
