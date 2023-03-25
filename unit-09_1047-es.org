@@ -271,7 +271,9 @@ comportamientos estratégicos:
 ** Teorema de May
 
 - El *teorema de May* establece que la regla de la mayoría es, en
-  cierto sentido, el mejor sistema de elección colectivo.
+  cierto sentido, el mejor sistema de elección colectivo cuando sólo
+  hay que elegir entre dos alternativas.
+
 
 ** Alternativas a la regla de la mayoría
 
@@ -390,6 +392,7 @@ poco probable:
 
 - Si las preferencias son unimodales podemos ordenar a los votantes de
   acuerdo al el tamaño del presupuesto que prefiera cada uno.
+
 
 ** Preferencias unimodales
 
