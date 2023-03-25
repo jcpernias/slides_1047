@@ -7,6 +7,7 @@
 
 * Restricción preferencias
 
+
 ** Chunks
 
 #+begin_src latex :noweb-ref unimodal-scale
@@ -74,6 +75,7 @@
   \end{tikzpicture}
 #+end_src
 
+
 *** Bimodal preferences
 
 #+begin_src latex :tangle fig-09_1047-unimodal-2.tex
@@ -91,6 +93,88 @@
         (5, 5)
       };
       \node[label={right:C}] at (axis cs: 5, 5) {} ;
+    \end{axis}
+  \end{tikzpicture}
+#+end_src
+
+
+* El votante mediano
+
+** Chunks
+
+#+begin_src latex :noweb-ref median-scale
+  [xscale=1, yscale=1]
+#+end_src
+
+#+begin_src latex :noweb-ref median-axis
+  xmin = 0,
+  xmax = 14,
+  ymin = 0,
+  ymax = 0.42,
+  axis lines* = center,
+  width = 10cm, height=5cm,
+  tick align = outside,
+  every tick/.style={semithick},
+  xtick = {2.5, 3.5, 7, 9, 11},
+  xticklabels={$G^*_A$, $G^*_B$, $G^*_C$, $G^*_D$, $G^*_E$},
+  xlabel = {Gasto},
+  x label style ={at={(axis description cs: 1, 0)}, anchor = west},
+  ytick=\empty,
+  y label style = {at = {(axis description cs: -0.075, 1.0)},
+      anchor = south west, rotate = -90},
+  ylabel={Utilidad},
+  declare function={
+    gauss(\x,\m,\s) = 1/(\s*sqrt(2*pi))*exp(-(((\x-\m)/\s)^2)/2);
+  },
+  no markers,
+  samples = 128,
+#+end_src
+
+#+begin_src latex :noweb-ref median-A
+  \addplot [Crimson, thick, domain = 0.7:4.3] { gauss(x,2.5,1) }
+    node[pos = 0.45, left, font=\small,] {A} ;
+#+end_src
+
+#+begin_src latex :noweb-ref median-B
+  \addplot [Maroon, thick, domain = 1.7:5.3] { gauss(x,3.5,1) }
+    node[pos = 0.55, right, font=\small,] {B} ;
+#+end_src
+
+#+begin_src latex :noweb-ref median-C
+  \addplot [DarkGreen, thick, domain = 5.2:8.8] { gauss(x,7,1) }
+    node[pos = 0.45, left, font=\small,] {C} ;
+#+end_src
+
+#+begin_src latex :noweb-ref median-D
+  \addplot [DarkBlue, thick, domain = 7.2:10.8] { gauss(x,9,1) }
+    node[pos = 0.55, right, font=\small,] {D} ;
+#+end_src
+
+#+begin_src latex :noweb-ref median-E
+  \addplot [DarkOrchid, thick, domain = 9.2:12.8] { gauss(x,11,1) }
+    node[pos = 0.55, right, font=\small,] {E} ;
+#+end_src
+
+** Figures
+
+#+begin_src latex :tangle fig-09_1047-median-1.tex
+  \newcommand*{\VertLine}[1]{%
+    \draw[gray, very thin] (#1) -- (#1|-{rel axis cs:0,0});
+  }
+  \begin{tikzpicture}<<median-scale>>
+    \begin{axis}[
+      <<median-axis>>
+      ]
+      <<median-A>>
+      <<median-B>>
+      <<median-C>>
+      <<median-D>>
+      <<median-E>>
+      \VertLine{2.5, 0.3989};
+      \VertLine{3.5, 0.3989};
+      \VertLine{7,   0.3989};
+      \VertLine{9,   0.3989};
+      \VertLine{11,  0.3989};
     \end{axis}
   \end{tikzpicture}
 #+end_src
