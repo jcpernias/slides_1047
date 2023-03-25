@@ -152,7 +152,7 @@ Con un sistema impositivo proporcional o progresivo:
   alternativa ganaría una votación contra cualquier otra alternativa.
 
 
-** Ejemplo (I)
+** Ejemplo 1 (I)
 
 - Tres votantes con preferencias transitivas: A, B y C.
 
@@ -170,7 +170,7 @@ Con un sistema impositivo proporcional o progresivo:
   | 3ª opción | Biblioteca | Parque     | Parque     |
 
 
-** Ejemplo (y II)
+** Ejemplo 1 (y II)
 
 - Votaciones:
   #+latex: \vspace*{1ex}
@@ -202,7 +202,7 @@ Con un sistema impositivo proporcional o progresivo:
   sean transitivas.
 
 
-** Ejemplo (I)
+** Ejemplo 2 (I)
 
 - Tres votantes: A, B y C.
 
@@ -220,7 +220,7 @@ Con un sistema impositivo proporcional o progresivo:
   | 3ª opción | Alto  | Bajo  | Medio |
 
 
-** Ejemplo (y II)
+** Ejemplo 2 (y II)
 
 - Votaciones:
   #+latex: \vspace*{1ex}
@@ -268,17 +268,22 @@ comportamientos estratégicos:
 
 * Teorema de imposibilidad de Arrow
 
+** Teorema de May
+
+- El *teorema de May* establece que la regla de la mayoría es, en
+  cierto sentido, el mejor sistema de elección colectivo.
 
 ** Alternativas a la regla de la mayoría
 
-- No siempre se alcanza un equilibrio con la regla de la mayoría.
+- Cuando hay más de tres opciones, existen situaciones en las que no
+  se alcanza un equilibrio con la regla de la mayoría.
 
 - En esos casos hay incentivos a la manipulación de los resultados.
 
 - ¿Existe alguna regla de votación que no tenga esos problemas?
 
 
-** Condiciones ideales
+** Condiciones ideales de las reglas de elección
 
 Idealmente, una regla de elección colectiva debe de cumplir las
 siguientes condiciones:
@@ -286,27 +291,29 @@ siguientes condiciones:
 1. *Transitividad*: Las preferencias sociales no son cíclicas.
 
 2. *Decisión no dictatorial*: las preferencias sociales no deben
-   reflejar simplemente las preferencias de un único individuo y deben
+   simplemente reflejar las preferencias de un único individuo y deben
    tener en cuenta las preferencias de todos los individuos.
 
 4. *Independencia de las alternativas irrelevantes*: La ordenación
    social de A y B sólo depende de como los individuos ordenan A y B y
    no de como ordenan otras alternativas.
 
-5. *Dominio no restringido*: Debe de producir una ordenación sean
-   cuales sean las alternativas y las preferencias de los individuos.
+5. *Dominio no restringido*: Es aplicable sean cuales sean las
+   alternativas y las preferencias de los individuos.
 
 
 ** Teorema de imposibilidad de Arrow
 
 - El *Teorema de imposibilidad de Arrow* establece que si existen al
   menos tres alternativas y un número finito de individuos, no existe
-  ninguna regla de elección colectiva que cumpla las 4 condiciones
+  ninguna regla de elección colectiva que cumpla las condiciones
   ideales.
 
-- Una consecuencia es que no podemos esperar que un gobierno actúe
-  como un individuo racional, a menos que se otorguen poderes
-  dictatoriales a un individuo.
+** Consecuencias
+
+- No podemos esperar que instituciones como el gobierno actúen como un
+  individuo racional, a menos que se otorguen poderes dictatoriales a
+  un individuo.
 
 - No existe ningún sistema de votación en el que los individuos voten
   siempre de acuerdo con sus preferencias.
@@ -317,27 +324,44 @@ siguientes condiciones:
 Bajo ciertas condiciones sobre las preferencias individuales, la
 votación mayoritaria produciría siempre un equilibrio:
 
-- Se votan *alternativas unidimensionales* (p.ej., diferentes niveles
-  del presupuesto público).
+- Se votan *alternativas unidimensionales*.
 
 - Los individuos tienen  *preferencias unimodales*.
 
-
 ** Preferencias unimodales
+
+Un grupo de individuos tiene *preferencias unimodales* sobre un
+conjunto de alternativas si estas pueden disponerse sobre una línea de
+forma que:
+
+- Cada individuo tiene una alternativa favorita que es preferida a
+  todas las demás.
+
+- Cuando un individuo compara entre dos alternativas que están ambas o
+  bien a la derecha o bien a la izquierda de su opción favorita,
+  prefiere la más cercana a su alternativa ideal.
+
+
+** Ejemplo 1
 
 #+MATS: figcol fig-09_1047-unimodal-1-*.pdf 0.5
 
-Las preferencias de todos los individuos son unimodales.
+- Representación gráfica de las preferencias del ejemplo 1.
+
+- Las preferencias de los votantes son unimodales.
 
 
-** Preferencias bimodales
+** Ejemplo 2
 
 #+MATS: figcol fig-09_1047-unimodal-2-*.pdf 0.5
 
-Las preferencias de C son bimodales.
+- Se incumple la segunda condición de las preferencias unimodales.
+
+- Esa condición se incumple sea cual sea la ordenación de las
+  alternativas en el eje horizontal.
 
 
-** Preferencias unimodales
+** Incumplimiento del supuesto de preferencias unimodales
 
 Bajo ciertas condiciones la existencia de preferencias unimodales es
 poco probable:
@@ -359,10 +383,20 @@ poco probable:
   eficiente de bienes públicos?
 
 
-** El votante mediano
+** Elección del presupuesto de un programa público
 
-- Con preferencias unimodales podemos ordenar a los individuos de
-  acuerdo a sus preferencias sobre gasto en el bien público.
+- Un conjunto (impar) de votantes tiene que decidir el presupuesto de
+  un programa público.
+
+- Si las preferencias son unimodales podemos ordenar a los votantes de
+  acuerdo al el tamaño del presupuesto que prefiera cada uno.
+
+** Preferencias unimodales
+
+#+MATS: fig fig-09_1047-median-1-*.pdf
+
+
+** El votante mediano
 
 - El gasto preferido del *votante mediano* divide a la población en
   dos mitades: la mitad de los individuos prefieren un gasto mayor y
@@ -410,7 +444,7 @@ poco probable:
 
 ** Sistemas bipartidistas y el votante mediano
 
-- En un sistema bipartidista, en el que cada partido busca maximizar
+- En un sistema bipartidista en el que cada partido busca maximizar
   sus votos dada la postura del rival, ¿donde debería situarse cada
   partido?
 
@@ -425,8 +459,11 @@ poco probable:
 - No tiene en cuenta los costes de participación en el sistema
   electoral.
 
-- Otras cuestiones además de la ideología pueden influir en el sentido
-  del voto.
+- Se ignoran las motivaciones ideológicas de los partidos, que se
+  supone que sólo se preocupan por los votos que obtienen.
+
+- Se supone que los partidos se adaptan pasivamente a las preferencias
+  de los votantes y que no tratan de influenciarlas.
 
 
 * Decisiones por unanimidad
