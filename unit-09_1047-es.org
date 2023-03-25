@@ -176,14 +176,14 @@ Con un sistema impositivo proporcional o progresivo:
   #+latex: \vspace*{1ex}
 
   #+ATTR_LATEX: :booktabs t :align p{5cm}p{3cm}
-  | Alternativas         | Resultado        |
-  |----------------------+------------------|
-  | Parque y Piscina     | Piscina (1-2)    |
-  | Parque y Biblioteca  | Biblioteca (1-2) |
-  | Piscina y Biblioteca | Piscina (2-1)    |
+  | Alternativas          | Resultado        |
+  |-----------------------+------------------|
+  | Parque -- Piscina     | Piscina (1-2)    |
+  | Parque -- Biblioteca  | Biblioteca (1-2) |
+  | Piscina -- Biblioteca | Piscina (2-1)    |
   #+latex: \vspace*{1ex}
 
-- En este caso la regla de la mayoría agrega las preferencias
+- La regla de la mayoría agrega consistentemente las preferencias
   individuales. Las preferencias colectivas son transitivas:
   #+begin_export latex
   \[
@@ -204,18 +204,20 @@ Con un sistema impositivo proporcional o progresivo:
 
 ** Ejemplo (I)
 
-- Tres votantes (A, B y C) deciden entre tres alternativas (parque,
-  piscina o biblioteca).
+- Tres votantes: A, B y C.
+
+- Tres alternativas de presupuesto de las escuelas públicas: bajo,
+  medio o alto.
 
 - Preferencias de los votantes:
   #+latex: \vspace*{1ex}
 
   #+ATTR_LATEX: :booktabs t :align *{4}{p{2cm}}
-  |           | A          | B          | C          |
-  |-----------+------------+------------+------------|
-  | 1ª opción | Parque     | Piscina    | Biblioteca |
-  | 2ª opción | Piscina    | Biblioteca | Parque     |
-  | 3ª opción | Biblioteca | Parque     | Piscina    |
+  |           | A     | B     | C     |
+  |-----------+-------+-------+-------|
+  | 1ª opción | Bajo  | Medio | Alto  |
+  | 2ª opción | Medio | Alto  | Bajo  |
+  | 3ª opción | Alto  | Bajo  | Medio |
 
 
 ** Ejemplo (y II)
@@ -223,21 +225,21 @@ Con un sistema impositivo proporcional o progresivo:
 - Votaciones:
   #+latex: \vspace*{1ex}
 
-  #+ATTR_LATEX: :booktabs t :align p{5cm}p{3cm}
-  | Alternativas         | Resultado        |
-  |----------------------+------------------|
-  | Parque y Piscina     | Parque (2-1)     |
-  | Parque y Biblioteca  | Biblioteca (1-2) |
-  | Piscina y Biblioteca | Piscina (2-1)    |
+  #+ATTR_LATEX: :booktabs t :align p{5.5cm}p{2.5cm}
+  | Alternativas presupuesto | Resultado   |
+  |---------------+-------------|
+  | Bajo -- Medio | Bajo (2-1)  |
+  | Bajo -- Alto  | Alto (1-2)  |
+  | Medio -- Alto | Medio (2-1) |
   #+latex: \vspace*{1ex}
 
 - En este caso, la regla de la mayoría no produce una ordenación
   transitiva de las alternativas:
   #+begin_export latex
   \[
-    \text{Parque} \succ \text{Piscina}; \;
-    \text{Piscina} \succ \text{Biblioteca}; \;
-    \text{Biblioteca} \succ \text{Parque}.
+    \text{Bajo} \succ \text{Medio}; \;
+    \text{Medio} \succ \text{Alto}; \;
+    \text{Alto} \succ \text{Bajo}.
   \]
   #+end_export
 
@@ -247,8 +249,8 @@ Con un sistema impositivo proporcional o progresivo:
 - Con preferencias colectivas cíclicas las votaciones se prolongarían
   indefinidamente.
 
-- Eliminando alternativas que sean derrotadas en una votación se
-  evitan las votaciones cíclicas.
+- Se puede evitar la repetición sin fin de las votaciones eliminando
+  las alternativas que sean derrotadas en una votación.
 
 
 
@@ -257,8 +259,8 @@ Con un sistema impositivo proporcional o progresivo:
 La eliminación de alternativas no ganadoras puede incentivar
 comportamientos estratégicos:
 
-- *Control de la agenda*: quien decide el orden de las votaciones
-  puede determinar el resultado final.
+- *Control de la agenda*: el orden en que se votan las alternativas
+  determina el resultado final.
 
 - *Votación estratégica*: votar en contra de las preferencias propias
   con el fin de influir en el resultado final.
