@@ -110,7 +110,6 @@
   xmin = 0,
   xmax = 14,
   ymin = 0,
-  ymax = 0.42,
   axis lines* = center,
   width = 10cm, height=5cm,
   tick align = outside,
@@ -122,7 +121,6 @@
   ytick=\empty,
   y label style = {at = {(axis description cs: -0.075, 1.0)},
       anchor = south west, rotate = -90},
-  ylabel={Utilidad},
   declare function={
     gauss(\x,\m,\s) = 1/(\s*sqrt(2*pi))*exp(-(((\x-\m)/\s)^2)/2);
   },
@@ -164,6 +162,8 @@
   \begin{tikzpicture}<<median-scale>>
     \begin{axis}[
       <<median-axis>>
+      ymax = 0.42,
+      ylabel={Utilidad},
       ]
       <<median-A>>
       <<median-B>>
@@ -176,5 +176,17 @@
       \VertLine{9,   0.3989};
       \VertLine{11,  0.3989};
     \end{axis}
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-09_1047-median-2.tex
+  \begin{tikzpicture}[xscale=0.6]
+    \draw[->,>=stealth] (0,0)  -- (14, 0) node[right] {Gasto} ;
+    \draw[semithick] (0,0) -- (0,-0.15) node[below] {$0$};
+    \draw[semithick] (2.5,0) -- (2.5,-0.15) node[below] {$G^*_A$};
+    \draw[semithick] (3.5,0) -- (3.5,-0.15) node[below] {$G^*_B$};
+    \draw[semithick] (7,0) -- (7,-0.15) node[below] {$G^*_C$};
+    \draw[semithick] (9,0) -- (9,-0.15) node[below] {$G^*_D$};
+    \draw[semithick] (11,0) -- (11,-0.15) node[below] {$G^*_E$};
   \end{tikzpicture}
 #+end_src

@@ -156,7 +156,7 @@ Con un sistema impositivo proporcional o progresivo:
 
 - Tres votantes con preferencias transitivas: A, B y C.
 
-- Tres alternativas: Parque, piscina y biblioteca.
+- Tres proyectos alternativos: Parque, piscina y biblioteca.
 
 - Preferencias de los votantes. Para cada votante se ordenan las
   alternativas de más a menos preferida:
@@ -268,6 +268,7 @@ comportamientos estratégicos:
 
 * Teorema de imposibilidad de Arrow
 
+
 ** Teorema de May
 
 - El *teorema de May* establece que la regla de la mayoría es, en
@@ -311,6 +312,7 @@ siguientes condiciones:
   ninguna regla de elección colectiva que cumpla las condiciones
   ideales.
 
+
 ** Consecuencias
 
 - No podemos esperar que instituciones como el gobierno actúen como un
@@ -329,6 +331,7 @@ votación mayoritaria produciría siempre un equilibrio:
 - Se votan *alternativas unidimensionales*.
 
 - Los individuos tienen  *preferencias unimodales*.
+
 
 ** Preferencias unimodales
 
@@ -396,6 +399,12 @@ poco probable:
 
 ** Preferencias unimodales
 
+- Las preferencias de un individuo disminuyen cuanto más se aleja el
+  gasto de su valor preferido.
+
+- Si las preferencias son unimodales, sólo necesitamos conocer los
+  valores preferidos por cada votante.
+
 #+MATS: fig fig-09_1047-median-1-*.pdf
 
 
@@ -411,6 +420,13 @@ poco probable:
 - Los resultado de la elección por mayoría corresponden a las
   preferencias del votante mediano.
 
+- Por ejemplo, si se elige entre $G^*_B$ y $G^*_C$, la primera opción
+  sólo recibe dos votos (A y B) mientras que la opción que prefiere el
+  votante mediano recibe 3 votos (C, D y E).
+
+  #+MATS: fig fig-09_1047-median-2-*.pdf
+
+
 
 ** La ineficiencia de la regla de la mayoría
 
@@ -418,31 +434,11 @@ poco probable:
   excesivo o insuficiente, sólo necesitamos examinar el comportamiento
   del votante mediano.
 
-- Comparamos la parte del coste social que recae sobre el votante
-  mediano con la parte del beneficio social que disfruta.
+- El votante mediano sólo considera la parte del coste social que
+  recae sobre él con la parte de beneficio social que disfrutará.
 
-
-** Impuestos uniformes
-
-- Con un sistema impositivo uniforme el precio en impuestos es $1/N$ y
-  la fracción del coste total soportada por el votante mediano es
-  $1/N$.
-
-- Si los beneficios del bien público se distribuyen uniformemente, la
-  fracción del beneficio que disfruta el votante mediano es $1/N$.
-
-- En este caso, el votante mediano votaría por un nivel eficiente de
-  gasto público.
-
-
-** Impuestos proporcionales
-
-- Con impuestos proporcionales o progresivos el precio en impuestos
-  del votante mediano en general es inferior a $1/N$.
-
-- Si los beneficios se reparten uniformemente, el votante mediano
-  votará por un gasto superior al eficiente.
-
+- En general, la elección del votante mediano no coincide con la
+  elección eficiente.
 
 
 ** Sistemas bipartidistas y el votante mediano
@@ -469,20 +465,29 @@ poco probable:
   de los votantes y que no tratan de influenciarlas.
 
 
-* Decisiones por unanimidad
+* Sistemas de elección pública alternativos
+
+** Problemas con las reglas de votación
+
+- La votación por mayoría presenta una serie de problemas ¿Existen
+  alternativas a tomar las decisiones mediante votaciones?
+
+** Equilibrio de Lindahl
+
+- Se pregunta a cada individuo cuánto estaría dispuesto a pagar por
+  una cantidad determinada del bien público.
+
+- Se determina la demanda colectiva del bien público agregando las
+  disposiciones marginales a pagar de los individuos.
+
+- El *equilibrio de Lindahl* se encuentra en la intersección de la
+  curva de demanda colectiva y la curva de coste marginal.
+
+- Cada individuo se enfrenta a un precio personalizado por unidad de
+  bien público igual a su disposición a pagar.
 
 
-** Regla de Lindahl
-
-- Se determina la cantidad eficiente del bien público agregando las
-  disposiciones marginales a pagar y confrontandolas con el coste
-  marginal.
-
-- Cada consumidor se enfrenta a un precio personalizado por unidad de
-  bien público.
-
-
-** Problemas
+** Dificultades
 
 - Los contribuyentes deben revelar sinceramente sus disposiciones a pagar.
 
