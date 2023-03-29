@@ -12,59 +12,110 @@
 
 * Introducción
 
+
 ** Introducción
 
-Por hacer.
+- Transferencia obligatoria de dinero.
 
-* Tipos de impuestos
+- La obligatoriedad de los impuestos resuelve el problema del polizón.
+
+- Pero puede suponer favorecer a determinados grupos de interés a
+  costa de otros.
+
+
+** Tipos de impuestos
+
+- *Directos*: recaen directamente sobre las persona y las sociedades.
+
+- *Indirectos*: gravan el consumo o la producción de bienes y
+  servicios.
 
 ** Impuestos directos
 
-Por hacer.
+- Impuesto sobre la renta de las personas físicas.
+
+- Impuesto sobre la renta de las sociedades.
+
+- Cotizaciones a la Seguridad Social.
+
+- Impuesto de transmisiones patrimoniales y sucesiones.
+
+- Impuesto sobre el patrimonio.
 
 ** Impuestos indirectos
 
-Por hacer.
+- Impuesto sobre el valor añadido.
 
-** Cotizaciones sociales
+- Impuestos específicos.
 
-Por hacer.
+- Aranceles.
+
+
+** Evolución del sistema tributario
+
+- Importancia relativa de los impuestos. Evolución.
+
 
 * Características de los sistemas impositivos
 
+
 ** Características ideales
 
-Por hacer.
+- *Eficiencia económica*.
 
-** Eficiencia económica
+- *Sencillez administrativa*.
 
-Por hacer.
+- *Flexibilidad*.
+
+- *Transparencia*
+
+- *Justicia*
+
+
+** Eficiencia económica (I)
+
+- El sistema tributario no debe interferir en la asignación eficiente
+  de recursos.
+
+- Si es posible, debe de usarse para aumentar la eficiencia económica.
+
+** Eficiencia económica (II)
+
+#+ATTR_LATEX: :scale 0.3
+#+MATS: fig tweet.png
 
 ** Costes administrativos
 
 Por hacer.
 
+
 ** Flexibilidad
 
 Por hacer.
+
 
 ** Transparencia
 
 Por hacer.
 
+
 ** Justicia
 
 Por hacer.
 
+
 * La función de bienestar social y los impuestos
+
 
 ** La función de bienestar utilitarista
 
 Por hacer.
 
+
 ** La función de bienestar de Rawls
 
 Por hacer.
+
 
 ** Limitaciones de las funciones de bienestar social
 
