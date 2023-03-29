@@ -1,0 +1,17 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: {{{unit12}}}
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*: Capítulo 19 y 20.
+#+end_bibbox
+
+* Introducción
+
+** Introducción
+
+Por hacer.

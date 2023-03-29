@@ -10,39 +10,62 @@
 #+LATEX_CLASS_OPTIONS: [es,full]
 #+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
 
-* Análisis del gasto público
+* El papel y la dimensión del sector público
 
 
 ** {{{unit01}}}
 
-#+include: "unit-01_1047-es.org" :lines "13-"
+#+include: "unit-01_1047-es.org" :lines "6-"
 
 
 ** {{{unit02}}}
 
-#+include: "unit-02_1047-es.org" :lines "15-"
+#+include: "unit-02_1047-es.org" :lines "6-"
+
+* Economía del bienestar
 
 
 ** {{{unit03}}}
 
-#+include: "unit-03_1047-es.org" :lines "12-"
+#+include: "unit-03_1047-es.org" :lines "6-"
 
 
 ** {{{unit05}}}
 
-#+include: "unit-05_1047-es.org" :lines "14-"
+#+include: "unit-05_1047-es.org" :lines "6-"
+
+
+* El gasto público: teoría
 
 
 ** {{{unit06}}}
 
-#+include: "unit-06_1047-es.org" :lines "12-"
+#+include: "unit-06_1047-es.org" :lines "6-"
 
 
 ** {{{unit07}}}
 
-#+include: "unit-07_1047-es.org" :lines "12-"
+#+include: "unit-07_1047-es.org" :lines "6-"
 
 
 ** {{{unit08}}}
 
-#+include: "unit-08_1047-es.org" :lines "12-"
+#+include: "unit-08_1047-es.org" :lines "6-"
+
+** {{{unit09}}}
+
+#+include: "unit-09_1047-es.org" :lines "6-"
+
+* Los impuestos: teoría
+
+** {{{unit10}}}
+
+#+include: "unit-10_1047-es.org" :lines "6-"
+
+** {{{unit11}}}
+
+#+include: "unit-11_1047-es.org" :lines "6-"
+
+** {{{unit12}}}
+
+#+include: "unit-12_1047-es.org" :lines "6-"

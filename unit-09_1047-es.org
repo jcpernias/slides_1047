@@ -467,10 +467,12 @@ poco probable:
 
 * Sistemas de elección pública alternativos
 
+
 ** Problemas con las reglas de votación
 
 - La votación por mayoría presenta una serie de problemas ¿Existen
   alternativas a tomar las decisiones mediante votaciones?
+
 
 ** Equilibrio de Lindahl
 
