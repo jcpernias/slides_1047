@@ -30,6 +30,7 @@
 - *Indirectos*: gravan el consumo o la producción de bienes y
   servicios.
 
+
 ** Impuestos directos
 
 - Impuesto sobre la renta de las personas físicas.
@@ -41,6 +42,7 @@
 - Impuesto de transmisiones patrimoniales y sucesiones.
 
 - Impuesto sobre el patrimonio.
+
 
 ** Impuestos indirectos
 
@@ -74,34 +76,111 @@
 
 ** Eficiencia económica (I)
 
-- El sistema tributario no debe interferir en la asignación eficiente
-  de recursos.
+#+ATTR_LATEX: :scale 0.3
+#+MATS: figcol tweet.png 0.55
 
-- Si es posible, debe de usarse para aumentar la eficiencia económica.
+La ineficiencia se traduce en que los contribuyentes modifican su
+comportamiento con el objetivo de reducir los impuestos que tienen que
+pagar.
 
 ** Eficiencia económica (II)
 
-#+ATTR_LATEX: :scale 0.3
-#+MATS: fig tweet.png
+- En ausencia de fallos de mercado, el sistema de precios permite asignar eficientemente los recursos.
 
-** Costes administrativos
+- La introducción de impuestos modifica los precios relativos a los
+  que se enfrentan los contribuyentes.
 
-Por hacer.
+- Los impuestos afectan, entre otras, las decisiones de ahorro,
+  trabajo, consumo y producción.
+
+** Eficiencia económica (III)
+
+- Los impuestos sobre el consumo o sobre la renta son
+  *distorsionadores*: los individuos pueden reducir su deuda tributaria
+  reduciendo su consumo o su ahorro o trabajando menos.
+
+- Si un impuesto es *no distorsionador* los contribuyentes no pueden
+  hacer para alterar su carga tributaria. El único efecto de los
+  impuestos de *tanto alzado* (/lump-sum taxes/) es el efecto renta.
+
+** Eficiencia económica (y IV)
+
+- En presencia de fallos de mercado, la asignación de recursos no será
+  óptima y, en ciertas situaciones, los impuestos podrían corregir
+  algunas ineficiencias
+
+- Por ejemplo, los *impuestos correctivos* pueden usarse para
+  contrarrestar la ineficiencia causada por externalidades.
+
+** Sencillez administrativa
+
+- El sistema impositivo debe tener bajos costes de administración.
+
+- Tampoco debe imponer grandes costes a los contribuyentes.
+
+** Flexibilidad (I)
+
+- El sistema impositivo debe ser capaz de responder a condiciones
+  económicas cambiantes.
+
+- Cuando los precios son estables, un sistema impositivo progresivo es
+  un *estabilizador automático*.
+
+- En periodos de inflación y crecimiento la *indexación* de las
+  escalas impositivas reduce la capacidad estabilizadora de los
+  impuestos sobre la renta.
+
+- Con inflación y recesión, el impuesto sobre la renta tiene efectos
+  procíclicos si no se indexan las escalas impositivas.
 
 
-** Flexibilidad
+** Flexibilidad (y II)
 
-Por hacer.
+- A menudo, *dificultades políticas* impiden realizar ajustes en el
+  sistema impositivo.
 
+- También afecta a la flexibilidad, la velocidad con la que los
+  cambios en los impuestos, una vez aprobados, pueden ser llevados a
+  la práctica.
 
 ** Transparencia
 
-Por hacer.
+- El diseño del sistema impositivo debe permitir a los individuos
+  conocer qué están pagando, de forma que puedan evaluar hasta qué
+  punto el sistema refleja sus preferencias.
+
+- El impuesto sobre la renta es *transparente*.
+
+- El impuesto sobre sociedades no es transparente: los impuestos son
+  pagados por las personas no por las instituciones y, en este caso,
+  no está claro qué parte de la carga del impuesto soportan los
+  accionistas, los trabajadores o los clientes de las sociedades.
 
 
-** Justicia
+** Justicia (I)
 
-Por hacer.
+- El sistema impositivo debe tratar de forma similar a sujetos en
+  condiciones similares e imponer impuestos más altos a aquellos que
+  mejor puedan soportar la carga fiscal.
+
+- Es difícil poner esos conceptos en práctica.
+
+** Justicia (II)
+
+- *Equidad horizontal*: Los individuos que se encuentren en
+  circunstancias esencialmente idénticas deben pagar lo mismo en
+  impuestos.
+
+- ¿Qué diferencias son relevantes y cuáles no?
+
+** Justicia (y III)
+
+- *Equidad vertical*: quienes puedan pagar mayores impuestos deberían
+  pagar más.
+
+- ¿Quién debe pagar más?
+
+- Si alguien tiene que pagar más, ¿cuánto más?
 
 
 * La función de bienestar social y los impuestos
