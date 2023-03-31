@@ -83,6 +83,7 @@ La ineficiencia se traduce en que los contribuyentes modifican su
 comportamiento con el objetivo de reducir los impuestos que tienen que
 pagar.
 
+
 ** Eficiencia económica (II)
 
 - En ausencia de fallos de mercado, el sistema de precios permite asignar eficientemente los recursos.
@@ -92,6 +93,7 @@ pagar.
 
 - Los impuestos afectan, entre otras, las decisiones de ahorro,
   trabajo, consumo y producción.
+
 
 ** Eficiencia económica (III)
 
@@ -103,6 +105,7 @@ pagar.
   hacer para alterar su carga tributaria. El único efecto de los
   impuestos de *tanto alzado* (/lump-sum taxes/) es el efecto renta.
 
+
 ** Eficiencia económica (y IV)
 
 - En presencia de fallos de mercado, la asignación de recursos no será
@@ -112,11 +115,13 @@ pagar.
 - Por ejemplo, los *impuestos correctivos* pueden usarse para
   contrarrestar la ineficiencia causada por externalidades.
 
+
 ** Sencillez administrativa
 
 - El sistema impositivo debe tener bajos costes de administración.
 
 - Tampoco debe imponer grandes costes a los contribuyentes.
+
 
 ** Flexibilidad (I)
 
@@ -143,6 +148,7 @@ pagar.
   cambios en los impuestos, una vez aprobados, pueden ser llevados a
   la práctica.
 
+
 ** Transparencia
 
 - El diseño del sistema impositivo debe permitir a los individuos
@@ -165,6 +171,7 @@ pagar.
 
 - Es difícil poner esos conceptos en práctica.
 
+
 ** Justicia (II)
 
 - *Equidad horizontal*: Los individuos que se encuentren en
@@ -173,7 +180,8 @@ pagar.
 
 - ¿Qué diferencias son relevantes y cuáles no?
 
-** Justicia (y III)
+
+** Justicia (III)
 
 - *Equidad vertical*: quienes puedan pagar mayores impuestos deberían
   pagar más.
@@ -183,19 +191,52 @@ pagar.
 - Si alguien tiene que pagar más, ¿cuánto más?
 
 
+** Bases impositivas
+
+¿Qué variable debería servir como base de los impuestos?
+
+- *Renta*.
+
+- *Consumo*.
+
+- *Renta permanente*
+
 * La función de bienestar social y los impuestos
 
+** Eficiencia y equidad
 
-** La función de bienestar utilitarista
+- Con *sistema impositivo Pareto eficiente* no se puede mejorar la
+  situación de nadie sin empeorar también la situación de algún otro.
 
-Por hacer.
+- La función de bienestar social nos permite elegir entre diferentes
+  sistemas eficientes.
+
+** La función de bienestar utilitarista (I)
+
+- El criterio utilitarista proporciona argumentos en favor de
+  impuestos progresivos, si la utilidad marginal de la renta es
+  decreciente y la oferta de trabajo no responde a cambios en los
+  impuestos.
+
+- Si la oferta de trabajo es muy elástica con respecto a la tasa
+  impositiva, incrementar la tasa impositiva elevará muy poco la
+  recaudación y reducirá considerablemente la oferta de trabajo.
+
+** La función de bienestar utilitarista (y II)
+
+- De forma similar, el criterio utilitarista es compatible con la
+  equidad horizontal siempre que la generación de renta no se viera
+  afectada por los impuestos.
+
 
 
 ** La función de bienestar de Rawls
 
-Por hacer.
+- La maximización del bienestar de quien peor está implica elevar la
+  tasa impositiva hasta que se maximice la recaudación obtenida del
+  resto de la sociedad.
 
-
-** Limitaciones de las funciones de bienestar social
-
-Por hacer.
+- A veces se critica que el criterio de Rawls no es lo
+  suficientemente igualitarista al concentrarse solo en el bienestar
+  del individuo en peor situación e ignorar las desigualdades en la
+  distribución de la renta.
