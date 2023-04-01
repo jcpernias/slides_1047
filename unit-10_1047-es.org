@@ -15,22 +15,27 @@
 * Introducción
 
 
-** Introducción
+** Definición
 
-- Transferencia obligatoria de dinero.
+- Los *impuestos* son transferencias de dinero a favor del sector
+  público, sin contrapartida directa y establecidos por ley.
 
-- La obligatoriedad de los impuestos resuelve el problema del polizón.
+- La obligatoriedad resuelve el problema del polizón.
 
-- Pero puede suponer favorecer a determinados grupos de interés a
+- Se crean tensiones al favorecer a determinados grupos de interés a
   costa de otros.
 
 
 ** Tipos de impuestos
 
-- *Directos*: recaen directamente sobre las persona y las sociedades.
+- *Directos*: gravan los orígenes de la capacidad de pago: la renta o
+  la riqueza.
 
-- *Indirectos*: gravan el consumo o la producción de bienes y
-  servicios.
+- *Indirectos*: gravan los usos de las renta: el consumo de bienes y
+  servicios, compras de activos y otras operaciones similares.
+
+- Las *cotizaciones sociales* son impuestos sobre las rentas del
+  trabajo que se dedican a gastos de cobertura social.
 
 
 ** Impuestos directos
@@ -39,9 +44,9 @@
 
 - Impuesto sobre la renta de las sociedades.
 
-- Cotizaciones a la Seguridad Social.
+- Impuesto sobre bienes inmuebles.
 
-- Impuesto de transmisiones patrimoniales y sucesiones.
+- Impuesto sobre sucesiones y donaciones.
 
 - Impuesto sobre el patrimonio.
 
@@ -50,14 +55,11 @@
 
 - Impuesto sobre el valor añadido.
 
-- Impuestos específicos.
+- Impuesto sobre transmisiones y actos jurídicos documentados.
+
+- Impuestos especiales (accisas).
 
 - Aranceles.
-
-
-** Evolución del sistema tributario
-
-- Importancia relativa de los impuestos. Evolución.
 
 
 * Características de los sistemas impositivos
@@ -103,7 +105,7 @@ pagar.
   *distorsionadores*: los individuos pueden reducir su deuda tributaria
   reduciendo su consumo o su ahorro o trabajando menos.
 
-- Si un impuesto es *no distorsionador* los contribuyentes no pueden
+- Si un impuesto es *neutral* los contribuyentes no pueden
   hacer para alterar su carga tributaria. El único efecto de los
   impuestos de *tanto alzado* (/lump-sum taxes/) es el efecto renta.
 
@@ -206,6 +208,7 @@ pagar.
 
 * La función de bienestar social y los impuestos
 
+
 ** Eficiencia y equidad
 
 - Con *sistema impositivo Pareto eficiente* no se puede mejorar la
@@ -213,6 +216,7 @@ pagar.
 
 - La función de bienestar social nos permite elegir entre diferentes
   sistemas eficientes.
+
 
 ** La función de bienestar utilitarista (I)
 
@@ -224,6 +228,7 @@ pagar.
 - Si la oferta de trabajo es muy elástica con respecto a la tasa
   impositiva, incrementar la tasa impositiva elevará muy poco la
   recaudación y reducirá considerablemente la oferta de trabajo.
+
 
 ** La función de bienestar utilitarista (y II)
 
