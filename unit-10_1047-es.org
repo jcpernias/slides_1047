@@ -8,6 +8,8 @@
 
 #+begin_bibbox
 - *Stiglitz y Rosengard*: Capítulo 17.
+
+- *Albi et al.*: Volmen II, Capítulo 1.
 #+end_bibbox
 
 * Introducción
@@ -200,6 +202,7 @@ pagar.
 - *Consumo*.
 
 - *Renta permanente*
+
 
 * La función de bienestar social y los impuestos
 
