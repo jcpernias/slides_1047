@@ -38,11 +38,13 @@
   trabajo que se dedican a gastos de cobertura social.
 
 
-** Impuestos directos
+** Impuestos sobre la renta
 
 - Impuesto sobre la renta de las personas físicas.
 
-- Impuesto sobre la renta de las sociedades.
+- Impuesto sobre sociedades.
+
+** Impuestos sobre la riqueza
 
 - Impuesto sobre bienes inmuebles.
 
@@ -61,6 +63,45 @@
 
 - Aranceles.
 
+** Progresividad de los impuestos
+
+- En los *impuestos progresivos* el *tipo impositivo medio* crece con
+  la renta.
+
+- Si el tipo impositivo medio no cambia con la renta, el *impuesto es
+  proporcional*.
+
+- El tipo medio de los *impuestos regresivos* disminuye con la renta.
+
+** Ejemplo: IRPF (I)
+
+#+ATTR_LATEX: :booktabs t :align l@{\hspace{2cm}}c
+| Tramos del IRPF                      | Tipo marginal     |
+|--------------------------------------+-------------------|
+| Desde 0 hasta \money{12450}          | \SI{19}{\percent} |
+| Desde \money{12450} a \money{20200}  | \SI{24}{\percent} |
+| Desde \money{20200} a \money{35200}  | \SI{30}{\percent} |
+| Desde \money{35200} a \money{60000}  | \SI{37}{\percent} |
+| Desde \money{60000} a \money{300000} | \SI{45}{\percent} |
+| Más de \money{300000}                | \SI{47}{\percent} |
+
+Un contribuyente que gane \money{30000} pagaría: $\num{12450} \cdot
+0.19 + \num{7750} \cdot 0.24 + \num{9800} \cdot 0.3 =
+\money{7165.50}$. Tipo medio: \SI{23.9}{\percent}.
+
+** Ejemplo: IRPF (y II)
+
+#+ATTR_LATEX: :booktabs t :align l@{\hspace{1.5cm}}c@{\hspace{1.5cm}}c
+| Renta         | Tipo marginal     | Tipo medio        |
+|---------------+-------------------+-------------------|
+| \money{10000} | \SI{19}{\percent} | \SI{19}{\percent} |
+| \money{20000} | \SI{24}{\percent} | \SI{21}{\percent} |
+| \money{30000} | \SI{30}{\percent} | \SI{24}{\percent} |
+| \money{40000} | \SI{37}{\percent} | \SI{26}{\percent} |
+| \money{50000} | \SI{37}{\percent} | \SI{28}{\percent} |
+
+El IRPF es progresivo: el tipo medio aumenta conforme aumenta la
+renta.
 
 * Características de los sistemas impositivos
 
@@ -105,9 +146,9 @@ pagar.
   *distorsionadores*: los individuos pueden reducir su deuda tributaria
   reduciendo su consumo o su ahorro o trabajando menos.
 
-- Si un impuesto es *neutral* los contribuyentes no pueden
-  hacer para alterar su carga tributaria. El único efecto de los
-  impuestos de *tanto alzado* (/lump-sum taxes/) es el efecto renta.
+- Si un impuesto es *neutral* los contribuyentes no pueden hacer para
+  alterar su carga tributaria. El único efecto de los impuestos de
+  *cuantía fija* (/lump-sum taxes/) es el efecto renta.
 
 
 ** Eficiencia económica (y IV)
@@ -221,11 +262,11 @@ pagar.
 ** La función de bienestar utilitarista (I)
 
 - El criterio utilitarista proporciona argumentos en favor de
-  impuestos progresivos, si la utilidad marginal de la renta es
+  impuestos progresivos si la utilidad marginal de la renta es
   decreciente y la oferta de trabajo no responde a cambios en los
   impuestos.
 
-- Si la oferta de trabajo es muy elástica con respecto a la tasa
+- Pero si la oferta de trabajo es muy elástica con respecto a la tasa
   impositiva, incrementar la tasa impositiva elevará muy poco la
   recaudación y reducirá considerablemente la oferta de trabajo.
 
