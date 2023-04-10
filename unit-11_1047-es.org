@@ -7,11 +7,175 @@
 #+MATS: bib
 
 #+begin_bibbox
-- *Stiglitz y Rosengard*: Capítulo 18.
+- *Stiglitz y Rosengard*: Capítulo 18, secciones 1, 2 y 4.
 #+end_bibbox
 
 * Introducción
 
+
 ** Introducción
 
-Por hacer.
+- ¿Quién soporta efectivamente la carga de un impuesto?
+
+- ¿Qué determina la *incidencia de los impuestos*?
+
+** Carga de un impuesto
+
+- La *carga legal* de un impuesto la establece la ley que lo regula y
+  que determina quién debe liquidar el impuesto.
+
+- La *carga económica* o *fiscal* es la diferencia entre la renta real
+  de una persona antes y después del impuesto, teniendo en cuenta
+  todos los ajustes de precios y salarios.
+
+- La *incidencia de un impuesto* estudia como se reparte la carga
+  económica entre los diferentes agentes económicos.
+
+
+** Traslación de la carga
+
+Algunos agentes pueden *trasladar* total o parcialmente los impuestos
+que tienen que pagar:
+
+- Una empresa puede *trasladar hacia atrás* un impuesto si puede
+  reducir los salarios que paga a sus trabajadores.
+
+- Una empresa puede *trasladar hacia delante* un impuesto si consigue
+  elevar el precio que cobra a sus clientes.
+
+
+* Incidencia en mercados competitivos
+
+** Impuesto sobre las ventas de un bien
+
+- Un producto se vende en un mercado competitivo.
+
+- Se establece un impuesto por el que las empresas tienen que pagar
+  $t$ euros por cada unidad vendida.
+
+- La oferta se desplaza hacia arriba.
+
+
+** Equilibrio de mercado
+
+- En el nuevo equilibrio se venden menos unidades que antes del
+  impuesto.
+
+- El precio que pagan los compradores ha aumentado. Las empresas han
+  trasladado parte del impuesto hacia delante.
+
+- Los ingresos por unidad vendida han disminuido: $P_1 - t < P_0$.
+
+** Impuesto a los compradores
+
+- Se obtendría el mismo resultado si fueran los compradores los que
+  tuvieran que pagar el impuesto.
+
+- La demanda se desplazaría hacia abajo.
+
+** Equilibrio
+
+El equilibrio no depende de quién pague el impuesto.
+
+- Cantidad después del impuesto: $Q_2 = Q_1$.
+
+- Pago de los compradores por unidad: $P_2 + t = P_1$.
+
+- Ingresos de los vendedores por unidad: $P_2 = P_1 - t$.
+
+** Incidencia legal e incidencia económica
+
+- El impuesto es una cuña que impide que se iguale la oferta,
+  $P^o(Q)$, y la demanda, $P^d(Q)$:
+  #+begin_export latex
+  \[
+     P^o(Q_t) - P^d(Q_t) = t.
+  \]
+  #+end_export
+
+- La incidencia económica no coincide con la incidencia legal y es
+  independiente de quién paga el impuesto.
+
+
+** Impuestos /ad valorem/ e impuestos específicos
+
+- Con un *impuesto específico* se paga la misma cantidad de dinero por
+  unidad.
+
+- Con un impuesto /*ad valorem*/ se paga un porcentaje fijo del precio.
+
+** Impuestos /ad valorem/
+
+- Al introducir un impuesto la demanda se contrae.
+
+- La demanda se contrae más cuanto más alto es el precio.
+
+** Equivalencia de impuestos /ad valorem/ y específicos
+
+- *En mercados competitivos*, un impuesto /ad valorem/ es *equivalente*
+  a uno específico que produzca la misma recaudación en el equilibrio
+  después de impuestos.
+
+** Incidencia en mercados competitivos
+
+- La incidencia depende de la forma de las curvas de demanda y de
+  oferta.
+
+- La parte del mercado que es relativamente más inelástica soporta la
+  mayor parte de la carga del impuesto.
+
+** Incidencia y elasticidades
+
+- Es posible expresar la incidencia sobre compradores y vendedores
+  usando las elasticidades de la demanda, $\eta_d$, y de la oferta,
+  $\eta_o$.
+
+- Después de un impuesto específico de $t$ por unidad:
+
+  + El incremento del precio pagado por los compradores es:
+    #+begin_export latex
+    \[
+      \incr P_{c} = -\frac{\eta_{d}}{\eta_{s} - \eta_{d}} t
+    \]
+    #+end_export
+
+  + La disminución del precio ingresado por los vendedores es:
+    #+begin_export latex
+    \[
+      \incr P_{v} = \frac{\eta_{s}}{\eta_{s} - \eta_{d}} t
+    \]
+    #+end_export
+
+** Subvenciones
+
+- La incidencia de las subvenciones puede analizarse de forma similar
+  a la de los impuestos.
+
+- Supongamos que se subvenciona el precio que pagan los compradores de
+  un producto en $s$ euros por unidad.
+
+- La curva de demanda se desplaza hacia arriba.
+
+** Equilibrio
+
+- En general, en el nuevo equilibrio la disminución del precio que
+  pagan los compradores es menor que $s$.
+
+- Los vendedores pueden capturar parte de la subvención.
+
+
+* Incidencia en mercados no competitivos
+
+** Impuestos sobre la producción de un monopolio
+
+** Variación del precio
+
+** Impuestos /ad valorem/ e impuestos específicos
+
+** Incidencia en oligopolios
+
+* Otras cuestiones
+
+** Incidencia y equilibrio general
+
+** Efectos a corto y a largo plazo
