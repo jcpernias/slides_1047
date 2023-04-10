@@ -139,10 +139,10 @@ El equilibrio no depende de quién pague el impuesto.
     \]
     #+end_export
 
-  + La disminución del precio ingresado por los vendedores es:
+  + La variación del precio ingresado por los vendedores es:
     #+begin_export latex
     \[
-      \incr P_{v} = \frac{\eta_{s}}{\eta_{s} - \eta_{d}} t
+      \incr P_{v} = - \frac{\eta_{s}}{\eta_{s} - \eta_{d}} t
     \]
     #+end_export
 
@@ -166,16 +166,120 @@ El equilibrio no depende de quién pague el impuesto.
 
 * Incidencia en mercados no competitivos
 
-** Impuestos sobre la producción de un monopolio
+** Monopolio
 
-** Variación del precio
+- El monopolista selecciona la cantidad que iguala el ingreso marginal
+  con el coste marginal.
+
+** Impuesto específico
+
+- Un impuesto específico de $t$ euros por unidad disminuye la
+  producción del monopolio y eleva el precio.
+
+- Si la curva de demanda es lineal y el coste marginal constante, se
+  traslada la mitad del impuesto a los consumidores.
+
+
+** Demanda de elasticidad constante
+
+- La capacidad de trasladar el impuesto depende de la forma de la
+  curva de demanda y de coste marginal.
+
+- Con curvas de demanda de elasticidad constante y costes marginales
+  constantes, el aumento de precio es mayor que $t$.
+
+** Variación del precio con elasticidad constante de la demanda
+
+- Regla de fijación del precio del monopolista:
+  #+begin_export latex
+  \[
+    P = \CMg \frac{1}{1 + 1/\eta_d}
+  \]
+  #+end_export
+
+- Un impuesto específico es equivalente a un incremento del coste
+  marginal:
+  #+begin_export latex
+  \[
+    P = (\CMg + t) \frac{1}{1 + 1/\eta_d}
+  \]
+  #+end_export
+
+- Por tanto:
+  #+begin_export latex
+  \[
+    \frac{\diff P}{\diff t} = \frac{1}{1 + 1/\eta_d}
+  \]
+  #+end_export
+
 
 ** Impuestos /ad valorem/ e impuestos específicos
 
+- En el caso del monopolio, los impuestos /ad valorem/ proporcionan
+  una mayor recaudación que un impuesto específico que provoque la
+  misma elevación del precio.
+
 ** Incidencia en oligopolios
+
+- Los efectos de los impuestos dependen de las diferentes estructuras
+  de los mercados oligopolísticos.
+
+- Si temen perder cuota de mercado al elevar los precios, las empresas
+  no trasladarán el impuesto.
+
+- Si piensan que sus rivales subirán sus precios, todas las empresas
+  subirán los precios y se trasladará el impuesto.
+
 
 * Otras cuestiones
 
+** Equilibrio parcial y equilibrio general
+
+- Nuestro análisis se ha centrado en situaciones de *equilibrio
+  parcial*: los cambios que se producen en un mercado no tienen
+  efectos en el resto de la economía.
+
+- Muchos impuestos tienen efectos de *equilibrio general*: afectan a
+  numerosos sectores y mercados simultáneamente.
+
 ** Incidencia y equilibrio general
 
+- El impuesto sobre el beneficio de sociedades afecta a todas las
+  sociedades anónimas.
+
+- Si aumenta el impuesto sobres sociedades:
+
+  + Los inversores exigen que el rendimiento del capital no disminuya,
+    lo que encarece el coste del capital para las sociedades.
+
+  + Las sociedades aumentan el precio de su productos.
+
+  + Las sociedades tratan de sustituir capital por trabajo.
+
+** Análisis de equilibrio general
+
+Algunas observaciones importantes:
+
+- Los impuestos son soportados por las personas (accionistas,
+  trabajadores, consumidores), no por sociedades.
+
+- Los cambios en el impuesto de sociedades no solo afectan a este tipo
+  de empresas, sino que se extienden por toda la economía.
+
+- El efecto final depende de características estructurales de la
+  economía: ¿es inelástica la oferta de trabajo? ¿Es fácil sustituir
+  capital por trabajo? ¿Cuál es la elasticidad de la demanda de los
+  productos de las sociedades anónimas?
+
 ** Efectos a corto y a largo plazo
+
+- La incidencia de un impuesto puede ser muy diferente a corto o a
+  largo plazo.
+
+- Las empresas pueden tener costes de ajuste que impiden alcanzar
+  inmediatamente el equilibrio a largo plazo.
+
+- Los impuestos sobre el ahorro pueden tener pocos efectos a corto. A
+  largo plazo, podrían desincentivar el ahorro lo que podría reducir
+  el stock de capital. Esto podría traducirse en una menor
+  productividad del trabajo que redujera los salarios a largo plazo.
