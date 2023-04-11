@@ -275,6 +275,7 @@
   \end{tikzpicture}
 #+end_src
 
+
 * Ad valorem tax
 
 ** Chunks
@@ -301,7 +302,7 @@
 
 #+begin_src latex  :noweb-ref draw-curve-av-D0
   \draw[curve A, use path=\pathDzero]
-  ($ (D0-1)!0.9!(D0-2) $) node[right, yshift = 0pt] { $D_0$ } ;
+  ($ (D0-1)!0.85!(D0-2) $) node[right, yshift = 0pt] { $D_0$ } ;
 #+end_src
 
 #+begin_src latex :noweb-ref curve-av-Dtau
@@ -355,6 +356,8 @@
 #+end_src
 
 
+** Equilibrium
+
 #+begin_src latex :tangle fig-11_1047-08.tex
   \begin{tikzpicture}<<comp-scale>>
     <<axes-coordinates>>
@@ -389,6 +392,9 @@
     <<comp-axes>>
   \end{tikzpicture}
 #+end_src
+
+
+** An equivalent specific tax
 
 #+begin_src latex :tangle fig-11_1047-09.tex
   \begin{tikzpicture}<<comp-scale>>
@@ -431,6 +437,530 @@
     \draw[curve A] (Dt-1) -- (Dt-2)
     node[pos = 0.85, right, yshift = 0pt] { $D_{t}$ }
     ;
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+* Subsidies
+
+** Chunks
+
+#+begin_src latex :noweb-ref subs-coordinates
+  \coordinate (subs) at (0, 3) ;
+#+end_src
+
+#+begin_src latex :noweb-ref subs-curve-O0
+  \coordinate (O0-1) at (1, 3) ;
+  \coordinate (O0-2) at (10, 6) ;
+  \path[save path=\pathOzero, name path=O0] (O0-1) -- (O0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref subs-draw-curve-O0
+  \draw[curve B, use path=\pathOzero] (O0-2) node[right] { $O_0$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref subs-curve-D0
+  \coordinate (D0-1) at (1, 6.5) ;
+  \coordinate (D0-2) at (10, 1) ;
+  \path[save path=\pathDzero, name path=D0] (D0-1) -- (D0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref subs-draw-curve-D0
+  \draw[curve A, use path=\pathDzero] (D0-2) node[right] { $D_0$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref subs-curve-D1
+  \coordinate (D1-1) at  ($ (D0-1) + (subs) $) ;
+  \coordinate (D1-2) at  ($ (D0-2) + (subs) $) ;
+  \path[save path=\pathDone, name path=D1] (D1-1) -- (D1-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref subs-draw-curve-D1
+  \draw[curve A, use path=\pathDone] (D1-2) node[right] { $D_1$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref subs-eq-coordinates
+  <<subs-coordinates>>
+  <<subs-curve-O0>>
+  <<subs-curve-D0>>
+  <<subs-curve-D1>>
+  \path[name intersections={of=D0 and O0, name=E0}] ;
+  \path[name intersections={of=D1 and O0, name=E1}] ;
+#+end_src
+
+** Demand
+
+#+begin_src latex :tangle fig-11_1047-10.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<subs-eq-coordinates>>
+
+
+    % \draw[help lines]
+    % (y-axis |- E0-1) node[left] {$P_0$} -|
+    % (x-axis -| E0-1) node[below] {$Q_0$}
+    % ;
+
+    % \draw[help lines]
+    % (y-axis |- E2-1) node[left] {$P_2$} -|
+    % (x-axis -| E2-1) node[below] {$Q_2$}
+    % ;
+
+    % \draw[help lines]
+    % ($ (y-axis |- E2-1) + (tax) $) node[left] {$P_2 + t$} -|
+    % ($ (E2-1) $)
+    % ;
+
+    <<subs-draw-curve-D0>>
+    <<subs-draw-curve-D1>>
+
+    \draw[shift arrow, ->]
+    ($ (D0-1)!0.4!(D0-2) $) -- ($ (D1-1)!0.4!(D1-2) $)
+    node[midway, right] {$s$}
+    ;
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+** Equilibrium
+
+#+begin_src latex :tangle fig-11_1047-11.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<subs-eq-coordinates>>
+
+
+    \draw[help lines]
+    (y-axis |- E0-1) node[left] {$P_0$} -|
+    (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E1-1) node[left] {$P_1$} -|
+    (x-axis -| E1-1) node[below] {$Q_1$}
+    ;
+
+    \draw[help lines]
+    ($ (y-axis |- E1-1) - (subs) $) node[left] {$P_1 - s$} -|
+    ($ (E1-1) $)
+    ;
+
+    <<subs-draw-curve-O0>>
+    <<subs-draw-curve-D0>>
+    <<subs-draw-curve-D1>>
+
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+** Incidence
+
+#+begin_src latex :tangle fig-11_1047-12.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<subs-eq-coordinates>>
+
+    \coordinate (P0) at (y-axis |- E0-1) ;
+    \coordinate (Q1) at (x-axis -| E1-1) ;
+
+    \fill[fillB]
+    (P0) rectangle (E1-1)
+    ;
+
+    \fill[fillA]
+    (P0) rectangle ($ (E1-1) - (subs) $)
+    ;
+
+
+    \draw[help lines]
+    (P0) node[left] {$P_0$} -- (P0 -| Q1)
+    (E0-1) -- (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E1-1) node[left] {$P_1$} -|
+    (Q1) node[below] {$Q_1$}
+    ;
+
+    \draw[help lines]
+    ($ (y-axis |- E1-1) - (subs) $) node[left] {$P_1 - s$} -|
+    ($ (E1-1) $)
+    ;
+
+    <<subs-draw-curve-O0>>
+    <<subs-draw-curve-D0>>
+    <<subs-draw-curve-D1>>
+
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+* Monopoly
+
+** Chunks
+
+#+begin_src latex :noweb-ref monop-tax-coordinates
+  \coordinate (tax) at (0, 2.5) ;
+#+end_src
+
+#+begin_src latex :noweb-ref monop-curve-CM
+  \coordinate (CM-1) at (0, 2) ;
+  \coordinate (CM-2) at (10, 2) ;
+  \path[save path=\pathCM, name path=CM] (CM-1) -- (CM-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref monop-draw-curve-CM
+  \draw[curve B, use path=\pathCM] (CM-2) node[right] { $\CMg$ } ;
+#+end_src
+
+
+#+begin_src latex :noweb-ref monop-curve-CMt
+  \coordinate (CMt-1) at ($ (CM-1) + (tax) $) ;
+  \coordinate (CMt-2) at ($ (CM-2) + (tax) $) ;
+  \path[save path=\pathCMt, name path=CMt] (CMt-1) -- (CMt-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref monop-draw-curve-CMt
+  \draw[curve B, use path=\pathCMt] (CMt-2) node[right] { $\CMg + t$ } ;
+#+end_src
+
+
+#+begin_src latex :noweb-ref monop-curve-D
+  \coordinate (D-1) at (0, 9) ;
+  \coordinate (D-2) at (10, 0) ;
+  \path[save path=\pathD, name path=D] (D-1) -- (D-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref monop-draw-curve-D
+  \draw[curve A, use path=\pathD]
+  ($ (D-1)!0.9!(D-2) $)
+  node[right, xshift = 2pt] { $D$ }
+  ;
+#+end_src
+
+#+begin_src latex :noweb-ref monop-curve-IM
+  \coordinate (IM-1) at  (D-1) ;
+  \coordinate (IM-2) at  ($ (0,0)!0.5!(D-2) $) ;
+  \path[save path=\pathIM, name path=IM] (IM-1) -- (IM-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref monop-draw-curve-IM
+  \draw[curve A, use path=\pathIM] ($ (IM-1)!0.9!(IM-2) $) node[right] { $\IMg$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref monop-eq-coordinates
+  <<monop-tax-coordinates>>
+  <<monop-curve-D>>
+  <<monop-curve-IM>>
+  <<monop-curve-CM>>
+  <<monop-curve-CMt>>
+  \path[name intersections={of=IM and CM, name=E0}] ;
+  \path[name intersections={of=IM and CMt, name=E1}] ;
+
+  \coordinate (Q0) at (E0-1 |- x-axis) ;
+  \coordinate (Q1) at (E1-1 |- x-axis) ;
+
+  \path[name path = E0vert]
+  (Q0) -- ($ (Q0)!3!(E0-1) $) ;
+  \path[name path = E1vert]
+  (Q1) -- ($ (Q1)!1.5!(E1-1) $) ;
+
+  \path[name intersections={of=D and E0vert, name=D0}] ;
+  \path[name intersections={of=D and E1vert, name=D1}] ;
+
+  \coordinate (P0) at (D0-1 -| y-axis) ;
+  \coordinate (P1) at (D1-1 -| y-axis) ;
+#+end_src
+
+** Monopoly before tax
+
+#+begin_src latex :tangle fig-11_1047-13.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<monop-eq-coordinates>>
+
+
+    \draw[help lines]
+    (P0) node[left] {$P_0$} -|
+    (Q0) node[below] {$Q_0$}
+    ;
+
+    <<monop-draw-curve-D>>
+    <<monop-draw-curve-IM>>
+    <<monop-draw-curve-CM>>
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+** Monopoly after tax
+
+#+begin_src latex :tangle fig-11_1047-14.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<monop-eq-coordinates>>
+
+
+    \draw[help lines]
+    (P0) node[left] {$P_0$} -|
+    (Q0) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (P1) node[left] {$P_1$} -|
+    (Q1) node[below] {$Q_1$}
+    ;
+
+    <<monop-draw-curve-D>>
+    <<monop-draw-curve-IM>>
+    <<monop-draw-curve-CM>>
+    <<monop-draw-curve-CMt>>
+
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+* Ad valorem tax on a monopoly
+
+** Chunks
+
+#+begin_src latex :noweb-ref av-monop-tax-coordinates
+  \coordinate (tax) at (0, 6.5) ;
+#+end_src
+
+#+begin_src latex :noweb-ref av-monop-curve-CM
+  \coordinate (CM-1) at (0, 1.5) ;
+  \coordinate (CM-2) at (10, 1.5) ;
+  \path[save path=\pathCM, name path=CM] (CM-1) -- (CM-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref av-monop-draw-curve-CM
+  \draw[curve B, use path=\pathCM]
+  (CM-2)
+  node[above, yshift = -2.5pt, font=\footnotesize] { $\CMg$ }
+  ;
+#+end_src
+
+
+#+begin_src latex :noweb-ref av-monop-curve-D0
+  \coordinate (D0-1) at (0, 10) ;
+  \coordinate (D0-2) at (10, 0) ;
+  \path[save path=\pathDzero, name path=D0] (D0-1) -- (D0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref av-monop-draw-curve-D0
+  \draw[curve A, use path=\pathDzero]
+  ($ (D0-1)!0.95!(D0-2) $)
+  node[right, yshift = 0.75pt, font=\footnotesize] { $D_0$ }
+  ;
+#+end_src
+
+#+begin_src latex :noweb-ref av-monop-curve-IM1
+  \coordinate (IM0-1) at  (D0-1) ;
+  \coordinate (IM0-2) at  ($ (0,0)!0.5!(D0-2) $) ;
+  \path[save path=\pathIMzero, name path=IM0] (IM0-1) -- (IM0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref av-monop-draw-curve-IM0
+  \draw[curve C, use path=\pathIMzero]
+  ($ (IM0-1)!0.94!(IM0-2) $)
+  node[right, xshift = -2.5pt, font=\footnotesize] { $\IMg_0$ }
+  ;
+#+end_src
+
+
+#+begin_src latex :noweb-ref av-monop-curve-D1
+  \coordinate (D1-1) at ($ (D0-1) - (tax) $) ;
+  \coordinate (D1-2) at (D0-2) ;
+  \path[save path=\pathDone, name path=D1] (D1-1) -- (D1-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref av-monop-draw-curve-D1
+  \draw[curve A, use path=\pathDone]
+  ($ (D1-1)!0.71!(D1-2) $)
+  node[below, yshift = 3.5pt, font=\footnotesize] { $D_1$ }
+  ;
+#+end_src
+
+
+#+begin_src latex :noweb-ref av-monop-curve-IM1
+  \coordinate (IM1-1) at  (D1-1) ;
+  \coordinate (IM1-2) at  ($ (0,0)!0.5!(D1-2) $) ;
+  \path[save path=\pathIMone, name path=IM1] (IM1-1) -- (IM1-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref av-monop-draw-curve-IM1
+  \draw[curve C, use path=\pathIMone]
+  ($ (IM1-1)!0.83!(IM1-2) $)
+  node[left, xshift=-5.5pt, fill=white, inner sep = 0pt, font=\footnotesize] { $\IMg_1$ }
+  ;
+#+end_src
+
+#+begin_src latex  :noweb-ref av-monop-eq-coordinates
+  <<av-monop-tax-coordinates>>
+  <<av-monop-curve-D0>>
+  <<av-monop-curve-IM0>>
+  <<av-monop-curve-D1>>
+  <<av-monop-curve-IM1>>
+  <<av-monop-curve-CM>>
+  \path[name intersections={of=IM0 and CM, name=E0}] ;
+  \path[name intersections={of=IM1 and CM, name=E1}] ;
+
+  \coordinate (Q0) at (E0-1 |- x-axis) ;
+  \coordinate (Q1) at (E1-1 |- x-axis) ;
+
+  \path[name path = E0vert]
+  (Q0) -- ($ (Q0)!4!(E0-1) $) ;
+  \path[name path = E1vert]
+  (Q1) -- ($ (Q1)!6!(E1-1) $) ;
+
+  \path[name intersections={of=D0 and E0vert, name=ED0}] ;
+  \path[name intersections={of=D1 and E1vert, name=E1D1}] ;
+  \path[name intersections={of=D0 and E1vert, name=E1D0}] ;
+  \path[name intersections={of=IM0 and E1vert, name=E1IM0}] ;
+
+
+  \coordinate (P0) at (ED0-1 -| y-axis) ;
+  \coordinate (P1tau) at (E1D1-1 -| y-axis) ;
+  \coordinate (P1) at (E1D0-1 -| y-axis) ;
+
+  \coordinate (IM2-1) at ($ (D0-1) - (E1IM0-1) + (E1-1) $) ;
+  \coordinate (IM2-2) at ($ (IM0-2) - (E0-1) + (E1-1) $) ;
+  \coordinate (D2-1) at (IM2-1) ;
+  \coordinate (D2-2) at  ($ (0, 0)!2!(IM2-2) $);
+#+end_src
+
+** Monopoly ad valorem tax
+
+#+begin_src latex :tangle fig-11_1047-15.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<av-monop-eq-coordinates>>
+
+
+    \draw[help lines]
+    (P0) node[left] {$P_0$} -|
+    (Q0) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (P1tau) node[left] {$P_1(1 - \tau)$} -|
+    (Q1) node[below] {$Q_1$}
+    (P1) node[left] {$P_1$} -|
+    (E1D1-1)
+    ;
+
+    <<av-monop-draw-curve-D0>>
+    <<av-monop-draw-curve-IM0>>
+    <<av-monop-draw-curve-D1>>
+    <<av-monop-draw-curve-IM1>>
+    <<av-monop-draw-curve-CM>>
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1047-15f.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<av-monop-eq-coordinates>>
+
+    \fill[fillC]
+    (P1tau) rectangle (E1D0-1) ;
+    \draw[help lines]
+    (P0) node[left] {$P_0$} -|
+    (Q0) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (P1tau) node[left] {$P_1(1 - \tau)$} -|
+    (Q1) node[below] {$Q_1$}
+    (P1) node[left] {$P_1$} -|
+    (E1D1-1)
+    ;
+
+    <<av-monop-draw-curve-D0>>
+    <<av-monop-draw-curve-IM0>>
+    <<av-monop-draw-curve-D1>>
+    <<av-monop-draw-curve-IM1>>
+    <<av-monop-draw-curve-CM>>
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Monopoly specific tax
+
+#+begin_src latex :tangle fig-11_1047-16.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<av-monop-eq-coordinates>>
+    \path[save path=\pathDtwo, name path=D2] (D2-1) -- (D2-2) ;
+    \path[name intersections={of=D2 and E1vert, name=E1D2}] ;
+    \coordinate (P1t) at (E1D2-1 -| y-axis) ;
+
+    \draw[help lines]
+    (P0) node[left] {$P_0$} -|
+    (Q0) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (P1t) node[left] {$P_1 - t$} -- (E1D2-1)
+    (P1) node[left] {$P_1$} -|
+    (Q1) node[below] {$Q_1$}
+    (0, 0.2) node[left] {\phantom{$P_1(1 - \tau)$}}
+    ;
+
+    <<av-monop-draw-curve-D0>>
+    <<av-monop-draw-curve-IM0>>
+    % <<av-monop-draw-curve-D1>>
+    % <<av-monop-draw-curve-IM1>>
+    \draw[curve C] (IM2-1) -- (IM2-2) ;
+    \draw[curve A, use path=\pathDtwo] ;
+    <<av-monop-draw-curve-CM>>
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1047-16f.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<av-monop-eq-coordinates>>
+    \path[save path=\pathDtwo, name path=D2] (D2-1) -- (D2-2) ;
+    \path[name intersections={of=D2 and E1vert, name=E1D2}] ;
+    \coordinate (P1t) at (E1D2-1 -| y-axis) ;
+
+    \fill[fillC]
+    (P1t) rectangle (E1D0-1) ;
+
+    \draw[help lines]
+    (P0) node[left] {$P_0$} -|
+    (Q0) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (P1t) node[left] {$P_1 - t$} -- (E1D2-1)
+    (P1) node[left] {$P_1$} -|
+    (Q1) node[below] {$Q_1$}
+    (0, 0.2) node[left] {\phantom{$P_1(1 - \tau)$}}
+    ;
+
+    <<av-monop-draw-curve-D0>>
+    <<av-monop-draw-curve-IM0>>
+    % <<av-monop-draw-curve-D1>>
+    % <<av-monop-draw-curve-IM1>>
+    \draw[curve C] (IM2-1) -- (IM2-2) ;
+    \draw[curve A, use path=\pathDtwo] ;
+    <<av-monop-draw-curve-CM>>
 
     <<comp-axes>>
   \end{tikzpicture}

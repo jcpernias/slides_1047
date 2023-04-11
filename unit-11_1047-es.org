@@ -105,8 +105,8 @@ El equilibrio no depende de quién pague el impuesto.
   precio total pagado por los compradores, con $P^v$, el ingreso por
   unidad de los vendedores.
 
-- La incidencia económica no coincide con la incidencia legal y es
-  independiente de quién paga el impuesto.
+- En general, la incidencia económica no coincide con la incidencia
+  legal y es independiente de quién paga el impuesto.
 
 
 ** Incidencia en mercados competitivos
@@ -191,8 +191,6 @@ Después de un impuesto específico de $t$ por unidad:
 - La demanda se contrae más cuanto más alto es el precio.
 
 
-
-
 ** Equivalencia de impuestos /ad valorem/ y específicos
 
 *En mercados competitivos*, un impuesto /ad valorem/ es *equivalente*
@@ -207,6 +205,8 @@ a uno específico que produzca la misma variación del precio.
 
 ** Subvenciones
 
+#+MATS: figcol fig-11_1047-10-*.pdf 0.47
+
 - La incidencia de las subvenciones puede analizarse de forma similar
   a la de los impuestos.
 
@@ -218,50 +218,75 @@ a uno específico que produzca la misma variación del precio.
 
 ** Equilibrio
 
-- En general, en el nuevo equilibrio la disminución del precio que
-  pagan los compradores es menor que $s$.
+#+MATS: figcol fig-11_1047-11-*.pdf 0.47
 
-- Los vendedores pueden capturar parte de la subvención.
+- El precio que cobran los vendedores aumenta de $P_0$ a $P_1$.
 
+- El precio que pagan los compradores disminuye de $P_0$ a $P_1 - s$.
+
+** Incidencia
+
+#+MATS: figcol fig-11_1047-12-*.pdf 0.47
+
+- En general, los vendedores capturan parte de la subvención que se
+  concedió a los compradores.
+
+- La incidencia de la subvención depende de las elasticidades de las
+  curvas de demanda y oferta.
+
+** Mercado competitivo de trabajo
+
+- En un mercado competitivo de trabajo la incidencia de las
+  cotizaciones sociales depende de las elasticidades de la oferta y la
+  demanda de trabajo.
+
+- El establecimiento de un salario mínimo podría hacer que la
+  incidencia legal afectase a la incidencia económica.
+
+** Mercados competitivos de otros factores
+
+- Los impuestos sobre un factor con oferta perfectamente elástica se
+  trasladan por completo a los demandantes de ese factor.
+
+- Por el contrario, los propietarios de factores con oferta
+  perfectamente inelástica soportan la carga completa de los
+  impuestos sobre el factor.
 
 * Incidencia en mercados no competitivos
 
 
 ** Monopolio
 
+#+MATS: figcol fig-11_1047-13-*.pdf 0.47
+
 - El monopolista selecciona la cantidad que iguala el ingreso marginal
   con el coste marginal.
+
+- La demanda determina el precio.
 
 
 ** Impuesto específico
 
+#+MATS: figcol fig-11_1047-14-*.pdf 0.47
+
 - Un impuesto específico de $t$ euros por unidad disminuye la
   producción del monopolio y eleva el precio.
 
-- Si la curva de demanda es lineal y el coste marginal constante, se
-  traslada la mitad del impuesto a los consumidores.
+- Si la curva de demanda es lineal y el coste marginal constante, el
+  monopolio traslada la mitad del impuesto:
+  #+begin_export latex
+  \[
+    P_1 - P_0 = t / 2
+  \]
+  #+end_export
 
 
 ** Demanda de elasticidad constante
 
-- La capacidad de trasladar el impuesto depende de la forma de la
-  curva de demanda y de coste marginal.
-
 - Con curvas de demanda de elasticidad constante y costes marginales
   constantes, el aumento de precio es mayor que $t$.
 
-
-** Variación del precio con elasticidad constante de la demanda
-
 - Regla de fijación del precio del monopolista:
-  #+begin_export latex
-  \[
-    P = \CMg \frac{1}{1 + 1/\eta_d}
-  \]
-  #+end_export
-
-- Un impuesto específico es equivalente a un incremento del coste
-  marginal:
   #+begin_export latex
   \[
     P = (\CMg + t) \frac{1}{1 + 1/\eta_d}
@@ -271,16 +296,34 @@ a uno específico que produzca la misma variación del precio.
 - Por tanto:
   #+begin_export latex
   \[
-    \frac{\diff P}{\diff t} = \frac{1}{1 + 1/\eta_d}
+    \frac{\diff P}{\diff t} = \frac{1}{1 + 1/\eta_d} > 1
   \]
   #+end_export
+
+** Impuesto /ad valorem/
+
+#+MATS: figcol fig-11_1047-15-*.pdf 0.47
+
+Texto.
+
+** Impuesto específico
+
+#+MATS: figcol fig-11_1047-16-*.pdf 0.47
+
+Texto.
 
 
 ** Impuestos /ad valorem/ e impuestos específicos
 
-- En el caso del monopolio, los impuestos /ad valorem/ proporcionan
-  una mayor recaudación que un impuesto específico que provoque la
-  misma elevación del precio.
+En el caso del monopolio, los impuestos /ad valorem/ proporcionan una
+mayor recaudación que un impuesto específico que provoque la misma
+elevación del precio.
+
+#+MATS: col 0.5
+#+MATS: fig fig-11_1047-15f-*.pdf
+
+#+MATS: col 0.5
+#+MATS: fig fig-11_1047-16f-*.pdf
 
 
 ** Incidencia en oligopolios
