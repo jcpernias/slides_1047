@@ -1,0 +1,437 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Tax incidence figures
+
+#+PROPERTY: header-args:latex :noweb yes :eval no
+
+* Competitive markets
+
+
+** Chunks
+
+#+begin_src latex :noweb-ref comp-scale
+  [xscale=0.35, yscale=0.35, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref comp-axes
+  \draw[axis]
+    (0,11) node[left] {$P$} |-
+    (12,0) node[below] {$Q$};
+#+end_src
+
+#+begin_src latex :noweb-ref axes-coordinates
+  \coordinate (x-axis) at (1, 0) ;
+  \coordinate (y-axis) at (0, 1) ;
+#+end_src
+
+#+begin_src latex :noweb-ref tax-coordinates
+  \coordinate (tax) at (0, 3) ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-O0
+  \coordinate (O0-1) at (1, 0.5) ;
+  \coordinate (O0-2) at (10, 6.5) ;
+  \path[save path=\pathOzero, name path=O0] (O0-1) -- (O0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-O0
+  \draw[curve B, use path=\pathOzero] (O0-2) node[right] { $O_0$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-D0
+  \coordinate (D0-1) at (1, 8) ;
+  \coordinate (D0-2) at (10, 4) ;
+  \path[save path=\pathDzero, name path=D0] (D0-1) -- (D0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-D0
+  \draw[curve A, use path=\pathDzero] (D0-2) node[right] { $D_0$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-O1
+  \coordinate (O1-1) at ($ (O0-1) + (tax) $) ;
+  \coordinate (O1-2) at ($ (O0-2) + (tax) $) ;
+  \path[save path=\pathOone, name path=O1] (O1-1) -- (O1-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-O1
+  \draw[curve B, use path=\pathOone] (O1-2) node[right] { $O_1$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-D2
+  \coordinate (D2-1) at  ($ (D0-1) - (tax) $) ;
+  \coordinate (D2-2) at  ($ (D0-2) - (tax) $) ;
+  \path[save path=\pathDtwo, name path=D2] (D2-1) -- (D2-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-D2
+  \draw[curve A, use path=\pathDtwo] (D2-2) node[right] { $D_2$ } ;
+#+end_src
+
+#+begin_src latex  :noweb-ref eq-coordinates
+  <<tax-coordinates>>
+  <<curve-O0>>
+  <<curve-D0>>
+  <<curve-O1>>
+  <<curve-D2>>
+  \path[name intersections={of=D0 and O0, name=E0}] ;
+  \path[name intersections={of=D0 and O1, name=E1}] ;
+  \path[name intersections={of=D2 and O0, name=E2}] ;
+#+end_src
+
+
+
+** Supply curve shifts upwards
+
+#+begin_src latex :tangle fig-11_1047-01.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \draw[help lines]
+    ($(y-axis |- E0-1) + (tax) $) node[left] {$P_0 + t$} -|
+    (E0-1)
+    ;
+
+    \draw[help lines]
+    (y-axis |- E0-1) node[left] {$P_0$} -|
+    (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+    <<draw-curve-O0>>
+    <<draw-curve-O1>>
+
+    \draw[shift arrow, ->]
+    ($ (O0-1)!0.9!(O0-2) $) -- ($ (O1-1)!0.9!(O1-2) $)
+    ;
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Tax on sellers
+
+#+begin_src latex :tangle fig-11_1047-02.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+
+    \draw[help lines]
+    (y-axis |- E0-1) node[left] {$P_0$} -|
+    (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E1-1) node[left] {$P_1$} -|
+    (x-axis -| E1-1) node[below] {$Q_1$}
+    ;
+
+    \draw[help lines]
+    ($(y-axis |- E1-1) - (tax) $) node[left] {$P_1 - t$} -|
+    ($ (E1-1) - (tax) $)
+    ;
+
+    <<draw-curve-O0>>
+    <<draw-curve-O1>>
+    <<draw-curve-D0>>
+
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Demand curve shifts downwards
+
+#+begin_src latex :tangle fig-11_1047-03.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \draw[help lines]
+    ($ (y-axis |- E0-1) - (tax) $) node[left] {$P_0 - t$} --
+    ($ (E0-1) - (tax) $)
+    ;
+
+    \draw[help lines]
+    (y-axis |- E0-1) node[left] {$P_0$} -|
+    (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+    <<draw-curve-D0>>
+    <<draw-curve-D2>>
+
+    \draw[shift arrow, ->]
+    ($ (D0-1)!0.9!(D0-2) $) -- ($ (D2-1)!0.9!(D2-2) $)
+    ;
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Tax on buyers
+
+#+begin_src latex :tangle fig-11_1047-04.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+
+    \draw[help lines]
+    (y-axis |- E0-1) node[left] {$P_0$} -|
+    (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E2-1) node[left] {$P_2$} -|
+    (x-axis -| E2-1) node[below] {$Q_2$}
+    ;
+
+    \draw[help lines]
+    ($ (y-axis |- E2-1) + (tax) $) node[left] {$P_2 + t$} -|
+    ($ (E2-1) $)
+    ;
+
+    <<draw-curve-O0>>
+    <<draw-curve-D0>>
+    <<draw-curve-D2>>
+
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Tax wedge
+
+#+begin_src latex :tangle fig-11_1047-05.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+
+    \draw[help lines]
+    (E0-1) -- (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E2-1) node[left] {$P^v$} -|
+    (x-axis -| E2-1) node[below] {$Q_t$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E1-1) node[left] {$P^c$} --
+    ($ (E1-1) $)
+    ;
+
+    <<draw-curve-O0>>
+    <<draw-curve-D0>>
+
+    \draw[shift arrow, <->, shorten >= 0.5pt, shorten <= 0.5pt]
+    (E1-1) -- (E2-1) node[pos = 0.5, left] {$t$} ;
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Tax incidence and elasticities
+
+#+begin_src latex :tangle fig-11_1047-06.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \fill[fillA]
+    (y-axis |- E0-1) rectangle (E1-1) ;
+
+    \fill[fillB]
+    (y-axis |- E0-1) rectangle (E2-1) ;
+
+    \draw[help lines]
+    (y-axis |- E0-1) node[left] {$P_0$} -|
+    (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+
+    \draw[help lines]
+    (y-axis |- E2-1) node[left] {$P^v$} -|
+    (x-axis -| E2-1) node[below] {$Q_t$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E1-1) node[left] {$P^c$} -|
+    ($ (E2-1) $)
+    ;
+
+    <<draw-curve-O0>>
+    <<draw-curve-D0>>
+
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+* Ad valorem tax
+
+** Chunks
+
+#+begin_src latex :noweb-ref tax-av-coordinates
+  \coordinate (tax) at (0, 5) ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-av-O0
+  \coordinate (O0-1) at (0, 1) ;
+  \coordinate (O0-2) at (10, 9) ;
+  \path[save path=\pathOzero, name path=O0] (O0-1) -- (O0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-av-O0
+  \draw[curve B, use path=\pathOzero] (O0-2) node[right] { $O_0$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-av-D0
+  \coordinate (D0-1) at (0, 9) ;
+  \coordinate (D0-2) at (10, 0) ;
+  \path[save path=\pathDzero, name path=D0] (D0-1) -- (D0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-av-D0
+  \draw[curve A, use path=\pathDzero]
+  ($ (D0-1)!0.9!(D0-2) $) node[right, yshift = 0pt] { $D_0$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-av-Dtau
+  \coordinate (Dtau-1) at  ($ (D0-1) - (tax) $) ;
+  \coordinate (Dtau-2) at  (D0-2) ;
+  \path[save path=\pathDtau, name path=Dtau] (Dtau-1) -- (Dtau-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-av-Dtau
+  \draw[curve A, use path=\pathDtau]
+  ($ (Dtau-1)!0.60!(Dtau-2) $) node[below, yshift = 3pt] { $D_{\tau}$ } ;
+#+end_src
+
+
+#+begin_src latex  :noweb-ref eq-av-coordinates
+  <<tax-av-coordinates>>
+  <<curve-av-O0>>
+  <<curve-av-D0>>
+  <<curve-av-Dtau>>
+  \path[name intersections={of=D0 and O0, name=E0}] ;
+  \path[name intersections={of=Dtau and O0, name=Etau}] ;
+#+end_src
+
+
+** Demand
+
+#+begin_src latex :tangle fig-11_1047-07.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-av-coordinates>>
+
+    \coordinate (E0-x) at (E0-1 |- x-axis);
+
+    \path[name path=E0-vert]
+    (E0-1) -- (E0-1 |- x-axis)
+    ;
+
+    \path[name intersections={of=Dtau and E0-vert, name=Ptau}] ;
+
+    \draw[help lines]
+    (E0-1 -| y-axis) node[left] {$P_{0}$} -|
+    (E0-1 |- x-axis) node[below] {$Q_{0}$}
+    (Ptau-1) -- (Ptau-1 -| y-axis) node[left] {$P_{0} (1 - \tau)$}
+    ;
+
+    <<draw-curve-av-D0>>
+    <<draw-curve-av-Dtau>>
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :tangle fig-11_1047-08.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-av-coordinates>>
+
+
+    \coordinate (Etau-x) at (Etau-1 |- x-axis);
+    \coordinate (Etau-y) at (Etau-1 -| y-axis);
+
+    \path[name path=Etau-vert]
+    (Etau-x) -- ($(Etau-x)!3!(Etau-1)$)
+    ;
+    \path[name intersections={of=D0 and Etau-vert, name=Etau-up}] ;
+
+
+    \draw[help lines]
+    (E0-1 -| y-axis) node[left] {$P_{0}$} -|
+    (E0-1 |- x-axis) node[below] {$Q_{0}$}
+    (Etau-y) node[left] {$P_{1} (1 - \tau)$} -|
+    (Etau-x |- x-axis) node[below] {$Q_{1}$}
+    (Etau-up-1 -| y-axis) node[left] {$P_{1}$} -|
+    (Etau-1)
+    ;
+
+
+
+    <<draw-curve-av-O0>>
+    <<draw-curve-av-D0>>
+    <<draw-curve-av-Dtau>>
+
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1047-09.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<eq-av-coordinates>>
+
+
+    \coordinate (Etau-x) at (Etau-1 |- x-axis);
+    \coordinate (Etau-y) at (Etau-1 -| y-axis);
+
+    \path[name path=Etau-vert]
+    (Etau-x) -- ($(Etau-x)!3!(Etau-1)$)
+    ;
+
+    \path[name path=Etau-horz]
+    (Etau-y) -- ($(Etau-y)!3!(Etau-1)$)
+    ;
+
+    \path[name intersections={of=D0 and Etau-vert, name=Etau-up}] ;
+    \path[name intersections={of=D0 and Etau-horz, name=Etau-right}] ;
+
+    \coordinate (Dt-1) at ($ (D0-1) - (Etau-up-1) + (Etau-1)$);
+    \coordinate (Dt-2) at ($ (D0-2) - (Etau-right-1) + (Etau-1)$);
+
+    \draw[help lines]
+    (E0-1 -| y-axis) node[left] {$P_{0}$} -|
+    (E0-1 |- x-axis) node[below] {$Q_{0}$}
+    (Etau-y) node[left] {$P_{1}- t$} -|
+    (Etau-x |- x-axis) node[below] {$Q_{1}$}
+    (Etau-up-1 -| y-axis) node[left] {$P_{1}$} -|
+    (Etau-1)
+    (0, 5) node[left] {\phantom{$P_{1} (1 - \tau)$}}
+    ;
+
+
+
+    <<draw-curve-av-O0>>
+    <<draw-curve-av-D0>>
+
+    \draw[curve A] (Dt-1) -- (Dt-2)
+    node[pos = 0.85, right, yshift = 0pt] { $D_{t}$ }
+    ;
+
+    <<comp-axes>>
+  \end{tikzpicture}
+#+end_src

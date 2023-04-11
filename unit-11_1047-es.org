@@ -19,6 +19,7 @@
 
 - ¿Qué determina la *incidencia de los impuestos*?
 
+
 ** Carga de un impuesto
 
 - La *carga legal* de un impuesto la establece la ley que lo regula y
@@ -46,7 +47,10 @@ que tienen que pagar:
 
 * Incidencia en mercados competitivos
 
+
 ** Impuesto sobre las ventas de un bien
+
+#+MATS: figcol fig-11_1047-01-*.pdf 0.47
 
 - Un producto se vende en un mercado competitivo.
 
@@ -58,22 +62,31 @@ que tienen que pagar:
 
 ** Equilibrio de mercado
 
+#+MATS: figcol fig-11_1047-02-*.pdf 0.47
+
+
 - En el nuevo equilibrio se venden menos unidades que antes del
   impuesto.
 
-- El precio que pagan los compradores ha aumentado. Las empresas han
-  trasladado parte del impuesto hacia delante.
+- Aumenta el precio que pagan los compradores de $P_0$ a $P_1$.
 
-- Los ingresos por unidad vendida han disminuido: $P_1 - t < P_0$.
+- Los ingresos por unidad de las empresas disminuyen de $P_0$ a
+  $P_1 - t$.
+
 
 ** Impuesto a los compradores
+
+#+MATS: figcol fig-11_1047-03-*.pdf 0.47
 
 - Se obtendría el mismo resultado si fueran los compradores los que
   tuvieran que pagar el impuesto.
 
 - La demanda se desplazaría hacia abajo.
 
+
 ** Equilibrio
+
+#+MATS: figcol fig-11_1047-04-*.pdf 0.47
 
 El equilibrio no depende de quién pague el impuesto.
 
@@ -83,40 +96,22 @@ El equilibrio no depende de quién pague el impuesto.
 
 - Ingresos de los vendedores por unidad: $P_2 = P_1 - t$.
 
+
 ** Incidencia legal e incidencia económica
 
-- El impuesto es una cuña que impide que se iguale la oferta,
-  $P^o(Q)$, y la demanda, $P^d(Q)$:
-  #+begin_export latex
-  \[
-     P^o(Q_t) - P^d(Q_t) = t.
-  \]
-  #+end_export
+#+MATS: figcol fig-11_1047-05-*.pdf 0.47
+
+- El impuesto actúa como una cuña que impide que se igualen $P^c$, el
+  precio total pagado por los compradores, con $P^v$, el ingreso por
+  unidad de los vendedores.
 
 - La incidencia económica no coincide con la incidencia legal y es
   independiente de quién paga el impuesto.
 
 
-** Impuestos /ad valorem/ e impuestos específicos
-
-- Con un *impuesto específico* se paga la misma cantidad de dinero por
-  unidad.
-
-- Con un impuesto /*ad valorem*/ se paga un porcentaje fijo del precio.
-
-** Impuestos /ad valorem/
-
-- Al introducir un impuesto la demanda se contrae.
-
-- La demanda se contrae más cuanto más alto es el precio.
-
-** Equivalencia de impuestos /ad valorem/ y específicos
-
-- *En mercados competitivos*, un impuesto /ad valorem/ es *equivalente*
-  a uno específico que produzca la misma recaudación en el equilibrio
-  después de impuestos.
-
 ** Incidencia en mercados competitivos
+
+#+MATS: figcol fig-11_1047-06-*.pdf 0.47
 
 - La incidencia depende de la forma de las curvas de demanda y de
   oferta.
@@ -124,27 +119,91 @@ El equilibrio no depende de quién pague el impuesto.
 - La parte del mercado que es relativamente más inelástica soporta la
   mayor parte de la carga del impuesto.
 
+
+** Elasticidades
+
+- Elasticidad de la demanda:
+  #+begin_export latex
+  \[
+    \eta^{d}= \frac{\diff Q^{d}}{P}\frac{P}{Q}
+  \]
+  #+end_export
+
+- Elasticidad de la oferta:
+  #+begin_export latex
+  \[
+    \eta^{o}= \frac{\diff Q^{o}}{P}\frac{P}{Q}
+  \]
+  #+end_export
+
+
 ** Incidencia y elasticidades
 
-- Es posible expresar la incidencia sobre compradores y vendedores
-  usando las elasticidades de la demanda, $\eta_d$, y de la oferta,
-  $\eta_o$.
+Después de un impuesto específico de $t$ por unidad:
 
-- Después de un impuesto específico de $t$ por unidad:
+- El incremento del precio pagado por los compradores es:
+  #+begin_export latex
+  \[
+    P^{c} - P^0 \approx \frac{\eta^{o}}{\eta^{o} - \eta^{d}} t
+  \]
+  #+end_export
 
-  + El incremento del precio pagado por los compradores es:
-    #+begin_export latex
-    \[
-      \incr P_{c} = -\frac{\eta_{d}}{\eta_{s} - \eta_{d}} t
-    \]
-    #+end_export
+- La variación del precio ingresado por los vendedores es:
+  #+begin_export latex
+  \[
+    P^{v} - P^0 \approx \frac{\eta^{d}}{\eta^{o} - \eta^{d}} t
+  \]
+  #+end_export
 
-  + La variación del precio ingresado por los vendedores es:
-    #+begin_export latex
-    \[
-      \incr P_{v} = - \frac{\eta_{s}}{\eta_{s} - \eta_{d}} t
-    \]
-    #+end_export
+** Algunos casos especiales
+
+- Los compradores soportan la carga completa del impuesto cuando la
+  demanda es perfectamente inelástica o cuando la oferta es
+  perfectamente elástica.
+
+- Los vendedores soportan toda la carga si la demanda es perfectamente
+  elástica o si la oferta es perfectamente inelástica.
+
+
+** Impuestos /ad valorem/ e impuestos específicos
+
+- Con un *impuesto específico* se paga una cantidad fija de dinero por
+  cada unidad de producto.
+
+- Con un impuesto /*ad valorem*/ se paga por cada unidad un porcentaje
+  fijo del precio.
+
+
+** Impuestos /ad valorem/
+
+#+MATS: figcol fig-11_1047-07-*.pdf 0.47
+
+- Al introducir un impuesto la demanda se contrae.
+
+- La demanda se contrae más cuanto más alto es el precio.
+
+** Equilibrio
+
+#+MATS: figcol fig-11_1047-08-*.pdf 0.47
+
+- Al introducir un impuesto la demanda se contrae.
+
+- La demanda se contrae más cuanto más alto es el precio.
+
+
+
+
+** Equivalencia de impuestos /ad valorem/ y específicos
+
+*En mercados competitivos*, un impuesto /ad valorem/ es *equivalente*
+a uno específico que produzca la misma variación del precio.
+
+#+MATS: col 0.5
+#+MATS: fig fig-11_1047-08-*.pdf
+
+#+MATS: col 0.5
+#+MATS: fig fig-11_1047-09-*.pdf
+
 
 ** Subvenciones
 
@@ -156,6 +215,7 @@ El equilibrio no depende de quién pague el impuesto.
 
 - La curva de demanda se desplaza hacia arriba.
 
+
 ** Equilibrio
 
 - En general, en el nuevo equilibrio la disminución del precio que
@@ -166,10 +226,12 @@ El equilibrio no depende de quién pague el impuesto.
 
 * Incidencia en mercados no competitivos
 
+
 ** Monopolio
 
 - El monopolista selecciona la cantidad que iguala el ingreso marginal
   con el coste marginal.
+
 
 ** Impuesto específico
 
@@ -187,6 +249,7 @@ El equilibrio no depende de quién pague el impuesto.
 
 - Con curvas de demanda de elasticidad constante y costes marginales
   constantes, el aumento de precio es mayor que $t$.
+
 
 ** Variación del precio con elasticidad constante de la demanda
 
@@ -219,6 +282,7 @@ El equilibrio no depende de quién pague el impuesto.
   una mayor recaudación que un impuesto específico que provoque la
   misma elevación del precio.
 
+
 ** Incidencia en oligopolios
 
 - Los efectos de los impuestos dependen de las diferentes estructuras
@@ -233,6 +297,7 @@ El equilibrio no depende de quién pague el impuesto.
 
 * Otras cuestiones
 
+
 ** Equilibrio parcial y equilibrio general
 
 - Nuestro análisis se ha centrado en situaciones de *equilibrio
@@ -241,6 +306,7 @@ El equilibrio no depende de quién pague el impuesto.
 
 - Muchos impuestos tienen efectos de *equilibrio general*: afectan a
   numerosos sectores y mercados simultáneamente.
+
 
 ** Incidencia y equilibrio general
 
@@ -256,6 +322,7 @@ El equilibrio no depende de quién pague el impuesto.
 
   + Las sociedades tratan de sustituir capital por trabajo.
 
+
 ** Análisis de equilibrio general
 
 Algunas observaciones importantes:
@@ -270,6 +337,7 @@ Algunas observaciones importantes:
   economía: ¿es inelástica la oferta de trabajo? ¿Es fácil sustituir
   capital por trabajo? ¿Cuál es la elasticidad de la demanda de los
   productos de las sociedades anónimas?
+
 
 ** Efectos a corto y a largo plazo
 
