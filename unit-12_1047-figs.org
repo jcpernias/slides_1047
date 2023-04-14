@@ -1,0 +1,318 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Tax efficiency figures
+
+#+PROPERTY: header-args:latex :noweb yes :eval no
+
+* Competitive markets
+
+
+** Chunks
+
+#+begin_src latex :noweb-ref goods-scale
+  [xscale=0.4, yscale=0.4, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref goods-axes
+  \draw[axis]
+    (0,12) node[left] {$Y$} |-
+    (12,0) node[below] {$X$};
+#+end_src
+
+#+begin_src latex :noweb-ref axes-coordinates
+  \coordinate (x-axis) at (1, 0) ;
+  \coordinate (y-axis) at (0, 1) ;
+#+end_src
+
+#+begin_src latex :noweb-ref yshift
+  \coordinate (yshift) at (0, 3) ;
+#+end_src
+
+#+begin_src latex :noweb-ref xshift
+  \coordinate (xshift) at (6, 0) ;
+#+end_src
+
+#+begin_src latex :noweb-ref budget-line-0
+  \coordinate (BL0-1) at (0, 9) ;
+  \coordinate (BL0-2) at (10.5, 0) ;
+  \path[save path=\pathBLzero, name path=BL0] (BL0-1) -- (BL0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-budget-line-0
+  \draw[curve A, use path=\pathBLzero] ;
+#+end_src
+
+#+begin_src latex :noweb-ref budget-line-1
+  \coordinate (BL1-1) at (BL0-1) ;
+  \coordinate (BL1-2) at ($ (BL0-2) - (xshift) $) ;
+  \path[save path=\pathBLone, name path=BL1] (BL1-1) -- (BL1-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-budget-line-1
+  \draw[curve A, use path=\pathBLone] ;
+#+end_src
+
+
+#+begin_src latex :noweb-ref budget-line-2
+  \coordinate (BL2-1) at ($ (BL0-1) - (yshift) $) ;
+  \path[name path=BL2-1-horz] (BL2-1) -- ($ (BL2-1) + (10, 0) $) ;
+  \path[name intersections={of=BL2-1-horz and BL0, name=BL2-shift}] ;
+  \coordinate (xshift2) at ($ (BL2-shift-1) - (BL2-1) $) ;
+  \coordinate (BL2-2) at ($ (BL0-2) - (xshift2) $) ;
+  \path[save path=\pathBLtwo, name path=BL2] (BL2-1) -- (BL2-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-budget-line-2
+  \draw[curve C, thick, use path=\pathBLtwo] ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-I-1
+  \draw[curve B, use Hobby shortcut]
+  (CI1-1) ..(E1) ..(E2) .. (CI1-2)
+  (CI1-2) node[right, xshift = -2pt, font=\footnotesize] {$I_{1}$}
+  ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-I-0
+  \draw[curve B, use Hobby shortcut]
+  (CI0-1) ..(E0) .. (CI0-2)
+  (CI0-2) node[right, xshift = -2pt, font=\footnotesize] {$I_{0}$}
+  ;
+#+end_src
+
+
+#+begin_src latex  :noweb-ref eq-coordinates
+  <<xshift>>
+  <<yshift>>
+  <<budget-line-0>>
+  <<budget-line-1>>
+  <<budget-line-2>>
+  \coordinate (E0) at ($ (BL0-1)!0.6!(BL0-2)$) ;
+  \coordinate (E1) at ($ (BL1-1)!0.25!(BL1-2)$) ;
+  \coordinate (E2) at ($ (BL2-1)!0.6!(BL2-2)$) ;
+  \coordinate (E0-x) at (E0 |- x-axis) ;
+  \coordinate (E1-x) at (E1 |- x-axis) ;
+  \coordinate (E2-x) at (E2 |- x-axis) ;
+  \coordinate (E0-y) at (E0 -| y-axis) ;
+  \coordinate (E1-y) at (E1 -| y-axis) ;
+  \coordinate (E2-y) at (E2 -| y-axis) ;
+
+  \coordinate (CI0-1) at ($ (BL0-1) + (0.15, 0.2) + 0.75*(xshift2) $) ;
+  \coordinate (CI0-2) at ($ (E0) + (3, -1.8) $) ;
+
+  \coordinate (CI1-1) at ($ (BL0-1) + (0.15, 0.2) $) ;
+  \coordinate (CI1-2) at ($ (E2) + (3.25, -1.5) $) ;
+
+  \coordinate (A) at ($ (E2) + (yshift) $) ;
+  \path[name path = E1-vert] (E1) -- (E1 |- x-axis) ;
+  \path[name intersections={of=BL2 and E1-vert, name=BL2E1}] ;
+  \coordinate (B) at (BL2E1-1) ;
+  \coordinate (C) at ($ (B) + (yshift) $) ;
+#+end_src
+
+** Consumer
+
+#+begin_src latex :tangle fig-12_1047-01.tex
+  \begin{tikzpicture}<<goods-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \draw[help lines]
+    (E0-y) node[left] {$Y_0$} -| (E0-x) node[below] {$X_0$}
+    ;
+
+    <<draw-budget-line-0>>
+
+    <<draw-I-0>>
+
+
+    \node[dot, label={[font=\scriptsize]right:$E_{0}$}] at (E0) {} ;
+
+    <<goods-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-12_1047-02.tex
+  \begin{tikzpicture}<<goods-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \draw[help lines]
+    (E0-y) node[left] {$Y_0$} -| (E0-x) node[below] {$X_0$}
+    (E1-y) node[left] {$Y_1$} -| (E1-x) node[below] {$X_1$}
+    ;
+
+    <<draw-budget-line-0>>
+    <<draw-budget-line-1>>
+
+
+    <<draw-I-0>>
+    <<draw-I-1>>
+
+
+    % \draw[shift arrow, ->]
+    % ($ (O0-1)!0.9!(O0-2) $) -- ($ (O1-1)!0.9!(O1-2) $)
+    % ;
+    \node[dot, label={[font=\scriptsize]right:$E_{0}$}] at (E0) {} ;
+    \node[dot, label={[font=\scriptsize,xshift = -2pt]right:$E_{1}$}] at (E1) {} ;
+
+    <<goods-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-12_1047-03.tex
+  \begin{tikzpicture}<<goods-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \draw[help lines]
+    (E1-y) node[left] {$Y_1$} -| (E1-x) node[below] {$X_1$}
+    (C -| y-axis) node[left] {$Y'_1$} -| (E1)
+    ;
+
+    <<draw-budget-line-0>>
+    <<draw-budget-line-1>>
+    \node[dot, label={[font=\scriptsize,xshift = -2pt]right:$E_{1}$}] at (E1) {} ;
+    \node[dot, label={[font=\scriptsize]right:$E_{0}$}] at (E0) {} ;
+
+    <<goods-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-12_1047-04.tex
+  \begin{tikzpicture}<<goods-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    <<draw-budget-line-0>>
+    <<draw-budget-line-2>>
+
+    <<draw-I-0>>
+    <<draw-I-1>>
+
+
+    \node[dot, label={[font=\scriptsize]right:$E_{0}$}] at (E0) {} ;
+    \node[dot, label={[font=\scriptsize,xshift = -2pt]right:$E_{1}$}] at (E1) {} ;
+    \node[dot, label={[font=\scriptsize]right:$E_{2}$}] at (E2) {} ;
+
+    <<goods-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-12_1047-05.tex
+  \begin{tikzpicture}<<goods-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \draw[help lines]
+    (C -| y-axis) node[left] {$Y'_1$} -| (E1-x) node[below] {$X_1$}
+    (B -| y-axis) node[left] {$Y''_1$} -| (E1)
+    ;
+
+    <<draw-budget-line-0>>
+    <<draw-budget-line-2>>
+    \node[dot, label={[font=\scriptsize]right:$E_{0}$}] at (E0) {} ;
+    \node[dot, label={[font=\scriptsize]right:$E_{2}$}] at (E2) {} ;
+
+    <<goods-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-12_1047-06.tex
+  \begin{tikzpicture}<<goods-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \draw[help lines]
+    (C -| y-axis) node[left] {$Y'_1$} -| (E1-x) node[below] {$X_1$}
+    (B -| y-axis) node[left] {$Y''_1$} -| (E1)
+    (E1-y) node[left] {$Y_1$} -- (E1)
+    ;
+
+    <<draw-budget-line-0>>
+    <<draw-budget-line-1>>
+    <<draw-budget-line-2>>
+
+    <<draw-I-0>>
+    <<draw-I-1>>
+
+
+    % \draw[shift arrow, ->]
+    % ($ (O0-1)!0.9!(O0-2) $) -- ($ (O1-1)!0.9!(O1-2) $)
+    % ;
+    \node[dot, label={[font=\scriptsize]right:$E_{0}$}] at (E0) {} ;
+    \node[dot, label={[font=\scriptsize,xshift = -2pt]right:$E_{1}$}] at (E1) {} ;
+    \node[dot, label={[font=\scriptsize]right:$E_{2}$}] at (E2) {} ;
+
+    % \node[dot, label={[font=\scriptsize]left:$A$}] at (A) {} ;
+    % \node[dot, label={[font=\scriptsize]left:$B$}] at (B) {} ;
+    % \node[dot, label={[font=\scriptsize]right:$C$}] at (C) {} ;
+
+    <<goods-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-12_1047-07.tex
+  \begin{tikzpicture}<<goods-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    <<draw-budget-line-0>>
+    <<draw-budget-line-1>>
+    <<draw-budget-line-2>>
+
+    % <<draw-I-0>>
+    % <<draw-I-1>>
+
+
+    \draw[shift arrow, ->, colorD, shorten >= 3pt, , shorten <= 3pt]
+    (E0) --  (E2)
+    ;
+    \node[below, font=\sffamily\tiny, colorD] at ($ (E0)!0.25!(E2) $) {ER} ;
+
+    \draw[shift arrow, ->, colorD, shorten >= 6pt, , shorten <= 4pt]
+    (E2) -- ($(E1) + (0.2, 0)$)
+    ;
+    \node[right, font=\sffamily\tiny, colorD] at ($ (E2)!0.5!(E1) $) {ES} ;
+
+    \node[dot, label={[font=\scriptsize]above:$E_{0}$}] at (E0) {} ;
+    \node[dot, label={[font=\scriptsize,xshift = -2pt]right:$E_{1}$}] at (E1) {} ;
+    \node[dot, label={[font=\scriptsize, xshift = 1.5pt, yshift = 1pt]above:$E_{2}$}] at (E2) {} ;
+
+    <<goods-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-12_1047-08.tex
+  \begin{tikzpicture}<<goods-scale>>
+    <<axes-coordinates>>
+    <<eq-coordinates>>
+
+    \draw[help lines]
+    (E0) -- (E0-x) node[below] {$X_0$}
+    (A) -- (E2-x) node[below] {$X_2$}
+    (C) -- (E1-x) node[below] {$X_1$}
+    ;
+
+    <<draw-budget-line-0>>
+    <<draw-budget-line-1>>
+    <<draw-budget-line-2>>
+
+    <<draw-I-0>>
+    <<draw-I-1>>
+
+
+    % \draw[shift arrow, ->]
+    % ($ (O0-1)!0.9!(O0-2) $) -- ($ (O1-1)!0.9!(O1-2) $)
+    % ;
+    \node[dot, label={[font=\scriptsize]right:$E_{0}$}] at (E0) {} ;
+    \node[dot, label={[font=\scriptsize,xshift = -2pt]right:$E_{1}$}] at (E1) {} ;
+    \node[dot, label={[font=\scriptsize]right:$E_{2}$}] at (E2) {} ;
+
+    \node[dot, label={[font=\scriptsize]left:$A$}] at (A) {} ;
+    \node[dot, label={[font=\scriptsize]left:$B$}] at (B) {} ;
+    \node[dot, label={[font=\scriptsize]right:$C$}] at (C) {} ;
+
+    <<goods-axes>>
+  \end{tikzpicture}
+#+end_src

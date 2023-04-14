@@ -7,11 +7,51 @@
 #+MATS: bib
 
 #+begin_bibbox
-- *Stiglitz y Rosengard*: Capítulo 19 y 20.
+- *Stiglitz y Rosengard*: Capítulo 19.
 #+end_bibbox
 
-* Introducción
 
-** Introducción
+* Impuestos sobre mercancías
 
-Por hacer.
+
+** La elección individual
+
+#+MATS: figcol fig-12_1047-01-*.pdf 0.47
+
+Hola.
+
+** Impuesto sobre un bien
+
+#+MATS: figcol fig-12_1047-02-*.pdf 0.47
+
+Hola.
+
+** Recaudación
+
+#+MATS: figcol fig-12_1047-03-*.pdf 0.47
+
+Hola.
+
+** Variación equivalente
+
+#+MATS: figcol fig-12_1047-04-*.pdf 0.47
+
+Hola.
+
+** Impuesto de cuantía fija
+
+#+MATS: figcol fig-12_1047-05-*.pdf 0.47
+
+Hola.
+
+** Exceso de gravamen
+
+#+MATS: figcol fig-12_1047-06-*.pdf 0.47
+
+Hola.
+
+** Efecto renta y efecto sustitución
+
+#+MATS: figcol fig-12_1047-07-*.pdf 0.47
+
+Hola.

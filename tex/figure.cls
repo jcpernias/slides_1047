@@ -110,7 +110,7 @@
   shift arrow/.style={%
     >=Stealth, thick, shorten >= 2pt, shorten <= 2pt,%
     colorC, every node/.style={black, curve label}},%
-  dot/.style={circle,fill=black,minimum size=4pt,inner sep=0pt,outer sep=-1pt},
+  dot/.style={circle,fill=black,minimum size=3pt,inner sep=0pt,outer sep=-1pt},
   nodot/.style={circle,minimum size=4pt,inner sep=0pt,outer sep=-1pt, transparent},
   IMg/.style={curve, color=colorIMg},
   IMe/.style={curve, color=colorIMe},

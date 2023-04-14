@@ -21,7 +21,8 @@ unit_figs := \
 	06 \
 	07 \
 	09 \
-	11
+	11 \
+	12
 
 LANGUAGES := es
 
