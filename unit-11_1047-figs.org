@@ -137,6 +137,8 @@
     <<draw-curve-O1>>
     <<draw-curve-D0>>
 
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
@@ -199,6 +201,8 @@
     <<draw-curve-D0>>
     <<draw-curve-D2>>
 
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E2-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
@@ -229,6 +233,8 @@
 
     <<draw-curve-O0>>
     <<draw-curve-D0>>
+
+    \node[dot] at (E0-1) {} ;
 
     \draw[shift arrow, <->, shorten >= 0.5pt, shorten <= 0.5pt]
     (E1-1) -- (E2-1) node[pos = 0.5, left] {$t$} ;
@@ -270,6 +276,7 @@
     <<draw-curve-O0>>
     <<draw-curve-D0>>
 
+    \node[dot] at (E0-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
@@ -277,6 +284,7 @@
 
 
 * Ad valorem tax
+
 
 ** Chunks
 
@@ -291,7 +299,7 @@
 #+end_src
 
 #+begin_src latex  :noweb-ref draw-curve-av-O0
-  \draw[curve B, use path=\pathOzero] (O0-2) node[right] { $O_0$ } ;
+  \draw[curve B, use path=\pathOzero] (O0-2) node[right] { $O$ } ;
 #+end_src
 
 #+begin_src latex :noweb-ref curve-av-D0
@@ -302,7 +310,7 @@
 
 #+begin_src latex  :noweb-ref draw-curve-av-D0
   \draw[curve A, use path=\pathDzero]
-  ($ (D0-1)!0.85!(D0-2) $) node[right, yshift = 0pt] { $D_0$ } ;
+  ($ (D0-1)!0.85!(D0-2) $) node[right, yshift = 0pt] { $D$ } ;
 #+end_src
 
 #+begin_src latex :noweb-ref curve-av-Dtau
@@ -382,12 +390,12 @@
     (Etau-1)
     ;
 
-
-
     <<draw-curve-av-O0>>
     <<draw-curve-av-D0>>
     <<draw-curve-av-Dtau>>
 
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (Etau-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
@@ -434,9 +442,14 @@
     <<draw-curve-av-O0>>
     <<draw-curve-av-D0>>
 
-    \draw[curve A] (Dt-1) -- (Dt-2)
+    \draw[curve A, name path = Dt] (Dt-1) -- (Dt-2)
     node[pos = 0.85, right, yshift = 0pt] { $D_{t}$ }
     ;
+
+    \path[name intersections={of=Dt and O0, name=Et}] ;
+
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (Et-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
@@ -444,6 +457,7 @@
 
 
 * Subsidies
+
 
 ** Chunks
 
@@ -490,6 +504,7 @@
   \path[name intersections={of=D1 and O0, name=E1}] ;
 #+end_src
 
+
 ** Demand
 
 #+begin_src latex :tangle fig-11_1047-10.tex
@@ -525,6 +540,7 @@
   \end{tikzpicture}
 #+end_src
 
+
 ** Equilibrium
 
 #+begin_src latex :tangle fig-11_1047-11.tex
@@ -552,10 +568,13 @@
     <<subs-draw-curve-D0>>
     <<subs-draw-curve-D1>>
 
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
 #+end_src
+
 
 ** Incidence
 
@@ -595,12 +614,16 @@
     <<subs-draw-curve-D0>>
     <<subs-draw-curve-D1>>
 
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
 #+end_src
 
+
 * Monopoly
+
 
 ** Chunks
 
@@ -615,7 +638,7 @@
 #+end_src
 
 #+begin_src latex  :noweb-ref monop-draw-curve-CM
-  \draw[curve B, use path=\pathCM] (CM-2) node[right] { $\CMg$ } ;
+  \draw[curve B, use path=\pathCM] (CM-2) node[above] { $\CMg$ } ;
 #+end_src
 
 
@@ -626,7 +649,7 @@
 #+end_src
 
 #+begin_src latex  :noweb-ref monop-draw-curve-CMt
-  \draw[curve B, use path=\pathCMt] (CMt-2) node[right] { $\CMg + t$ } ;
+  \draw[curve B, use path=\pathCMt] (CMt-2) node[above] { $\CMg + t$ } ;
 #+end_src
 
 
@@ -650,7 +673,7 @@
 #+end_src
 
 #+begin_src latex  :noweb-ref monop-draw-curve-IM
-  \draw[curve A, use path=\pathIM] ($ (IM-1)!0.9!(IM-2) $) node[right] { $\IMg$ } ;
+  \draw[curve C, thick, use path=\pathIM] ($ (IM-1)!0.9!(IM-2) $) node[right] { $\IMg$ } ;
 #+end_src
 
 #+begin_src latex  :noweb-ref monop-eq-coordinates
@@ -677,6 +700,7 @@
   \coordinate (P1) at (D1-1 -| y-axis) ;
 #+end_src
 
+
 ** Monopoly before tax
 
 #+begin_src latex :tangle fig-11_1047-13.tex
@@ -694,9 +718,12 @@
     <<monop-draw-curve-IM>>
     <<monop-draw-curve-CM>>
 
+    \node[dot] at (E0-1) {} ;
+
     <<comp-axes>>
   \end{tikzpicture}
 #+end_src
+
 
 ** Monopoly after tax
 
@@ -721,6 +748,8 @@
     <<monop-draw-curve-CM>>
     <<monop-draw-curve-CMt>>
 
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
@@ -728,6 +757,7 @@
 
 
 * Ad valorem tax on a monopoly
+
 
 ** Chunks
 
@@ -758,7 +788,7 @@
 #+begin_src latex  :noweb-ref av-monop-draw-curve-D0
   \draw[curve A, use path=\pathDzero]
   ($ (D0-1)!0.95!(D0-2) $)
-  node[right, yshift = 0.75pt, font=\footnotesize] { $D_0$ }
+  node[right, yshift = 0.75pt, font=\footnotesize] { $D$ }
   ;
 #+end_src
 
@@ -769,9 +799,9 @@
 #+end_src
 
 #+begin_src latex  :noweb-ref av-monop-draw-curve-IM0
-  \draw[curve C, use path=\pathIMzero]
-  ($ (IM0-1)!0.94!(IM0-2) $)
-  node[right, xshift = -2.5pt, font=\footnotesize] { $\IMg_0$ }
+  \draw[curve C, thick, use path=\pathIMzero]
+  ($ (IM0-1)!0.945!(IM0-2) $)
+  node[right, xshift = -1.5pt, font=\footnotesize] { $\IMg$ }
   ;
 #+end_src
 
@@ -785,7 +815,7 @@
 #+begin_src latex  :noweb-ref av-monop-draw-curve-D1
   \draw[curve A, use path=\pathDone]
   ($ (D1-1)!0.71!(D1-2) $)
-  node[below, yshift = 3.5pt, font=\footnotesize] { $D_1$ }
+  node[below, yshift = 3.5pt, font=\footnotesize] { $D_{\tau}$ }
   ;
 #+end_src
 
@@ -797,9 +827,12 @@
 #+end_src
 
 #+begin_src latex  :noweb-ref av-monop-draw-curve-IM1
-  \draw[curve C, use path=\pathIMone]
+  \draw[curve C, thick, use path=\pathIMone]
   ($ (IM1-1)!0.83!(IM1-2) $)
-  node[left, xshift=-5.5pt, fill=white, inner sep = 0pt, font=\footnotesize] { $\IMg_1$ }
+  node[
+  left, xshift=-5.5pt, fill=white,
+  inner sep = 0pt, font=\footnotesize
+  ]{ $\IMg_{\tau}$ }
   ;
 #+end_src
 
@@ -837,6 +870,7 @@
   \coordinate (D2-2) at  ($ (0, 0)!2!(IM2-2) $);
 #+end_src
 
+
 ** Monopoly ad valorem tax
 
 #+begin_src latex :tangle fig-11_1047-15.tex
@@ -862,6 +896,9 @@
     <<av-monop-draw-curve-D1>>
     <<av-monop-draw-curve-IM1>>
     <<av-monop-draw-curve-CM>>
+
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
@@ -892,6 +929,10 @@
     <<av-monop-draw-curve-IM1>>
     <<av-monop-draw-curve-CM>>
 
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
+
+
     <<comp-axes>>
   \end{tikzpicture}
 #+end_src
@@ -921,11 +962,23 @@
 
     <<av-monop-draw-curve-D0>>
     <<av-monop-draw-curve-IM0>>
-    % <<av-monop-draw-curve-D1>>
-    % <<av-monop-draw-curve-IM1>>
-    \draw[curve C] (IM2-1) -- (IM2-2) ;
-    \draw[curve A, use path=\pathDtwo] ;
+    \draw[curve C, thick]
+    (IM2-1) -- (IM2-2)
+    ($ (IM2-1)!0.93!(IM2-2) $)
+    node[left, xshift=-2pt, fill=white,
+    inner sep = 0.5pt, font=\footnotesize]
+    { $\IMg_{t}$ }
+    ;
+
+    \draw[curve A, use path=\pathDtwo]
+    ($ (D2-1)!0.93!(D2-2) $)
+    node[right, xshift=0pt, font = \footnotesize]
+    { $D_{t}$ }
+    ;
     <<av-monop-draw-curve-CM>>
+
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
 
     <<comp-axes>>
   \end{tikzpicture}
@@ -956,11 +1009,24 @@
 
     <<av-monop-draw-curve-D0>>
     <<av-monop-draw-curve-IM0>>
-    % <<av-monop-draw-curve-D1>>
-    % <<av-monop-draw-curve-IM1>>
-    \draw[curve C] (IM2-1) -- (IM2-2) ;
-    \draw[curve A, use path=\pathDtwo] ;
+    \draw[curve C, thick]
+    (IM2-1) -- (IM2-2)
+    ($ (IM2-1)!0.93!(IM2-2) $)
+    node[left, xshift=-2pt, fill=white,
+    inner sep = 0.5pt, font=\footnotesize]
+    { $\IMg_{t}$ }
+    ;
+
+    \draw[curve A, use path=\pathDtwo]
+    ($ (D2-1)!0.93!(D2-2) $)
+    node[right, xshift=0pt, font = \footnotesize]
+    { $D_{t}$ }
+    ;
     <<av-monop-draw-curve-CM>>
+
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
+
 
     <<comp-axes>>
   \end{tikzpicture}

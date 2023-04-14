@@ -25,9 +25,9 @@
 - La *carga legal* de un impuesto la establece la ley que lo regula y
   que determina quién debe liquidar el impuesto.
 
-- La *carga económica* o *fiscal* es la diferencia entre la renta real
-  de una persona antes y después del impuesto, teniendo en cuenta
-  todos los ajustes de precios y salarios.
+- La *carga económica* es la diferencia entre la renta real de una
+  persona antes y después del impuesto, teniendo en cuenta todos los
+  ajustes de precios y salarios.
 
 - La *incidencia de un impuesto* estudia como se reparte la carga
   económica entre los diferentes agentes económicos.
@@ -64,11 +64,7 @@ que tienen que pagar:
 
 #+MATS: figcol fig-11_1047-02-*.pdf 0.47
 
-
-- En el nuevo equilibrio se venden menos unidades que antes del
-  impuesto.
-
-- Aumenta el precio que pagan los compradores de $P_0$ a $P_1$.
+- El precio que pagan los compradores aumenta de $P_0$ a $P_1$.
 
 - Los ingresos por unidad de las empresas disminuyen de $P_0$ a
   $P_1 - t$.
@@ -84,17 +80,15 @@ que tienen que pagar:
 - La demanda se desplazaría hacia abajo.
 
 
-** Equilibrio
-
-#+MATS: figcol fig-11_1047-04-*.pdf 0.47
+** Comparación
 
 El equilibrio no depende de quién pague el impuesto.
 
-- Cantidad después del impuesto: $Q_2 = Q_1$.
+#+MATS: col 0.5
+#+MATS: fig fig-11_1047-02-*.pdf
 
-- Pago de los compradores por unidad: $P_2 + t = P_1$.
-
-- Ingresos de los vendedores por unidad: $P_2 = P_1 - t$.
+#+MATS: col 0.5
+#+MATS: fig fig-11_1047-04-*.pdf
 
 
 ** Incidencia legal e incidencia económica
@@ -102,7 +96,7 @@ El equilibrio no depende de quién pague el impuesto.
 #+MATS: figcol fig-11_1047-05-*.pdf 0.47
 
 - El impuesto actúa como una cuña que impide que se igualen $P^c$, el
-  precio total pagado por los compradores, con $P^v$, el ingreso por
+  precio total pagado por los compradores, y $P^v$, el ingreso por
   unidad de los vendedores.
 
 - En general, la incidencia económica no coincide con la incidencia
@@ -144,16 +138,17 @@ Después de un impuesto específico de $t$ por unidad:
 - El incremento del precio pagado por los compradores es:
   #+begin_export latex
   \[
-    P^{c} - P^0 \approx \frac{\eta^{o}}{\eta^{o} - \eta^{d}} t
+    P^{c} - P^0 = \frac{\eta^{o}}{\eta^{o} - \eta^{d}} t
   \]
   #+end_export
 
 - La variación del precio ingresado por los vendedores es:
   #+begin_export latex
   \[
-    P^{v} - P^0 \approx \frac{\eta^{d}}{\eta^{o} - \eta^{d}} t
+    P^{v} - P^0 = \frac{\eta^{d}}{\eta^{o} - \eta^{d}} t
   \]
   #+end_export
+
 
 ** Algunos casos especiales
 
@@ -178,17 +173,22 @@ Después de un impuesto específico de $t$ por unidad:
 
 #+MATS: figcol fig-11_1047-07-*.pdf 0.47
 
-- Al introducir un impuesto la demanda se contrae.
+- Se introduce un impuesto que es una fracción $\tau$ del precio del bien.
 
-- La demanda se contrae más cuanto más alto es el precio.
+- La demanda, $D$, determina el precio que pagan los compradores.
+
+- La curva $D_{\tau}$ es la demanda relevante para los vendedores, ya
+  que indica el precio neto de impuestos.
+
 
 ** Equilibrio
 
 #+MATS: figcol fig-11_1047-08-*.pdf 0.47
 
-- Al introducir un impuesto la demanda se contrae.
+- El precio que pagan los compradores se eleva desde $P_0$ hasta $P_1$.
 
-- La demanda se contrae más cuanto más alto es el precio.
+- El precio que cobran los vendedores disminuye de $P_0$ a $P_1 (1 -
+  \tau)$.
 
 
 ** Equivalencia de impuestos /ad valorem/ y específicos
@@ -224,15 +224,16 @@ a uno específico que produzca la misma variación del precio.
 
 - El precio que pagan los compradores disminuye de $P_0$ a $P_1 - s$.
 
+
 ** Incidencia
 
 #+MATS: figcol fig-11_1047-12-*.pdf 0.47
 
-- En general, los vendedores capturan parte de la subvención que se
-  concedió a los compradores.
+- En general, los vendedores capturan parte de la subvención.
 
 - La incidencia de la subvención depende de las elasticidades de las
   curvas de demanda y oferta.
+
 
 ** Mercado competitivo de trabajo
 
@@ -243,6 +244,7 @@ a uno específico que produzca la misma variación del precio.
 - El establecimiento de un salario mínimo podría hacer que la
   incidencia legal afectase a la incidencia económica.
 
+
 ** Mercados competitivos de otros factores
 
 - Los impuestos sobre un factor con oferta perfectamente elástica se
@@ -251,6 +253,7 @@ a uno específico que produzca la misma variación del precio.
 - Por el contrario, los propietarios de factores con oferta
   perfectamente inelástica soportan la carga completa de los
   impuestos sobre el factor.
+
 
 * Incidencia en mercados no competitivos
 
@@ -300,22 +303,30 @@ a uno específico que produzca la misma variación del precio.
   \]
   #+end_export
 
+
 ** Impuesto /ad valorem/
 
 #+MATS: figcol fig-11_1047-15-*.pdf 0.47
 
-Texto.
+- Con un impuesto /ad valorem/ de $P \tau$ euros por unidad, la
+  demanda relevante para el monopolista es $D_{\tau}$.
+
+- En el nuevo equilibrio se cumple: $\IMg_{\tau} = \CMg$.
+
 
 ** Impuesto específico
 
 #+MATS: figcol fig-11_1047-16-*.pdf 0.47
 
-Texto.
+- Después de introducir un impuesto específico de $t$ euros por
+  unidad, la demanda relevante para el monopolista es $D_t$.
+
+- En el nuevo equilibrio se cumple: $\IMg_t = \CMg$.
 
 
 ** Impuestos /ad valorem/ e impuestos específicos
 
-En el caso del monopolio, los impuestos /ad valorem/ proporcionan una
+En el caso del monopolio, un impuestos /ad valorem/ proporciona una
 mayor recaudación que un impuesto específico que provoque la misma
 elevación del precio.
 
