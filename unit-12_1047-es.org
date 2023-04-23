@@ -8,101 +8,282 @@
 
 #+begin_bibbox
 - *Stiglitz y Rosengard*: Capítulo 19.
+- *Albi et al.*: Capítulo 2 del Vol. II.
 #+end_bibbox
 
 
 * Impuestos y eficiencia económica
 
-** Condiciones de eficiencia
 
-** Impuesto sobre un bien
+** Condiciones de eficiencia e impuestos
 
-** Impuestos sobre la renta
+- El equilibrio competitivo conduce a una asignación eficiente debido
+  a que consumidores y productores se guían por los mismos precios
+  relativos de los bienes y de los factores de producción.
 
-** Ineficiencia del impuesto sobre la renta
+- En una economía que produce dos bienes $X$ e $Y$:
+  #+begin_export latex
+  \[
+    \RMS_{XY} = \frac{P_{X}}{P_{Y}} = \RMT_{XY}.
+  \]
+  #+end_export
 
-* Impuestos sobre mercancías
+
+** Condiciones de eficiencia e impuestos
+
+- Los impuestos introducen una "cuña" entre los precios relativos que
+  determinan las elecciones de los consumidores y los que son
+  relevantes para los productores.
+
+- Después de introducir un impuesto a las compras de $X$ que se
+  traslada por completo a los compradores:
+  #+begin_export latex
+  \[
+    \RMS_{XY} = \frac{P_{X} + t}{P_{Y}} \neq \frac{P_{X}}{P_{Y}} = \RMT_{XY}.
+  \]
+  #+end_export
+
+** Impuestos y comportamiento de los individuos
+
+- Los impuestos reducen el bienestar de los individuos y estos
+  modificarán su comportamiento si con ello consiguen pagar menos.
+
+- Sólo son neutrales los impuestos de suma fija, ya que en este caso
+  el comportamiento del contribuyente no puede influir en lo que tiene
+  que pagar.
+
+
+
+* Ineficiencia soportada por los compradores
 
 
 ** La elección individual
 
 #+MATS: figcol fig-12_1047-01-*.pdf 0.47
 
-Hola.
+La cesta $E_0$ es la elección óptima del consumidor.
 
 
 ** Impuesto sobre un bien
 
 #+MATS: figcol fig-12_1047-02-*.pdf 0.47
 
-Hola.
+Al introducir un impuesto sobre las compras de bien $X$, la
+restricción presupuestaria se desplaza hacia la izquierda y la nueva
+cesta óptima es $E_1$.
 
 
 ** Recaudación
 
 #+MATS: figcol fig-12_1047-03-*.pdf 0.47
 
-Hola.
+La recaudación que se obtiene del consumidor, medida en unidades del
+bien $Y$, es $Y'_1 - Y_1$.
 
 
 ** Variación equivalente
 
 #+MATS: figcol fig-12_1047-04-*.pdf 0.47
 
-Hola.
+- ¿Cuánta renta estaría dispuesto a pagar el consumidor para eliminar
+  el impuesto?
+
+- *Variación equivalente*: el consumidor sufriría la misma pérdida de
+  utilidad si su renta disminuyera hasta que $E_2$ fuera su elección
+  óptima.
 
 
 ** Impuesto de cuantía fija
 
 #+MATS: figcol fig-12_1047-05-*.pdf 0.47
 
-Hola.
+- La variación equivalente, en unidades de $Y$, es igual a $Y'_1 -
+  Y''_1$.
+
+- Si se estableciera un impuesto de cuantía fija igual a $Y'_1 -
+  Y''_1$, el consumidor elegiría $E_2$.
 
 
 ** Exceso de gravamen
 
 #+MATS: figcol fig-12_1047-06-*.pdf 0.47
 
-Hola.
+- El impuesto sobre $X$ tiene el mismo efecto sobre el bienestar que
+  un impuesto de suma fija de $Y'_1 - Y''_1$.
+
+- La recaudación del impuesto sobre $X$ es inferior a la del de suma
+  fija.
+
+- *Exceso de gravamen*: $Y_1 - Y''_1$
 
 
 ** Efecto renta y efecto sustitución
 
 #+MATS: figcol fig-12_1047-07-*.pdf 0.47
 
-Hola.
+El efecto del impuesto sobre $X$ puede descomponerse en:
+
+- *Efecto renta*: variación del consumo por una disminución de la
+  renta real.
+
+- *Efecto sustitución*: variación del consumo por la desviación del
+  consumo hacia los bienes que no están gravados por el impuesto.
+
+** Exceso de gravamen y efecto sustitución
+
+- Un impuesto de suma fija sólo provocaría un efecto renta.
+
+- La magnitud del exceso de gravamen depende del efecto
+  sustitución. Cuanto más fácilmente puede sustituirse el bien $X$ por
+  el bien $Y$, mayor será el exceso de gravamen.
 
 ** Curva de demanda compensada
 
+#+MATS: figcol fig-12_1047-10-*.pdf 0.47
 
-** Pérdida de eficiencia y curvas de demanda
+- La *curva de demanda ordinaria*, $D$, recoge tanto el efecto renta como el
+  efecto sustitución.
+
+- La *curva de demanda compensada*, $D_c$, sólo recoge el efecto
+  sustitución.
+
+** Exceso de gravamen y curvas de demanda
 
 
-** Demanda inelástica e ineficiencia
+#+MATS: figcol fig-12_1047-11-*.pdf 0.47
 
+- La recaudación es igual al área del rectángulo sombreado.
 
-* Mercados competitivos
+- El exceso de gravamen es igual al área del triángulo sombreado.
+
+** Diferencias entre las curvas de demanda
+
+- La diferencia entre las curvas de demanda ordinaria y compensada es
+  el efecto renta.
+
+- Cuando el efecto renta es pequeño las curvas de demanda ordinaria
+  son una buena aproximación para analizar el exceso de gravamen.
+
+** Cálculo del exceso de gravamen
+
+El exceso de gravamen puede calcularse con la fórmula:
+#+begin_export latex
+\[
+  \text{EG} = -\frac{1}{2}\eta_d \tau^2 P Q,
+\]
+#+end_export
+donde:
+- $\eta_d$ es la elasticidad de la demanda (compensada),
+
+- $P$ es el precio antes de impuestos,
+
+- $Q$ es la cantidad demandada (compensada) con el precio inicial, y
+
+- $\tau = t / P$ es el impuesto unitario expresado como fracción del
+  precio.
+
+** Aplicación
+
+- De acuerdo con la edición del 17 de abril de 2023 del /Weekly Oil
+  Bulletin/ publicado por la Comisión Europea, el precio en España del
+  gasoil para automoción con impuestos es \price[litre]{1.51975} y sin
+  impuestos es \price[litre]{0.87699}.
+- Se estima que la elasticidad de la demanda de gasoil es igual a
+  $-0.25$ a corto plazo y $-0.8$ a largo plazo.
+- El exceso de gravamen como fracción de las ventas totales es:
+  #+begin_export latex
+  \[
+    \frac{\text{EG}}{\tau P Q} = -\frac{1}{2}\eta_d \tau.
+  \]
+  #+end_export
+- El exceso de gravamen a corto plazo sería el \SI{9.2}{\percent} de
+  la recaudación de los impuestos sobres el gasoil y a largo plazo
+  sería el \SI{29.3}{\percent}.
+
+** Determinantes del exceso de gravamen
+
+- El exceso de gravamen aumenta con el *cuadrado* del tipo impositivo.
+
+- Cuanto más elástica es la curva de demanda compensada, mayor es el
+  efecto sustitución y, por tanto, mayor es el exceso de gravamen.
+
+* Ineficiencia en mercados competitivos
 
 ** Efectos sobre los productores
+
+- Cuando las curvas de oferta son perfectamente elásticas todos los
+  efectos distorsionadores recaen en los consumidores.
+
+- Al menos a corto plazo, las curvas de oferta tienen pendiente
+  positiva y parte de la ineficiencia de los impuestos recae en los
+  productores.
 
 
 ** Pérdida de eficiencia en mercados competitivos
 
+#+MATS: figcol fig-12_1047-20-*.pdf 0.47
 
-** Elasticidades
+El exceso de gravamen coincide con la suma de las áreas de los
+triángulos sombreados.
+
+
+** Cálculo del exceso de gravamen
+
+El exceso de gravamen en un mercado competitivo puede expresarse como:
+#+begin_export latex
+\[
+  \text{EG} = -\frac{1}{2}\frac{\eta_o \eta_d}{\eta_o - \eta_d} \tau^2 P Q,
+\]
+#+end_export
+donde:
+- $\eta_d$ es la elasticidad de la demanda (compensada),
+
+- $\eta_d$ es la elasticidad de la oferta,
+
+- $P$ es el precio antes de impuestos,
+
+- $Q$ es la cantidad demandada (compensada) con el precio inicial, y
+
+- $\tau = t / P$ es el impuesto unitario expresado como fracción del
+  precio.
+
+** Elasticidades y exceso de gravamen
+
+- La ineficiencia de un impuesto en un mercado competitivo depende de
+  las acciones que toman los consumidores y las empresas para reducir
+  el pago de impuestos.
+
+- Cuanto mas elásticas sean las curvas de demanda y de oferta mayor
+  será el exceso de gravamen.
+
+** El tipo impositivo y el exceso de gravamen
+
+- El exceso de gravamen crece con el cuadrado del tipo impositivo.
+
+- La ineficiencia del impuesto crece más rápidamente que el tipo
+  impositivo.
+
+- Las primeras unidades que dejan de producirse generan una
+  ineficiencia muy pequeña, porque tienen un excedente social muy
+  pequeño.
+
+- Conforme se pierden más unidades y nos alejamos del equilibrio
+  competitivo crece el excedente social que se pierde por unidad.
 
 ** Distorsiones preexistentes
 
-** Impuestos progresivos
+- La ineficiencia de los impuestos es mayor si existían previamente
+  otras ineficiencias (competencia imperfecta, externalidades, etc.).
 
-** Perfil temporal
+- Un impuesto en un mercado controlado por un monopolista produce más
+  exceso de gravamen que si el mercado fuera competitivo.
 
-* Impuestos óptimos
+** Otras consideraciones
 
-** Regla de Ramsey
+- Cambiar un impuesto proporcional a un impuesto progresivo,
+  manteniendo la recaudación, puede incrementar sustancialmente el
+  exceso de gravamen.
 
-** Regla de la elasticidad inversa
-
-** Equidad y la regla de Ramsey
-
-** Impuestos sobre la renta óptimos
+- Desde el punto de vista de la eficiencia es mejor tener unos tipos
+  impositivos relativamente constantes a lo largo del tiempo alternar
+  periodos de impuestos altos con periodos de impuestos bajos.

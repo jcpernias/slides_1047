@@ -4,8 +4,7 @@
 
 #+PROPERTY: header-args:latex :noweb yes :eval no
 
-* Competitive markets
-
+* Consumer burden
 
 ** Chunks
 
@@ -16,6 +15,16 @@
 #+begin_src latex :noweb-ref goods-axes
   \draw[axis]
     (0,12) node[left] {$Y$} |-
+    (12,0) node[below] {$X$};
+#+end_src
+
+#+begin_src latex :noweb-ref demand-scale
+  [xscale=0.4, yscale=0.4]
+#+end_src
+
+#+begin_src latex :noweb-ref demand-axes
+  \draw[axis]
+    (0,12) node[left] {$P_X$} |-
     (12,0) node[below] {$X$};
 #+end_src
 
@@ -110,7 +119,48 @@
   \coordinate (C) at ($ (B) + (yshift) $) ;
 #+end_src
 
-** Consumer
+
+#+begin_src latex :noweb-ref ordinary-demand
+  \path[save path=\pathD, name path=D] (D-1) -- (D-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-ordinary-demand
+  \draw[curve A, use path=\pathD]  (D-2) node[right] {$D$} ;
+#+end_src
+
+#+begin_src latex :noweb-ref comp-demand
+  \path[save path=\pathDc, name path=Dc] (Dc-1) -- (Dc-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-comp-demand
+  \draw[curve B, use path=\pathDc] (Dc-2) node[right] {$D_c$} ;
+#+end_src
+
+#+begin_src latex  :noweb-ref demand-coordinates
+  \coordinate (D-1) at (0.5, 10) ;
+  \coordinate (D-2) at (9, 1.5) ;
+  \coordinate (Dc-1) at (1, 10.5) ;
+  \coordinate (Dc-2) at (4, 1.5) ;
+  \coordinate (width) at (12, 0) ;
+
+  <<ordinary-demand>>
+  <<comp-demand>>
+
+  \path[name intersections={of=D and Dc, name=DDc}] ;
+  \coordinate (t) at (0, 4) ;
+  \coordinate (Pt) at (DDc-1 -| y-axis) ;
+  \coordinate (X1) at (DDc-1 |- x-axis) ;
+  \coordinate (P) at ($ (Pt) - (t)$) ;
+  \path[name path=Phorz] (P) -- ($ (P) + (width) $) ;
+  \path[name intersections={of=D and Phorz, name=DP}] ;
+  \path[name intersections={of=Dc and Phorz, name=DcP}] ;
+  \coordinate (X2) at (DcP-1 |- x-axis) ;
+  \coordinate (X0) at (DP-1 |- x-axis) ;
+  \coordinate (X1t) at ($ (Pt) - (t)$) ;
+#+end_src
+
+
+** Consumer choice
 
 #+begin_src latex :tangle fig-12_1047-01.tex
   \begin{tikzpicture}<<goods-scale>>
@@ -314,5 +364,181 @@
     \node[dot, label={[font=\scriptsize]right:$C$}] at (C) {} ;
 
     <<goods-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Demand curves
+
+#+begin_src latex :tangle fig-12_1047-10.tex
+  \begin{tikzpicture}<<demand-scale>>
+    <<axes-coordinates>>
+    <<demand-coordinates>>
+
+    \draw[help lines]
+    (Pt) node[left] {$P_0 + t$} -| (X1) node[below] {$X_1$}
+    ;
+    \draw[help lines]
+    (P) node[left] {$P_0$} -| (X2) node[below] {$X_2$}
+    ;
+
+    \draw[help lines]
+    (DcP-1)  -| (X0) node[below] {$X_0$}
+    ;
+
+    <<draw-ordinary-demand>>
+
+    <<draw-comp-demand>>
+
+
+    \node[dot] at (DDc-1) {} ;
+    \node[dot] at (DcP-1) {} ;
+    \node[dot] at (DP-1) {} ;
+
+    <<demand-axes>>
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-12_1047-11.tex
+  \begin{tikzpicture}<<demand-scale>>
+    <<axes-coordinates>>
+    <<demand-coordinates>>
+    \fill[fillC]
+    (DDc-1) -- (DcP-1) -- (X1t) -- cycle
+    ;
+
+    \fill[fillA]
+    (P) rectangle (DDc-1)
+    ;
+
+    \draw[help lines]
+    (Pt) node[left] {$P_0 + t$} -| (X1) node[below] {$X_1$}
+    ;
+    \draw[help lines]
+    (P) node[left] {$P_0$} -| (X2) node[below] {$X_2$}
+    ;
+
+    \draw[help lines]
+    (DcP-1)  -| (X0) node[below] {$X_0$}
+    ;
+
+    <<draw-ordinary-demand>>
+
+    <<draw-comp-demand>>
+
+
+    \node[dot] at (DDc-1) {} ;
+    \node[dot] at (DcP-1) {} ;
+    \node[dot] at (DP-1) {} ;
+
+    <<demand-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :noweb-ref comp-scale
+  [xscale=0.35, yscale=0.35, samples=128]
+#+end_src
+
+#+begin_src latex :noweb-ref comp-axes
+  \draw[axis]
+    (0,11) node[left] {$P$} |-
+    (12,0) node[below] {$Q$};
+#+end_src
+
+#+begin_src latex :noweb-ref tax-coordinates
+  \coordinate (tax) at (0, 3) ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-O0
+  \coordinate (O0-1) at (1, 0.5) ;
+  \coordinate (O0-2) at (10, 6.5) ;
+  \path[save path=\pathOzero, name path=O0] (O0-1) -- (O0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-O0
+  \draw[curve B, use path=\pathOzero] (O0-2) node[right] { $O_0$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-D0
+  \coordinate (D0-1) at (1, 8) ;
+  \coordinate (D0-2) at (10, 4) ;
+  \path[save path=\pathDzero, name path=D0] (D0-1) -- (D0-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-D0
+  \draw[curve A, use path=\pathDzero] (D0-2) node[right] { $D_0$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-O1
+  \coordinate (O1-1) at ($ (O0-1) + (tax) $) ;
+  \coordinate (O1-2) at ($ (O0-2) + (tax) $) ;
+  \path[save path=\pathOone, name path=O1] (O1-1) -- (O1-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-O1
+  \draw[curve B, use path=\pathOone] (O1-2) node[right] { $O_1$ } ;
+#+end_src
+
+#+begin_src latex :noweb-ref curve-D2
+  \coordinate (D2-1) at  ($ (D0-1) - (tax) $) ;
+  \coordinate (D2-2) at  ($ (D0-2) - (tax) $) ;
+  \path[save path=\pathDtwo, name path=D2] (D2-1) -- (D2-2) ;
+#+end_src
+
+#+begin_src latex  :noweb-ref draw-curve-D2
+  \draw[curve A, use path=\pathDtwo] (D2-2) node[right] { $D_2$ } ;
+#+end_src
+
+
+#+begin_src latex  :noweb-ref comp-eq-coordinates
+  <<tax-coordinates>>
+  <<curve-O0>>
+  <<curve-D0>>
+  <<curve-O1>>
+  <<curve-D2>>
+  \path[name intersections={of=D0 and O0, name=E0}] ;
+  \path[name intersections={of=D0 and O1, name=E1}] ;
+  \path[name intersections={of=D2 and O0, name=E2}] ;
+#+end_src
+
+
+#+begin_src latex :tangle fig-12_1047-20.tex
+  \begin{tikzpicture}<<comp-scale>>
+    <<axes-coordinates>>
+    <<comp-eq-coordinates>>
+
+    \coordinate (P0) at (y-axis |- E0-1) ;
+    \coordinate (Q1) at (x-axis -| E2-1) ;
+
+    \fill[fillA]
+    (E0-1) -- (E1-1) -- (P0 -| Q1) -- cycle ;
+
+    \fill[fillB]
+    (E0-1) -- (E2-1) -- (P0 -| Q1) -- cycle ;
+
+    \draw[help lines]
+    (P0) node[left] {$P_0$} -| (x-axis -| E0-1) node[below] {$Q_0$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E2-1) node[left] {$P_1-t$} -|
+    (Q1) node[below] {$Q_1$}
+    ;
+
+    \draw[help lines]
+    (y-axis |- E1-1) node[left] {$P_{1}$} -|
+    ($ (E2-1) $)
+    ;
+
+    <<draw-curve-O0>>
+    <<draw-curve-O1>>
+    <<draw-curve-D0>>
+
+    \node[dot] at (E0-1) {} ;
+    \node[dot] at (E1-1) {} ;
+
+
+    <<comp-axes>>
   \end{tikzpicture}
 #+end_src
