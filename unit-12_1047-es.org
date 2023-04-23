@@ -11,6 +11,16 @@
 #+end_bibbox
 
 
+* Impuestos y eficiencia económica
+
+** Condiciones de eficiencia
+
+** Impuesto sobre un bien
+
+** Impuestos sobre la renta
+
+** Ineficiencia del impuesto sobre la renta
+
 * Impuestos sobre mercancías
 
 
@@ -20,11 +30,13 @@
 
 Hola.
 
+
 ** Impuesto sobre un bien
 
 #+MATS: figcol fig-12_1047-02-*.pdf 0.47
 
 Hola.
+
 
 ** Recaudación
 
@@ -32,11 +44,13 @@ Hola.
 
 Hola.
 
+
 ** Variación equivalente
 
 #+MATS: figcol fig-12_1047-04-*.pdf 0.47
 
 Hola.
+
 
 ** Impuesto de cuantía fija
 
@@ -44,14 +58,51 @@ Hola.
 
 Hola.
 
+
 ** Exceso de gravamen
 
 #+MATS: figcol fig-12_1047-06-*.pdf 0.47
 
 Hola.
 
+
 ** Efecto renta y efecto sustitución
 
 #+MATS: figcol fig-12_1047-07-*.pdf 0.47
 
 Hola.
+
+** Curva de demanda compensada
+
+
+** Pérdida de eficiencia y curvas de demanda
+
+
+** Demanda inelástica e ineficiencia
+
+
+* Mercados competitivos
+
+** Efectos sobre los productores
+
+
+** Pérdida de eficiencia en mercados competitivos
+
+
+** Elasticidades
+
+** Distorsiones preexistentes
+
+** Impuestos progresivos
+
+** Perfil temporal
+
+* Impuestos óptimos
+
+** Regla de Ramsey
+
+** Regla de la elasticidad inversa
+
+** Equidad y la regla de Ramsey
+
+** Impuestos sobre la renta óptimos

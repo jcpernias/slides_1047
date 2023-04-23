@@ -44,6 +44,7 @@
 
 - Impuesto sobre sociedades.
 
+
 ** Impuestos sobre la riqueza
 
 - Impuesto sobre bienes inmuebles.
@@ -63,6 +64,7 @@
 
 - Aranceles.
 
+
 ** Progresividad de los impuestos
 
 - En los *impuestos progresivos* el *tipo impositivo medio* crece con
@@ -72,6 +74,7 @@
   proporcional*.
 
 - El tipo medio de los *impuestos regresivos* disminuye con la renta.
+
 
 ** Ejemplo: IRPF (I)
 
@@ -89,6 +92,7 @@ Un contribuyente que gane \money{30000} pagaría: $\num{12450} \cdot
 0.19 + \num{7750} \cdot 0.24 + \num{9800} \cdot 0.3 =
 \money{7165.50}$. Tipo medio: \SI{23.9}{\percent}.
 
+
 ** Ejemplo: IRPF (y II)
 
 #+ATTR_LATEX: :booktabs t :align l@{\hspace{1.5cm}}c@{\hspace{1.5cm}}c
@@ -102,6 +106,7 @@ Un contribuyente que gane \money{30000} pagaría: $\num{12450} \cdot
 
 El IRPF es progresivo: el tipo medio aumenta conforme aumenta la
 renta.
+
 
 * Características de los sistemas impositivos
 
