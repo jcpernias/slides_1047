@@ -129,6 +129,7 @@ El efecto del impuesto sobre $X$ puede descomponerse en:
 - *Efecto sustitución*: variación del consumo por la desviación del
   consumo hacia los bienes que no están gravados por el impuesto.
 
+
 ** Exceso de gravamen y efecto sustitución
 
 - Un impuesto de suma fija sólo provocaría un efecto renta.
@@ -136,6 +137,7 @@ El efecto del impuesto sobre $X$ puede descomponerse en:
 - La magnitud del exceso de gravamen depende del efecto
   sustitución. Cuanto más fácilmente puede sustituirse el bien $X$ por
   el bien $Y$, mayor será el exceso de gravamen.
+
 
 ** Curva de demanda compensada
 
@@ -147,6 +149,7 @@ El efecto del impuesto sobre $X$ puede descomponerse en:
 - La *curva de demanda compensada*, $D_c$, sólo recoge el efecto
   sustitución.
 
+
 ** Exceso de gravamen y curvas de demanda
 
 
@@ -156,6 +159,7 @@ El efecto del impuesto sobre $X$ puede descomponerse en:
 
 - El exceso de gravamen es igual al área del triángulo sombreado.
 
+
 ** Diferencias entre las curvas de demanda
 
 - La diferencia entre las curvas de demanda ordinaria y compensada es
@@ -164,23 +168,21 @@ El efecto del impuesto sobre $X$ puede descomponerse en:
 - Cuando el efecto renta es pequeño las curvas de demanda ordinaria
   son una buena aproximación para analizar el exceso de gravamen.
 
+
 ** Cálculo del exceso de gravamen
 
 El exceso de gravamen puede calcularse con la fórmula:
 #+begin_export latex
 \[
-  \text{EG} = -\frac{1}{2}\eta_d \tau^2 P Q,
+  \text{EG} = -\frac{1}{2}\eta^d \tau^2 P Q,
 \]
 #+end_export
 donde:
-- $\eta_d$ es la elasticidad de la demanda (compensada),
-
-- $P$ es el precio antes de impuestos,
-
-- $Q$ es la cantidad demandada (compensada) con el precio inicial, y
+- $\eta_d$ es la elasticidad de la demanda (compensada), y
 
 - $\tau = t / P$ es el impuesto unitario expresado como fracción del
   precio.
+
 
 ** Aplicación
 
@@ -200,6 +202,7 @@ donde:
   la recaudación de los impuestos sobres el gasoil y a largo plazo
   sería el \SI{29.3}{\percent}.
 
+
 ** Determinantes del exceso de gravamen
 
 - El exceso de gravamen aumenta con el *cuadrado* del tipo impositivo.
@@ -207,7 +210,9 @@ donde:
 - Cuanto más elástica es la curva de demanda compensada, mayor es el
   efecto sustitución y, por tanto, mayor es el exceso de gravamen.
 
+
 * Ineficiencia en mercados competitivos
+
 
 ** Efectos sobre los productores
 
@@ -232,20 +237,17 @@ triángulos sombreados.
 El exceso de gravamen en un mercado competitivo puede expresarse como:
 #+begin_export latex
 \[
-  \text{EG} = -\frac{1}{2}\frac{\eta_o \eta_d}{\eta_o - \eta_d} \tau^2 P Q,
+  \text{EG} = \frac{1}{2}\frac{1}{1/\eta^o - 1/\eta^d} \tau^2 P Q,
 \]
 #+end_export
 donde:
-- $\eta_d$ es la elasticidad de la demanda (compensada),
+- $\eta^d$ es la elasticidad de la demanda (compensada),
 
-- $\eta_d$ es la elasticidad de la oferta,
-
-- $P$ es el precio antes de impuestos,
-
-- $Q$ es la cantidad demandada (compensada) con el precio inicial, y
+- $\eta^o$ es la elasticidad de la oferta, y
 
 - $\tau = t / P$ es el impuesto unitario expresado como fracción del
   precio.
+
 
 ** Elasticidades y exceso de gravamen
 
@@ -256,11 +258,11 @@ donde:
 - Cuanto mas elásticas sean las curvas de demanda y de oferta mayor
   será el exceso de gravamen.
 
+
 ** El tipo impositivo y el exceso de gravamen
 
-- El exceso de gravamen crece con el cuadrado del tipo impositivo.
-
-- La ineficiencia del impuesto crece más rápidamente que el tipo
+- El exceso de gravamen crece con el cuadrado del tipo impositivo. La
+  ineficiencia del impuesto crece más rápidamente que el tipo
   impositivo.
 
 - Las primeras unidades que dejan de producirse generan una
@@ -270,13 +272,16 @@ donde:
 - Conforme se pierden más unidades y nos alejamos del equilibrio
   competitivo crece el excedente social que se pierde por unidad.
 
+
 ** Distorsiones preexistentes
 
 - La ineficiencia de los impuestos es mayor si existían previamente
-  otras ineficiencias (competencia imperfecta, externalidades, etc.).
+  otras ineficiencias (competencia imperfecta, externalidades
+  positivas, etc.).
 
 - Un impuesto en un mercado controlado por un monopolista produce más
   exceso de gravamen que si el mercado fuera competitivo.
+
 
 ** Otras consideraciones
 
