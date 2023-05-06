@@ -1,0 +1,52 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: {{{unit13}}}
+
+#+MATS: bib
+
+#+begin_bibbox
+- *Stiglitz y Rosengard*: Capítulo 16.
+- *Albi et al.*: Capítulo 9 del Vol. I.
+#+end_bibbox
+
+* Los programas de prestación económica
+
+** Introducción
+
+** Programas de pensiones
+
+** Programas de incapacidad laboral temporal
+
+** Programas de prestaciones por desempleo
+
+** Programas de sustituciones de rentas
+
+** Programs de reducción de la pobreza
+
+* Justificación de los programas de sustitución de rentas
+
+** La obligación de participar
+
+** El carácter público de los programas
+
+* El sistema de pensiones de la Seguridad Social
+
+** El diseño de los programas de pensiones
+
+** Determinación del nivel de pensiones
+
+** El sistema de pensiones en España
+
+** Las dificultades financieras del sistema de pensiones
+
+** Las soluciones del problema
+
+* El seguro de desempleo
+
+* Los programas de lucha contra la pobreza
+
+** Los programas de mínimos garantizados
+
+** El impuesto negativo sobre la renta
