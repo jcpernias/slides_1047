@@ -11,42 +11,245 @@
 - *Albi et al.*: Capítulo 9 del Vol. I.
 #+end_bibbox
 
-* Los programas de prestación económica
+* Las prestaciones económicas
+
 
 ** Introducción
 
-** Programas de pensiones
+- Uno de los pilares del Estado del Bienestar es un sistema de
+  prestaciones económicas destinado a garantizar un nivel de vida
+  digno a todos los ciudadanos.
 
-** Programas de incapacidad laboral temporal
+- Las *prestaciones económicas*, transferencias de renta del
+  Sector Público a los ciudadanos son una de las partidas más
+  importantes de los presupuestos de los países desarrollados.
 
-** Programas de prestaciones por desempleo
 
-** Programas de sustituciones de rentas
+** Programas de prestaciones
 
-** Programs de reducción de la pobreza
+Las prestaciones se suelen clasificar en dos grupos:
 
-* Justificación de los programas de sustitución de rentas
+- *Programas de sustitución de rentas*. Con estas prestaciones se
+  reemplaza parte de las rentas del trabajo que el individuo deja de
+  percibir por alguna causa externa: desempleo, accidente, vejez, etc.
 
-** La obligación de participar
+- *Programas de lucha contra la pobreza*. Destinadas a proporcionar a
+  individuos con recursos muy bajos una renta de subsistencia.
 
-** El carácter público de los programas
 
-* El sistema de pensiones de la Seguridad Social
+** Programas de sustitución de rentas
 
-** El diseño de los programas de pensiones
+- Las prestaciones son mayores cuanto mayor es la renta que se deja de
+  percibir.
 
-** Determinación del nivel de pensiones
+- Sólo se puede acceder a estas prestaciones si se han pagado las
+  *cotizaciones sociales*.
 
-** El sistema de pensiones en España
+- La participación en los programas es obligatoria para trabajadores y
+  empresas.
+
+** Programas de pensiones en España
+
+- *Programas de pensiones*. Son prestaciones de larga duración y se
+  originan en que el individuo pierde la capacidad de generar rentas
+  para él y su familia.
+
+- *Pensiones contributivas*: se debe haber cotizado durante un número
+  determinado de años para poder disfrutarlas. Son las de
+  *jubilación*, *supervivencia* (viudedad, orfandad, a favor de
+  familiares) e *invalidez*, entre otras.
+
+- *Pensiones no contributivas*: para los casos de no haber cotizado
+  suficientes años y carecer de suficientes recursos a la edad de
+  jubilación.
+
+- Las gestionan la Seguridad Social y las Mutualidades de
+  Funcionarios.
+
+** Otros programas de sustitución de rentas
+
+- *Programas de incapacidad laboral temporal*. Complementan durante un
+  periodo limitado las rentas de individuos que han quedado
+  temporalmente incapacitados para trabajar. Las gestionan la
+  Seguridad Social y las Mutualidades de Funcionarios.
+
+- *Programas de prestaciones por desempleo*. Su duración es limitada y
+  se organizan en dos niveles: contributivo y asistencial. Las
+  gestiona el Servicio Público de Empleo Estatal, SEPE.
+
+
+* Los seguros privados y los fallos del mercado
+
+** Los seguros privados
+
+- El sector privado puede ofrecer planes de pensiones que a cambio del
+  pago de una prima proporcionen ingresos después de la jubilación.
+
+- ¿Por qué es necesaria la intervención pública?
+
+
+** Costes de transacción
+
+Las empresas privadas de seguros incurren en elevados costes de
+transacción:
+
+- Tratan de asegurar solo a los mejores riesgos o elevar las primas de
+  los peores riesgos.
+
+- Ofrecen una gran cantidad de planes.
+
+- Comisiones a los corredores de seguros.
+
+** Reducción deficiente de los riesgos
+
+- Actualmente los planes de pensiones privados son de *contribución
+  definida*: los empresarios y los trabajadores realizan aportaciones
+  fijas en una cuenta de jubilación que se invierte en acciones o
+  bonos.
+
+- Las prestaciones dependen mucho de la evolución de los mercados
+  financieros y el momento en que se produce la jubilación.
+
+** Riesgos sociales
+
+- La rentabilidad de las empresas de seguros se basa en que no tendrá
+  que compensar simultáneamente a todos sus asegurados y que con las
+  primas de los que no se ven afectados se puedan pagar las
+  compensaciones a los afectados.
+
+- Algunas situaciones adversas, como la inflación, son *riesgos
+  sociales* que afectan a todos los ciudadanos a la vez. La empresas
+  privadas no pueden asegurar estos riesgos.
+
+- El estado puede cubrir esos riesgos sociales y financiarlos mediante
+  impuestos o repartiendo los costes entre las generaciones futuras.
+
+** Selección adversa
+
+- Las compañías privadas de seguros prefieren ofrecer sus planes de
+  pensiones a los individuos que tengan una probabilidad de morir
+  pronto.
+
+- Si las compañías privadas no pueden discriminar los riesgos malos de
+  los buenos, las primas reflejan el riesgo medio.
+
+- Algunos trabajadores que son buenos riesgos se encontrarán que la
+  prima que tienen que pagar es demasiado elevada y dejarán de comprar
+  el seguro.
+
+- La *selección adversa* hace que sólo los peores riesgos compren el
+  seguro. El estado puede eliminar este problema obligando a todos los
+  trabajadores a comprar el seguro.
+
+
+** Riesgo moral
+
+- El *riesgo moral* se produce cuando el seguro reduce los incentivos
+  de la gente para evitar el hecho asegurado.
+
+- La seguridad social de algunos países permite jubilaciones
+  anticipadas, lo que evitaría que personas con mala salud o cuyas
+  habilidades se han quedado obsoletas dejen de trabajar antes de la
+  edad de jubilación.
+
+- Cuanto menos se penalice la jubilación anticipada mayores son los
+  incentivos a acogerse a ella, aunque no tengan ningún problema de
+  salud u obsolescencia.
+
+- En este caso el estado no puede hacerlo mucho mejor que la
+  iniciativa privado. El riesgo moral limita el alcance del seguro que
+  puede ofrecerse.
+
+** Las pensiones de jubilación como un bien preferente
+
+- Incluso con buenos seguros privados, estaría justificada la
+  intervención del estado si parte de la población no es previsora y
+  no ha suscrito planes para su jubilación.
+
+- Las pensiones serían un *bien preferente* que el estado paternalista
+  impondría a todos los trabajadores por su propio bien.
+
+
+* El sistema de pensiones públicas
+
+** Las cotizaciones sociales
+
+- *Cotizaciones de los trabajadores*. El sector público recauda cada
+  mes un porcentaje del salario de todos los trabajadores.
+
+- *Cotizaciones empresariales*. Simultáneamente la empresa ingresa en
+  la Seguridad Social un porcentaje del salario en nombre del
+  trabajador.
+
+- Cuando se produce la contingencia el trabajador recibe prestaciones
+  que dependen de sus cotizaciones y de las que realizó en su nombre
+  su empleador.
+
+** Sistemas de capitalización
+
+- *Sistema de capitalización*. Al igual que en un sistema privado, las
+  cotizaciones se invierten en activos. A partir de la jubilación, se
+  pagan las pensiones de un trabajador con sus cotizaciones y los
+  rendimientos que produjeron.
+
+- La rentabilidad de los sistemas de capitalización depende del riesgo
+  de los activos en que se invierte.
+
+- No cubre los riesgos de la volatilidad de los mercados financieros,
+  la inflación o una mayor longevidad de lo esperado.
+
+** Sistemas de reparto
+
+- *Sistema de reparto*. Se utiliza la recaudación de las cotizaciones
+  de los trabajadores en activo para pagar las pensiones de los
+  trabajadores retirados.
+
+- La mayoría de los sistemas públicos de pensiones son de reparto.
+
+- *Falta de transparencia*. Es difícil saber si las prestaciones son
+  mayores o menores que las cotizaciones. Los jubilados se oponen a
+  recortes en pensiones porque piensa que ya las pagaron con sus
+  cotizaciones.
+
+
+** Determinantes del gasto en pensiones
+
+- El gasto en pensiones como fracción del PIB se suele expresar con el
+  producto de cuatro factores:
+  #+begin_export latex
+  \[
+    \textstyle%
+    \frac{\text{G. pensiones}}{\text{PIB}} =
+    \frac{\text{Pobl. mayor 65}}{\text{Pobl. edad trab.}} \times
+    \frac{\text{1}}{\text{Tasa empleo}} \times
+    \frac{\text{Nº pensiones}}{\text{Pobl. mayor 65}} \times
+    \frac{\text{Pensión media}}{\text{PIB por ocupado}}
+  \]
+  #+end_export
+
+- Los dos primeros factores dependen de factores demográficos y del
+  comportamiento del mercado de trabajo.
+
+- Los dos últimos factores dependen de las *condiciones de
+  elegibilidad* y de la generosidad del sistema de pensiones.
 
 ** Las dificultades financieras del sistema de pensiones
 
-** Las soluciones del problema
+- Dadas las previsiones demográficas, mantener las pensiones medias
+  implica aumentos en la productividad de los trabajadores o aumentar
+  el gasto en pensiones.
 
-* El seguro de desempleo
+- Los ingresos por cotizaciones sociales prácticamente no han
+  aumentado en las últimas décadas. El mantenimiento de las pensiones
+  medias conllevaría un aumento del déficit o la utilización de
+  impuestos generales para financiar las pensiones.
 
-* Los programas de lucha contra la pobreza
+** Reforma de la seguridad social
 
-** Los programas de mínimos garantizados
+- *Reformas paramétricas*: cambio en la edad de jubilación, en el
+  número de años cotizados que se tienen en cuenta para determinar la
+  pensión original, tasa de sustitución, factores de sostenibilidad,
+  etc.
 
-** El impuesto negativo sobre la renta
+- *Reformas estructurales*: *sistemas de cuentas nocionales*,
+  *privatización*.
