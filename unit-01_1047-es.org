@@ -48,13 +48,13 @@
 
 ** Preguntas básicas
 
-- ¿*Qué* producir?
+- ¿\textbf{Qué} producir?
 
-- ¿*Cómo* producir?
+- ¿\textbf{Cómo} producir?
 
-- ¿*Para quién* producir?
+- ¿\textbf{Para quién} producir?
 
-- ¿*Cómo se toman las decisiones* dentro del sector público?
+- ¿\textbf{Cómo se toman las decisiones} dentro del sector público?
 
 
 ** Análisis del sector público
