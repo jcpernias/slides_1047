@@ -138,6 +138,5 @@
 a) Capacidad o necesidad de financiación (saldo fiscal): diferencia
    entre ingresos y gastos no financieros.
 
-b) Saldo primario: se calcula como diferencia de ingresos
-   y gastos, pero no se exluyendo los pagos de los intereses de la
-   deuda pública.
+b) Saldo primario: se calcula como diferencia de ingresos y gastos,
+   pero exluyendo los pagos de los intereses de la deuda pública.
