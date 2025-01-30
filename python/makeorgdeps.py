@@ -60,9 +60,9 @@ def process_line(line, matchers):
 
 
 org_matchers = (
-    Matcher("^\s*#\s", always_none),
-    Matcher("(?i)^\s*#[+]SETUPFILE:\s+(\S+)\s*$", first_group),
-    Matcher("(?i)^\s*#[+]INCLUDE:\s+\"([^\":]+)", first_group)
+    Matcher(r"^\s*#\s", always_none),
+    Matcher(r"(?i)^\s*#[+]SETUPFILE:\s+(\S+)\s*$", first_group),
+    Matcher(r"(?i)^\s*#[+]INCLUDE:\s+\"([^\":]+)", first_group)
 )
 
 
