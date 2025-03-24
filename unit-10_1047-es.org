@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "castellano" -*-
+# -*- ispell-dictionary: "spanish" -*-
 
 #+SETUPFILE: ./course-es.org
 
@@ -127,7 +127,7 @@ renta.
 ** Eficiencia económica (I)
 
 #+ATTR_LATEX: :scale 0.3
-#+MATS: figcol tweet.png 0.55
+#+MATS: figcol file:tweet.png 0.55
 
 La ineficiencia se traduce en que los contribuyentes modifican su
 comportamiento con el objetivo de reducir los impuestos que tienen que

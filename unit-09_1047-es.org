@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "castellano" -*-
+# -*- ispell-dictionary: "spanish" -*-
 
 #+SETUPFILE: ./course-es.org
 
@@ -349,7 +349,7 @@ forma que:
 
 ** Ejemplo 1
 
-#+MATS: figcol fig-09_1047-unimodal-1-*.pdf 0.5
+#+MATS: figcol file:fig-09_1047-unimodal-1-*.pdf 0.5
 
 - Representación gráfica de las preferencias del ejemplo 1.
 
@@ -358,7 +358,7 @@ forma que:
 
 ** Ejemplo 2
 
-#+MATS: figcol fig-09_1047-unimodal-2-*.pdf 0.5
+#+MATS: figcol file:fig-09_1047-unimodal-2-*.pdf 0.5
 
 - Se incumple la segunda condición de las preferencias unimodales.
 
@@ -405,7 +405,7 @@ poco probable:
 - Si las preferencias son unimodales, sólo necesitamos conocer los
   valores preferidos por cada votante.
 
-#+MATS: fig fig-09_1047-median-1-*.pdf
+#+MATS: fig file:fig-09_1047-median-1-*.pdf
 
 
 ** El votante mediano
@@ -424,7 +424,7 @@ poco probable:
   sólo recibe dos votos (A y B) mientras que la opción que prefiere el
   votante mediano recibe 3 votos (C, D y E).
 
-  #+MATS: fig fig-09_1047-median-2-*.pdf
+  #+MATS: fig file:fig-09_1047-median-2-*.pdf
 
 
 

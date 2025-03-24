@@ -167,5 +167,7 @@ available to use with Org"
   (kill-buffer))
 
 (defun tangle-to (dir)
-  (cd (expand-file-name dir))
-  (org-babel-tangle))
+  (let ((path (file-name-as-directory dir)))
+    (mapcar (lambda (file)
+              (rename-file file (expand-file-name path) t))
+            (org-babel-tangle))))

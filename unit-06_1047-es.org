@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "castellano" -*-
+# -*- ispell-dictionary: "spanish" -*-
 
 #+SETUPFILE: ./course-es.org
 
@@ -74,7 +74,7 @@ Sólo se producen dos bienes privados:
 
 ** Preferencias
 
-#+MATS: figcol fig-06_1047-01-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-01-*.pdf 0.45
 
 - Las preferencias de los consumidores son regulares.
 
@@ -96,7 +96,7 @@ Sólo se producen dos bienes privados:
 
 ** Elección óptima
 
-#+MATS: figcol fig-06_1047-02-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-02-*.pdf 0.45
 
 El consumidor $i$ ajusta su consumo hasta que el precio de mercado
 coincide con su valoración de un buñuelo adicional:
@@ -109,7 +109,7 @@ coincide con su valoración de un buñuelo adicional:
 
 ** Demanda individual
 
-#+MATS: figcol fig-06_1047-03-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-03-*.pdf 0.45
 
 - En todos los puntos de la curva de demanda: $P_B = \RMS_i$.
 
@@ -119,7 +119,7 @@ coincide con su valoración de un buñuelo adicional:
 
 ** Demanda de mercado
 
-#+MATS: figcol fig-06_1047-04-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-04-*.pdf 0.45
 
 - La curva de *demanda de mercado* de un bien privado es la suma
   horizontal de las curvas de demanda individuales.
@@ -159,7 +159,7 @@ eficiencia en la producción:
 
 ** Oferta
 
-#+MATS: figcol fig-06_1047-05-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-05-*.pdf 0.45
 
 - Oferta de $B$: $P_B = \CM_B$
 
@@ -170,7 +170,7 @@ eficiencia en la producción:
 
 ** Equilibrio de mercado
 
-#+MATS: figcol fig-06_1047-06-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-06-*.pdf 0.45
 
 La igualdad de la demanda y la oferta de mercado implica el
 cumplimiento de las condiciones de eficiencia:
@@ -207,7 +207,7 @@ públicos.
 
 ** Preferencias
 
-#+MATS: figcol fig-06_1047-11-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-11-*.pdf 0.45
 
 - Las preferencias de los consumidores son regulares.
 
@@ -217,7 +217,7 @@ públicos.
 
 ** Curva de demanda individual del bien público
 
-#+MATS: figcol fig-06_1047-13-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-13-*.pdf 0.45
 
 La curva de demanda individual refleja la disposición a pagar del
 consumidor $i$ por un minuto adicional de /mascletà/.
@@ -225,7 +225,7 @@ consumidor $i$ por un minuto adicional de /mascletà/.
 
 ** Curva de demanda colectiva
 
-#+MATS: figcol fig-06_1047-14-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-14-*.pdf 0.45
 
 - La *curva de demanda colectiva* muestra la disposición a pagar por
   parte de toda la sociedad por un minuto adicional de /mascletà/.
@@ -236,7 +236,7 @@ consumidor $i$ por un minuto adicional de /mascletà/.
 
 ** Curva de oferta del bien público
 
-#+MATS: figcol fig-06_1047-15-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-15-*.pdf 0.45
 
 - Coincide con el coste marginal de producir el bien público.
 
@@ -245,7 +245,7 @@ consumidor $i$ por un minuto adicional de /mascletà/.
 
 ** Eficiencia (I)
 
-#+MATS: figcol fig-06_1047-16-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-16-*.pdf 0.45
 
 - $M^*$ es la cantidad socialmente óptima de /mascletades/.
 
@@ -260,7 +260,7 @@ consumidor $i$ por un minuto adicional de /mascletà/.
 
 ** Eficiencia (y II)
 
-#+MATS: figcol fig-06_1047-16-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-16-*.pdf 0.45
 
 La condición de eficiencia con bienes públicos no es un equilibrio
 de mercado ni hay fuerzas que lleven a la economía a esta situación.
@@ -282,7 +282,7 @@ de mercado ni hay fuerzas que lleven a la economía a esta situación.
 
 ** Provisión gratuita
 
-#+MATS: figcol fig-06_1047-20-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-20-*.pdf 0.45
 
 La *provisión gratuita* de un bien con coste marginal positivo no es
 eficiente: *consumo excesivo*.
@@ -290,7 +290,7 @@ eficiente: *consumo excesivo*.
 
 ** Costes de transacción
 
-#+MATS: figcol fig-06_1047-21-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-21-*.pdf 0.45
 
 Si se evitan *costes de transacción*, las ganancias de bienestar
 pueden compensar las ineficiencias.
@@ -331,7 +331,7 @@ Razones para justificar la producción pública:
 
 ** El monopolio natural
 
-#+MATS: figcol fig-06_1047-30-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-30-*.pdf 0.45
 
 *Monopolio natural*: costes decrecientes en el rango relevante de
 producción.
@@ -339,7 +339,7 @@ producción.
 
 ** Fijación de precios monopolista
 
-#+MATS: figcol fig-06_1047-31-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-31-*.pdf 0.45
 
 El monopolista puede obtener beneficios, limitando la producción
 para soportar precios por encima del coste marginal.
@@ -347,7 +347,7 @@ para soportar precios por encima del coste marginal.
 
 ** Competencia latente
 
-#+MATS: figcol fig-06_1047-32-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-32-*.pdf 0.45
 
 - El monopolista podría fijar un precio cercano al coste unitario si
   es fácil que entren competidores en el mercado.
@@ -357,7 +357,7 @@ para soportar precios por encima del coste marginal.
 
 ** Producción eficiente
 
-#+MATS: figcol fig-06_1047-33-*.pdf 0.45
+#+MATS: figcol file:fig-06_1047-33-*.pdf 0.45
 
 Si el precio coincide con el coste marginal, el monopolio incurre en
 pérdidas.

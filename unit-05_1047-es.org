@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "castellano" -*-
+# -*- ispell-dictionary: "spanish" -*-
 
 #+SETUPFILE: ./course-es.org
 
@@ -61,7 +61,7 @@ La redistribución puede suponer pérdidas de eficiencia:
 
 ** La frontera de posibilidades de utilidad
 
-#+MATS: figcol fig-05_1047-01-*.pdf 0.55
+#+MATS: figcol file:fig-05_1047-01-*.pdf 0.55
 
 - La frontera de posibilidades de utilidad muestra la máxima utilidad
   que obtiene una persona dada la utilidad de la otra persona.
@@ -91,21 +91,21 @@ La redistribución puede suponer pérdidas de eficiencia:
 
 ** Utilitarismo
 
-#+MATS: figcol fig-05_1047-02-*.pdf 0.55
+#+MATS: figcol file:fig-05_1047-02-*.pdf 0.55
 
 - *Utilitarismo*: $W = U_A + U_B$.
 
 
 ** Igualitarismo
 
-#+MATS: figcol fig-05_1047-05-*.pdf 0.55
+#+MATS: figcol file:fig-05_1047-05-*.pdf 0.55
 
 - *Igualitarismo* (Rawls): $W = \min\{U_A, U_B\}$.
 
 
 ** La elección social (I)
 
-#+MATS: figcol fig-05_1047-06-*.pdf 0.55
+#+MATS: figcol file:fig-05_1047-06-*.pdf 0.55
 
 - Cada función de bienestar social determina una elección óptima
   diferente.

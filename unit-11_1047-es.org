@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "castellano" -*-
+# -*- ispell-dictionary: "spanish" -*-
 
 #+SETUPFILE: ./course-es.org
 
@@ -50,7 +50,7 @@ que tienen que pagar:
 
 ** Impuesto sobre las ventas de un bien
 
-#+MATS: figcol fig-11_1047-01-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-01-*.pdf 0.47
 
 - Un producto se vende en un mercado competitivo.
 
@@ -62,7 +62,7 @@ que tienen que pagar:
 
 ** Equilibrio de mercado
 
-#+MATS: figcol fig-11_1047-02-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-02-*.pdf 0.47
 
 - El precio que pagan los compradores aumenta de $P_0$ a $P_1$.
 
@@ -72,7 +72,7 @@ que tienen que pagar:
 
 ** Impuesto a los compradores
 
-#+MATS: figcol fig-11_1047-03-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-03-*.pdf 0.47
 
 - Se obtendría el mismo resultado si fueran los compradores los que
   tuvieran que pagar el impuesto.
@@ -85,15 +85,15 @@ que tienen que pagar:
 El equilibrio no depende de quién pague el impuesto.
 
 #+MATS: col 0.5
-#+MATS: fig fig-11_1047-02-*.pdf
+#+MATS: fig file:fig-11_1047-02-*.pdf
 
 #+MATS: col 0.5
-#+MATS: fig fig-11_1047-04-*.pdf
+#+MATS: fig file:fig-11_1047-04-*.pdf
 
 
 ** Incidencia legal e incidencia económica
 
-#+MATS: figcol fig-11_1047-05-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-05-*.pdf 0.47
 
 - El impuesto actúa como una cuña que impide que se igualen $P^c$, el
   precio total pagado por los compradores, y $P^v$, el ingreso por
@@ -105,7 +105,7 @@ El equilibrio no depende de quién pague el impuesto.
 
 ** Incidencia en mercados competitivos
 
-#+MATS: figcol fig-11_1047-06-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-06-*.pdf 0.47
 
 - La incidencia depende de la forma de las curvas de demanda y de
   oferta.
@@ -171,7 +171,7 @@ Después de un impuesto específico de $t$ por unidad:
 
 ** Impuestos /ad valorem/
 
-#+MATS: figcol fig-11_1047-07-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-07-*.pdf 0.47
 
 - Se introduce un impuesto que es una fracción $\tau$ del precio del bien.
 
@@ -183,7 +183,7 @@ Después de un impuesto específico de $t$ por unidad:
 
 ** Equilibrio
 
-#+MATS: figcol fig-11_1047-08-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-08-*.pdf 0.47
 
 - El precio que pagan los compradores se eleva desde $P_0$ hasta $P_1$.
 
@@ -197,15 +197,15 @@ Después de un impuesto específico de $t$ por unidad:
 a uno específico que produzca la misma variación del precio.
 
 #+MATS: col 0.5
-#+MATS: fig fig-11_1047-08-*.pdf
+#+MATS: fig file:fig-11_1047-08-*.pdf
 
 #+MATS: col 0.5
-#+MATS: fig fig-11_1047-09-*.pdf
+#+MATS: fig file:fig-11_1047-09-*.pdf
 
 
 ** Subvenciones
 
-#+MATS: figcol fig-11_1047-10-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-10-*.pdf 0.47
 
 - La incidencia de las subvenciones puede analizarse de forma similar
   a la de los impuestos.
@@ -218,7 +218,7 @@ a uno específico que produzca la misma variación del precio.
 
 ** Equilibrio
 
-#+MATS: figcol fig-11_1047-11-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-11-*.pdf 0.47
 
 - El precio que cobran los vendedores aumenta de $P_0$ a $P_1$.
 
@@ -227,7 +227,7 @@ a uno específico que produzca la misma variación del precio.
 
 ** Incidencia
 
-#+MATS: figcol fig-11_1047-12-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-12-*.pdf 0.47
 
 - En general, los vendedores capturan parte de la subvención.
 
@@ -260,7 +260,7 @@ a uno específico que produzca la misma variación del precio.
 
 ** Monopolio
 
-#+MATS: figcol fig-11_1047-13-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-13-*.pdf 0.47
 
 - El monopolista selecciona la cantidad que iguala el ingreso marginal
   con el coste marginal.
@@ -270,7 +270,7 @@ a uno específico que produzca la misma variación del precio.
 
 ** Impuesto específico
 
-#+MATS: figcol fig-11_1047-14-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-14-*.pdf 0.47
 
 - Un impuesto específico de $t$ euros por unidad disminuye la
   producción del monopolio y eleva el precio.
@@ -306,7 +306,7 @@ a uno específico que produzca la misma variación del precio.
 
 ** Impuesto /ad valorem/
 
-#+MATS: figcol fig-11_1047-15-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-15-*.pdf 0.47
 
 - Con un impuesto /ad valorem/ de $P \tau$ euros por unidad, la
   demanda relevante para el monopolista es $D_{\tau}$.
@@ -316,7 +316,7 @@ a uno específico que produzca la misma variación del precio.
 
 ** Impuesto específico
 
-#+MATS: figcol fig-11_1047-16-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-16-*.pdf 0.47
 
 - Después de introducir un impuesto específico de $t$ euros por
   unidad, la demanda relevante para el monopolista es $D_t$.
@@ -331,10 +331,10 @@ mayor recaudación que un impuesto específico que provoque la misma
 elevación del precio.
 
 #+MATS: col 0.5
-#+MATS: fig fig-11_1047-15f-*.pdf
+#+MATS: fig file:fig-11_1047-15f-*.pdf
 
 #+MATS: col 0.5
-#+MATS: fig fig-11_1047-16f-*.pdf
+#+MATS: fig file:fig-11_1047-16f-*.pdf
 
 
 ** Incidencia en oligopolios

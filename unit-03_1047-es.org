@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "castellano" -*-
+# -*- ispell-dictionary: "spanish" -*-
 
 #+SETUPFILE: ./course-es.org
 
@@ -81,7 +81,7 @@ Funciones de utilidad:
 
 ** La caja de Edgeworth (I)
 
-#+MATS: figcol fig-03_1047-01-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-01-*.pdf 0.55
 
 - Las esquinas $O_A$ y $O_B$ son los orígenes de coordenadas de cada
   uno de los consumidores.
@@ -93,7 +93,7 @@ Funciones de utilidad:
 
 ** La caja de Edgeworth (y II)
 
-#+MATS: figcol fig-03_1047-02-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-02-*.pdf 0.55
 
 - $Q$: dotaciones iniciales.
 
@@ -123,7 +123,7 @@ Funciones de utilidad:
 
 ** Curvas de indiferencia (I)
 
-#+MATS: figcol fig-03_1047-03-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-03-*.pdf 0.55
 
 - Curvas de indiferencia del consumidor $A$.
 
@@ -133,7 +133,7 @@ Funciones de utilidad:
 
 ** Curvas de indiferencia (y II)
 
-#+MATS: figcol fig-03_1047-04-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-04-*.pdf 0.55
 
 - Curvas de indiferencia del consumidor $B$.
 
@@ -143,7 +143,7 @@ Funciones de utilidad:
 
 ** Intercambio (I)
 
-#+MATS: figcol fig-03_1047-05-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-05-*.pdf 0.55
 
 - En $Q$: $\RMS_A(Q) > \RMS_B(Q)$.
 
@@ -152,7 +152,7 @@ Funciones de utilidad:
 
 ** Intercambio (II)
 
-#+MATS: figcol fig-03_1047-06-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-06-*.pdf 0.55
 
 Al pasar de $Q$ a $R$:
 
@@ -163,7 +163,7 @@ Al pasar de $Q$ a $R$:
 
 ** Intercambio (y III)
 
-#+MATS: figcol fig-03_1047-07-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-07-*.pdf 0.55
 
 - En $S$: $\RMS_A(S) = \RMS_B(S)$
 
@@ -183,7 +183,7 @@ de los bienes sea la misma para todos los consumidores:
 
 ** La curva de contrato (I)
 
-#+MATS: figcol fig-03_1047-08-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-08-*.pdf 0.55
 
 La *curva de contrato* es el conjunto de todas las asignaciones
 eficientes.
@@ -191,7 +191,7 @@ eficientes.
 
 ** La curva de contrato (y II)
 
-#+MATS: figcol fig-03_1047-09-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-09-*.pdf 0.55
 
 El intercambio libre permite alcanzar una asignación eficiente
 partiendo de una asignación ineficiente.
@@ -199,7 +199,7 @@ partiendo de una asignación ineficiente.
 
 ** La frontera de posibilidades de utilidad (I)
 
-#+MATS: figcol fig-03_1047-09b-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-09b-*.pdf 0.55
 
 Utilidades de los consumidores en cada una de las asignaciones
 eficientes:
@@ -213,7 +213,7 @@ eficientes:
 
 ** La frontera de posibilidades de utilidad (II)
 
-#+MATS: figcol fig-03_1047-10-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-10-*.pdf 0.55
 
 La *frontera de posibilidades de utilidad* representa los niveles de
 utilidad que obtienen los consumidores en las asignaciones
@@ -222,7 +222,7 @@ eficientes.
 
 ** La frontera de posibilidades de utilidad (III)
 
-#+MATS: figcol fig-03_1047-09-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-09-*.pdf 0.55
 
 - $Q$ es una asignación ineficiente.
 
@@ -231,7 +231,7 @@ eficientes.
 
 ** La frontera de posibilidades de utilidad (y IV)
 
-#+MATS: figcol fig-03_1047-10b-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-10b-*.pdf 0.55
 
 - $Q$ se corresponde a una asignación ineficiente.
 
@@ -312,7 +312,7 @@ Funciones de producción de cada empresa:
 
 ** La asignación de los factores
 
-#+MATS: figcol fig-03_1047-22-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-22-*.pdf 0.55
 
 En otra caja de Edgeworth representamos todas las posibles
 asignaciones de factores:
@@ -326,7 +326,7 @@ asignaciones de factores:
 
 ** Isocuantas (I)
 
-#+MATS: figcol fig-03_1047-23-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-23-*.pdf 0.55
 
 - Isocuantas de la función de producción de $X$.
 
@@ -336,7 +336,7 @@ asignaciones de factores:
 
 ** Isocuantas (y II)
 
-#+MATS: figcol fig-03_1047-24-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-24-*.pdf 0.55
 
 - Isocuantas de la función de producción de $Y$.
 
@@ -346,7 +346,7 @@ asignaciones de factores:
 
 ** Eficiencia en la producción (I)
 
-#+MATS: figcol fig-03_1047-25-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-25-*.pdf 0.55
 
 - En $M$: $\RMST_X < \RMST_Y$.
 
@@ -367,7 +367,7 @@ asignaciones de factores:
 
 ** La curva de contrato
 
-#+MATS: figcol fig-03_1047-28-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-28-*.pdf 0.55
 
 En la curva de contrato todas las asignaciones son eficientes:
 $\RMST_X = \RMST_Y$
@@ -375,7 +375,7 @@ $\RMST_X = \RMST_Y$
 
 ** Mejoras de Pareto
 
-#+MATS: figcol fig-03_1047-29-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-29-*.pdf 0.55
 
 Es posible encontrar mejoras de Pareto desde cualquier asignación
 ineficiente.
@@ -383,7 +383,7 @@ ineficiente.
 
 ** La frontera de posibilidades de producción (I)
 
-#+MATS: figcol fig-03_1047-29b-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-29b-*.pdf 0.55
 
 Producción de cada bien en las asignaciones eficientes:
 #+begin_export latex
@@ -397,7 +397,7 @@ Producción de cada bien en las asignaciones eficientes:
 
 ** La frontera de posibilidades de producción (II)
 
-#+MATS: figcol fig-03_1047-30-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-30-*.pdf 0.55
 
 La *frontera de posibilidades de producción* representa la máxima
 producción que puede obtenerse de un bien dada la producción del
@@ -406,14 +406,14 @@ otro bien.
 
 ** La frontera de posibilidades de producción (III)
 
-#+MATS: figcol fig-03_1047-29-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-29-*.pdf 0.55
 
 $M$ no es una asignación eficiente.
 
 
 ** La frontera de posibilidades de producción (y IV)
 
-#+MATS: figcol fig-03_1047-30b-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-30b-*.pdf 0.55
 
 Las combinaciones de producción asociadas a asignaciones
 ineficientes se encuentran debajo de la FPP.
@@ -424,7 +424,7 @@ ineficientes se encuentran debajo de la FPP.
 
 ** La relación marginal de transformación (I)
 
-#+MATS: figcol fig-03_1047-31-*.pdf 0.55
+#+MATS: figcol file:fig-03_1047-31-*.pdf 0.55
 
 La pendiente de la FPP, en valor absoluto, es la *relación marginal
 de transformación*, $\RMT$.
