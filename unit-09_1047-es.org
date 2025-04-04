@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "spanish" -*-
+# -*- ispell-local-dictionary: "spanish" -*-
 
 #+SETUPFILE: ./course-es.org
 
@@ -140,8 +140,6 @@ Con un sistema impositivo proporcional o progresivo:
 - Se usan muchos sistemas de votación: mayoría simple, mayoría
   cualificada, unanimidad, pluralidad, etc.
 
-- De todos los sistemas, el más utilizado es mayoría simple.
-
 
 ** Regla de la mayoría
 
@@ -278,7 +276,7 @@ comportamientos estratégicos:
 
 ** Alternativas a la regla de la mayoría
 
-- Cuando hay más de tres opciones, existen situaciones en las que no
+- Cuando hay más de dos opciones, existen situaciones en las que no
   se alcanza un equilibrio con la regla de la mayoría.
 
 - En esos casos hay incentivos a la manipulación de los resultados.
