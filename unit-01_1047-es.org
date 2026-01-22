@@ -1,46 +1,49 @@
-# -*- ispell-dictionary: "spanish" -*-
-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: {{{unit01}}}
 
 #+MATS: bib
 #+begin_bibbox
-- *Stiglitz y Rosengard*: /La economía del sector público/. Capítulo 1.
+- *Stiglitz y Rosengard*: /La economía del sector público/. Capítulos 1 y 2.
+
+- *Albi et al*: /Economía Pública I/, Capítulo 2.
 #+end_bibbox
 
+* ¿Qué es el sector público?
 
-* El papel económico del Estado
+
+** Entidades públicas
+
+¿Qué distingue las entidades públicas de las entidades privadas?
+
+- Los responsables de las entidades públicas son cargos electos o
+  nombrados por otros cargos electos.
+
+- El Estado y las entidades que lo forman actúan de acuerdo al
+  *principio de autoridad*.
 
 
 ** Las economías mixtas
 
-- En una *economía mixta* el Estado influye e interviene en la economía:
+En una *economía mixta* el Estado influye e interviene en la economía:
 
-  + *Producción* y *provisión* de bienes y servicios.
+- *Producción* y *provisión* de bienes y servicios.
 
-  + *Regulación*.
+- *Regulación*.
 
-  + *Impuestos* y *subsidios*.
+- *Impuestos* y *subsidios*.
 
-  + *Transferencias*.
+- *Transferencias*.
 
 
 ** Perspectiva histórica
 
-- Diversos puntos de vista a lo largo de la historia. Por ejemplo:
+Diversos puntos de vista a lo largo de la historia. Por ejemplo:
 
-  + Adam Smith: /laissez faire/.
+- Adam Smith: /laissez faire/.
 
-  + John Maynard Keynes: papel activo en la estabilización de la
-    economía, solución de fallos de mercado y distribución de la renta.
-
-
-** COMMENT Consenso actual
-
-- *Fallos del Estado*.
-
-- *Desregulación* y *privatización*.
+- John Maynard Keynes: papel activo en la estabilización de la
+  economía, solución de fallos de mercado y distribución de la renta.
 
 
 * El análisis económico del sector público
@@ -65,21 +68,170 @@
 
 - ¿Consiguen esas medidas los objetivos que perseguían? ¿Hay alternativas mejores?
 
-- ¿Cómo afecta el proceso político a las decisiones sobre qué
-  actividades se llevan a cabo y cuáles no?
+- ¿Cómo afecta el proceso político a las decisiones públicas?
 
 
 ** Modelos económicos
 
-- Análisis *positivo*: ¿cómo funciona la economía?.
+- Análisis *positivo*: ¿cómo funciona la economía?
 
-- Análisis *normativo*: ¿cómo debería funcionar la economía?.
+- Análisis *normativo*: ¿cómo debería funcionar la economía?
 
 
-** Los tres brazos de Musgrave
+** Indicadores del sector público
 
-- *Estabilización*.
+- El análisis de la actividad del sector público requiere el uso de
+  indicadores:
 
-- *Asignación*.
+  + Gasto público.
 
-- *Distribución*.
+  + Ingresos públicos.
+
+  + Déficit público.
+
+  + Deuda pública.
+
+- Para facilitar comparaciones entre países se usan los criterios del
+  Sistema Europeo de Cuentas 2010 (SEC 2010).
+
+
+** Gasto público
+
+- El indicador más común es el cociente de los gastos no financieros
+  con respecto al PIB.
+
+- El gasto público incluye transferencias, las cuales no forman parte
+  al PIB.
+
+- También se presenta desagregado por funciones o por niveles de gobierno.
+
+
+** Ingresos públicos
+
+- Frecuentemente se usa el cociente de los ingresos no financieros con
+  respecto del PIB.
+
+- También es muy común la *presión fiscal*: cociente de impuestos y
+  cotizaciones sociales con respecto al PIB.
+
+- La presión fiscal se presenta a veces desagregada por los diferentes
+  tipos de impuestos.
+
+
+** Déficit público
+
+- *Capacidad o necesidad de financiación (saldo fiscal)*: diferencia
+  entre ingresos y gastos no financieros.
+
+- *Saldo primario*: se calcula como diferencia de ingresos y gastos,
+  pero excluyendo los pagos de los intereses de la deuda pública.
+
+
+** Deuda pública
+
+- *Deuda pública (bruta)*: valor de los pasivos financieros que
+  mantienen las Administraciones Públicas en un momento dado.
+
+- Es el resultado de los déficits acumulados en el pasado.
+
+
+* Actividades del sector público
+
+
+** Actividades del sector público
+
+- Producción de bienes y servicios.
+
+- Influencia sobre la producción privada.
+
+- Compra de bienes y servicios.
+
+- Redistribución de la renta.
+
+
+** Producción pública
+
+- La frontera entre producción pública y privada cambia con el tiempo:
+  oleadas de *privatizaciones* o *nacionalizaciones*.
+
+- Es difícil establecer el carácter público o privado de algunas
+  empresas.
+
+
+** Influencia sobre la producción privada
+
+- Subvenciones e impuestos.
+
+- Crédito oficial.
+
+- Regulación.
+
+
+** Compra de bienes y servicios
+
+Compras de bienes y servicios que se utilizan como consumos
+intermedios en la producción pública o se ponen a disposición del
+público para consumo final.
+
+
+** Redistribución de la renta
+
+- Impuestos.
+
+- Programas de seguridad social: pensiones, prestaciones por
+  desempleo, invalidez u otras causas.
+
+- Programas de asistencia social.
+
+
+* Organización del sector público en España
+
+
+** El sector público en España
+
+- Administraciones Públicas.
+
+- Sector Público Empresarial.
+
+
+** Administraciones Públicas
+
+Entidades que no realizan actividades de mercado o empresariales:
+
+- Producción no destinada a la venta.
+
+- Redistribución.
+
+
+** Niveles de las Administraciones Públicas
+
+- Administración Central:
+
+  + Estado.
+
+  + Organismos de la Administración Central.
+
+- Administración Regional.
+
+- Administración Local.
+
+- Fondos de la Seguridad Social.
+
+
+** Sector Público Empresarial
+
+- Las entidades del Sector Público Empresarial se financian
+  (parcialmente) con sus ventas y son controladas por las
+  Administraciones Públicas.
+
+- Comprende:
+
+  + Sociedades no financieras.
+
+  + Instituciones financieras públicas.
+
+
+
+# Local Variables:
+# ispell-dictionary: "spanish"
+# End:

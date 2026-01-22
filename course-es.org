@@ -11,7 +11,7 @@
 
 ## Títulos de los temas
 ## ================================================================================
-#+MACRO: unit01 El sector público en una economía mixta
+#+MACRO: unit01 El papel económico del sector público
 #+MACRO: unit02 Delimitación del sector público
 #+MACRO: unit03 Eficiencia
 #+MACRO: unit04 Fallos de mercado
@@ -24,4 +24,4 @@
 #+MACRO: unit11 La incidencia de los impuestos
 #+MACRO: unit12 Los impuestos y la eficiencia económica
 #+MACRO: unit13 Seguridad Social
-#+MACRO: unit13 Sanidad
+#+MACRO: unit14 Sanidad

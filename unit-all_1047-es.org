@@ -15,12 +15,8 @@
 
 ** {{{unit01}}}
 
-#+include: "unit-01_1047-es.org" :lines "6-"
+#+include: "unit-01_1047-es.org" :lines "5-"
 
-
-** {{{unit02}}}
-
-#+include: "unit-02_1047-es.org" :lines "6-"
 
 
 * Economía del bienestar
