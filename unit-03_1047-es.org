@@ -1,5 +1,3 @@
-# -*- ispell-dictionary: "spanish" -*-
-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: {{{unit03}}}
@@ -633,6 +631,7 @@ Aunque la economía sea eficiente dos razones para intervenir:
 + Los individuos pueden actuar en contra de sus propios intereses:
   *paternalismo* y *bienes preferentes*.
 
+
 ** El papel del Estado
 
 - La existencia de fallos de mercado es una razón para la intervención
@@ -646,3 +645,8 @@ Aunque la economía sea eficiente dos razones para intervenir:
 - Los fallos de mercado pueden utilizarse para justificar programas
   cuyos resultados tienen poco que ver con los pretendidos objetivos
   de los mismos.
+
+
+# Local Variables:
+# ispell-dictionary: "spanish"
+# End:
