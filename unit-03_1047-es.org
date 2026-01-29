@@ -42,9 +42,9 @@ El principio de Pareto es individualista en dos sentidos:
 
 - Cada consumidor posee una *dotación inicial* de los bienes:
 
-  + Consumidor $A$: $(\Xbar_A, \Ybar_A)$.
-
-  + Consumidor $B$: $(\Xbar_B, \Ybar_B)$.
+  #+attr_latex: :center nil
+  | Consumidor $A$: | $(\Xbar_A, \Ybar_A)$. |
+  | Consumidor $B$: | $(\Xbar_B, \Ybar_B)$.|
 
 
 ** Intercambio puro
@@ -59,8 +59,8 @@ El principio de Pareto es individualista en dos sentidos:
 - Se consumen todas las unidades de $X$ y de $Y$:
   #+begin_export latex
   \begin{gather*}
-    \Xbar = \Xbar_{A} + \Xbar_{B} = X_A + X_B \\
-    \Ybar = \Ybar_{A} + \Ybar_{B} = Y_A + Y_B
+    \Xbar = \Xbar_{A} + \Xbar_{B} = X_A + X_B, \\
+    \Ybar = \Ybar_{A} + \Ybar_{B} = Y_A + Y_B.
   \end{gather*}
   #+end_export
 
@@ -84,10 +84,11 @@ El principio de Pareto es individualista en dos sentidos:
 
 - $Q$: dotaciones iniciales.
 
-- Cada punto dentro de la caja representa una posible asignación de los dos bienes entre los dos consumidores:
+- Cada punto dentro de la caja representa una posible asignación de
+  los dos bienes entre los dos consumidores:
   #+begin_export latex
   \begin{gather*}
-    \Xbar = X_{A} + X_{B} \\
+    \Xbar = X_{A} + X_{B},. \\
     \Ybar = Y_{A} + Y_{B}
   \end{gather*}
   #+end_export
@@ -96,9 +97,10 @@ El principio de Pareto es individualista en dos sentidos:
 ** Funciones de utilidad
 
 Funciones de utilidad:
-#+attr_latex: :center t
-| Consumidor $A$: | $U_A = U_A(X_A, Y_A)$ |
-| Consumidor $B$: | $U_B = U_B(X_B, Y_B)$ |
+
+#+attr_latex: :center nil
+| Consumidor $A$: | $U_A = U_A(X_A, Y_A)$. |
+| Consumidor $B$: | $U_B = U_B(X_B, Y_B)$. |
 
 
 ** Relación marginal de sustitución
@@ -234,26 +236,23 @@ eficientes.
 
 ** Intercambio y producción
 
-Ampliamos el modelo para incluir la producción.
+Ampliamos el modelo para incluir la producción:
 
+- Dos consumidores $A$ y $B$, que consumen los bienes $X$ e $Y$.
 
-** Consumidores
+- Dos empresas, una de las cuales produce el bien $X$ y la otra el
+  bien $Y$.
 
-- Dos consumidores: $A$ y $B$.
-
-- Dos bienes de consumo: $X$ e $Y$.
-
-
-** Producción
-
-- Dos empresas.
-
-- Cada empresa produce un único bien de consumo.
+- Dos factores de producción: $K$ y $L$.
 
 
 ** Factores de producción
 
-- Dos factores de producción: $L$ y $K$.
+- Cada empresa dispone de una dotación de factores:
+
+  #+attr_latex: :center nil
+  | Empresa $X$: | $(\Lbar_X, \Kbar_X)$. |
+  | Empresa $Y$: | $(\Lbar_Y, \Kbar_Y)$. |
 
 - La cantidad total de cada uno de los factores es fija:
   #+begin_export latex
@@ -263,14 +262,24 @@ Ampliamos el modelo para incluir la producción.
   \end{gather*}
   #+end_export
 
+- Las empresas pueden intercambiar libremente factores de
+  producción. En la asignación final:
+  #+begin_export latex
+  \begin{gather*}
+    \Kbar = K_{X} + K_{Y} \\
+    \Lbar = L_{X} + L_{Y}
+  \end{gather*}
+  #+end_export
+
 
 ** Tecnología
 
-Funciones de producción de cada empresa:
+La tecnología de las empresas se representa con las funciones de
+producción:
 #+begin_export latex
 \begin{gather*}
-  X = F_{X}(L_{X}, K_{X}) \\
-  Y = F_{Y}(L_{Y}, K_{Y})
+  X = F_{X}(L_{X}, K_{X}), \\
+  Y = F_{Y}(L_{Y}, K_{Y}).
 \end{gather*}
 #+end_export
 
@@ -285,52 +294,40 @@ Funciones de producción de cada empresa:
 - Se puede calcular como el cociente entre productos marginales:
   #+begin_export latex
   \[
-    \RMST_j = \frac{\PMgL_j}{\PMgK_j} \quad (j = X, Y)
+    \RMST_j = \frac{\PMgL_j}{\PMgK_j}, \quad (j = X, Y).
   \]
   #+end_export
 
-
-
-** Intercambio
-
-- Podemos seguir analizando el intercambio (casi) igual que antes.
-
-- Las dimensiones de la caja de Edgeworth, $\Xbar$ e $\Ybar$, se
-  corresponden ahora con las producciones de los bienes $X$ e $Y$.
 
 
 ** La asignación de los factores
 
 #+MATS: figcol file:fig-03_1047-22-*.pdf 0.55
 
-En otra caja de Edgeworth representamos todas las posibles
-asignaciones de factores:
+Representamos todas las posibles asignaciones de factores en otra caja
+de Edgeworth:
 #+begin_export latex
 \begin{gather*}
-  \Kbar = K_{X} + K_{Y} \\
-  \Lbar = L_{X} + L_{Y}
+  \Kbar = K_{X} + K_{Y}, \\
+  \Lbar = L_{X} + L_{Y}.
 \end{gather*}
 #+end_export
+$M$ es la dotación inicial de las empresas.
 
+** Isocuantas
 
-** Isocuantas (I)
+#+MATS: col 0.5
+#+MATS: fig file:fig-03_1047-23-*.pdf
+#+begin_center
+Empresa $X$
+#+end_center
 
-#+MATS: figcol file:fig-03_1047-23-*.pdf 0.55
+#+MATS: col 0.5
+#+MATS: fig file:fig-03_1047-24-*.pdf
+#+begin_center
+Empresa $Y$
+#+end_center
 
-- Isocuantas de la función de producción de $X$.
-
-- La $\RMST_X$ es la pendiente, en valor absoluto, de las isocuantas
-  de $X$.
-
-
-** Isocuantas (y II)
-
-#+MATS: figcol file:fig-03_1047-24-*.pdf 0.55
-
-- Isocuantas de la función de producción de $Y$.
-
-- La $\RMST_Y$ es la pendiente, en valor absoluto, de las isocuantas
-  de $Y$.
 
 
 ** Eficiencia en la producción (I)
@@ -404,8 +401,17 @@ $M$ no es una asignación eficiente.
 
 #+MATS: figcol file:fig-03_1047-30b-*.pdf 0.55
 
-Las combinaciones de producción asociadas a asignaciones
-ineficientes se encuentran debajo de la FPP.
+Las combinaciones de producción asociadas a asignaciones ineficientes
+se encuentran debajo de la frontera de posibilidades de producción.
+
+
+** Intercambio
+
+- La asignación de los factores de producción determina la producción
+  de los bienes de consumo, $X$ e $Y$.
+
+- La asignación eficiente de los bienes de consumo se puede analizar
+  igual que antes.
 
 
 * Eficiencia en la combinación de productos
@@ -415,8 +421,8 @@ ineficientes se encuentran debajo de la FPP.
 
 #+MATS: figcol file:fig-03_1047-31-*.pdf 0.55
 
-La pendiente de la FPP, en valor absoluto, es la *relación marginal
-de transformación*, $\RMT$.
+La pendiente de la frontera de posibilidades de producción, en valor
+absoluto, es la *relación marginal de transformación*, $\RMT$.
 
 
 ** La relación marginal de transformación (y II)
