@@ -592,7 +592,7 @@ La *eficiencia en la combinación de productos* requiere que:
   redistribución inicial adecuada.
 
 
-* Fallos de mercado e intervención pública
+* COMMENT Fallos de mercado e intervención pública
 
 
 ** Razones para la intervención pública
