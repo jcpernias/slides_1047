@@ -13,14 +13,12 @@
 
 ** Eficiencia en el sentido de Pareto
 
-Una asignación es *eficiente en el sentido de Pareto* si no es posible
-mejorar el bienestar de ninguna persona sin que empeore el de otra.
+- Una asignación es *eficiente en el sentido de Pareto* si no es
+  posible mejorar el bienestar de ninguna persona sin que empeore el
+  de otra.
 
-
-** El principio de Pareto
-
-Una *mejora en el sentido de Pareto* es un cambio que mejora el
-bienestar de algunas personas sin empeorar el de ninguna otra.
+- Una *mejora en el sentido de Pareto* es un cambio que mejora el
+  bienestar de algunas personas sin empeorar el de ninguna otra.
 
 
 ** Individualismo
@@ -38,20 +36,15 @@ El principio de Pareto es individualista en dos sentidos:
 * Eficiencia en el intercambio
 
 
-** Consumidores
+** Consumidores y dotaciones iniciales
 
-- Dos consumidores: $A$ y $B$.
+- Economía con dos consumidores, $A$ y $B$, y dos bienes, $X$ e $Y$.
 
-- Dos bienes: $X$ e $Y$.
+- Cada consumidor posee una *dotación inicial* de los bienes:
 
+  + Consumidor $A$: $(\Xbar_A, \Ybar_A)$.
 
-** Dotaciones iniciales
-
-Cada consumidor posee una *dotación inicial* de los bienes:
-
-- Consumidor $A$: $(\Xbar_A, \Ybar_A)$.
-
-- Consumidor $B$: $(\Xbar_B, \Ybar_B)$.
+  + Consumidor $B$: $(\Xbar_B, \Ybar_B)$.
 
 
 ** Intercambio puro
