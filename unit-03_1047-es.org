@@ -52,7 +52,11 @@ El principio de Pareto es individualista en dos sentidos:
 - No hay producción: las cantidades totales de cada uno de los bienes,
   $\Xbar$ e $\Ybar$, son fijas.
 
-- Los consumidores pueden *intercambiar* unidades *libremente*.
+- Los consumidores pueden *intercambiar* unidades
+  *libremente*. Después del intercambio, $A$ consume la cesta $(X_A,
+  Y_A)$ y $B$ consume $(X_B, Y_B)$.
+
+- Se consumen todas las unidades de $X$ y de $Y$:
   #+begin_export latex
   \begin{gather*}
     \Xbar = \Xbar_{A} + \Xbar_{B} = X_A + X_B \\
@@ -60,14 +64,6 @@ El principio de Pareto es individualista en dos sentidos:
   \end{gather*}
   #+end_export
 
-
-** Preferencias
-
-Funciones de utilidad:
-
-+ Consumidor $A$: $U_A = U_A(X_A, Y_A)$.
-
-+ Consumidor $B$: $U_B = U_B(X_B, Y_B)$.
 
 
 ** La caja de Edgeworth (I)
@@ -97,6 +93,13 @@ Funciones de utilidad:
   #+end_export
 
 
+** Funciones de utilidad
+
+Funciones de utilidad:
+#+attr_latex: :center t
+| Consumidor $A$: | $U_A = U_A(X_A, Y_A)$ |
+| Consumidor $B$: | $U_B = U_B(X_B, Y_B)$ |
+
 
 ** Relación marginal de sustitución
 
@@ -104,32 +107,27 @@ Funciones de utilidad:
   de unidades del bien $Y$ que el consumidor $i$ estaría dispuesto
   intercambiar por una unidad adicional del bien $X$.
 
-- Se puede calcular como el cociente entre utilidades marginales:
+- Se puede expresar en función de \UMgX y \UMgY, las utilidades
+  marginales del bien $X$ y del bien $Y$, respectivamente:
   #+begin_export latex
   \[
-    \RMS_i = \frac{\UMgX_i}{\UMgY_i} \quad (i = A, B)
+    \RMS_i = \frac{\UMgX_i}{\UMgY_i}, \quad (i = A, B).
   \]
   #+end_export
 
+** Curvas de indiferencia
 
-** Curvas de indiferencia (I)
+#+MATS: col 0.5
+#+MATS: fig file:fig-03_1047-03-*.pdf
+#+begin_center
+Consumidor $A$
+#+end_center
 
-#+MATS: figcol file:fig-03_1047-03-*.pdf 0.55
-
-- Curvas de indiferencia del consumidor $A$.
-
-- La $\RMS_A$ es igual a la pendiente con el signo cambiado de las
-  curvas de indiferencia de $A$.
-
-
-** Curvas de indiferencia (y II)
-
-#+MATS: figcol file:fig-03_1047-04-*.pdf 0.55
-
-- Curvas de indiferencia del consumidor $B$.
-
-- La $\RMS_B$ es la pendiente, en valor absoluto, de las curvas de
-  indiferencia de $B$.
+#+MATS: col 0.5
+#+MATS: fig file:fig-03_1047-04-*.pdf
+#+begin_center
+Consumidor $B$
+#+end_center
 
 
 ** Intercambio (I)
