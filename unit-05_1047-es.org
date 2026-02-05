@@ -8,43 +8,80 @@
 #+MATS: bib
 
 #+begin_bibbox
-- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulo 7.
+- *Stiglitz y Rosengard*:  /La economía del sector público/. Capítulos 4 y 7.
 #+end_bibbox
 
 
-* Introducción
+
+* Fallos de mercado e intervención pública
 
 
-** Eficiencia
+** Teoremas fundamentales del bienestar
 
-El *primer teorema fundamental de la Economía del Bienestar* afirma
-que los mercados competitivos consiguen la eficiencia de Pareto.
+- El *primer teorema fundamental de la Economía del Bienestar* afirma
+  que los mercados competitivos consiguen la eficiencia de Pareto.
 
-
-** Eficiencia y equidad
-
-El *segundo teorema fundamental de la Economía del Bienestar*
-establece que se pueden lograr objetivos de equidad si primero se
-redistribuye y luego se deja funcionar al mercado.
+- El *segundo teorema fundamental de la Economía del Bienestar*
+  establece que se pueden lograr objetivos de equidad si primero se
+  redistribuye y luego se deja funcionar al mercado.
 
 
-** Redistribución
+** Razones para la intervención pública
 
-La *redistribución* requiere:
+- Derechos de propiedad y cumplimiento de los contratos.
 
-- Información sobre preferencias y dotaciones.
+- Eficiencia.
 
-- Utilizar impuestos no distorsionadores (/lump-sum/).
+- Redistribución y bienes preferentes.
+
+
+** Fallos de mercado
+
+- Poder de mercado.
+
+- Bienes públicos.
+
+- Externalidades.
+
+- Mercados incompletos.
+
+- Información imperfecta.
+
+- Desempleo y otros desequilibrios macroeconómicos.
+
+
+** Los fallos de mercado y el papel del Estado
+
+- La existencia de fallos de mercado es una razón para la intervención
+  del Estado, pero eso no quiere decir que siempre sea deseable:
+
+  + *Fallos del sector público*.
+
+  + Problemas en la recogida de información.
+
+- Los fallos de mercado pueden utilizarse para justificar programas
+  cuyos resultados tienen poco que ver con los pretendidos objetivos
+  de los mismos.
+
+
+** Redistribución y bienes preferentes
+
+Aunque la economía sea eficiente dos razones para intervenir:
+
++ Redistribución de la renta.
+
++ Los individuos pueden actuar en contra de sus propios intereses:
+  *paternalismo* y *bienes preferentes*.
 
 
 ** Redistribución y eficiencia
 
-La redistribución puede suponer pérdidas de eficiencia:
+La *redistribución* no conlleva pérdidas de eficiencia si:
 
-- Coste de obtención de la información y de implementar la
-  redistribución.
+- Se dispone de información completa y sin coste sobre preferencias y
+  dotaciones.
 
-- Los impuestos no distorsionadores pueden no ser factibles.
+- Es posible utilizar impuestos no distorsionadores (/lump-sum taxes/).
 
 
 ** Disyuntiva entre eficiencia y equidad
@@ -69,8 +106,8 @@ La redistribución puede suponer pérdidas de eficiencia:
 
 ** La función de bienestar social
 
-- La *función de bienestar social* agrega las utilidades alcanzadas
-  por todos los miembros de la sociedad:
+- La *función de bienestar social* agrega las utilidades individuales
+  de los miembros de la sociedad:
   #+begin_export latex
   \[
     W = W(U_{A}, U_{B})
@@ -155,3 +192,12 @@ Problemas:
 - Comparación medidas eficiencia y equidad.
 
 - Beneficios netos ponderados.
+
+
+
+# Local Variables:
+# ispell-dictionary: "spanish"
+# End:
+
+
+#  LocalWords:  Hicks Harberger loss lump sum taxes Gini Kaldor
