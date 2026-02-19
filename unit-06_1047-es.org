@@ -200,7 +200,7 @@ públicos.
 
   + $C$: tazas de chocolate; un bien privado.
 
-  + $M$: minutos de /mascletades/; un bien público.
+  + $M$: minutos de espectáculos pirotécnicos; un bien público.
 
 - $C$ es el bien numerario.
 
@@ -212,7 +212,7 @@ públicos.
 - Las preferencias de los consumidores son regulares.
 
 - $\RMS_i$: cuántas tazas de chocolate está dispuesto a sacrificar el
-  consumidor $i$ a cambio de un minuto adicional de /mascletà/.
+  consumidor $i$ a cambio de un minuto adicional de pirotecnia.
 
 
 ** Curva de demanda individual del bien público
@@ -220,7 +220,7 @@ públicos.
 #+MATS: figcol file:fig-06_1047-13-*.pdf 0.45
 
 La curva de demanda individual refleja la disposición a pagar del
-consumidor $i$ por un minuto adicional de /mascletà/.
+consumidor $i$ por un minuto adicional de pirotecnia.
 
 
 ** Curva de demanda colectiva
@@ -228,7 +228,7 @@ consumidor $i$ por un minuto adicional de /mascletà/.
 #+MATS: figcol file:fig-06_1047-14-*.pdf 0.45
 
 - La *curva de demanda colectiva* muestra la disposición a pagar por
-  parte de toda la sociedad por un minuto adicional de /mascletà/.
+  parte de toda la sociedad por un minuto adicional de pirotecnia.
 
 - Se obtiene como la *suma vertical* de las curvas de demanda
   individuales.
@@ -247,10 +247,11 @@ consumidor $i$ por un minuto adicional de /mascletà/.
 
 #+MATS: figcol file:fig-06_1047-16-*.pdf 0.45
 
-- $M^*$ es la cantidad socialmente óptima de /mascletades/.
+- $M^*$ es la cantidad socialmente óptima de espectáculos
+  pirotécnicos.
 
 - Coinciden la valoración social y el coste social del último
-  minuto de /mascletades/:
+  minuto de $M$:
   #+begin_export latex
   \[
     \RMS_1 + \RMS_2 + \cdots = \RMT
@@ -262,8 +263,11 @@ consumidor $i$ por un minuto adicional de /mascletà/.
 
 #+MATS: figcol file:fig-06_1047-16-*.pdf 0.45
 
-La condición de eficiencia con bienes públicos no es un equilibrio
-de mercado ni hay fuerzas que lleven a la economía a esta situación.
+- La condición de eficiencia con bienes públicos no es un equilibrio
+  de mercado ni hay fuerzas que lleven a la economía a esta situación.
+
+- La cantidad eficiente de bienes públicos depende de la distribución
+  de la renta.
 
 
 
@@ -345,7 +349,7 @@ El monopolista puede obtener beneficios, limitando la producción
 para soportar precios por encima del coste marginal.
 
 
-** Competencia latente
+** COMMENT Competencia latente
 
 #+MATS: figcol file:fig-06_1047-32-*.pdf 0.45
 
@@ -365,23 +369,21 @@ pérdidas.
 
 ** Intervención pública
 
+Alternativas:
+
 - *Nacionalizar* el monopolio natural.
 
 - *Regulación*.
 
 - No hacer nada.
 
-
-** Los fallos del Estado (I)
-
-- La intervención sólo sería justificable si la ineficiencia del
-  monopolio es grande en relación a los costes de intervenir.
-
-- La intervención puede ser peor que el monopolio: *fallos del
-  Estado*.
+La intervención sólo sería justificable si la ineficiencia del
+monopolio es grande en relación a los costes de intervenir.
 
 
-** Los fallos del Estado (y II)
+** Los fallos del Estado
+
+La intervención puede ser peor que el monopolio: *fallos del Estado*.
 
 - Información limitada.
 

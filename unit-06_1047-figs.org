@@ -226,13 +226,14 @@
 
     \draw[help lines]
        (6, 3) --
-       (6, 0) node[below] {$Q_e$}
+       (6, 0) node[below] {$Q^*$}
        (9, 3) --
-       (9, 0) node[below] {$Q_m$} ;
+       (9, 0) node[below] {$Q_p$} ;
 
     \draw[curve A] (0, 9) -- (9, 0) node[above right, pos=0.2] { $D$ };
 
-    \draw[curve, colorD] (0, 3) -- (9.5, 3) node[right] { $c_p$ };
+    \draw[curve, colorD] (0, 3) -- (9.5, 3) node[right] { $c$ }
+      (9.5, 3) node[right] { \phantom{$c + c_{t}$} };
 
     \draw[axis] (0,11) node[left] {$P$} |-
       (11,0) node[below] {$Q$};
@@ -249,16 +250,16 @@
        (0, 4.5) -- (4.5, 4.5) -- (6, 3) -- (0, 3) -- cycle ;
 
     \draw[help lines]
-       (4.5, 4.5) -- (4.5, 0) node[below] {$Q_p$}
-       (6, 3) -- (6, 0) node[below] {$Q_e$}
+       (4.5, 4.5) -- (4.5, 0) node[below] {$Q_m$}
+       (6, 3) -- (6, 0) node[below] {$Q^*$}
        (9, 3) --
-       (9, 0) node[below] {$Q_m$} ;
+       (9, 0) node[below] {$Q_p$} ;
 
     \draw[curve A] (0, 9) -- (9, 0) node[above right, pos=0.2] { $D$ };
 
-    \draw[curve, colorD] (0, 3) -- (9.5, 3) node[right] { $c_p$ };
+    \draw[curve, colorD] (0, 3) -- (9.5, 3) node[right] { $c$ };
 
-    \draw[curve, colorD] (0, 4.5) -- (9.5, 4.5) node[right] { $c_p + c_t$ };
+    \draw[curve, colorD] (0, 4.5) -- (9.5, 4.5) node[right] { $c + c_t$ };
 
     \draw[axis] (0,11) node[left] {$P$} |-
       (11,0) node[below] {$Q$};
