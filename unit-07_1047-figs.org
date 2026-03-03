@@ -495,8 +495,10 @@
 
 
 #+begin_src latex  :noweb-ref red-curve-BMS
-  \coordinate (BMS-1) at (0, 4) ;
-  \coordinate (BMS-2) at (9, 4) ;
+  % \coordinate (BMS-1) at (0, 4) ;
+  % \coordinate (BMS-2) at (9, 4) ;
+  \coordinate (BMS-1) at (0, 5.5) ;
+  \coordinate (BMS-2) at (9, 3.5) ;
   \path[save path=\pathBMS, name path=BMS] (BMS-1) -- (BMS-2) ;
 #+end_src
 
@@ -553,9 +555,8 @@
     \coordinate (Im-1) at (0, 0) ;
 
     \draw[help lines]
-      (BMS-1) node[left] { $f$ }
       (Im-1) node[below] {$R_m$}
-      (Ie-1) -- (Ie-1 |- x-axis) node[below] {$R_e$}
+      (Ie-1 -| y-axis) node[left] { $f$ } -| (Ie-1 |- x-axis) node[below] {$R_e$}
       ;
 
     <<red-draw-curve-BMS>>
