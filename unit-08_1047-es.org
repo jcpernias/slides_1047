@@ -13,7 +13,7 @@
 * Análisis de los costes y beneficios privados
 
 
-** Evaluación de proyectos
+** COMMENT Evaluación de proyectos
 
 - ¿Qué proyectos son *admisibles*?
 
@@ -22,12 +22,12 @@
 
 ** Etapas
 
-1. Identificación de los proyectos a considerar.
+1. Identificación de los proyectos alternativos.
 
-2. Enumeración de los inputs y outputs requeridos en cada proyecto
-   alternativo.
+2. Enumeración para cada alternativa de los factores y recursos que se
+   utilizarán y de la producción que se obtendrá.
 
-3. Asignación de un valor monetario a cada input y a cada output.
+3. Valoración monetaria de los factores y de la producción.
 
 4. Cálculo de la rentabilidad asociada a cada proyecto.
 
@@ -51,7 +51,7 @@
   r)^t$.
 
 
-** El valor actual descontado (I)
+** El valor actual descontado
 
 El *valor actual descontado* de un proyecto que genera un flujo de
 beneficios netos $R_0, R_1, R_2, \dots, R_T$ es:
@@ -63,14 +63,14 @@ beneficios netos $R_0, R_1, R_2, \dots, R_T$ es:
 #+end_export
 
 
-** El valor actual descontado (y II)
+** Selección de proyectos
 
 - Un proyecto es admisible si $\VAD > 0$.
 
 - Es preferible el proyecto con mayor \VAD.
 
 
-** Otros criterios (I)
+** COMMENT Otros criterios (I)
 
 - *Tasa interna de rentabilidad*, $\rho$:
   #+begin_export latex
@@ -91,32 +91,28 @@ beneficios netos $R_0, R_1, R_2, \dots, R_T$ es:
 
 ** Diferencias con el análisis privado
 
-El Sector Público tiene en cuenta aspectos que el análisis privado
-no considera:
-
 - El Sector Público puede tener objetivos más amplios que la obtención
   de beneficios monetarios.
 
 - Los precios de mercado no existen o, a causa de un fallo de mercado,
-  no representan el coste marginal social.
+  no representan el coste de oportunidad social.
 
 
 ** Excedente de los consumidores
 
-- La valoración del proyecto debe de incluir las variaciones del
+- La valoración del proyecto debe incluir las variaciones del
   bienestar de todas las partes implicadas.
 
-- Los beneficios totales de un proyecto son la suma de los ingresos
-  más el excedente de los consumidores.
+- La evaluación pública de un proyecto debe tener en cuenta tanto
+  ingresos monetarios como el excedente de los consumidores.
 
 
 ** El valor del tiempo
 
-- Un proyecto que mejora algún sistema de transporte puede ahorrar
-  tiempo a los miembros de la sociedad.
+- Mejoras en el transporte pueden ahorrar tiempo a los usuarios.
 
-- El salario (neto de impuestos) se ha usado como una medida del valor
-  del tiempo para un trabajador.
+- Frecuentemente se usa el salario neto de impuestos como una medida
+  del valor del tiempo para un trabajador.
 
 - Otros métodos estadísticos tratan de determinar la disposición a
   pagar por reducir el tiempo de viaje.
@@ -159,7 +155,7 @@ oportunidad de los trabajadores que se contraten:
   el salario de mercado.
 
 - Si estaban desempleados su coste de oportunidad es el valor del
-  ocio, muy inferior al salario de mercado.
+  ocio, generalmente inferior al salario de mercado.
 
 
 ** Precios sombra: monopolio
@@ -184,18 +180,18 @@ genera contaminación:
 - El precio sombra debe recoger el daño causado por la contaminación.
 
 
-** Tasa de descuento social (I)
+** Tasa de descuento social
 
 La *tasa de descuento social* puede basarse en el tipo de interés de
-mercado:
+mercado si:
 
-- si no hay fallos de mercado; y
+- no hay fallos de mercado; y
 
-- si los que se benefician del proyecto son los mismos que soportan
-  los costes.
+- los beneficiarios del proyecto son los mismos que soportan los
+  costes.
 
 
-** Tasa de descuento social (y II)
+** Efectos a largo plazo
 
 - La valoración de proyectos que tienen efectos en el largo plazo es
   muy sensible a la tasa de descuento que se emplee:
@@ -219,7 +215,7 @@ mercado:
   deberían utilizarse tasas de descuento sociales bajas.
 
 
-** Otras cuestiones
+** COMMENT Otras cuestiones
 
 - Valoración en condiciones de incertidumbre.
 
@@ -231,12 +227,11 @@ mercado:
 - El *análisis coste efectividad* compara sólo los costes de
   diferentes alternativas.
 
-- Este tipo más simple de análisis se usa cuando es difícil estimar
-  los beneficios de las diferentes alternativas y estos beneficios se
-  suponen razonablemente similares.
+- Se usa cuando es difícil estimar los beneficios, los cuales se
+  consideran equivalentes entre las diferentes alternativas.
 
 
-** Errores comunes
+** COMMENT Errores comunes
 
 - Contabilizar beneficios secundarios.
 
