@@ -22,7 +22,7 @@
   problema de la elección pública sería trivial.
 
 
-** Heterogeneidad de las preferencias
+** COMMENT Heterogeneidad de las preferencias
 
 - Las preferencias por los bienes públicos pueden ser heterogéneas
   debido a diferencias en la renta de los individuos.
@@ -106,7 +106,7 @@ Con un sistema impositivo uniforme:
   #+end_export
 
 
-** Impuestos y preferencias por los bienes públicos
+** COMMENT Impuestos y preferencias por los bienes públicos
 
 Con un sistema impositivo proporcional o progresivo:
 
