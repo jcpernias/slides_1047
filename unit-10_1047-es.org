@@ -17,35 +17,33 @@
 
 ** Definición
 
-- Los *impuestos* son transferencias de dinero a favor del sector
-  público, sin contrapartida directa y establecidos por ley.
+- Los *impuestos* son transferencias coactivas desde el sector privado
+  al sector público, sin contrapartida directa y establecidos por ley.
 
 - La obligatoriedad resuelve el problema del polizón.
-
-- Se crean tensiones al favorecer a determinados grupos de interés a
-  costa de otros.
 
 
 ** Tipos de impuestos
 
-- *Directos*: gravan los orígenes de la capacidad de pago: la renta o
-  la riqueza.
+- Los *impuestos directos* gravan los orígenes de la capacidad de
+  pago: la renta o la riqueza.
 
-- *Indirectos*: gravan los usos de las renta: el consumo de bienes y
-  servicios, compras de activos y otras operaciones similares.
+- Los *impuestos indirectos* gravan los usos de las renta: el consumo
+  de bienes y servicios, compras de activos y otras operaciones
+  similares.
 
 - Las *cotizaciones sociales* son impuestos sobre las rentas del
   trabajo que se dedican a gastos de cobertura social.
 
 
-** Impuestos sobre la renta
+** COMMENT Impuestos sobre la renta
 
 - Impuesto sobre la renta de las personas físicas.
 
 - Impuesto sobre sociedades.
 
 
-** Impuestos sobre la riqueza
+** COMMENT Impuestos sobre la riqueza
 
 - Impuesto sobre bienes inmuebles.
 
@@ -54,7 +52,7 @@
 - Impuesto sobre el patrimonio.
 
 
-** Impuestos indirectos
+** COMMENT Impuestos indirectos
 
 - Impuesto sobre el valor añadido.
 
@@ -63,6 +61,29 @@
 - Impuestos especiales (accisas).
 
 - Aranceles.
+
+
+** Principales elementos impositivos
+
+- El *sujeto pasivo* es la persona física o jurídica obligada por ley
+  a satisfacer la obligación tributaria.
+
+- El *hecho imponible* es la circunstancia que da origen a la
+  obligación tributaria.
+
+- La *base imponible* es la valoración, usualmente monetaria, del
+  hecho imponible.
+
+- La *cuota tributaria* es la cantidad que debe pagarse por el impuesto.
+
+
+** Tipos impositivos medio y marginal
+
+- *Tipo impositivo medio*: cociente entre la cuota tributaria y la
+  base imponible.
+
+- *Tipo impositivo marginal*: porcentaje que se aplica a la última
+  unidad de la base imponible.
 
 
 ** Progresividad de los impuestos
@@ -76,7 +97,7 @@
 - El tipo medio de los *impuestos regresivos* disminuye con la renta.
 
 
-** Ejemplo: IRPF (I)
+** COMMENT Ejemplo: IRPF (I)
 
 #+ATTR_LATEX: :booktabs t :align l@{\hspace{2cm}}c
 | Tramos del IRPF                      | Tipo marginal     |
@@ -93,7 +114,7 @@ Un contribuyente que gane \money{30000} pagaría: $\num{12450} \cdot
 \money{7165.50}$. Tipo medio: \SI{23.9}{\percent}.
 
 
-** Ejemplo: IRPF (y II)
+** COMMENT Ejemplo: IRPF (y II)
 
 #+ATTR_LATEX: :booktabs t :align l@{\hspace{1.5cm}}c@{\hspace{1.5cm}}c
 | Renta         | Tipo marginal     | Tipo medio        |
@@ -136,7 +157,8 @@ pagar.
 
 ** Eficiencia económica (II)
 
-- En ausencia de fallos de mercado, el sistema de precios permite asignar eficientemente los recursos.
+- En ausencia de fallos de mercado, el sistema de precios permite
+  asignar eficientemente los recursos.
 
 - La introducción de impuestos modifica los precios relativos a los
   que se enfrentan los contribuyentes.
@@ -153,7 +175,7 @@ pagar.
 
 - Si un impuesto es *neutral* los contribuyentes no pueden hacer para
   alterar su carga tributaria. El único efecto de los impuestos de
-  *cuantía fija* (/lump-sum taxes/) es el efecto renta.
+  *tanto alzado* (/lump-sum taxes/) es el efecto renta.
 
 
 ** Eficiencia económica (y IV)
@@ -173,7 +195,7 @@ pagar.
 - Tampoco debe imponer grandes costes a los contribuyentes.
 
 
-** Flexibilidad (I)
+** Flexibilidad
 
 - El sistema impositivo debe ser capaz de responder a condiciones
   económicas cambiantes.
@@ -182,14 +204,14 @@ pagar.
   un *estabilizador automático*.
 
 - En periodos de inflación y crecimiento la *indexación* de las
-  escalas impositivas reduce la capacidad estabilizadora de los
-  impuestos sobre la renta.
+  escalas de un impuesto progresivo reduce la capacidad
+  estabilizadora.
 
-- Con inflación y recesión, el impuesto sobre la renta tiene efectos
-  procíclicos si no se indexan las escalas impositivas.
+- Con inflación y recesión, la indexación contribuye a la
+  estabilización.
 
 
-** Flexibilidad (y II)
+** COMMENT Flexibilidad (y II)
 
 - A menudo, *dificultades políticas* impiden realizar ajustes en el
   sistema impositivo.
@@ -207,10 +229,8 @@ pagar.
 
 - El impuesto sobre la renta es *transparente*.
 
-- El impuesto sobre sociedades no es transparente: los impuestos son
-  pagados por las personas no por las instituciones y, en este caso,
-  no está claro qué parte de la carga del impuesto soportan los
-  accionistas, los trabajadores o los clientes de las sociedades.
+- El impuesto sobre sociedades o las cotizaciones sociales no son
+  transparentes.
 
 
 ** Justicia (I)
@@ -233,7 +253,7 @@ pagar.
 
 ** Justicia (III)
 
-- *Equidad vertical*: quienes puedan pagar mayores impuestos deberían
+- *Equidad vertical*: quien pueda pagar mayores impuestos debería
   pagar más.
 
 - ¿Quién debe pagar más?
@@ -241,7 +261,7 @@ pagar.
 - Si alguien tiene que pagar más, ¿cuánto más?
 
 
-** Bases impositivas
+** Justicia (y IV)
 
 ¿Qué variable debería servir como base de los impuestos?
 
@@ -249,7 +269,9 @@ pagar.
 
 - *Consumo*.
 
-- *Renta permanente*
+- *Renta permanente*.
+
+- *Principio del beneficio*.
 
 
 * La función de bienestar social y los impuestos
