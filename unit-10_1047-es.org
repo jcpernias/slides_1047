@@ -36,14 +36,14 @@
   trabajo que se dedican a gastos de cobertura social.
 
 
-** COMMENT Impuestos sobre la renta
+** Impuestos sobre la renta
 
 - Impuesto sobre la renta de las personas físicas.
 
 - Impuesto sobre sociedades.
 
 
-** COMMENT Impuestos sobre la riqueza
+** Impuestos sobre la riqueza
 
 - Impuesto sobre bienes inmuebles.
 
@@ -52,7 +52,7 @@
 - Impuesto sobre el patrimonio.
 
 
-** COMMENT Impuestos indirectos
+** Impuestos indirectos
 
 - Impuesto sobre el valor añadido.
 
@@ -65,8 +65,8 @@
 
 ** Principales elementos impositivos
 
-- El *sujeto pasivo* es la persona física o jurídica obligada por ley
-  a satisfacer la obligación tributaria.
+- El *sujeto pasivo* está obligado por ley a satisfacer la obligación
+  tributaria.
 
 - El *hecho imponible* es la circunstancia que da origen a la
   obligación tributaria.
@@ -145,7 +145,7 @@ renta.
 - *Justicia*
 
 
-** Eficiencia económica (I)
+** Eficiencia económica
 
 #+ATTR_LATEX: :scale 0.3
 #+MATS: figcol file:tweet.png 0.55
@@ -153,39 +153,6 @@ renta.
 La ineficiencia se traduce en que los contribuyentes modifican su
 comportamiento con el objetivo de reducir los impuestos que tienen que
 pagar.
-
-
-** Eficiencia económica (II)
-
-- En ausencia de fallos de mercado, el sistema de precios permite
-  asignar eficientemente los recursos.
-
-- La introducción de impuestos modifica los precios relativos a los
-  que se enfrentan los contribuyentes.
-
-- Los impuestos afectan, entre otras, las decisiones de ahorro,
-  trabajo, consumo y producción.
-
-
-** Eficiencia económica (III)
-
-- Los impuestos sobre el consumo o sobre la renta son
-  *distorsionadores*: los individuos pueden reducir su deuda tributaria
-  reduciendo su consumo o su ahorro o trabajando menos.
-
-- Si un impuesto es *neutral* los contribuyentes no pueden hacer para
-  alterar su carga tributaria. El único efecto de los impuestos de
-  *tanto alzado* (/lump-sum taxes/) es el efecto renta.
-
-
-** Eficiencia económica (y IV)
-
-- En presencia de fallos de mercado, la asignación de recursos no será
-  óptima y, en ciertas situaciones, los impuestos podrían corregir
-  algunas ineficiencias
-
-- Por ejemplo, los *impuestos correctivos* pueden usarse para
-  contrarrestar la ineficiencia causada por externalidades.
 
 
 ** Sencillez administrativa
@@ -202,6 +169,9 @@ pagar.
 
 - Cuando los precios son estables, un sistema impositivo progresivo es
   un *estabilizador automático*.
+
+
+** Flexibilidad: indexación
 
 - En periodos de inflación y crecimiento la *indexación* de las
   escalas de un impuesto progresivo reduce la capacidad
@@ -233,7 +203,7 @@ pagar.
   transparentes.
 
 
-** Justicia (I)
+** Justicia
 
 - El sistema impositivo debe tratar de forma similar a sujetos en
   condiciones similares e imponer impuestos más altos a aquellos que
@@ -242,7 +212,7 @@ pagar.
 - Es difícil poner esos conceptos en práctica.
 
 
-** Justicia (II)
+** Justicia: equidad horizontal
 
 - *Equidad horizontal*: Los individuos que se encuentren en
   circunstancias esencialmente idénticas deben pagar lo mismo en
@@ -251,7 +221,7 @@ pagar.
 - ¿Qué diferencias son relevantes y cuáles no?
 
 
-** Justicia (III)
+** Justicia: equidad vertical
 
 - *Equidad vertical*: quien pueda pagar mayores impuestos debería
   pagar más.
@@ -261,7 +231,7 @@ pagar.
 - Si alguien tiene que pagar más, ¿cuánto más?
 
 
-** Justicia (y IV)
+** Justicia: base imponible
 
 ¿Qué variable debería servir como base de los impuestos?
 
@@ -285,8 +255,26 @@ pagar.
 - La función de bienestar social nos permite elegir entre diferentes
   sistemas eficientes.
 
+** La función de bienestar utilitarista
 
-** La función de bienestar utilitarista (I)
+- Si la oferta de trabajo no responde a cambios en los impuestos y la
+  utilidad marginal de la renta es decreciente, el criterio
+  utilitarista favorece impuestos progresivos.
+
+- Los impuestos progresivos son menos recomendables desde este
+  criterio si la oferta de trabajo es muy elástica con respecto de los
+  impuestos.
+
+
+** La función de bienestar de Rawls
+
+- La maximización del bienestar de quien peor está implica elevar la
+  tasa impositiva hasta que se maximice la recaudación obtenida del
+  resto de la sociedad.
+
+
+
+** COMMENT La función de bienestar utilitarista (I)
 
 - El criterio utilitarista proporciona argumentos en favor de
   impuestos progresivos si la utilidad marginal de la renta es
@@ -298,7 +286,7 @@ pagar.
   recaudación y reducirá considerablemente la oferta de trabajo.
 
 
-** La función de bienestar utilitarista (y II)
+** COMMENT La función de bienestar utilitarista (y II)
 
 - De forma similar, el criterio utilitarista es compatible con la
   equidad horizontal siempre que la generación de renta no se viera
@@ -306,7 +294,7 @@ pagar.
 
 
 
-** La función de bienestar de Rawls
+** COMMENT La función de bienestar de Rawls
 
 - La maximización del bienestar de quien peor está implica elevar la
   tasa impositiva hasta que se maximice la recaudación obtenida del

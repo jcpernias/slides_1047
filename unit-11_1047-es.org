@@ -50,6 +50,14 @@ que tienen que pagar:
 
 ** Impuesto sobre las ventas de un bien
 
+- Un producto se vende en un mercado competitivo.
+
+- Se establece un impuesto de $t$ euros por cada unidad vendida.
+
+
+
+** COMMENT Impuesto sobre las ventas de un bien
+
 #+MATS: figcol file:fig-11_1047-01-*.pdf 0.47
 
 - Un producto se vende en un mercado competitivo.
@@ -60,7 +68,7 @@ que tienen que pagar:
 - La oferta se desplaza hacia arriba.
 
 
-** Equilibrio de mercado
+** COMMENT Equilibrio de mercado
 
 #+MATS: figcol file:fig-11_1047-02-*.pdf 0.47
 
@@ -70,7 +78,7 @@ que tienen que pagar:
   $P_1 - t$.
 
 
-** Impuesto a los compradores
+** COMMENT Impuesto a los compradores
 
 #+MATS: figcol file:fig-11_1047-03-*.pdf 0.47
 
@@ -78,17 +86,6 @@ que tienen que pagar:
   tuvieran que pagar el impuesto.
 
 - La demanda se desplazaría hacia abajo.
-
-
-** Comparación
-
-El equilibrio no depende de quién pague el impuesto.
-
-#+MATS: col 0.5
-#+MATS: fig file:fig-11_1047-02-*.pdf
-
-#+MATS: col 0.5
-#+MATS: fig file:fig-11_1047-04-*.pdf
 
 
 ** Incidencia legal e incidencia económica
@@ -103,6 +100,18 @@ El equilibrio no depende de quién pague el impuesto.
   legal y es independiente de quién paga el impuesto.
 
 
+** Comparación
+
+El equilibrio no depende de si son los vendedores o los compradores
+quienes pagan el impuesto.
+#+latex: \par\smallskip
+
+#+MATS: col 0.5
+#+MATS: fig file:fig-11_1047-02-*.pdf
+#+MATS: col 0.5
+#+MATS: fig file:fig-11_1047-04-*.pdf
+
+
 ** Incidencia en mercados competitivos
 
 #+MATS: figcol file:fig-11_1047-06-*.pdf 0.47
@@ -114,7 +123,7 @@ El equilibrio no depende de quién pague el impuesto.
   mayor parte de la carga del impuesto.
 
 
-** Elasticidades
+** COMMENT Elasticidades
 
 - Elasticidad de la demanda:
   #+begin_export latex
@@ -131,7 +140,7 @@ El equilibrio no depende de quién pague el impuesto.
   #+end_export
 
 
-** Incidencia y elasticidades
+** COMMENT Incidencia y elasticidades
 
 Después de un impuesto específico de $t$ por unidad:
 
@@ -165,11 +174,11 @@ Después de un impuesto específico de $t$ por unidad:
 - Con un *impuesto específico* se paga una cantidad fija de dinero por
   cada unidad de producto.
 
-- Con un impuesto /*ad valorem*/ se paga por cada unidad un porcentaje
-  fijo del precio.
+- Con un impuesto /*ad valorem*/ se paga un porcentaje fijo del precio
+  por cada unidad .
 
 
-** Impuestos /ad valorem/
+** COMMENT Impuestos /ad valorem/
 
 #+MATS: figcol file:fig-11_1047-07-*.pdf 0.47
 
@@ -181,9 +190,22 @@ Después de un impuesto específico de $t$ por unidad:
   que indica el precio neto de impuestos.
 
 
+** Impuestos /ad valorem/
+
+- Un producto se vende en un mercado competitivo.
+
+- Se introduce un impuesto que es una fracción $\tau$ del precio del bien.
+
+
+
 ** Equilibrio
 
-#+MATS: figcol file:fig-11_1047-08-*.pdf 0.47
+#+MATS: figcol file:fig-11_1047-08-*.pdf 0.49
+
+- La demanda, $D$, determina el precio que pagan los compradores.
+
+- La curva $D_{\tau}$ es la demanda relevante para los vendedores, ya
+  que indica el precio neto de impuestos.
 
 - El precio que pagan los compradores se eleva desde $P_0$ hasta $P_1$.
 
@@ -195,6 +217,7 @@ Después de un impuesto específico de $t$ por unidad:
 
 *En mercados competitivos*, un impuesto /ad valorem/ es *equivalente*
 a uno específico que produzca la misma variación del precio.
+#+latex: \par\smallskip
 
 #+MATS: col 0.5
 #+MATS: fig file:fig-11_1047-08-*.pdf
@@ -203,7 +226,7 @@ a uno específico que produzca la misma variación del precio.
 #+MATS: fig file:fig-11_1047-09-*.pdf
 
 
-** Subvenciones
+** COMMENT Subvenciones
 
 #+MATS: figcol file:fig-11_1047-10-*.pdf 0.47
 
@@ -216,9 +239,12 @@ a uno específico que produzca la misma variación del precio.
 - La curva de demanda se desplaza hacia arriba.
 
 
-** Equilibrio
+** Subvenciones
 
 #+MATS: figcol file:fig-11_1047-11-*.pdf 0.47
+
+- La incidencia de las subvenciones puede analizarse de forma similar
+  a la de los impuestos.
 
 - El precio que cobran los vendedores aumenta de $P_0$ a $P_1$.
 
@@ -237,9 +263,8 @@ a uno específico que produzca la misma variación del precio.
 
 ** Mercado competitivo de trabajo
 
-- En un mercado competitivo de trabajo la incidencia de las
-  cotizaciones sociales depende de las elasticidades de la oferta y la
-  demanda de trabajo.
+- En un mercado competitivo de trabajo la incidencia depende de las
+  elasticidades de la oferta y la demanda de trabajo.
 
 - El establecimiento de un salario mínimo podría hacer que la
   incidencia legal afectase a la incidencia económica.
@@ -258,7 +283,7 @@ a uno específico que produzca la misma variación del precio.
 * Incidencia en mercados no competitivos
 
 
-** Monopolio
+** COMMENT Monopolio
 
 #+MATS: figcol file:fig-11_1047-13-*.pdf 0.47
 
@@ -268,7 +293,7 @@ a uno específico que produzca la misma variación del precio.
 - La demanda determina el precio.
 
 
-** Impuesto específico
+** Monopolio: impuestos específicos
 
 #+MATS: figcol file:fig-11_1047-14-*.pdf 0.47
 
@@ -286,8 +311,13 @@ a uno específico que produzca la misma variación del precio.
 
 ** Demanda de elasticidad constante
 
+- La incidencia de los impuestos en mercados monopolísticos depende de
+  la forma de la curva de demanda.
+
 - Con curvas de demanda de elasticidad constante y costes marginales
   constantes, el aumento de precio es mayor que $t$.
+
+** COMMENT Demanda de elasticidad constante
 
 - Regla de fijación del precio del monopolista:
   #+begin_export latex
@@ -314,7 +344,7 @@ a uno específico que produzca la misma variación del precio.
 - En el nuevo equilibrio se cumple: $\IMg_{\tau} = \CMg$.
 
 
-** Impuesto específico
+** COMMENT Impuesto específico
 
 #+MATS: figcol file:fig-11_1047-16-*.pdf 0.47
 
@@ -329,6 +359,7 @@ a uno específico que produzca la misma variación del precio.
 En el caso del monopolio, un impuestos /ad valorem/ proporciona una
 mayor recaudación que un impuesto específico que provoque la misma
 elevación del precio.
+#+latex: \par\smallskip
 
 #+MATS: col 0.5
 #+MATS: fig file:fig-11_1047-15f-*.pdf
@@ -405,3 +436,5 @@ Algunas observaciones importantes:
   largo plazo, podrían desincentivar el ahorro lo que podría reducir
   el stock de capital. Esto podría traducirse en una menor
   productividad del trabajo que redujera los salarios a largo plazo.
+
+#  LocalWords:  monopolísticos
