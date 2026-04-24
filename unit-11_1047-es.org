@@ -251,7 +251,7 @@ a uno específico que produzca la misma variación del precio.
 - El precio que pagan los compradores disminuye de $P_0$ a $P_1 - s$.
 
 
-** Incidencia
+** Subvenciones: incidencia
 
 #+MATS: figcol file:fig-11_1047-12-*.pdf 0.47
 
