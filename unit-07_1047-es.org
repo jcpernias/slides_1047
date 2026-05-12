@@ -1,5 +1,3 @@
-# -*- ispell-dictionary: "spanish" -*-
-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: {{{unit07}}}
@@ -285,3 +283,8 @@ Un impuesto correctivo:
 
 - Perjudica a las empresas gravadas por el impuesto y a sus
   consumidores que soportan mayores precios.
+
+
+# Local Variables:
+# ispell-dictionary: "spanish"
+# End:

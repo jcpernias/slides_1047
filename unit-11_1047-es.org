@@ -1,5 +1,3 @@
-# -*- ispell-dictionary: "spanish" -*-
-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: {{{unit11}}}
@@ -436,5 +434,9 @@ Algunas observaciones importantes:
   largo plazo, podrían desincentivar el ahorro lo que podría reducir
   el stock de capital. Esto podría traducirse en una menor
   productividad del trabajo que redujera los salarios a largo plazo.
+
+# Local Variables:
+# ispell-dictionary: "spanish"
+# End:
 
 #  LocalWords:  monopolísticos

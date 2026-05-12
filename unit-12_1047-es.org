@@ -1,5 +1,3 @@
-# -*- ispell-dictionary: "spanish" -*-
-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: {{{unit12}}}
@@ -308,3 +306,7 @@ donde:
 - Desde el punto de vista de la eficiencia es mejor tener unos tipos
   impositivos relativamente constantes a lo largo del tiempo alternar
   periodos de impuestos altos con periodos de impuestos bajos.
+
+# Local Variables:
+# ispell-dictionary: "spanish"
+# End:

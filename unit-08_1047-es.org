@@ -1,5 +1,3 @@
-# -*- ispell-dictionary: "spanish" -*-
-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: {{{unit08}}}
@@ -238,3 +236,8 @@ mercado si:
 - Considerar los puestos de trabajo creados como un beneficio.
 
 - Contabilizar dos veces los beneficios.
+
+
+# Local Variables:
+# ispell-dictionary: "spanish"
+# End:

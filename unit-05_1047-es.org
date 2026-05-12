@@ -1,9 +1,6 @@
-# -*- ispell-dictionary: "spanish" -*-
-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: {{{unit05}}}
-
 
 #+MATS: bib
 
