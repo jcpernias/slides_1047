@@ -29,7 +29,7 @@
 
 ** {{{unit05}}}
 
-#+include: "unit-05_1047-es.org" :lines "6-"
+#+include: "unit-05_1047-es.org" :lines "5-"
 
 
 * El gasto público: teoría
@@ -37,22 +37,22 @@
 
 ** {{{unit06}}}
 
-#+include: "unit-06_1047-es.org" :lines "6-"
+#+include: "unit-06_1047-es.org" :lines "5-"
 
 
 ** {{{unit07}}}
 
-#+include: "unit-07_1047-es.org" :lines "6-"
+#+include: "unit-07_1047-es.org" :lines "5-"
 
 
 ** {{{unit08}}}
 
-#+include: "unit-08_1047-es.org" :lines "6-"
+#+include: "unit-08_1047-es.org" :lines "5-"
 
 
 ** {{{unit09}}}
 
-#+include: "unit-09_1047-es.org" :lines "6-"
+#+include: "unit-09_1047-es.org" :lines "5-"
 
 
 * Los impuestos: teoría
@@ -60,17 +60,17 @@
 
 ** {{{unit10}}}
 
-#+include: "unit-10_1047-es.org" :lines "6-"
+#+include: "unit-10_1047-es.org" :lines "5-"
 
 
 ** {{{unit11}}}
 
-#+include: "unit-11_1047-es.org" :lines "6-"
+#+include: "unit-11_1047-es.org" :lines "5-"
 
 
 ** {{{unit12}}}
 
-#+include: "unit-12_1047-es.org" :lines "6-"
+#+include: "unit-12_1047-es.org" :lines "5-"
 
 
 * Programas de gasto
